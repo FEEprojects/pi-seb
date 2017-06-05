@@ -1102,9 +1102,10 @@ More information and support community is available at http://www.element14.com/
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="U2" library="74HC139N" deviceset="74HC139N" device=""/>
-<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="U3" library="74HC139N" deviceset="74HC139N" device=""/>
+<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1127,9 +1128,6 @@ More information and support community is available at http://www.element14.com/
 <instance part="GND9" gate="1" x="203.2" y="177.8"/>
 <instance part="+3V2" gate="G$1" x="203.2" y="210.82"/>
 <instance part="+3V3" gate="G$1" x="264.16" y="210.82"/>
-<instance part="U2" gate="A" x="226.06" y="109.22"/>
-<instance part="GND10" gate="1" x="182.88" y="91.44"/>
-<instance part="P+2" gate="1" x="205.74" y="124.46"/>
 </instances>
 <busses>
 </busses>
@@ -1189,13 +1187,6 @@ More information and support community is available at http://www.element14.com/
 <junction x="208.28" y="187.96"/>
 <junction x="208.28" y="180.34"/>
 </segment>
-<segment>
-<pinref part="U2" gate="A" pin="GND"/>
-<wire x1="208.28" y1="91.44" x2="187.96" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="182.88" y1="93.98" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="93.98" x2="187.96" y2="91.44" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -1224,12 +1215,6 @@ More information and support community is available at http://www.element14.com/
 <wire x1="119.38" y1="228.6" x2="119.38" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="228.6" x2="119.38" y2="228.6" width="0.1524" layer="91"/>
 <junction x="119.38" y="228.6"/>
-</segment>
-<segment>
-<pinref part="U2" gate="A" pin="VCC"/>
-<pinref part="P+2" gate="1" pin="+5V"/>
-<wire x1="208.28" y1="119.38" x2="205.74" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="119.38" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL_3V3" class="0">
@@ -1283,11 +1268,6 @@ More information and support community is available at http://www.element14.com/
 <pinref part="PCB1" gate="G$1" pin="GPIO7"/>
 <label x="127" y="170.18" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U2" gate="A" pin="2~E"/>
-<wire x1="208.28" y1="111.76" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
-<label x="185.42" y="111.76" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SPI0_CS0" class="0">
 <segment>
@@ -1295,10 +1275,50 @@ More information and support community is available at http://www.element14.com/
 <wire x1="119.38" y1="175.26" x2="137.16" y2="175.26" width="0.1524" layer="91"/>
 <label x="124.46" y="175.26" size="1.778" layer="95"/>
 </segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="FRAME2" gate="G$1" x="-12.7" y="-33.02"/>
+<instance part="U3" gate="A" x="165.1" y="111.76"/>
+<instance part="GND11" gate="1" x="121.92" y="93.98"/>
+<instance part="P+3" gate="1" x="144.78" y="127"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="GND" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="1~E"/>
-<wire x1="208.28" y1="114.3" x2="193.04" y2="114.3" width="0.1524" layer="91"/>
-<label x="193.04" y="116.84" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="GND"/>
+<wire x1="147.32" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="121.92" y1="96.52" x2="127" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="127" y1="96.52" x2="127" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="VCC"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="147.32" y1="121.92" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="121.92" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SPI0_CS1" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="2~E"/>
+<wire x1="147.32" y1="114.3" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
+<label x="124.46" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPI0_CS0" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="1~E"/>
+<wire x1="147.32" y1="116.84" x2="132.08" y2="116.84" width="0.1524" layer="91"/>
+<label x="132.08" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

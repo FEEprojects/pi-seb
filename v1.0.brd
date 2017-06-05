@@ -828,12 +828,12 @@ design rules under a new name.</description>
 <attribute name="PACKAGE" value="SOIC-28" x="-116.84" y="30.48" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER" value="Microchip" x="-116.84" y="30.48" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U2" library="74HC139N" package="DIP254P762X420-16" value="74HC139N" x="-133.35" y="5.08">
-<attribute name="MPN" value="74HC139N" x="-133.35" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="380556" x="-133.35" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="07WX3674" x="-133.35" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="PACKAGE" value="DIP-16" x="-133.35" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="SUPPLIER" value="NXP" x="-133.35" y="5.08" size="1.778" layer="27" display="off"/>
+<element name="U3" library="74HC139N" package="DIP254P762X420-16" value="74HC139N" x="-107.95" y="-41.91">
+<attribute name="MPN" value="74HC139N" x="-133.35" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="380556" x="-133.35" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="07WX3674" x="-133.35" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="DIP-16" x="-133.35" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER" value="NXP" x="-133.35" y="-6.35" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -850,11 +850,11 @@ design rules under a new name.</description>
 <contactref element="U1" pad="15"/>
 <contactref element="U1" pad="16"/>
 <contactref element="U1" pad="17"/>
-<contactref element="U2" pad="8"/>
-<wire x1="-121.3612" y1="27.305" x2="-140.97" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="-112.3188" y1="24.765" x2="-121.3612" y2="27.305" width="0" layer="19" extent="1-1"/>
-<wire x1="-112.3188" y1="23.495" x2="-112.3188" y2="24.765" width="0" layer="19" extent="1-1"/>
-<wire x1="-112.3188" y1="22.225" x2="-112.3188" y2="23.495" width="0" layer="19" extent="1-1"/>
+<contactref element="U3" pad="8"/>
+<wire x1="-112.3188" y1="22.225" x2="-115.57" y2="-41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="-112.3188" y1="23.495" x2="-112.3188" y2="22.225" width="0" layer="19" extent="1-1"/>
+<wire x1="-112.3188" y1="24.765" x2="-112.3188" y2="23.495" width="0" layer="19" extent="1-1"/>
+<wire x1="-121.3612" y1="27.305" x2="-112.3188" y2="24.765" width="0" layer="19" extent="1-1"/>
 <wire x1="3.3782" y1="33.5534" x2="-112.3188" y2="24.765" width="0" layer="19" extent="1-1"/>
 <wire x1="3.3782" y1="38.6334" x2="3.3782" y2="33.5534" width="0" layer="19" extent="1-1"/>
 <wire x1="5.9182" y1="43.7134" x2="3.3782" y2="38.6334" width="0" layer="19" extent="1-1"/>
@@ -874,8 +874,8 @@ design rules under a new name.</description>
 <signal name="+5V">
 <contactref element="PCB1" pad="P$2"/>
 <contactref element="PCB1" pad="P$4"/>
-<contactref element="U2" pad="16"/>
-<wire x1="3.3782" y1="71.6534" x2="-133.35" y2="22.86" width="0" layer="19" extent="1-1"/>
+<contactref element="U3" pad="16"/>
+<wire x1="3.3782" y1="71.6534" x2="-107.95" y2="-24.13" width="0" layer="19" extent="1-1"/>
 <wire x1="3.3782" y1="74.1934" x2="3.3782" y2="71.6534" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL_3V3">
@@ -899,13 +899,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="SPI0_CS1">
 <contactref element="PCB1" pad="P$26"/>
-<contactref element="U2" pad="15"/>
-<wire x1="3.3782" y1="43.7134" x2="-133.35" y2="20.32" width="0" layer="19" extent="1-1"/>
+<contactref element="U3" pad="15"/>
+<wire x1="3.3782" y1="43.7134" x2="-107.95" y2="-26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI0_CS0">
 <contactref element="PCB1" pad="P$24"/>
-<contactref element="U2" pad="1"/>
-<wire x1="3.3782" y1="46.2534" x2="-140.97" y2="22.86" width="0" layer="19" extent="1-1"/>
+<contactref element="U3" pad="1"/>
+<wire x1="3.3782" y1="46.2534" x2="-115.57" y2="-24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
