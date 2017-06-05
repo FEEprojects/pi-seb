@@ -4,6 +4,10 @@
 *.s#?
 *.b#?
 *.l#?
+.l\$$
+.l\$#?
+.s\$#
+.b\$#
 
 # Eagle project file
 # It contains a serial number and references to the file structure
