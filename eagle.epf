@@ -1,5 +1,5 @@
 [Eagle]
-Version="08 02 01"
+Version="08 02 00"
 Platform="Mac OS X"
 Globals="Globals"
 Desktop="Desktop"
@@ -38,7 +38,7 @@ UsedLibrary="/Applications/EAGLE-8.2.1/lbr/e14_Rpi3_RevA.lbr"
 
 [Win_1]
 Type="Board Editor"
-Loc="0 0 2559 1439"
+Loc="0 23 2559 1337"
 State=2
 Number=1
 File="v1.brd"
@@ -89,6 +89,6 @@ State=2
 Number=0
 
 [Desktop]
-Screen="640 480"
+Screen="2560 1440"
 Window="Win_1"
 Window="Win_2"
