@@ -4117,6 +4117,18 @@ https://www.seeedstudio.com/Adjustable-Step-Down-DC%26DC-Converter-%280.8V-18V%2
 <text x="-1.905" y="-2.159" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-2.159" y1="-0.889" x2="2.159" y2="0.889" layer="39"/>
 </package>
+<package name="C0805" library_version="1">
+<description>&lt;b&gt;0805&lt;b&gt;&lt;p&gt;</description>
+<wire x1="0.889" y1="-1.651" x2="-0.889" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-0.889" y1="-1.651" x2="-0.889" y2="1.651" width="0.127" layer="21"/>
+<wire x1="-0.889" y1="1.651" x2="0.889" y2="1.651" width="0.127" layer="21"/>
+<wire x1="0.889" y1="1.651" x2="0.889" y2="-1.651" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0.889" dx="1.016" dy="1.397" layer="1" roundness="25" rot="R270"/>
+<smd name="2" x="0" y="-0.889" dx="1.016" dy="1.397" layer="1" roundness="25" rot="R270"/>
+<text x="1.143" y="1.905" size="0.889" layer="25" font="vector" ratio="11" rot="R270">&gt;NAME</text>
+<text x="-2.159" y="1.905" size="0.635" layer="27" ratio="10" rot="R270">&gt;VALUE</text>
+<rectangle x1="-1.4605" y1="-0.762" x2="1.4605" y2="0.762" layer="39" rot="R270"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C" library_version="1">
@@ -4199,6 +4211,26 @@ https://www.seeedstudio.com/Adjustable-Step-Down-DC%26DC-Converter-%280.8V-18V%2
 <technology name="">
 <attribute name="MPN" value="TAJA106K010RNJ" constant="no"/>
 <attribute name="VALUE" value="10uf"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CERAMIC-10NF-50V-5%-X7R(0805)" prefix="C" uservalue="yes" library_version="1">
+<description>302010175</description>
+<gates>
+<gate name="G$1" symbol="C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="CC0805JRX7R9BB103"/>
+<attribute name="VALUE" value="10nf"/>
 </technology>
 </technologies>
 </device>
@@ -4779,54 +4811,6 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Seeed-Resistor" urn="urn:adsk.eagle:library:474">
-<packages>
-<package name="R0603" library_version="1">
-<wire x1="0.635" y1="1.397" x2="0.635" y2="-1.397" width="0.127" layer="21"/>
-<wire x1="0.635" y1="-1.397" x2="-0.635" y2="-1.397" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="-1.397" x2="-0.635" y2="1.397" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="0.127" layer="21"/>
-<smd name="1" x="0" y="0.762" dx="0.889" dy="0.889" layer="1" roundness="25" rot="R270"/>
-<smd name="2" x="0" y="-0.762" dx="0.889" dy="0.889" layer="1" roundness="25" rot="R270"/>
-<text x="-1.016" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;NAME</text>
-<text x="1.435" y="-1.605" size="0.635" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="RES" library_version="1">
-<wire x1="-1.27" y1="0.508" x2="1.27" y2="0.508" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0.508" x2="1.27" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-0.508" x2="-1.27" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-0.508" x2="-1.27" y2="0.508" width="0.254" layer="94"/>
-<text x="-3.81" y="1.27" size="1.27" layer="95" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-2.54" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
-<pin name="1" x="-3.81" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="3.81" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SMD-RES-100K-1%-1/10W(0603)" prefix="R" uservalue="yes" library_version="1">
-<description>301010196</description>
-<gates>
-<gate name="G$1" symbol="RES" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="R0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="RC0603FR-07100KL" constant="no"/>
-<attribute name="VALUE" value="100K"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4944,8 +4928,8 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <part name="X4" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="R1" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100K-1%-1/10W(0603)" device="" value="100K"/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="C9" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-10NF-50V-5%-X7R(0805)" device="" value="10nf"/>
 </parts>
 <sheets>
 <sheet>
@@ -5406,8 +5390,8 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <instance part="X4" gate="-6" x="218.44" y="190.5"/>
 <instance part="X4" gate="-7" x="218.44" y="187.96"/>
 <instance part="GND26" gate="1" x="162.56" y="73.66"/>
-<instance part="R1" gate="G$1" x="198.12" y="109.22"/>
 <instance part="P+11" gate="1" x="193.04" y="124.46"/>
+<instance part="C9" gate="G$1" x="190.5" y="91.44" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -5467,13 +5451,6 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <wire x1="149.86" y1="107.95" x2="144.78" y2="107.95" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="107.95" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="91.44" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
-<junction x="180.34" y="106.68"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="201.93" y1="109.22" x2="213.36" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="109.22" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="106.68" x2="180.34" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="109.22" x2="223.52" y2="109.22" width="0.1524" layer="91"/>
-<junction x="213.36" y="109.22"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -5504,9 +5481,15 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 </segment>
 <segment>
 <pinref part="USB1" gate="G$1" pin="VCC"/>
-<wire x1="176.53" y1="116.84" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="176.53" y1="116.84" x2="190.5" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="116.84" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="116.84" x2="193.04" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="+5V"/>
+<wire x1="190.5" y1="116.84" x2="190.5" y2="95.25" width="0.1524" layer="91"/>
+<junction x="190.5" y="116.84"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="95.25" x2="190.5" y2="93.98" width="0.1524" layer="91"/>
+<junction x="190.5" y="95.25"/>
 </segment>
 </net>
 <net name="LOPY_3V3" class="0">
@@ -5742,13 +5725,43 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <label x="205.74" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="USB_DM" class="0">
+<segment>
+<pinref part="USB1" gate="G$1" pin="DM"/>
+<wire x1="176.53" y1="114.3" x2="187.96" y2="114.3" width="0.1524" layer="91"/>
+<label x="203.2" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U6" gate="1" pin="USBDM"/>
+<wire x1="270.51" y1="90.17" x2="261.62" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="90.17" x2="261.62" y2="88.9" width="0.1524" layer="91"/>
+<label x="243.84" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USB_DP" class="0">
+<segment>
+<pinref part="USB1" gate="G$1" pin="DP"/>
+<wire x1="176.53" y1="111.76" x2="198.12" y2="111.76" width="0.1524" layer="91"/>
+<label x="203.2" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U6" gate="1" pin="USBDP"/>
+<wire x1="270.51" y1="92.71" x2="264.16" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="92.71" x2="264.16" y2="91.44" width="0.1524" layer="91"/>
+<label x="243.84" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U6" gate="1" pin="GND@A"/>
+<wire x1="270.51" y1="85.09" x2="261.62" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="85.09" x2="261.62" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
 <segment>
 <pinref part="USB1" gate="G$1" pin="ID"/>
-<wire x1="176.53" y1="109.22" x2="194.31" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="194.31" y1="109.22" x2="195.58" y2="109.22" width="0.1524" layer="91"/>
-<junction x="194.31" y="109.22"/>
+<wire x1="176.53" y1="109.22" x2="185.42" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
