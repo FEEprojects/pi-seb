@@ -1307,6 +1307,61 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </package>
 </packages>
 </library>
+<library name="Rembrandt Electronics - JST XH Connectors v1-0 2">
+<packages>
+<package name="JST-XH-05-PACKAGE-ROUND-PAD">
+<description>&lt;b&gt;JST XH Connector Round Pads (Package)&lt;/b&gt;&lt;p&gt;
+
+Wire to board connector.
+
+Pitch: 2,54 mm, (0.100")&lt;p&gt;
+Number of pins: &lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;P&gt;
+
+&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
+&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="7.45" y1="-2.3575" x2="7.45" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="7.45" y1="3.3925" x2="-7.45" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="-7.45" y1="3.3925" x2="-7.45" y2="-2.3575" width="0.254" layer="21"/>
+<wire x1="-7.45" y1="-2.3575" x2="7.45" y2="-2.3575" width="0.254" layer="21"/>
+<pad name="3" x="0" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="-2.54" y="0" drill="1.016" rot="R90"/>
+<pad name="1" x="-5.08" y="0" drill="1.016" rot="R90"/>
+<pad name="4" x="2.54" y="0" drill="1.016" rot="R90"/>
+<pad name="5" x="5.08" y="0" drill="1.016" rot="R90"/>
+<text x="-8.055" y="-2.14" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-7.2025" y="3.8925" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-6.6675" y="-1.5875" size="1.016" layer="51" ratio="10">1</text>
+<wire x1="-5.1" y1="-2.3" x2="-5.1" y2="-1.8" width="0.254" layer="21"/>
+<wire x1="5.1" y1="-2.3" x2="5.1" y2="-1.8" width="0.254" layer="21"/>
+</package>
+<package name="JST-XH-06-PACKAGE-ROUND-PAD">
+<description>&lt;b&gt;JST XH Connector Round Pads (Package)&lt;/b&gt;&lt;p&gt;
+
+Wire to board connector.
+
+Pitch: 2,54 mm, (0.100")&lt;p&gt;
+Number of pins: &lt;b&gt;6&lt;/b&gt;&lt;b&gt;&lt;P&gt;
+
+&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
+&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="8.7" y1="-2.3575" x2="8.7" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="8.7" y1="3.3925" x2="-8.7" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="-8.7" y1="3.3925" x2="-8.7" y2="-2.3575" width="0.254" layer="21"/>
+<wire x1="-8.7" y1="-2.3575" x2="8.7" y2="-2.3575" width="0.254" layer="21"/>
+<pad name="3" x="-1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="-3.81" y="0" drill="1.016" rot="R90"/>
+<pad name="1" x="-6.35" y="0" drill="1.016" rot="R90"/>
+<pad name="4" x="1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="5" x="3.81" y="0" drill="1.016" rot="R90"/>
+<text x="-9.255" y="-2.14" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-8.3025" y="3.8925" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-7.9675" y="-1.5875" size="1.016" layer="51" ratio="10">1</text>
+<wire x1="-6.3" y1="-2.3" x2="-6.3" y2="-1.8" width="0.254" layer="21"/>
+<wire x1="6.4" y1="-2.3" x2="6.4" y2="-1.8" width="0.254" layer="21"/>
+<pad name="6" x="6.35" y="0" drill="1.016" rot="R90"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1638,6 +1693,11 @@ design rules under a new name.</description>
 <element name="C3" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" package="C0603" value="100nf" x="-224.79" y="-213.36">
 <attribute name="MPN" value="CC0603KRX7R9BB104" x="-224.79" y="-213.36" size="1.778" layer="27" display="off"/>
 </element>
+<element name="X1" library="Rembrandt Electronics - JST XH Connectors v1-0 2" package="JST-XH-05-PACKAGE-ROUND-PAD" value="JST-XH-05-PIN-ROUND-PAD" x="-213.36" y="-226.06"/>
+<element name="X2" library="Rembrandt Electronics - JST XH Connectors v1-0 2" package="JST-XH-05-PACKAGE-ROUND-PAD" value="JST-XH-05-PIN-ROUND-PAD" x="-213.36" y="-241.3"/>
+<element name="X3" library="Rembrandt Electronics - JST XH Connectors v1-0 2" package="JST-XH-05-PACKAGE-ROUND-PAD" value="JST-XH-05-PIN-ROUND-PAD" x="-213.36" y="-256.54"/>
+<element name="X4" library="Rembrandt Electronics - JST XH Connectors v1-0 2" package="JST-XH-05-PACKAGE-ROUND-PAD" value="JST-XH-05-PIN-ROUND-PAD" x="-213.36" y="-271.78"/>
+<element name="X5" library="Rembrandt Electronics - JST XH Connectors v1-0 2" package="JST-XH-06-PACKAGE-ROUND-PAD" value="JST-XH-06-PIN-ROUND-PAD" x="-212.09" y="-287.02"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1670,6 +1730,9 @@ design rules under a new name.</description>
 <contactref element="BAT1" pad="-"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C3" pad="2"/>
+<contactref element="X1" pad="3"/>
+<contactref element="X2" pad="3"/>
+<contactref element="X3" pad="3"/>
 <wire x1="-164.719" y1="-102.87" x2="-160.02" y2="-90.678" width="0" layer="19" extent="1-1"/>
 <wire x1="-148.59" y1="-68.58" x2="-160.02" y2="-90.678" width="0" layer="19" extent="1-1"/>
 <wire x1="-184.15" y1="-73.66" x2="-160.02" y2="-90.678" width="0" layer="19" extent="1-1"/>
@@ -1683,6 +1746,9 @@ design rules under a new name.</description>
 <wire x1="-214.63" y1="-185.928" x2="-196.85" y2="-182.88" width="0" layer="19" extent="1-1"/>
 <wire x1="-219.71" y1="-214.122" x2="-214.63" y2="-185.928" width="0" layer="19" extent="1-1"/>
 <wire x1="-224.79" y1="-214.122" x2="-219.71" y2="-214.122" width="0" layer="19" extent="1-1"/>
+<wire x1="-213.36" y1="-226.06" x2="-219.71" y2="-214.122" width="0" layer="19" extent="1-1"/>
+<wire x1="-213.36" y1="-241.3" x2="-213.36" y2="-226.06" width="0" layer="19" extent="1-1"/>
+<wire x1="-213.36" y1="-256.54" x2="-213.36" y2="-241.3" width="0" layer="19" extent="1-1"/>
 <wire x1="-114.3" y1="4.572" x2="-129.54" y2="-43.688" width="0" layer="19" extent="1-1"/>
 <wire x1="-86.8934" y1="57.5818" x2="-114.3" y2="4.572" width="0" layer="19" extent="1-1"/>
 <wire x1="-81.8134" y1="55.0418" x2="-86.8934" y2="57.5818" width="0" layer="19" extent="1-1"/>
@@ -1725,9 +1791,17 @@ design rules under a new name.</description>
 <contactref element="U10" pad="16"/>
 <contactref element="C13" pad="2"/>
 <contactref element="U3" pad="P$28"/>
+<contactref element="X1" pad="1"/>
+<contactref element="X2" pad="1"/>
+<contactref element="X3" pad="1"/>
+<contactref element="X5" pad="1"/>
+<wire x1="-218.44" y1="-256.54" x2="-218.44" y2="-287.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-218.44" y1="-241.3" x2="-218.44" y2="-256.54" width="0" layer="19" extent="1-1"/>
+<wire x1="-218.44" y1="-226.06" x2="-218.44" y2="-241.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-184.15" y1="-71.12" x2="-218.44" y2="-226.06" width="0" layer="19" extent="1-1"/>
+<wire x1="-140.97" y1="-50.8" x2="-184.15" y2="-71.12" width="0" layer="19" extent="1-1"/>
 <wire x1="-129.54" y1="-45.212" x2="-140.97" y2="-50.8" width="0" layer="19" extent="1-1"/>
 <wire x1="-129.54" y1="-32.512" x2="-129.54" y2="-45.212" width="0" layer="19" extent="1-1"/>
-<wire x1="-184.15" y1="-71.12" x2="-140.97" y2="-50.8" width="0" layer="19" extent="1-1"/>
 <wire x1="-91.9734" y1="57.5818" x2="-129.54" y2="-32.512" width="0" layer="19" extent="1-1"/>
 <wire x1="-89.4334" y1="57.5818" x2="-91.9734" y2="57.5818" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -1928,39 +2002,60 @@ design rules under a new name.</description>
 </signal>
 <signal name="LOPY_3V3">
 <contactref element="U3" pad="P$26"/>
+<contactref element="X1" pad="2"/>
+<contactref element="X2" pad="2"/>
+<contactref element="X3" pad="2"/>
+<contactref element="X5" pad="2"/>
+<wire x1="-215.9" y1="-256.54" x2="-215.9" y2="-287.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-215.9" y1="-241.3" x2="-215.9" y2="-256.54" width="0" layer="19" extent="1-1"/>
+<wire x1="-215.9" y1="-226.06" x2="-215.9" y2="-241.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-184.15" y1="-76.2" x2="-215.9" y2="-226.06" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LOPY_RST">
 <contactref element="U3" pad="P$1"/>
 </signal>
-<signal name="LOPY_P0">
+<signal name="LOPY_RX0">
 <contactref element="U3" pad="P$2"/>
+<contactref element="X1" pad="4"/>
+<wire x1="-201.93" y1="-73.66" x2="-210.82" y2="-226.06" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="LOPY_P1">
+<signal name="LOPY_TX0">
 <contactref element="U3" pad="P$3"/>
+<contactref element="X1" pad="5"/>
+<wire x1="-201.93" y1="-76.2" x2="-208.28" y2="-226.06" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LOPY_P2">
 <contactref element="U3" pad="P$4"/>
 </signal>
-<signal name="LOPY_P3">
+<signal name="LOPY_TX1">
 <contactref element="U3" pad="P$5"/>
-</signal>
-<signal name="LOPY_P4">
-<contactref element="U3" pad="P$6"/>
+<contactref element="X2" pad="5"/>
+<wire x1="-201.93" y1="-81.28" x2="-208.28" y2="-241.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LOPY_P8">
 <contactref element="U3" pad="P$10"/>
 </signal>
-<signal name="LOPY_P9">
+<signal name="LOPY_SDA">
 <contactref element="U3" pad="P$11"/>
+<contactref element="X3" pad="4"/>
+<wire x1="-201.93" y1="-96.52" x2="-210.82" y2="-256.54" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="LOPY_P10">
+<signal name="LOPY_SCL/CLK">
 <contactref element="U3" pad="P$12"/>
+<contactref element="X3" pad="5"/>
+<contactref element="X5" pad="5"/>
+<wire x1="-208.28" y1="-256.54" x2="-208.28" y2="-287.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-201.93" y1="-99.06" x2="-208.28" y2="-256.54" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="LOPY_P11">
+<signal name="LOPY_MOSI">
 <contactref element="U3" pad="P$13"/>
+<contactref element="X5" pad="3"/>
+<wire x1="-201.93" y1="-101.6" x2="-213.36" y2="-287.02" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="LOPY_P12">
+<signal name="LOPY_MISO">
 <contactref element="U3" pad="P$14"/>
+<contactref element="X5" pad="4"/>
+<wire x1="-201.93" y1="-104.14" x2="-210.82" y2="-287.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LOPY_P13">
 <contactref element="U3" pad="P$15"/>
@@ -2024,6 +2119,14 @@ design rules under a new name.</description>
 <contactref element="C3" pad="1"/>
 <wire x1="-212.09" y1="-215.646" x2="-224.79" y2="-212.598" width="0" layer="19" extent="1-1"/>
 <wire x1="-203.0222" y1="-168.275" x2="-212.09" y2="-215.646" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOPY_RX1">
+<contactref element="X2" pad="4"/>
+<contactref element="U3" pad="P$6"/>
+<wire x1="-201.93" y1="-83.82" x2="-210.82" y2="-241.3" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOPY_CS">
+<contactref element="X5" pad="6"/>
 </signal>
 </signals>
 </board>
