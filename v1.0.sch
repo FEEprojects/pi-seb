@@ -5372,14 +5372,14 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <text x="210.82" y="177.8" size="1.778" layer="97">lopy SPI</text>
 <text x="30.48" y="177.8" size="1.778" layer="97">lopy UART</text>
 <text x="203.2" y="215.9" size="1.778" layer="97">Lopy SPI does not seem to use a CS</text>
-<text x="121.92" y="38.1" size="1.778" layer="97">Do we want RST P2 &amp;P12 connected to the Pi because the Pi does weird things to GPIO on boot?</text>
+<text x="45.72" y="35.56" size="1.778" layer="97">Do we want RST P2 &amp;P12 connected to the Pi because the Pi does weird things to GPIO on boot?</text>
 <text x="195.58" y="182.88" size="1.778" layer="97">TODO: define and connect CS to IN pin</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="-12.7" y="-33.02"/>
-<instance part="U3" gate="G$1" x="147.32" y="91.44"/>
-<instance part="GND21" gate="1" x="147.32" y="55.88"/>
-<instance part="P+2" gate="1" x="142.24" y="144.78"/>
+<instance part="U3" gate="G$1" x="71.12" y="88.9"/>
+<instance part="GND21" gate="1" x="71.12" y="53.34"/>
+<instance part="P+2" gate="1" x="66.04" y="142.24"/>
 <instance part="X1" gate="-1" x="20.32" y="203.2"/>
 <instance part="X1" gate="-2" x="20.32" y="200.66"/>
 <instance part="X1" gate="-3" x="20.32" y="198.12"/>
@@ -5397,7 +5397,7 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <instance part="X3" gate="-5" x="132.08" y="193.04"/>
 <instance part="U6" gate="1" x="284.48" y="101.6"/>
 <instance part="J2" gate="G$1" x="287.02" y="38.1"/>
-<instance part="USB1" gate="G$1" x="231.14" y="147.32"/>
+<instance part="USB1" gate="G$1" x="162.56" y="111.76"/>
 <instance part="X4" gate="-1" x="218.44" y="203.2"/>
 <instance part="X4" gate="-2" x="218.44" y="200.66"/>
 <instance part="X4" gate="-3" x="218.44" y="198.12"/>
@@ -5405,9 +5405,9 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <instance part="X4" gate="-5" x="218.44" y="193.04"/>
 <instance part="X4" gate="-6" x="218.44" y="190.5"/>
 <instance part="X4" gate="-7" x="218.44" y="187.96"/>
-<instance part="GND26" gate="1" x="228.6" y="109.22"/>
-<instance part="R1" gate="G$1" x="264.16" y="144.78"/>
-<instance part="P+11" gate="1" x="259.08" y="160.02"/>
+<instance part="GND26" gate="1" x="162.56" y="73.66"/>
+<instance part="R1" gate="G$1" x="198.12" y="109.22"/>
+<instance part="P+11" gate="1" x="193.04" y="124.46"/>
 </instances>
 <busses>
 </busses>
@@ -5416,7 +5416,7 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="147.32" y1="58.42" x2="147.32" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="55.88" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X1" gate="-3" pin="S"/>
@@ -5440,47 +5440,47 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 </segment>
 <segment>
 <pinref part="USB1" gate="G$1" pin="GND@5"/>
-<wire x1="245.11" y1="142.24" x2="246.38" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="142.24" x2="246.38" y2="127" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="127" x2="208.28" y2="127" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="127" x2="228.6" y2="111.76" width="0.1524" layer="91"/>
-<junction x="228.6" y="127"/>
+<wire x1="176.53" y1="106.68" x2="180.34" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="106.68" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="91.44" x2="144.78" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="91.44" x2="162.56" y2="76.2" width="0.1524" layer="91"/>
+<junction x="162.56" y="91.44"/>
 <pinref part="GND26" gate="1" pin="GND"/>
-<junction x="208.28" y="152.4"/>
+<junction x="144.78" y="116.84"/>
 <pinref part="USB1" gate="G$1" pin="GND@1"/>
-<wire x1="218.44" y1="151.13" x2="208.28" y2="151.13" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="151.13" x2="208.28" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="115.57" x2="144.78" y2="115.57" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="115.57" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="USB1" gate="G$1" pin="GND@2"/>
-<wire x1="218.44" y1="148.59" x2="208.28" y2="148.59" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="148.59" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
-<junction x="208.28" y="149.86"/>
-<wire x1="208.28" y1="149.86" x2="208.28" y2="151.13" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="147.32" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="113.03" x2="144.78" y2="113.03" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="113.03" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
+<junction x="144.78" y="114.3"/>
+<wire x1="144.78" y1="114.3" x2="144.78" y2="115.57" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="111.76" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="USB1" gate="G$1" pin="GND@3"/>
-<wire x1="218.44" y1="146.05" x2="208.28" y2="146.05" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="146.05" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
-<junction x="208.28" y="147.32"/>
-<wire x1="208.28" y1="144.78" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
-<junction x="208.28" y="144.78"/>
+<wire x1="149.86" y1="110.49" x2="144.78" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="110.49" x2="144.78" y2="111.76" width="0.1524" layer="91"/>
+<junction x="144.78" y="111.76"/>
+<wire x1="144.78" y1="109.22" x2="144.78" y2="111.76" width="0.1524" layer="91"/>
+<junction x="144.78" y="109.22"/>
 <pinref part="USB1" gate="G$1" pin="GND@4"/>
-<wire x1="218.44" y1="143.51" x2="208.28" y2="143.51" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="143.51" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="127" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
-<junction x="246.38" y="142.24"/>
+<wire x1="149.86" y1="107.95" x2="144.78" y2="107.95" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="107.95" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="91.44" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
+<junction x="180.34" y="106.68"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="267.97" y1="144.78" x2="274.32" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="144.78" x2="274.32" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="142.24" x2="246.38" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="144.78" x2="281.94" y2="144.78" width="0.1524" layer="91"/>
-<junction x="274.32" y="144.78"/>
+<wire x1="201.93" y1="109.22" x2="213.36" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="109.22" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="106.68" x2="180.34" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="109.22" x2="223.52" y2="109.22" width="0.1524" layer="91"/>
+<junction x="213.36" y="109.22"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="5V"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
-<wire x1="142.24" y1="129.54" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="127" x2="66.04" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X1" gate="-1" pin="S"/>
@@ -5504,16 +5504,16 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 </segment>
 <segment>
 <pinref part="USB1" gate="G$1" pin="VCC"/>
-<wire x1="245.11" y1="152.4" x2="259.08" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="152.4" x2="259.08" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="176.53" y1="116.84" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="116.84" x2="193.04" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="LOPY_3V3" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="3V3"/>
-<wire x1="152.4" y1="129.54" x2="152.4" y2="144.78" width="0.1524" layer="91"/>
-<label x="152.4" y="139.7" size="1.778" layer="95" rot="R90"/>
+<wire x1="76.2" y1="127" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
+<label x="76.2" y="137.16" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="X1" gate="-2" pin="S"/>
@@ -5539,15 +5539,15 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <net name="LOPY_RST" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="RST"/>
-<wire x1="129.54" y1="109.22" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
-<label x="116.84" y="109.22" size="1.778" layer="95"/>
+<wire x1="53.34" y1="106.68" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
+<label x="40.64" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_RX0" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P0"/>
-<wire x1="165.1" y1="121.92" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
-<label x="175.26" y="121.92" size="1.778" layer="95"/>
+<wire x1="88.9" y1="119.38" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
+<label x="99.06" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="X1" gate="-4" pin="S"/>
@@ -5558,8 +5558,8 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <net name="LOPY_TX0" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P1"/>
-<wire x1="165.1" y1="119.38" x2="182.88" y2="119.38" width="0.1524" layer="91"/>
-<label x="175.26" y="119.38" size="1.778" layer="95"/>
+<wire x1="88.9" y1="116.84" x2="106.68" y2="116.84" width="0.1524" layer="91"/>
+<label x="99.06" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="X1" gate="-5" pin="S"/>
@@ -5570,15 +5570,15 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <net name="LOPY_P2" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P2"/>
-<wire x1="165.1" y1="116.84" x2="182.88" y2="116.84" width="0.1524" layer="91"/>
-<label x="175.26" y="116.84" size="1.778" layer="95"/>
+<wire x1="88.9" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
+<label x="99.06" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_TX1" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P3"/>
-<wire x1="165.1" y1="114.3" x2="182.88" y2="114.3" width="0.1524" layer="91"/>
-<label x="175.26" y="114.3" size="1.778" layer="95"/>
+<wire x1="88.9" y1="111.76" x2="106.68" y2="111.76" width="0.1524" layer="91"/>
+<label x="99.06" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="X2" gate="-5" pin="S"/>
@@ -5589,15 +5589,15 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <net name="LOPY_P8" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P8"/>
-<wire x1="165.1" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
-<label x="175.26" y="106.68" size="1.778" layer="95"/>
+<wire x1="88.9" y1="104.14" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
+<label x="99.06" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_SDA" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P9"/>
-<wire x1="165.1" y1="104.14" x2="182.88" y2="104.14" width="0.1524" layer="91"/>
-<label x="175.26" y="104.14" size="1.778" layer="95"/>
+<wire x1="88.9" y1="101.6" x2="106.68" y2="101.6" width="0.1524" layer="91"/>
+<label x="99.06" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="X3" gate="-4" pin="S"/>
@@ -5608,8 +5608,8 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <net name="LOPY_SCL/CLK" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P10"/>
-<wire x1="165.1" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
-<label x="175.26" y="101.6" size="1.778" layer="95"/>
+<wire x1="88.9" y1="99.06" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
+<label x="99.06" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="X3" gate="-5" pin="S"/>
@@ -5625,8 +5625,8 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <net name="LOPY_MOSI" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P11"/>
-<wire x1="165.1" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
-<label x="175.26" y="99.06" size="1.778" layer="95"/>
+<wire x1="88.9" y1="96.52" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
+<label x="99.06" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="X4" gate="-4" pin="S"/>
@@ -5637,8 +5637,8 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <net name="LOPY_MISO" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P12"/>
-<wire x1="165.1" y1="96.52" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
-<label x="175.26" y="96.52" size="1.778" layer="95"/>
+<wire x1="88.9" y1="93.98" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
+<label x="99.06" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="X4" gate="-5" pin="S"/>
@@ -5649,78 +5649,78 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <net name="LOPY_P13" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P13"/>
-<wire x1="165.1" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
-<label x="175.26" y="93.98" size="1.778" layer="95"/>
+<wire x1="88.9" y1="91.44" x2="106.68" y2="91.44" width="0.1524" layer="91"/>
+<label x="99.06" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P14" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P14"/>
-<wire x1="165.1" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
-<label x="175.26" y="91.44" size="1.778" layer="95"/>
+<wire x1="88.9" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
+<label x="99.06" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P15" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P15"/>
-<wire x1="165.1" y1="88.9" x2="182.88" y2="88.9" width="0.1524" layer="91"/>
-<label x="175.26" y="88.9" size="1.778" layer="95"/>
+<wire x1="88.9" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<label x="99.06" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P16" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P16"/>
-<wire x1="165.1" y1="86.36" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
-<label x="175.26" y="86.36" size="1.778" layer="95"/>
+<wire x1="88.9" y1="83.82" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
+<label x="99.06" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P17" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P17"/>
-<wire x1="165.1" y1="83.82" x2="182.88" y2="83.82" width="0.1524" layer="91"/>
-<label x="175.26" y="83.82" size="1.778" layer="95"/>
+<wire x1="88.9" y1="81.28" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
+<label x="99.06" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P18" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P18"/>
-<wire x1="165.1" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
-<label x="175.26" y="81.28" size="1.778" layer="95"/>
+<wire x1="88.9" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
+<label x="99.06" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P19" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P19"/>
-<wire x1="165.1" y1="78.74" x2="182.88" y2="78.74" width="0.1524" layer="91"/>
-<label x="175.26" y="78.74" size="1.778" layer="95"/>
+<wire x1="88.9" y1="76.2" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
+<label x="99.06" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P20" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P20"/>
-<wire x1="165.1" y1="76.2" x2="182.88" y2="76.2" width="0.1524" layer="91"/>
-<label x="175.26" y="76.2" size="1.778" layer="95"/>
+<wire x1="88.9" y1="73.66" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
+<label x="99.06" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P21" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P21"/>
-<wire x1="165.1" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
-<label x="175.26" y="73.66" size="1.778" layer="95"/>
+<wire x1="88.9" y1="71.12" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
+<label x="99.06" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P22" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P22"/>
-<wire x1="165.1" y1="71.12" x2="182.88" y2="71.12" width="0.1524" layer="91"/>
-<label x="175.26" y="71.12" size="1.778" layer="95"/>
+<wire x1="88.9" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
+<label x="99.06" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P23" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P23"/>
-<wire x1="165.1" y1="68.58" x2="182.88" y2="68.58" width="0.1524" layer="91"/>
-<label x="175.26" y="68.58" size="1.778" layer="95"/>
+<wire x1="88.9" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
+<label x="99.06" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_RX1" class="0">
@@ -5731,8 +5731,8 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="P4"/>
-<wire x1="165.1" y1="111.76" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
-<label x="175.26" y="111.76" size="1.778" layer="95"/>
+<wire x1="88.9" y1="109.22" x2="106.68" y2="109.22" width="0.1524" layer="91"/>
+<label x="99.06" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_CS" class="0">
@@ -5745,10 +5745,10 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <net name="N$5" class="0">
 <segment>
 <pinref part="USB1" gate="G$1" pin="ID"/>
-<wire x1="245.11" y1="144.78" x2="260.35" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="176.53" y1="109.22" x2="194.31" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="260.35" y1="144.78" x2="261.62" y2="144.78" width="0.1524" layer="91"/>
-<junction x="260.35" y="144.78"/>
+<wire x1="194.31" y1="109.22" x2="195.58" y2="109.22" width="0.1524" layer="91"/>
+<junction x="194.31" y="109.22"/>
 </segment>
 </net>
 </nets>
