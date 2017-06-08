@@ -4351,74 +4351,6 @@ Number of pins: &lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="Seeed-Resistor" urn="urn:adsk.eagle:library:474">
-<packages>
-<package name="R0603" library_version="1">
-<wire x1="0.635" y1="1.397" x2="0.635" y2="-1.397" width="0.127" layer="21"/>
-<wire x1="0.635" y1="-1.397" x2="-0.635" y2="-1.397" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="-1.397" x2="-0.635" y2="1.397" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="0.127" layer="21"/>
-<smd name="1" x="0" y="0.762" dx="0.889" dy="0.889" layer="1" roundness="25" rot="R270"/>
-<smd name="2" x="0" y="-0.762" dx="0.889" dy="0.889" layer="1" roundness="25" rot="R270"/>
-<text x="-1.016" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;NAME</text>
-<text x="1.435" y="-1.605" size="0.635" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="RES" library_version="1">
-<wire x1="-1.27" y1="0.508" x2="1.27" y2="0.508" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0.508" x2="1.27" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-0.508" x2="-1.27" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-0.508" x2="-1.27" y2="0.508" width="0.254" layer="94"/>
-<text x="-3.81" y="1.27" size="1.27" layer="95" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-2.54" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
-<pin name="1" x="-3.81" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="3.81" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SMD-RES-3K-1%-1/10W(0603)" prefix="R" uservalue="yes" library_version="1">
-<description>301010170</description>
-<gates>
-<gate name="G$1" symbol="RES" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="R0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="RC0603FR-073KL" constant="no"/>
-<attribute name="VALUE" value="3K"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SMD-RES-1K-1%-1/10W(0603)" prefix="R" uservalue="yes" library_version="1">
-<description>301010298</description>
-<gates>
-<gate name="G$1" symbol="RES" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="R0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="RC0603FR-071KL" constant="no"/>
-<attribute name="VALUE" value="1K"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4527,13 +4459,11 @@ Number of pins: &lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="U5" library="imported-parts" deviceset="LM1085IT-5.0" device=""/>
 <part name="C4" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-10UF-10V-10%-X5R(0603)" device="" value="10uf"/>
-<part name="R1" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-3K-1%-1/10W(0603)" device="" value="3K"/>
-<part name="R3" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
-<part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C10" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="TANTALUM-SMD-10UF-10V-10%(AVX-A)" device="" value="10uf"/>
+<part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
 </parts>
 <sheets>
 <sheet>
@@ -4557,7 +4487,8 @@ Number of pins: &lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <wire x1="289.56" y1="200.66" x2="383.54" y2="200.66" width="0.1524" layer="97"/>
 <text x="317.5" y="190.5" size="6.4516" layer="97">I2C Pullups</text>
 <text x="172.72" y="76.2" size="1.778" layer="97">Do we want this permenantly powered given the Pi can be switched?  What's the battery life like?</text>
-<text x="165.1" y="7.62" size="1.778" layer="97">Seed crystals have the wrong capacitance</text>
+<text x="231.14" y="7.62" size="1.778" layer="97">Seed crystals have the wrong capacitance</text>
+<text x="187.96" y="27.94" size="1.778" layer="97">double check these cap values</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -4928,8 +4859,6 @@ Number of pins: &lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <label x="167.64" y="27.94" size="1.778" layer="95"/>
 <wire x1="167.64" y1="25.4" x2="189.23" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="189.23" y1="25.4" x2="190.5" y2="25.4" width="0.1524" layer="91"/>
-<junction x="189.23" y="25.4"/>
 </segment>
 </net>
 <net name="X2_RTC" class="0">
@@ -4965,6 +4894,7 @@ Number of pins: &lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <text x="210.82" y="177.8" size="1.778" layer="97">lopy SPI</text>
 <text x="30.48" y="177.8" size="1.778" layer="97">lopy UART</text>
 <text x="203.2" y="215.9" size="1.778" layer="97">Lopy SPI does not seem to use a CS</text>
+<text x="121.92" y="38.1" size="1.778" layer="97">Do we want RST P2 &amp;P12 connected to the Pi because the Pi does weird things to GPIO on boot?</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="-12.7" y="-33.02"/>
@@ -5308,13 +5238,11 @@ Number of pins: &lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="GND12" gate="1" x="27.94" y="200.66"/>
 <instance part="U5" gate="A" x="86.36" y="104.14"/>
 <instance part="C4" gate="G$1" x="53.34" y="96.52" rot="R90"/>
-<instance part="R1" gate="G$1" x="111.76" y="71.12" rot="R90"/>
-<instance part="R3" gate="G$1" x="111.76" y="86.36" rot="R90"/>
-<instance part="GND26" gate="1" x="111.76" y="58.42"/>
 <instance part="GND27" gate="1" x="53.34" y="60.96"/>
 <instance part="GND28" gate="1" x="121.92" y="60.96"/>
 <instance part="P+3" gate="1" x="129.54" y="104.14"/>
-<instance part="C10" gate="G$1" x="121.92" y="83.82" rot="R90"/>
+<instance part="C10" gate="G$1" x="121.92" y="83.82" rot="R270"/>
+<instance part="TP1" gate="G$1" x="111.76" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -5377,19 +5305,20 @@ Number of pins: &lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <junction x="27.94" y="203.2"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="67.31" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="GND26" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="92.71" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="92.71" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="GND27" gate="1" pin="GND"/>
+<pinref part="U5" gate="A" pin="ADJ/GND"/>
+<wire x1="53.34" y1="86.36" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="86.36" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="86.36" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
+<junction x="53.34" y="86.36"/>
 </segment>
 <segment>
-<wire x1="121.92" y1="80.01" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="-"/>
 <pinref part="GND28" gate="1" pin="GND"/>
-<pinref part="C10" gate="G$1" pin="+"/>
+<wire x1="121.92" y1="80.01" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+24V" class="0">
@@ -5455,35 +5384,19 @@ Number of pins: &lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <junction x="53.34" y="101.6"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="ADJ/GND"/>
-<wire x1="66.04" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="99.06" x2="58.42" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="78.74" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="78.74" x2="111.76" y2="82.55" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="78.74" x2="111.76" y2="74.93" width="0.1524" layer="91"/>
-<junction x="111.76" y="78.74"/>
-</segment>
-</net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="VOUT"/>
 <wire x1="106.68" y1="99.06" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="99.06" x2="111.76" y2="90.17" width="0.1524" layer="91"/>
-<junction x="111.76" y="99.06"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="90.17" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
-<junction x="111.76" y="90.17"/>
-<wire x1="111.76" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="99.06" x2="121.92" y2="87.63" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
-<junction x="121.92" y="99.06"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="111.76" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="101.6" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="-"/>
+<pinref part="C10" gate="G$1" pin="+"/>
+<wire x1="121.92" y1="99.06" x2="121.92" y2="87.63" width="0.1524" layer="91"/>
+<junction x="121.92" y="99.06"/>
+<pinref part="TP1" gate="G$1" pin="TP"/>
+<junction x="111.76" y="99.06"/>
 </segment>
 </net>
 </nets>
