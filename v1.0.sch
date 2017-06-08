@@ -1812,41 +1812,6 @@ More information and support community is available at http://www.element14.com/
 </deviceset>
 </devicesets>
 </library>
-<library name="supply2" urn="urn:adsk.eagle:library:372">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
-GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
-Please keep in mind, that these devices are necessary for the
-automatic wiring of the supply signals.&lt;p&gt;
-The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
-In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="+05V/1" library_version="1">
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-3.175" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+5V/1" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="+5V/1" prefix="SUPPLY" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="+05V/1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="MCP3424">
 <packages>
 <package name="SOIC127P600X175-14N">
@@ -4293,6 +4258,60 @@ Number of pins: &lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <wire x1="-5.1" y1="-2.3" x2="-5.1" y2="-1.8" width="0.254" layer="21"/>
 <wire x1="5.1" y1="-2.3" x2="5.1" y2="-1.8" width="0.254" layer="21"/>
 </package>
+<package name="JST-XH-07-PACKAGE-LONG-PAD">
+<description>&lt;b&gt;JST XH Connector Long Pads (Package)&lt;/b&gt;&lt;p&gt;
+
+Wire to board connector.
+
+Pitch: 2,54 mm, (0.100")&lt;p&gt;
+Number of pins: &lt;b&gt;7&lt;/b&gt;&lt;b&gt;&lt;P&gt;
+
+&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
+&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="9.95" y1="-2.3575" x2="9.95" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="9.95" y1="3.3925" x2="-9.95" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="-9.95" y1="3.3925" x2="-9.95" y2="-2.3575" width="0.254" layer="21"/>
+<wire x1="-9.95" y1="-2.3575" x2="9.95" y2="-2.3575" width="0.254" layer="21"/>
+<pad name="3" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="-7.62" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-10.555" y="-2.14" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-9.7025" y="3.8925" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-9.1675" y="-1.5875" size="1.016" layer="51" ratio="10">1</text>
+<wire x1="-7.6" y1="-2.3" x2="-7.6" y2="-1.8" width="0.254" layer="21"/>
+<wire x1="7.7" y1="-2.3" x2="7.7" y2="-1.8" width="0.254" layer="21"/>
+<pad name="6" x="5.08" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="0" drill="1.016" shape="long" rot="R90"/>
+</package>
+<package name="JST-XH-07-PACKAGE-ROUND-PAD">
+<description>&lt;b&gt;JST XH Connector Round Pads (Package)&lt;/b&gt;&lt;p&gt;
+
+Wire to board connector.
+
+Pitch: 2,54 mm, (0.100")&lt;p&gt;
+Number of pins: &lt;b&gt;7&lt;/b&gt;&lt;b&gt;&lt;P&gt;
+
+&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
+&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="9.95" y1="-2.3575" x2="9.95" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="9.95" y1="3.3925" x2="-9.95" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="-9.95" y1="3.3925" x2="-9.95" y2="-2.3575" width="0.254" layer="21"/>
+<wire x1="-9.95" y1="-2.3575" x2="9.95" y2="-2.3575" width="0.254" layer="21"/>
+<pad name="3" x="-2.54" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="-5.08" y="0" drill="1.016" rot="R90"/>
+<pad name="1" x="-7.62" y="0" drill="1.016" rot="R90"/>
+<pad name="4" x="0" y="0" drill="1.016" rot="R90"/>
+<pad name="5" x="2.54" y="0" drill="1.016" rot="R90"/>
+<text x="-10.555" y="-2.14" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-9.7025" y="3.8925" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-9.1675" y="-1.5875" size="1.016" layer="51" ratio="10">1</text>
+<wire x1="-7.6" y1="-2.3" x2="-7.6" y2="-1.8" width="0.254" layer="21"/>
+<wire x1="7.7" y1="-2.3" x2="7.7" y2="-1.8" width="0.254" layer="21"/>
+<pad name="6" x="5.08" y="0" drill="1.016" rot="R90"/>
+<pad name="7" x="7.62" y="0" drill="1.016" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -4345,6 +4364,56 @@ Number of pins: &lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <connect gate="-3" pin="S" pad="3"/>
 <connect gate="-4" pin="S" pad="4"/>
 <connect gate="-5" pin="S" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST-XH-07-PIN" prefix="X">
+<description>&lt;b&gt;JST XH Connector 2 Pin&lt;/b&gt;&lt;p&gt;
+
+Wire to board connector.
+
+Pitch: 2,54 mm, (0.100")&lt;p&gt;
+Number of pins: &lt;b&gt;7&lt;/b&gt;&lt;b&gt;&lt;P&gt;
+
+&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
+&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
+<gates>
+<gate name="-1" symbol="MV" x="2.54" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="2.54" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="2.54" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="M" x="2.54" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="M" x="2.54" y="-10.16" addlevel="always" swaplevel="1"/>
+<gate name="-6" symbol="M" x="2.54" y="-12.7" addlevel="always" swaplevel="1"/>
+<gate name="-7" symbol="M" x="2.54" y="-15.24" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="-LONG-PAD" package="JST-XH-07-PACKAGE-LONG-PAD">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-ROUND-PAD" package="JST-XH-07-PACKAGE-ROUND-PAD">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4710,6 +4779,54 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Seeed-Resistor" urn="urn:adsk.eagle:library:474">
+<packages>
+<package name="R0603" library_version="1">
+<wire x1="0.635" y1="1.397" x2="0.635" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-1.397" x2="-0.635" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-1.397" x2="-0.635" y2="1.397" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0.762" dx="0.889" dy="0.889" layer="1" roundness="25" rot="R270"/>
+<smd name="2" x="0" y="-0.762" dx="0.889" dy="0.889" layer="1" roundness="25" rot="R270"/>
+<text x="-1.016" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;NAME</text>
+<text x="1.435" y="-1.605" size="0.635" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="RES" library_version="1">
+<wire x1="-1.27" y1="0.508" x2="1.27" y2="0.508" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.508" x2="1.27" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.508" x2="-1.27" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-0.508" x2="-1.27" y2="0.508" width="0.254" layer="94"/>
+<text x="-3.81" y="1.27" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-2.54" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
+<pin name="1" x="-3.81" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="3.81" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SMD-RES-100K-1%-1/10W(0603)" prefix="R" uservalue="yes" library_version="1">
+<description>301010196</description>
+<gates>
+<gate name="G$1" symbol="RES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="RC0603FR-07100KL" constant="no"/>
+<attribute name="VALUE" value="100K"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4774,7 +4891,6 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <part name="C13" library="Seeed-Capacitor-2016" library_urn="urn:adsk.eagle:library:450" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="USB2" library="Seeed-Connector -2016" library_urn="urn:adsk.eagle:library:451" deviceset="MICRO-USB-SMD-B-WITHOUT-POST-W/P(ST-USB-001G)" device="" value="ST-USB-001G"/>
-<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V/1" device=""/>
 <part name="R2" library="Seeed-Resistor-2016" deviceset="SMD-RES-100K-1%-1/10W(0603)" device="" value="100K"/>
 <part name="C12" library="Seeed-Capacitor-2016" library_urn="urn:adsk.eagle:library:450" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="C14" library="Seeed-Capacitor-2016" library_urn="urn:adsk.eagle:library:450" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
@@ -4814,7 +4930,6 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <part name="X1" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="X2" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="X3" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
-<part name="X5" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="U5" library="imported-parts" deviceset="LM1085IT-5.0" device=""/>
 <part name="C4" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-10UF-10V-10%-X5R(0603)" device="" value="10uf"/>
@@ -4826,6 +4941,11 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <part name="U6" library="Seeed-IC" library_urn="urn:adsk.eagle:library:470" deviceset="INTERFACE-FT232RL(SSOP28)" device="" value="FT232RL-SSOP28"/>
 <part name="J2" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="MICRO-SD-CARD-HOLDER-9P" device="" value="MICROSD-9P"/>
 <part name="USB1" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="MICRO-USB-SMD-B-(10118193-0001LF)" device="" value="10118193-0001LF"/>
+<part name="X4" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
+<part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="R1" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100K-1%-1/10W(0603)" device="" value="100K"/>
+<part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4878,7 +4998,6 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <instance part="C13" gate="G$1" x="190.5" y="119.38" rot="R90"/>
 <instance part="P+9" gate="1" x="190.5" y="127"/>
 <instance part="USB2" gate="USB" x="325.12" y="226.06"/>
-<instance part="SUPPLY1" gate="G$1" x="342.9" y="233.68"/>
 <instance part="R2" gate="G$1" x="345.44" y="223.52"/>
 <instance part="U2" gate="A" x="220.98" y="53.34"/>
 <instance part="GND14" gate="1" x="205.74" y="38.1"/>
@@ -4892,6 +5011,7 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <instance part="C1" gate="G$1" x="193.04" y="25.4"/>
 <instance part="C3" gate="G$1" x="193.04" y="10.16"/>
 <instance part="GND25" gate="1" x="220.98" y="7.62"/>
+<instance part="P+10" gate="1" x="342.9" y="233.68"/>
 </instances>
 <busses>
 </busses>
@@ -4997,6 +5117,38 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <junction x="208.28" y="15.24"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="USB2" gate="USB" pin="GND@1"/>
+<wire x1="312.42" y1="229.87" x2="309.88" y2="229.87" width="0.1524" layer="91"/>
+<pinref part="USB2" gate="USB" pin="GND@2"/>
+<wire x1="312.42" y1="227.33" x2="309.88" y2="227.33" width="0.1524" layer="91"/>
+<pinref part="USB2" gate="USB" pin="GND@3"/>
+<wire x1="309.88" y1="227.33" x2="309.88" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="228.6" x2="309.88" y2="229.87" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="224.79" x2="309.88" y2="224.79" width="0.1524" layer="91"/>
+<pinref part="USB2" gate="USB" pin="GND@4"/>
+<wire x1="309.88" y1="224.79" x2="309.88" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="226.06" x2="309.88" y2="227.33" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="222.25" x2="309.88" y2="222.25" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="222.25" x2="309.88" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="223.52" x2="309.88" y2="224.79" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="213.36" x2="309.88" y2="222.25" width="0.1524" layer="91"/>
+<pinref part="USB2" gate="USB" pin="GND@5"/>
+<label x="347.98" y="220.98" size="1.778" layer="95"/>
+<wire x1="337.82" y1="220.98" x2="353.06" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="353.06" y1="220.98" x2="358.14" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="220.98" x2="363.22" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="349.25" y1="223.52" x2="353.06" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="223.52" x2="353.06" y2="220.98" width="0.1524" layer="91"/>
+<junction x="353.06" y="220.98"/>
+<wire x1="309.88" y1="213.36" x2="358.14" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="213.36" x2="358.14" y2="220.98" width="0.1524" layer="91"/>
+<junction x="358.14" y="220.98"/>
+<junction x="309.88" y="223.52"/>
+<junction x="309.88" y="226.06"/>
+<junction x="309.88" y="228.6"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -5051,6 +5203,11 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="190.5" y1="123.19" x2="190.5" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="USB2" gate="USB" pin="VCC"/>
+<wire x1="337.82" y1="231.14" x2="342.9" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="P+10" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="SCL_3V3" class="0">
@@ -5153,47 +5310,6 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <label x="71.12" y="215.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GNDA" class="0">
-<segment>
-<pinref part="USB2" gate="USB" pin="GND@1"/>
-<wire x1="312.42" y1="229.87" x2="309.88" y2="229.87" width="0.1524" layer="91"/>
-<pinref part="USB2" gate="USB" pin="GND@2"/>
-<wire x1="312.42" y1="227.33" x2="309.88" y2="227.33" width="0.1524" layer="91"/>
-<pinref part="USB2" gate="USB" pin="GND@3"/>
-<wire x1="309.88" y1="227.33" x2="309.88" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="228.6" x2="309.88" y2="229.87" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="224.79" x2="309.88" y2="224.79" width="0.1524" layer="91"/>
-<pinref part="USB2" gate="USB" pin="GND@4"/>
-<wire x1="309.88" y1="224.79" x2="309.88" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="226.06" x2="309.88" y2="227.33" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="222.25" x2="309.88" y2="222.25" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="222.25" x2="309.88" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="223.52" x2="309.88" y2="224.79" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="213.36" x2="309.88" y2="222.25" width="0.1524" layer="91"/>
-<pinref part="USB2" gate="USB" pin="GND@5"/>
-<label x="347.98" y="220.98" size="1.778" layer="95"/>
-<wire x1="337.82" y1="220.98" x2="353.06" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="353.06" y1="220.98" x2="358.14" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="220.98" x2="363.22" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="349.25" y1="223.52" x2="353.06" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="353.06" y1="223.52" x2="353.06" y2="220.98" width="0.1524" layer="91"/>
-<junction x="353.06" y="220.98"/>
-<wire x1="309.88" y1="213.36" x2="358.14" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="213.36" x2="358.14" y2="220.98" width="0.1524" layer="91"/>
-<junction x="358.14" y="220.98"/>
-<junction x="309.88" y="223.52"/>
-<junction x="309.88" y="226.06"/>
-<junction x="309.88" y="228.6"/>
-</segment>
-</net>
-<net name="+5V/1" class="0">
-<segment>
-<pinref part="USB2" gate="USB" pin="VCC"/>
-<wire x1="337.82" y1="231.14" x2="342.9" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="G$1" pin="+5V/1"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="USB2" gate="USB" pin="ID"/>
@@ -5257,6 +5373,7 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <text x="30.48" y="177.8" size="1.778" layer="97">lopy UART</text>
 <text x="203.2" y="215.9" size="1.778" layer="97">Lopy SPI does not seem to use a CS</text>
 <text x="121.92" y="38.1" size="1.778" layer="97">Do we want RST P2 &amp;P12 connected to the Pi because the Pi does weird things to GPIO on boot?</text>
+<text x="195.58" y="182.88" size="1.778" layer="97">TODO: define and connect CS to IN pin</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="-12.7" y="-33.02"/>
@@ -5278,14 +5395,19 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <instance part="X3" gate="-3" x="132.08" y="198.12"/>
 <instance part="X3" gate="-4" x="132.08" y="195.58"/>
 <instance part="X3" gate="-5" x="132.08" y="193.04"/>
-<instance part="X5" gate="-1" x="210.82" y="200.66"/>
-<instance part="X5" gate="-2" x="210.82" y="198.12"/>
-<instance part="X5" gate="-3" x="210.82" y="195.58"/>
-<instance part="X5" gate="-4" x="210.82" y="193.04"/>
-<instance part="X5" gate="-5" x="210.82" y="190.5"/>
 <instance part="U6" gate="1" x="284.48" y="101.6"/>
 <instance part="J2" gate="G$1" x="287.02" y="38.1"/>
-<instance part="USB1" gate="G$1" x="281.94" y="147.32"/>
+<instance part="USB1" gate="G$1" x="231.14" y="147.32"/>
+<instance part="X4" gate="-1" x="218.44" y="203.2"/>
+<instance part="X4" gate="-2" x="218.44" y="200.66"/>
+<instance part="X4" gate="-3" x="218.44" y="198.12"/>
+<instance part="X4" gate="-4" x="218.44" y="195.58"/>
+<instance part="X4" gate="-5" x="218.44" y="193.04"/>
+<instance part="X4" gate="-6" x="218.44" y="190.5"/>
+<instance part="X4" gate="-7" x="218.44" y="187.96"/>
+<instance part="GND26" gate="1" x="228.6" y="109.22"/>
+<instance part="R1" gate="G$1" x="264.16" y="144.78"/>
+<instance part="P+11" gate="1" x="259.08" y="160.02"/>
 </instances>
 <busses>
 </busses>
@@ -5311,6 +5433,48 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <wire x1="129.54" y1="198.12" x2="124.46" y2="198.12" width="0.1524" layer="91"/>
 <label x="119.38" y="198.12" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X4" gate="-3" pin="S"/>
+<wire x1="215.9" y1="198.12" x2="210.82" y2="198.12" width="0.1524" layer="91"/>
+<label x="205.74" y="198.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="USB1" gate="G$1" pin="GND@5"/>
+<wire x1="245.11" y1="142.24" x2="246.38" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="142.24" x2="246.38" y2="127" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="127" x2="208.28" y2="127" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="127" x2="228.6" y2="111.76" width="0.1524" layer="91"/>
+<junction x="228.6" y="127"/>
+<pinref part="GND26" gate="1" pin="GND"/>
+<junction x="208.28" y="152.4"/>
+<pinref part="USB1" gate="G$1" pin="GND@1"/>
+<wire x1="218.44" y1="151.13" x2="208.28" y2="151.13" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="151.13" x2="208.28" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="USB1" gate="G$1" pin="GND@2"/>
+<wire x1="218.44" y1="148.59" x2="208.28" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="148.59" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
+<junction x="208.28" y="149.86"/>
+<wire x1="208.28" y1="149.86" x2="208.28" y2="151.13" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="147.32" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="USB1" gate="G$1" pin="GND@3"/>
+<wire x1="218.44" y1="146.05" x2="208.28" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="146.05" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
+<junction x="208.28" y="147.32"/>
+<wire x1="208.28" y1="144.78" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
+<junction x="208.28" y="144.78"/>
+<pinref part="USB1" gate="G$1" pin="GND@4"/>
+<wire x1="218.44" y1="143.51" x2="208.28" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="143.51" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="127" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
+<junction x="246.38" y="142.24"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="267.97" y1="144.78" x2="274.32" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="144.78" x2="274.32" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="142.24" x2="246.38" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="144.78" x2="281.94" y2="144.78" width="0.1524" layer="91"/>
+<junction x="274.32" y="144.78"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -5334,9 +5498,15 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <label x="119.38" y="203.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X5" gate="-1" pin="S"/>
-<wire x1="208.28" y1="200.66" x2="203.2" y2="200.66" width="0.1524" layer="91"/>
-<label x="198.12" y="200.66" size="1.778" layer="95"/>
+<pinref part="X4" gate="-1" pin="S"/>
+<wire x1="215.9" y1="203.2" x2="210.82" y2="203.2" width="0.1524" layer="91"/>
+<label x="205.74" y="203.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="USB1" gate="G$1" pin="VCC"/>
+<wire x1="245.11" y1="152.4" x2="259.08" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="152.4" x2="259.08" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="P+11" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="LOPY_3V3" class="0">
@@ -5361,9 +5531,9 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <label x="119.38" y="200.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X5" gate="-2" pin="S"/>
-<wire x1="208.28" y1="198.12" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
-<label x="198.12" y="198.12" size="1.778" layer="95"/>
+<pinref part="X4" gate="-2" pin="S"/>
+<wire x1="215.9" y1="200.66" x2="210.82" y2="200.66" width="0.1524" layer="91"/>
+<label x="205.74" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_RST" class="0">
@@ -5447,9 +5617,9 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <label x="119.38" y="193.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X5" gate="-5" pin="S"/>
-<wire x1="208.28" y1="190.5" x2="203.2" y2="190.5" width="0.1524" layer="91"/>
-<label x="198.12" y="190.5" size="1.778" layer="95"/>
+<pinref part="X4" gate="-6" pin="S"/>
+<wire x1="215.9" y1="190.5" x2="210.82" y2="190.5" width="0.1524" layer="91"/>
+<label x="205.74" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_MOSI" class="0">
@@ -5459,9 +5629,9 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <label x="175.26" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X5" gate="-4" pin="S"/>
-<wire x1="208.28" y1="193.04" x2="203.2" y2="193.04" width="0.1524" layer="91"/>
-<label x="198.12" y="193.04" size="1.778" layer="95"/>
+<pinref part="X4" gate="-4" pin="S"/>
+<wire x1="215.9" y1="195.58" x2="210.82" y2="195.58" width="0.1524" layer="91"/>
+<label x="205.74" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_MISO" class="0">
@@ -5471,9 +5641,9 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <label x="175.26" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X5" gate="-3" pin="S"/>
-<wire x1="208.28" y1="195.58" x2="203.2" y2="195.58" width="0.1524" layer="91"/>
-<label x="198.12" y="195.58" size="1.778" layer="95"/>
+<pinref part="X4" gate="-5" pin="S"/>
+<wire x1="215.9" y1="193.04" x2="210.82" y2="193.04" width="0.1524" layer="91"/>
+<label x="205.74" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P13" class="0">
@@ -5563,6 +5733,22 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <pinref part="U3" gate="G$1" pin="P4"/>
 <wire x1="165.1" y1="111.76" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
 <label x="175.26" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LOPY_CS" class="0">
+<segment>
+<pinref part="X4" gate="-7" pin="S"/>
+<wire x1="215.9" y1="187.96" x2="210.82" y2="187.96" width="0.1524" layer="91"/>
+<label x="205.74" y="187.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="USB1" gate="G$1" pin="ID"/>
+<wire x1="245.11" y1="144.78" x2="260.35" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="260.35" y1="144.78" x2="261.62" y2="144.78" width="0.1524" layer="91"/>
+<junction x="260.35" y="144.78"/>
 </segment>
 </net>
 </nets>
