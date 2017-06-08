@@ -845,6 +845,66 @@ More information and support community is available at http://www.element14.com/
 <text x="-4.6482" y="9.7028" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.1816" y="-11.811" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
+<package name="SOIC127P600X175-8N">
+<smd name="1" x="-2.3622" y="1.905" dx="2.1844" dy="0.5588" layer="1"/>
+<smd name="2" x="-2.3622" y="0.635" dx="2.1844" dy="0.5588" layer="1"/>
+<smd name="3" x="-2.3622" y="-0.635" dx="2.1844" dy="0.5588" layer="1"/>
+<smd name="4" x="-2.3622" y="-1.905" dx="2.1844" dy="0.5588" layer="1"/>
+<smd name="5" x="2.3622" y="-1.905" dx="2.1844" dy="0.5588" layer="1"/>
+<smd name="6" x="2.3622" y="-0.635" dx="2.1844" dy="0.5588" layer="1"/>
+<smd name="7" x="2.3622" y="0.635" dx="2.1844" dy="0.5588" layer="1"/>
+<smd name="8" x="2.3622" y="1.905" dx="2.1844" dy="0.5588" layer="1"/>
+<wire x1="-1.9812" y1="1.651" x2="-1.9812" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="-1.9812" y1="2.159" x2="-3.0988" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="-3.0988" y1="2.159" x2="-3.0988" y2="1.651" width="0.1524" layer="51"/>
+<wire x1="-3.0988" y1="1.651" x2="-1.9812" y2="1.651" width="0.1524" layer="51"/>
+<wire x1="-1.9812" y1="0.381" x2="-1.9812" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="-1.9812" y1="0.889" x2="-3.0988" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="-3.0988" y1="0.889" x2="-3.0988" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-3.0988" y1="0.381" x2="-1.9812" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-1.9812" y1="-0.889" x2="-1.9812" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-1.9812" y1="-0.381" x2="-3.0988" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-3.0988" y1="-0.381" x2="-3.0988" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="-3.0988" y1="-0.889" x2="-1.9812" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="-1.9812" y1="-2.159" x2="-1.9812" y2="-1.651" width="0.1524" layer="51"/>
+<wire x1="-1.9812" y1="-1.651" x2="-3.0988" y2="-1.651" width="0.1524" layer="51"/>
+<wire x1="-3.0988" y1="-1.651" x2="-3.0988" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="-3.0988" y1="-2.159" x2="-1.9812" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="1.9812" y1="-1.651" x2="1.9812" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="1.9812" y1="-2.159" x2="3.0988" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="3.0988" y1="-2.159" x2="3.0988" y2="-1.651" width="0.1524" layer="51"/>
+<wire x1="3.0988" y1="-1.651" x2="1.9812" y2="-1.651" width="0.1524" layer="51"/>
+<wire x1="1.9812" y1="-0.381" x2="1.9812" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="1.9812" y1="-0.889" x2="3.0988" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="3.0988" y1="-0.889" x2="3.0988" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="3.0988" y1="-0.381" x2="1.9812" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="1.9812" y1="0.889" x2="1.9812" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="1.9812" y1="0.381" x2="3.0988" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="3.0988" y1="0.381" x2="3.0988" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="3.0988" y1="0.889" x2="1.9812" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="1.9812" y1="2.159" x2="1.9812" y2="1.651" width="0.1524" layer="51"/>
+<wire x1="1.9812" y1="1.651" x2="3.0988" y2="1.651" width="0.1524" layer="51"/>
+<wire x1="3.0988" y1="1.651" x2="3.0988" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="3.0988" y1="2.159" x2="1.9812" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="-1.9812" y1="-2.4892" x2="1.9812" y2="-2.4892" width="0.1524" layer="51"/>
+<wire x1="1.9812" y1="-2.4892" x2="1.9812" y2="2.4892" width="0.1524" layer="51"/>
+<wire x1="1.9812" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="2.4892" x2="-1.9812" y2="2.4892" width="0.1524" layer="51"/>
+<wire x1="-1.9812" y1="2.4892" x2="-1.9812" y2="-2.4892" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="2.5146" x2="-0.3048" y2="2.4892" width="0.1524" layer="51" curve="-180"/>
+<text x="-3.2004" y="2.3368" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<wire x1="-3.7084" y1="-2.7432" x2="-3.7084" y2="2.7432" width="0.1524" layer="39"/>
+<wire x1="-3.7084" y1="2.7432" x2="3.7084" y2="2.7432" width="0.1524" layer="39"/>
+<wire x1="3.7084" y1="2.7432" x2="3.7084" y2="-2.7432" width="0.1524" layer="39"/>
+<wire x1="3.7084" y1="-2.7432" x2="-3.7084" y2="-2.7432" width="0.1524" layer="39"/>
+<wire x1="-1.1684" y1="-2.4892" x2="1.1684" y2="-2.4892" width="0.1524" layer="21"/>
+<wire x1="1.1684" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="2.4892" x2="-1.1684" y2="2.4892" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="2.5146" x2="-0.3048" y2="2.4892" width="0.1524" layer="21" curve="-180"/>
+<text x="-3.2004" y="2.3368" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-4.699" y="3.429" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.3848" y="-5.0038" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP23017-E/SO">
@@ -882,6 +942,22 @@ More information and support community is available at http://www.element14.com/
 <wire x1="12.7" y1="27.94" x2="-12.7" y2="27.94" width="0.4064" layer="94"/>
 <text x="-4.3942" y="29.6926" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-6.35" y="-36.6776" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
+<symbol name="MCP79412-I/SN">
+<pin name="VCC" x="-15.24" y="5.08" length="middle" direction="pwr"/>
+<pin name="VBAT" x="-15.24" y="2.54" length="middle" direction="pwr"/>
+<pin name="X1" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="X2" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="VSS" x="-15.24" y="-10.16" length="middle" direction="pwr"/>
+<pin name="SDA" x="15.24" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="SCL" x="15.24" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="MFP" x="15.24" y="2.54" length="middle" direction="pas" rot="R180"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.4064" layer="94"/>
+<text x="-4.7244" y="14.1986" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.6642" y="11.6586" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -928,6 +1004,35 @@ More information and support community is available at http://www.element14.com/
 <attribute name="OC_FARNELL" value="1332087" constant="no"/>
 <attribute name="OC_NEWARK" value="34M7442" constant="no"/>
 <attribute name="PACKAGE" value="SOIC-28" constant="no"/>
+<attribute name="SUPPLIER" value="Microchip" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP79412-I/SN" prefix="U">
+<description>RTCC, I2C, 1K EE, 64B SRAM, 8SOIC</description>
+<gates>
+<gate name="A" symbol="MCP79412-I/SN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC127P600X175-8N">
+<connects>
+<connect gate="A" pin="MFP" pad="7"/>
+<connect gate="A" pin="SCL" pad="6"/>
+<connect gate="A" pin="SDA" pad="5"/>
+<connect gate="A" pin="VBAT" pad="3"/>
+<connect gate="A" pin="VCC" pad="8"/>
+<connect gate="A" pin="VSS" pad="4"/>
+<connect gate="A" pin="X1" pad="1"/>
+<connect gate="A" pin="X2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="MCP79412-I/SN" constant="no"/>
+<attribute name="OC_FARNELL" value="2103565" constant="no"/>
+<attribute name="OC_NEWARK" value="94T5863" constant="no"/>
+<attribute name="PACKAGE" value="SOIC-8" constant="no"/>
 <attribute name="SUPPLIER" value="Microchip" constant="no"/>
 </technology>
 </technologies>
@@ -1116,76 +1221,6 @@ More information and support community is available at http://www.element14.com/
 </deviceset>
 </devicesets>
 </library>
-<library name="LM2599T">
-<packages>
-<package name="TO127P470X1016X1740-7P">
-<pad name="1" x="-7.62" y="-11.2014" drill="1.27" shape="square"/>
-<pad name="2" x="-6.35" y="-6.1214" drill="1.27"/>
-<pad name="3" x="-5.08" y="-11.2014" drill="1.27"/>
-<pad name="4" x="-3.81" y="-6.1214" drill="1.27"/>
-<pad name="5" x="-2.54" y="-11.2014" drill="1.27"/>
-<pad name="6" x="-1.27" y="-6.1214" drill="1.27"/>
-<pad name="7" x="0" y="-11.2014" drill="1.27"/>
-<wire x1="-9.017" y1="-7.9502" x2="1.397" y2="-7.9502" width="0.1524" layer="21"/>
-<wire x1="1.397" y1="-7.9502" x2="1.397" y2="-3.2512" width="0.1524" layer="21"/>
-<wire x1="1.397" y1="-3.2512" x2="-9.017" y2="-3.2512" width="0.1524" layer="21"/>
-<wire x1="-9.017" y1="-3.2512" x2="-9.017" y2="-7.9502" width="0.1524" layer="21"/>
-<wire x1="-9.017" y1="-7.9502" x2="1.397" y2="-7.9502" width="0.1524" layer="51"/>
-<wire x1="1.397" y1="-7.9502" x2="1.397" y2="-3.2512" width="0.1524" layer="51"/>
-<wire x1="1.397" y1="-3.2512" x2="-9.017" y2="-3.2512" width="0.1524" layer="51"/>
-<wire x1="-9.017" y1="-3.2512" x2="-9.017" y2="-7.9502" width="0.1524" layer="51"/>
-<text x="-8.6106" y="-2.9464" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-9.4488" y="-14.8844" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="LM2599T-5.0">
-<pin name="VIN" x="-22.86" y="2.54" length="middle" direction="in"/>
-<pin name="FLAG" x="-22.86" y="-2.54" length="middle" direction="pas"/>
-<pin name="*SD-SS" x="-22.86" y="-5.08" length="middle" direction="in"/>
-<pin name="GND" x="-22.86" y="-7.62" length="middle" direction="pas"/>
-<pin name="DELAY" x="22.86" y="-5.08" length="middle" direction="in" rot="R180"/>
-<pin name="FEEDBACK" x="22.86" y="-2.54" length="middle" direction="in" rot="R180"/>
-<pin name="OUTPUT" x="22.86" y="2.54" length="middle" direction="out" rot="R180"/>
-<wire x1="-17.78" y1="7.62" x2="-17.78" y2="-12.7" width="0.4064" layer="94"/>
-<wire x1="-17.78" y1="-12.7" x2="17.78" y2="-12.7" width="0.4064" layer="94"/>
-<wire x1="17.78" y1="-12.7" x2="17.78" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="17.78" y1="7.62" x2="-17.78" y2="7.62" width="0.4064" layer="94"/>
-<text x="-5.588" y="8.6106" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-5.2832" y="-15.621" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LM2599T-5.0" prefix="U">
-<description>SWITCHING REG 3A 5.0V, 2599</description>
-<gates>
-<gate name="A" symbol="LM2599T-5.0" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO127P470X1016X1740-7P">
-<connects>
-<connect gate="A" pin="*SD-SS" pad="7"/>
-<connect gate="A" pin="DELAY" pad="5"/>
-<connect gate="A" pin="FEEDBACK" pad="6"/>
-<connect gate="A" pin="FLAG" pad="3"/>
-<connect gate="A" pin="GND" pad="4"/>
-<connect gate="A" pin="OUTPUT" pad="2"/>
-<connect gate="A" pin="VIN" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="LM2599T-5.0" constant="no"/>
-<attribute name="OC_FARNELL" value="9494103" constant="no"/>
-<attribute name="OC_NEWARK" value="38K3657" constant="no"/>
-<attribute name="PACKAGE" value="TO220-7" constant="no"/>
-<attribute name="SUPPLIER" value="National Semiconductor" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Seeed-Connector -2016" urn="urn:adsk.eagle:library:451">
 <packages>
 <package name="DCJ3P-11.6X9.6X7.0MM">
@@ -1346,6 +1381,43 @@ More information and support community is available at http://www.element14.com/
 <wire x1="-3.7" y1="-5" x2="-3.7" y2="-4.2" width="0.127" layer="21"/>
 <wire x1="-3.7" y1="-2.2" x2="-3.7" y2="-1.3" width="0.127" layer="21"/>
 </package>
+<package name="BAT2P-13.5-CR1220" library_version="1">
+<wire x1="-6.477" y1="-2.921" x2="-6.731" y2="-2.667" width="0.0254" layer="46"/>
+<wire x1="-6.731" y1="-2.667" x2="-6.731" y2="-1.905" width="0.0254" layer="46"/>
+<wire x1="-6.731" y1="-1.905" x2="-6.858" y2="-2.159" width="0.0254" layer="46"/>
+<wire x1="-6.731" y1="-1.905" x2="-6.604" y2="-2.159" width="0.0254" layer="46"/>
+<wire x1="6.477" y1="-2.921" x2="6.731" y2="-2.667" width="0.0254" layer="46"/>
+<wire x1="6.731" y1="-2.667" x2="6.731" y2="-1.905" width="0.0254" layer="46"/>
+<wire x1="6.731" y1="-1.905" x2="6.604" y2="-2.159" width="0.0254" layer="46"/>
+<wire x1="6.731" y1="-1.905" x2="6.858" y2="-2.159" width="0.0254" layer="46"/>
+<circle x="0" y="0" radius="6.731" width="0" layer="39"/>
+<circle x="0" y="0" radius="5.334" width="0" layer="51"/>
+<pad name="+2" x="-6.731" y="0" drill="0.635" diameter="1.524" shape="long" rot="R90"/>
+<pad name="+1" x="6.731" y="0" drill="0.635" diameter="1.524" shape="long" rot="R90"/>
+<smd name="-" x="0" y="0" dx="7.62" dy="7.62" layer="1" roundness="100"/>
+<text x="-4.445" y="6.985" size="0.889" layer="25" ratio="11">&gt;name</text>
+<text x="0.635" y="6.985" size="0.889" layer="27" ratio="11">&gt;value</text>
+<text x="-6.985" y="-3.683" size="0.8128" layer="46" ratio="10">slot drill with copper</text>
+<rectangle x1="-1.27" y1="5.08" x2="1.27" y2="6.35" layer="21"/>
+<rectangle x1="-5.8" y1="-1.27" x2="-5.08" y2="1.27" layer="21"/>
+<rectangle x1="5.08" y1="-1.27" x2="5.8" y2="1.27" layer="21"/>
+<polygon width="0.0254" layer="46">
+<vertex x="-7.0485" y="0.381" curve="-90"/>
+<vertex x="-6.731" y="0.6985" curve="-90"/>
+<vertex x="-6.4135" y="0.381"/>
+<vertex x="-6.4135" y="-0.381" curve="-90"/>
+<vertex x="-6.731" y="-0.6985" curve="-90"/>
+<vertex x="-7.0485" y="-0.381"/>
+</polygon>
+<polygon width="0.0254" layer="46">
+<vertex x="6.4135" y="0.381" curve="-90"/>
+<vertex x="6.731" y="0.6985" curve="-90"/>
+<vertex x="7.0485" y="0.381"/>
+<vertex x="7.0485" y="-0.381" curve="-90"/>
+<vertex x="6.731" y="-0.6985" curve="-90"/>
+<vertex x="6.4135" y="-0.381"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="POWER-JACK-DC">
@@ -1416,6 +1488,20 @@ More information and support community is available at http://www.element14.com/
 <wire x1="-10.16" y1="3.81" x2="-8.89" y2="3.81" width="0.1524" layer="94"/>
 <wire x1="-10.16" y1="-3.81" x2="-8.89" y2="-3.81" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="BAT-HOLDER" library_version="1">
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<text x="-6.35" y="3.81" size="1.27" layer="95" ratio="10">&gt;name</text>
+<text x="0" y="3.81" size="1.27" layer="96" ratio="10">&gt;value</text>
+<pin name="V+" x="-8.89" y="0" length="short"/>
+<pin name="V-" x="8.89" y="0" length="short" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="6.35" y2="0" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JACK-DC-044-A" prefix="J" uservalue="yes">
@@ -1461,6 +1547,25 @@ More information and support community is available at http://www.element14.com/
 <technology name="">
 <attribute name="MPN" value="ST-USB-001G" constant="no"/>
 <attribute name="VALUE" value="ST-USB-001G" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIP-BATTERY-CELL-HOLDER(1220)" prefix="BAT" uservalue="yes" library_version="1">
+<description>320170002</description>
+<gates>
+<gate name="G$1" symbol="BAT-HOLDER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BAT2P-13.5-CR1220">
+<connects>
+<connect gate="G$1" pin="V+" pad="+1 +2"/>
+<connect gate="G$1" pin="V-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="cr1220"/>
 </technology>
 </technologies>
 </device>
@@ -1548,98 +1653,8 @@ More information and support community is available at http://www.element14.com/
 </deviceset>
 </devicesets>
 </library>
-<library name="Seeed-OPL-2017-01-Capacitor-akita">
-<packages>
-<package name="CAP_TH_P50_D100_POL">
-<description>Capacitor, Polarity, p=5.0mm D=10.0mm</description>
-<pad name="P$M" x="2.5" y="0" drill="0.9"/>
-<pad name="P$P" x="-2.5" y="0" drill="0.9"/>
-<circle x="0" y="0" radius="5" width="0.254" layer="21"/>
-<text x="-2.54" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-6.985" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-5.715" y="1.905" size="1.27" layer="27">+</text>
-<text x="5.08" y="1.905" size="1.27" layer="27">-</text>
-<circle x="2.5" y="0" radius="1" width="0.254" layer="27"/>
-</package>
-<package name="CAP_TH_P35_D80_POL">
-<description>Capacitor, polarity, p=3.5mm, D=8.0mm</description>
-<pad name="P$M" x="1.75" y="0" drill="0.9"/>
-<pad name="P$P" x="-1.75" y="0" drill="0.9"/>
-<circle x="0" y="0" radius="4" width="0.254" layer="21"/>
-<text x="-2.54" y="4.445" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-4.445" y="1.905" size="1.27" layer="27">+</text>
-<text x="3.81" y="1.905" size="1.27" layer="27">-</text>
-<circle x="1.75" y="0" radius="1" width="0.254" layer="27"/>
-</package>
-</packages>
-<symbols>
-<symbol name="CAP_POL">
-<description>Capacitor, with polarity mark</description>
-<pin name="P$P" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<pin name="P$M" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<text x="-3.302" y="0.508" size="1.778" layer="94">+</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CAP_TH_470UF_50V" prefix="C">
-<description>DIP CAP Aluminum 470uF-50V;Radial-D10*H20.0mm
-SKU: 302030044</description>
-<gates>
-<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CAP_TH_P50_D100_POL">
-<connects>
-<connect gate="G$1" pin="P$M" pad="P$M"/>
-<connect gate="G$1" pin="P$P" pad="P$P"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CAP_TH_220UF_25V" prefix="C">
-<description>DIP CAP Aluminum 220uF-25V;Radial-D8.0*H12.0mm
-SKU: 302030042</description>
-<gates>
-<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CAP_TH_P35_D80_POL">
-<connects>
-<connect gate="G$1" pin="P$M" pad="P$M"/>
-<connect gate="G$1" pin="P$P" pad="P$P"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Seeed-Resistor-2016">
 <packages>
-<package name="R0402">
-<smd name="1" x="0" y="0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
-<smd name="2" x="0" y="-0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
-<text x="0.635" y="1.27" size="0.889" layer="25" ratio="11" rot="R270">&gt;NAME</text>
-<text x="-1.524" y="1.27" size="0.889" layer="27" font="vector" ratio="11" rot="R270">&gt;VALUE</text>
-<wire x1="0.3945" y1="0.839" x2="0.3945" y2="-0.839" width="0.0762" layer="21"/>
-<wire x1="0.3945" y1="-0.839" x2="-0.3945" y2="-0.839" width="0.0762" layer="21"/>
-<wire x1="-0.3945" y1="-0.839" x2="-0.3945" y2="0.839" width="0.0762" layer="21"/>
-<wire x1="-0.3945" y1="0.839" x2="0.3945" y2="0.839" width="0.0762" layer="21"/>
-</package>
 <package name="R0603">
 <wire x1="0.635" y1="1.397" x2="0.635" y2="-1.397" width="0.127" layer="21"/>
 <wire x1="0.635" y1="-1.397" x2="-0.635" y2="-1.397" width="0.127" layer="21"/>
@@ -1664,26 +1679,6 @@ SKU: 302030042</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SMD-RES-10K-1%-1/16W(0402)" prefix="R" uservalue="yes">
-<description>301010047</description>
-<gates>
-<gate name="G$1" symbol="RES" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="R0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="RC0402FR-0710KL" constant="no"/>
-<attribute name="VALUE" value="10K 1/16W" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SMD-RES-100K-1%-1/10W(0603)" prefix="R" uservalue="yes">
 <description>301010196</description>
 <gates>
@@ -1708,19 +1703,6 @@ SKU: 302030042</description>
 </library>
 <library name="Seeed-Capacitor-2016">
 <packages>
-<package name="C0603">
-<description>&lt;b&gt;0603&lt;b&gt;&lt;p&gt;</description>
-<wire x1="0.635" y1="1.397" x2="0.635" y2="-1.397" width="0.127" layer="21"/>
-<wire x1="0.635" y1="-1.397" x2="-0.635" y2="-1.397" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="-1.397" x2="-0.635" y2="1.397" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="0.127" layer="21"/>
-<smd name="1" x="0" y="0.762" dx="0.889" dy="0.889" layer="1" roundness="25" rot="R270"/>
-<smd name="2" x="0" y="-0.762" dx="0.889" dy="0.889" layer="1" roundness="25" rot="R270"/>
-<text x="0.889" y="1.27" size="0.889" layer="25" ratio="11" rot="R270">&gt;NAME</text>
-<text x="-1.5875" y="1.27" size="0.635" layer="27" ratio="10" rot="R270">&gt;VALUE</text>
-<text x="-0.254" y="1.27" size="0.635" layer="33" ratio="10" rot="R270">&gt;name</text>
-<rectangle x1="-1.27" y1="-0.508" x2="1.27" y2="0.508" layer="39" rot="R270"/>
-</package>
 <package name="C0402">
 <description>&lt;b&gt;0402&lt;b&gt;&lt;p&gt;</description>
 <smd name="1" x="0" y="0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
@@ -1758,26 +1740,6 @@ SKU: 302030042</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CERAMIC-100NF-50V-10%-X7R(0603)" prefix="C" uservalue="yes">
-<description>302010138</description>
-<gates>
-<gate name="G$1" symbol="C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="C0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="CC0603KRX7R9BB104" constant="no"/>
-<attribute name="VALUE" value="100nf"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CERAMIC-1UF-6.3V-10%-X5R(0402)" prefix="C" uservalue="yes">
 <description>302010003</description>
 <gates>
@@ -1794,64 +1756,6 @@ SKU: 302030042</description>
 <attribute name="MPN" value="CC0402KRX5R5BB105" constant="no"/>
 <attribute name="VALUE" value="1UF 6.3V" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="inductors" urn="urn:adsk.eagle:library:243">
-<description>&lt;b&gt;Inductors and Filters&lt;/b&gt;&lt;p&gt;
-Based on the previous library ind-a.lbr&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="DR125" library_version="1">
-<description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
-Source: coiltronics_dr_series.pdf</description>
-<wire x1="-6.5" y1="6.5" x2="6.525" y2="6.5" width="0.2032" layer="21"/>
-<wire x1="6.525" y1="6.5" x2="6.525" y2="-6.5" width="0.2032" layer="21"/>
-<wire x1="6.525" y1="-6.5" x2="-6.5" y2="-6.5" width="0.2032" layer="21"/>
-<wire x1="-6.5" y1="-6.5" x2="-6.5" y2="6.5" width="0.2032" layer="21"/>
-<wire x1="-4.5254" y1="3.783" x2="-3.8006" y2="4.5431" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
-<wire x1="-3.783" y1="-4.5254" x2="-4.5431" y2="-3.8006" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
-<wire x1="4.5254" y1="-3.783" x2="3.8006" y2="-4.5431" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
-<wire x1="3.783" y1="4.5254" x2="4.5431" y2="3.8006" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
-<wire x1="0" y1="5.9" x2="4.9" y2="3.275" width="0.2032" layer="21" curve="-56.209779"/>
-<wire x1="0" y1="5.9" x2="-4.95" y2="3.225" width="0.2032" layer="21" curve="56.95663"/>
-<wire x1="0" y1="-5.9" x2="-4.9" y2="-3.275" width="0.2032" layer="21" curve="-56.209779"/>
-<wire x1="0" y1="-5.9" x2="4.95" y2="-3.225" width="0.2032" layer="21" curve="56.95663"/>
-<circle x="0" y="0" radius="5.9" width="0.2032" layer="51"/>
-<smd name="1" x="-4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
-<smd name="2" x="4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
-<text x="-2.5" y="3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="DRK" library_version="1">
-<wire x1="-3.81" y1="1.651" x2="3.81" y2="1.651" width="0.254" layer="94"/>
-<text x="-3.81" y="2.286" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.937" y="-3.048" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-3.81" y1="-0.889" x2="3.81" y2="0.889" layer="94"/>
-<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DR125" prefix="L" library_version="1">
-<description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
-Source: coiltronics_dr_series.pdf</description>
-<gates>
-<gate name="G$1" symbol="DRK" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DR125">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2527,31 +2431,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </package>
 </packages>
 <symbols>
-<symbol name="PS" library_version="1">
-<wire x1="0.635" y1="-4.572" x2="-0.635" y2="-4.572" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="-4.572" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="0" x2="-0.635" y2="-4.572" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="-3.048" x2="-0.381" y2="-2.794" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="-2.794" x2="0.381" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="-2.54" x2="-0.381" y2="-2.286" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="-2.286" x2="0.381" y2="-2.032" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="-2.032" x2="-0.381" y2="-1.778" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="-1.778" x2="0.381" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="-0.381" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="-1.27" x2="0.381" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="-1.016" x2="-0.381" y2="-0.762" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="-0.762" x2="0.381" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="-5.207" x2="-0.508" y2="-5.207" width="0.1524" layer="94"/>
-<wire x1="-0.508" y1="-5.207" x2="-0.508" y2="-5.715" width="0.1524" layer="94"/>
-<wire x1="-0.508" y1="-5.715" x2="0" y2="-6.35" width="0.1524" layer="94"/>
-<wire x1="0" y1="-6.35" x2="0.508" y2="-5.715" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="-5.715" x2="0.508" y2="-5.207" width="0.1524" layer="94"/>
-<text x="-1.016" y="-6.35" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="1.27" y="-2.54" size="1.778" layer="97">&gt;TP_SIGNAL_NAME</text>
-<rectangle x1="-0.381" y1="-5.207" x2="0.381" y2="-4.572" layer="94"/>
-<pin name="TP" x="0" y="2.54" visible="off" length="short" direction="in" rot="R270"/>
-</symbol>
 <symbol name="TP" library_version="1">
 <wire x1="-0.762" y1="-0.762" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
@@ -2563,394 +2442,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PTR1" prefix="TP" library_version="1">
-<description>&lt;b&gt;TEST PIN&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="PS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="B1,27" package="B1,27">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="B2,54" package="B2,54">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="PAD1-13" package="P1-13">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="PAD1-13Y" package="P1-13Y">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="PAD1-17" package="P1-17">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="PAD1-17Y" package="P1-17Y">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="PAD1-20" package="P1-20">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="PAD1-20Y" package="P1-20Y">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP06R" package="TP06R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP06SQ" package="TP06SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP07R" package="TP07R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP07SQ" package="TP07SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP08R" package="TP08R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP08SQ" package="TP08SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP09R" package="TP09R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP09SQ" package="TP09SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP10R" package="TP10R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP10SQ" package="TP10SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP11R" package="TP11R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP11SQ" package="TP11SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP12SQ" package="TP12SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP12R" package="TP12R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP13R" package="TP13R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP14R" package="TP14R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP15R" package="TP15R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP16R" package="TP16R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP17R" package="TP17R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP18R" package="TP18R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP19R" package="TP19R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP20R" package="TP20R">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP13SQ" package="TP13SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP14SQ" package="TP14SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP15SQ" package="TP15SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP16SQ" package="TP16SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP17SQ" package="TP17SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP18SQ" package="TP18SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP19SQ" package="TP19SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TP20SQ" package="TP20SQ">
-<connects>
-<connect gate="G$1" pin="TP" pad="TP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TP" prefix="TP" library_version="1">
 <description>&lt;b&gt;Test pad&lt;/b&gt;</description>
 <gates>
@@ -3471,6 +2962,8 @@ https://www.pycom.io/product/lopy/</description>
 <pin name="P21" x="17.78" y="-17.78" visible="pin" length="middle" rot="R180"/>
 <pin name="P22" x="17.78" y="-20.32" visible="pin" length="middle" rot="R180"/>
 <pin name="P23" x="17.78" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<text x="-10.16" y="-7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3518,6 +3011,70 @@ https://www.pycom.io/product/lopy/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="seeed_parts">
+<packages>
+<package name="GROVE_DC&amp;DC">
+<wire x1="-11" y1="8.5" x2="11" y2="8.5" width="0.127" layer="21"/>
+<wire x1="11" y1="8.5" x2="11" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="11" y1="-8.5" x2="-11" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="-11" y1="-8.5" x2="-11" y2="8.5" width="0.127" layer="21"/>
+<pad name="P$1" x="-8.89" y="6.35" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$2" x="-8.89" y="3.81" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$3" x="-8.89" y="-6.35" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$4" x="-8.89" y="-3.81" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$5" x="8.89" y="6.35" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$6" x="8.89" y="3.81" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$7" x="8.89" y="-3.81" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$8" x="8.89" y="-6.35" drill="1" diameter="2.54" shape="square"/>
+<text x="-2.54" y="1.27" size="1.27" layer="25">&gt;Name</text>
+<text x="-2.54" y="-1.27" size="1.27" layer="27">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="GROVE_DC&amp;DC">
+<description>Seeed Grove DC&amp;DC adjustable converter 0.8V - 18V&amp;3A for 4.5V to 28V Operating Input Range 
+https://www.seeedstudio.com/Adjustable-Step-Down-DC%26DC-Converter-%280.8V-18V%263A%29-p-1716.html</description>
+<pin name="IN1" x="-33.02" y="17.78" length="middle" direction="pwr"/>
+<pin name="IN2" x="-33.02" y="15.24" length="middle" direction="pwr"/>
+<pin name="GND_IN1" x="-33.02" y="-12.7" length="middle" direction="pwr"/>
+<pin name="GND_IN2" x="-33.02" y="-15.24" length="middle" direction="pwr"/>
+<pin name="OUT1" x="7.62" y="17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT2" x="7.62" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND_OUT1" x="7.62" y="-12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND_OUT2" x="7.62" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-27.94" y1="20.32" x2="2.54" y2="20.32" width="0.254" layer="94"/>
+<wire x1="2.54" y1="20.32" x2="2.54" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-17.78" x2="-27.94" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="20.32" x2="-27.94" y2="-17.78" width="0.254" layer="94"/>
+<text x="-17.78" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-17.78" y="5.08" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GROVE_DC&amp;DC" prefix="U">
+<gates>
+<gate name="G$1" symbol="GROVE_DC&amp;DC" x="12.7" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="GROVE_DC&amp;DC">
+<connects>
+<connect gate="G$1" pin="GND_IN1" pad="P$4"/>
+<connect gate="G$1" pin="GND_IN2" pad="P$3"/>
+<connect gate="G$1" pin="GND_OUT1" pad="P$7"/>
+<connect gate="G$1" pin="GND_OUT2" pad="P$8"/>
+<connect gate="G$1" pin="IN1" pad="P$1"/>
+<connect gate="G$1" pin="IN2" pad="P$2"/>
+<connect gate="G$1" pin="OUT1" pad="P$5"/>
+<connect gate="G$1" pin="OUT2" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3545,17 +3102,8 @@ https://www.pycom.io/product/lopy/</description>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
-<part name="U2" library="LM2599T" deviceset="LM2599T-5.0" device=""/>
 <part name="J1" library="Seeed-Connector -2016" library_urn="urn:adsk.eagle:library:451" deviceset="JACK-DC-044-A" device="" value="DC-044-A"/>
 <part name="D1" library="Seeed-Diode-2016" library_urn="urn:adsk.eagle:library:453" deviceset="SMD-DIODE-SCHOTTKY-28V-5A(DO-214AA)" device="" value="28V-5A"/>
-<part name="C1" library="Seeed-OPL-2017-01-Capacitor-akita" deviceset="CAP_TH_470UF_50V" device=""/>
-<part name="R1" library="Seeed-Resistor-2016" deviceset="SMD-RES-10K-1%-1/16W(0402)" device="" value="10K 1/16W"/>
-<part name="C2" library="Seeed-Capacitor-2016" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
-<part name="C3" library="Seeed-Capacitor-2016" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
-<part name="D2" library="Seeed-Diode-2016" library_urn="urn:adsk.eagle:library:453" deviceset="SMD-DIODE-SCHOTTKY-28V-5A(DO-214AA)" device="" value="28V-5A"/>
-<part name="C4" library="Seeed-OPL-2017-01-Capacitor-akita" deviceset="CAP_TH_220UF_25V" device=""/>
-<part name="L1" library="inductors" library_urn="urn:adsk.eagle:library:243" deviceset="DR125" device="" value="DR125-330-R 33uH"/>
-<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FRAME5" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
@@ -3566,7 +3114,6 @@ https://www.pycom.io/product/lopy/</description>
 <part name="C11" library="Seeed-Capacitor-2016" library_urn="urn:adsk.eagle:library:450" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D4" library="Seeed-LED-2016" library_urn="urn:adsk.eagle:library:458" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="RED-0603"/>
@@ -3586,7 +3133,6 @@ https://www.pycom.io/product/lopy/</description>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
-<part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B2,54"/>
 <part name="U10" library="74HC139N" deviceset="74HC139N" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -3611,9 +3157,21 @@ https://www.pycom.io/product/lopy/</description>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
 <part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
-<part name="U$3" library="pycom" deviceset="LOPY" device=""/>
+<part name="U3" library="pycom" deviceset="LOPY" device=""/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="U4" library="seeed_parts" deviceset="GROVE_DC&amp;DC" device=""/>
+<part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
+<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U2" library="imported-parts" deviceset="MCP79412-I/SN" device=""/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="BAT1" library="Seeed-Connector -2016" library_urn="urn:adsk.eagle:library:451" deviceset="DIP-BATTERY-CELL-HOLDER(1220)" device="" value="cr1220"/>
+<part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C2" library="Seeed-Capacitor-2016" library_urn="urn:adsk.eagle:library:450" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
+<part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3621,8 +3179,9 @@ https://www.pycom.io/product/lopy/</description>
 <plain>
 <text x="294.64" y="10.16" size="6.4516" layer="97">Pi &amp; Digital</text>
 <wire x1="299.72" y1="259.08" x2="289.56" y2="259.08" width="0.1524" layer="97"/>
-<wire x1="289.56" y1="259.08" x2="289.56" y2="167.64" width="0.1524" layer="97"/>
+<wire x1="289.56" y1="259.08" x2="289.56" y2="200.66" width="0.1524" layer="97"/>
 <text x="322.58" y="243.84" size="6.4516" layer="97">USB</text>
+<wire x1="289.56" y1="200.66" x2="289.56" y2="167.64" width="0.1524" layer="97"/>
 <wire x1="289.56" y1="167.64" x2="289.56" y2="91.44" width="0.1524" layer="97"/>
 <wire x1="289.56" y1="91.44" x2="289.56" y2="22.86" width="0.1524" layer="97"/>
 <wire x1="160.02" y1="256.54" x2="160.02" y2="167.64" width="0.1524" layer="97"/>
@@ -3633,6 +3192,10 @@ https://www.pycom.io/product/lopy/</description>
 <text x="205.74" y="160.02" size="6.4516" layer="97">SPI Mux</text>
 <wire x1="160.02" y1="91.44" x2="289.56" y2="91.44" width="0.1524" layer="97"/>
 <text x="210.82" y="81.28" size="6.4516" layer="97">RTC</text>
+<wire x1="289.56" y1="200.66" x2="383.54" y2="200.66" width="0.1524" layer="97"/>
+<text x="317.5" y="190.5" size="6.4516" layer="97">I2C Pullups</text>
+<text x="172.72" y="76.2" size="1.778" layer="97">Do we want this permenantly powered given the Pi can be switched?  What's the battery life like?</text>
+<text x="165.1" y="7.62" size="1.778" layer="97">Seed crystals have the wrong capacitance</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -3662,6 +3225,14 @@ https://www.pycom.io/product/lopy/</description>
 <instance part="USB2" gate="USB" x="325.12" y="226.06"/>
 <instance part="SUPPLY1" gate="G$1" x="342.9" y="233.68"/>
 <instance part="R2" gate="G$1" x="345.44" y="223.52"/>
+<instance part="U2" gate="A" x="220.98" y="53.34"/>
+<instance part="GND14" gate="1" x="205.74" y="38.1"/>
+<instance part="BAT1" gate="G$1" x="182.88" y="66.04" rot="R180"/>
+<instance part="+3V6" gate="G$1" x="205.74" y="66.04"/>
+<instance part="+3V7" gate="G$1" x="248.92" y="38.1"/>
+<instance part="GND23" gate="1" x="248.92" y="22.86"/>
+<instance part="C2" gate="G$1" x="248.92" y="30.48" rot="R90"/>
+<instance part="GND24" gate="1" x="170.18" y="63.5"/>
 </instances>
 <busses>
 </busses>
@@ -3737,6 +3308,21 @@ https://www.pycom.io/product/lopy/</description>
 <wire x1="190.5" y1="114.3" x2="190.5" y2="115.57" width="0.1524" layer="91"/>
 <junction x="190.5" y="114.3"/>
 </segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="U2" gate="A" pin="VSS"/>
+<wire x1="205.74" y1="40.64" x2="205.74" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND23" gate="1" pin="GND"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="248.92" y1="25.4" x2="248.92" y2="26.67" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND24" gate="1" pin="GND"/>
+<pinref part="BAT1" gate="G$1" pin="V-"/>
+<wire x1="170.18" y1="66.04" x2="173.99" y2="66.04" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -3759,6 +3345,16 @@ https://www.pycom.io/product/lopy/</description>
 <pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 <wire x1="180.34" y1="212.09" x2="180.34" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="VCC"/>
+<pinref part="+3V6" gate="G$1" pin="+3V3"/>
+<wire x1="205.74" y1="58.42" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="248.92" y1="35.56" x2="248.92" y2="34.29" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -3794,6 +3390,11 @@ https://www.pycom.io/product/lopy/</description>
 <wire x1="91.44" y1="220.98" x2="73.66" y2="220.98" width="0.1524" layer="91"/>
 <label x="73.66" y="220.98" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U2" gate="A" pin="SCL"/>
+<wire x1="236.22" y1="53.34" x2="254" y2="53.34" width="0.1524" layer="91"/>
+<label x="248.92" y="53.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA_3V3" class="0">
 <segment>
@@ -3805,6 +3406,11 @@ https://www.pycom.io/product/lopy/</description>
 <pinref part="PCB1" gate="G$1" pin="GPIO2"/>
 <wire x1="91.44" y1="226.06" x2="73.66" y2="226.06" width="0.1524" layer="91"/>
 <label x="73.66" y="226.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="SDA"/>
+<wire x1="236.22" y1="50.8" x2="254" y2="50.8" width="0.1524" layer="91"/>
+<label x="248.92" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI_MOSI" class="0">
@@ -3921,6 +3527,14 @@ https://www.pycom.io/product/lopy/</description>
 <wire x1="337.82" y1="223.52" x2="341.63" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="VBAT"/>
+<pinref part="BAT1" gate="G$1" pin="V+"/>
+<wire x1="205.74" y1="55.88" x2="191.77" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="191.77" y1="55.88" x2="191.77" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -3930,7 +3544,7 @@ https://www.pycom.io/product/lopy/</description>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="-12.7" y="-33.02"/>
-<instance part="U$3" gate="G$1" x="147.32" y="91.44"/>
+<instance part="U3" gate="G$1" x="147.32" y="91.44"/>
 <instance part="GND21" gate="1" x="147.32" y="55.88"/>
 <instance part="P+2" gate="1" x="142.24" y="144.78"/>
 </instances>
@@ -3939,175 +3553,175 @@ https://www.pycom.io/product/lopy/</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 <wire x1="147.32" y1="58.42" x2="147.32" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="5V"/>
+<pinref part="U3" gate="G$1" pin="5V"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="142.24" y1="129.54" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LOPY_3V3" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="3V3"/>
+<pinref part="U3" gate="G$1" pin="3V3"/>
 <wire x1="152.4" y1="129.54" x2="152.4" y2="144.78" width="0.1524" layer="91"/>
 <label x="152.4" y="139.7" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LOPY_RST" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="RST"/>
+<pinref part="U3" gate="G$1" pin="RST"/>
 <wire x1="129.54" y1="109.22" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
 <label x="116.84" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P0" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P0"/>
+<pinref part="U3" gate="G$1" pin="P0"/>
 <wire x1="165.1" y1="121.92" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
 <label x="175.26" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P1" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P1"/>
+<pinref part="U3" gate="G$1" pin="P1"/>
 <wire x1="165.1" y1="119.38" x2="182.88" y2="119.38" width="0.1524" layer="91"/>
 <label x="175.26" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P2" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P2"/>
+<pinref part="U3" gate="G$1" pin="P2"/>
 <wire x1="165.1" y1="116.84" x2="182.88" y2="116.84" width="0.1524" layer="91"/>
 <label x="175.26" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P3" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P3"/>
+<pinref part="U3" gate="G$1" pin="P3"/>
 <wire x1="165.1" y1="114.3" x2="182.88" y2="114.3" width="0.1524" layer="91"/>
 <label x="175.26" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P4" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P4"/>
+<pinref part="U3" gate="G$1" pin="P4"/>
 <wire x1="165.1" y1="111.76" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
 <label x="175.26" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P8" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P8"/>
+<pinref part="U3" gate="G$1" pin="P8"/>
 <wire x1="165.1" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
 <label x="175.26" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P9" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P9"/>
+<pinref part="U3" gate="G$1" pin="P9"/>
 <wire x1="165.1" y1="104.14" x2="182.88" y2="104.14" width="0.1524" layer="91"/>
 <label x="175.26" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P10" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P10"/>
+<pinref part="U3" gate="G$1" pin="P10"/>
 <wire x1="165.1" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
 <label x="175.26" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P11" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P11"/>
+<pinref part="U3" gate="G$1" pin="P11"/>
 <wire x1="165.1" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
 <label x="175.26" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P12" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P12"/>
+<pinref part="U3" gate="G$1" pin="P12"/>
 <wire x1="165.1" y1="96.52" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
 <label x="175.26" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P13" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P13"/>
+<pinref part="U3" gate="G$1" pin="P13"/>
 <wire x1="165.1" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
 <label x="175.26" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P14" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P14"/>
+<pinref part="U3" gate="G$1" pin="P14"/>
 <wire x1="165.1" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
 <label x="175.26" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P15" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P15"/>
+<pinref part="U3" gate="G$1" pin="P15"/>
 <wire x1="165.1" y1="88.9" x2="182.88" y2="88.9" width="0.1524" layer="91"/>
 <label x="175.26" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P16" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P16"/>
+<pinref part="U3" gate="G$1" pin="P16"/>
 <wire x1="165.1" y1="86.36" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
 <label x="175.26" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P17" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P17"/>
+<pinref part="U3" gate="G$1" pin="P17"/>
 <wire x1="165.1" y1="83.82" x2="182.88" y2="83.82" width="0.1524" layer="91"/>
 <label x="175.26" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P18" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P18"/>
+<pinref part="U3" gate="G$1" pin="P18"/>
 <wire x1="165.1" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
 <label x="175.26" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P19" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P19"/>
+<pinref part="U3" gate="G$1" pin="P19"/>
 <wire x1="165.1" y1="78.74" x2="182.88" y2="78.74" width="0.1524" layer="91"/>
 <label x="175.26" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P20" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P20"/>
+<pinref part="U3" gate="G$1" pin="P20"/>
 <wire x1="165.1" y1="76.2" x2="182.88" y2="76.2" width="0.1524" layer="91"/>
 <label x="175.26" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P21" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P21"/>
+<pinref part="U3" gate="G$1" pin="P21"/>
 <wire x1="165.1" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
 <label x="175.26" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P22" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P22"/>
+<pinref part="U3" gate="G$1" pin="P22"/>
 <wire x1="165.1" y1="71.12" x2="182.88" y2="71.12" width="0.1524" layer="91"/>
 <label x="175.26" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_P23" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P23"/>
+<pinref part="U3" gate="G$1" pin="P23"/>
 <wire x1="165.1" y1="68.58" x2="182.88" y2="68.58" width="0.1524" layer="91"/>
 <label x="175.26" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -4121,22 +3735,11 @@ https://www.pycom.io/product/lopy/</description>
 <text x="307.34" y="10.16" size="6.4516" layer="97">PSU</text>
 </plain>
 <instances>
-<instance part="U2" gate="A" x="91.44" y="208.28"/>
 <instance part="J1" gate="G$1" x="17.78" y="205.74"/>
 <instance part="D1" gate="G$1" x="38.1" y="231.14"/>
-<instance part="C1" gate="G$1" x="50.8" y="203.2" rot="R270"/>
-<instance part="R1" gate="G$1" x="58.42" y="213.36" rot="R270"/>
-<instance part="C2" gate="G$1" x="63.5" y="193.04" rot="R270"/>
-<instance part="C3" gate="G$1" x="114.3" y="193.04" rot="R270"/>
-<instance part="D2" gate="G$1" x="121.92" y="195.58" rot="R90"/>
-<instance part="C4" gate="G$1" x="139.7" y="193.04" rot="R90"/>
-<instance part="L1" gate="G$1" x="132.08" y="210.82"/>
-<instance part="GND12" gate="1" x="27.94" y="200.66"/>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
-<instance part="GND14" gate="1" x="83.82" y="180.34"/>
 <instance part="P+4" gate="1" x="195.58" y="226.06"/>
 <instance part="P+7" gate="1" x="50.8" y="233.68"/>
-<instance part="TP1" gate="G$1" x="154.94" y="208.28"/>
 <instance part="C12" gate="G$1" x="297.18" y="208.28" rot="R90"/>
 <instance part="C14" gate="G$1" x="312.42" y="208.28" rot="R90"/>
 <instance part="L2" gate="L" x="304.8" y="213.36"/>
@@ -4147,49 +3750,14 @@ https://www.pycom.io/product/lopy/</description>
 <instance part="+3V3_SMOOTH" gate="G$1" x="320.04" y="215.9"/>
 <instance part="TP2" gate="G$1" x="294.64" y="215.9"/>
 <instance part="TP3" gate="G$1" x="314.96" y="215.9"/>
+<instance part="U4" gate="G$1" x="114.3" y="213.36"/>
+<instance part="GND22" gate="1" x="101.6" y="182.88"/>
+<instance part="TP4" gate="G$1" x="129.54" y="233.68"/>
+<instance part="GND12" gate="1" x="27.94" y="200.66"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="DELAY"/>
-<wire x1="114.3" y1="203.2" x2="114.3" y2="196.85" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="OUTPUT"/>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="210.82" x2="121.92" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="D2" gate="G$1" pin="-"/>
-<wire x1="121.92" y1="210.82" x2="124.46" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="199.39" x2="121.92" y2="210.82" width="0.1524" layer="91"/>
-<junction x="121.92" y="210.82"/>
-</segment>
-</net>
-<net name="+5V_REG_OUT" class="0">
-<segment>
-<pinref part="L1" gate="G$1" pin="2"/>
-<pinref part="C4" gate="G$1" pin="P$M"/>
-<wire x1="139.7" y1="210.82" x2="139.7" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="FEEDBACK"/>
-<wire x1="139.7" y1="205.74" x2="139.7" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="205.74" x2="124.46" y2="205.74" width="0.1524" layer="91"/>
-<junction x="139.7" y="205.74"/>
-<label x="154.94" y="210.82" size="1.778" layer="95"/>
-<wire x1="124.46" y1="205.74" x2="139.7" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="210.82" x2="154.94" y2="210.82" width="0.1524" layer="91"/>
-<junction x="139.7" y="210.82"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="217.17" x2="58.42" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="241.3" x2="124.46" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="241.3" x2="124.46" y2="205.74" width="0.1524" layer="91"/>
-<junction x="124.46" y="205.74"/>
-<pinref part="TP1" gate="G$1" pin="TP"/>
-</segment>
-</net>
 <net name="+24V_UNREG_IN" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="+"/>
@@ -4202,24 +3770,7 @@ https://www.pycom.io/product/lopy/</description>
 <label x="22.86" y="231.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="FLAG"/>
-<wire x1="68.58" y1="209.55" x2="68.58" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="209.55" x2="68.58" y2="209.55" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GNDA" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="-"/>
-<wire x1="24.13" y1="203.2" x2="27.94" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="GND12" gate="1" pin="GNDA"/>
-<pinref part="J1" gate="G$1" pin="CDN"/>
-<wire x1="24.13" y1="205.74" x2="27.94" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="205.74" x2="27.94" y2="203.2" width="0.1524" layer="91"/>
-<junction x="27.94" y="203.2"/>
-</segment>
 <segment>
 <pinref part="L3" gate="L" pin="2"/>
 <pinref part="C14" gate="G$1" pin="1"/>
@@ -4230,41 +3781,7 @@ https://www.pycom.io/product/lopy/</description>
 <junction x="312.42" y="203.2"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="*SD-SS"/>
-<wire x1="68.58" y1="203.2" x2="63.5" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="203.2" x2="63.5" y2="196.85" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="GND" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="GND"/>
-<wire x1="50.8" y1="182.88" x2="63.5" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="182.88" x2="68.58" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="182.88" x2="83.82" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="182.88" x2="114.3" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="182.88" x2="121.92" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="200.66" x2="68.58" y2="182.88" width="0.1524" layer="91"/>
-<junction x="68.58" y="182.88"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="189.23" x2="114.3" y2="182.88" width="0.1524" layer="91"/>
-<junction x="114.3" y="182.88"/>
-<pinref part="D2" gate="G$1" pin="+"/>
-<wire x1="121.92" y1="191.77" x2="121.92" y2="182.88" width="0.1524" layer="91"/>
-<junction x="121.92" y="182.88"/>
-<wire x1="121.92" y1="182.88" x2="139.7" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="P$P"/>
-<wire x1="139.7" y1="187.96" x2="139.7" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="P$M"/>
-<wire x1="50.8" y1="198.12" x2="50.8" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="63.5" y1="189.23" x2="63.5" y2="182.88" width="0.1524" layer="91"/>
-<junction x="63.5" y="182.88"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<junction x="83.82" y="182.88"/>
-</segment>
 <segment>
 <pinref part="L3" gate="L" pin="1"/>
 <pinref part="C12" gate="G$1" pin="1"/>
@@ -4273,18 +3790,43 @@ https://www.pycom.io/product/lopy/</description>
 <pinref part="GND11" gate="1" pin="GND"/>
 <junction x="297.18" y="203.2"/>
 </segment>
+<segment>
+<pinref part="GND22" gate="1" pin="GND"/>
+<pinref part="U4" gate="G$1" pin="GND_IN2"/>
+<wire x1="101.6" y1="185.42" x2="81.28" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="185.42" x2="81.28" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="GND_IN1"/>
+<wire x1="81.28" y1="198.12" x2="81.28" y2="200.66" width="0.1524" layer="91"/>
+<junction x="81.28" y="198.12"/>
+<pinref part="U4" gate="G$1" pin="GND_OUT2"/>
+<wire x1="101.6" y1="185.42" x2="121.92" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="185.42" x2="121.92" y2="198.12" width="0.1524" layer="91"/>
+<junction x="101.6" y="185.42"/>
+<pinref part="U4" gate="G$1" pin="GND_OUT1"/>
+<wire x1="121.92" y1="198.12" x2="121.92" y2="200.66" width="0.1524" layer="91"/>
+<junction x="121.92" y="198.12"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="-"/>
+<wire x1="24.13" y1="203.2" x2="27.94" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="CDN"/>
+<wire x1="24.13" y1="205.74" x2="27.94" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="205.74" x2="27.94" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<junction x="27.94" y="203.2"/>
+</segment>
 </net>
 <net name="+24V" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="VIN"/>
-<pinref part="C1" gate="G$1" pin="P$P"/>
-<wire x1="68.58" y1="231.14" x2="68.58" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="208.28" x2="50.8" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="231.14" x2="68.58" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="231.14" x2="81.28" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="-"/>
 <wire x1="41.91" y1="231.14" x2="50.8" y2="231.14" width="0.1524" layer="91"/>
 <junction x="50.8" y="231.14"/>
 <pinref part="P+7" gate="1" pin="+24V"/>
+<pinref part="U4" gate="G$1" pin="IN2"/>
+<pinref part="U4" gate="G$1" pin="IN1"/>
+<wire x1="81.28" y1="228.6" x2="81.28" y2="231.14" width="0.1524" layer="91"/>
+<junction x="81.28" y="231.14"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -4313,6 +3855,19 @@ https://www.pycom.io/product/lopy/</description>
 <pinref part="TP2" gate="G$1" pin="TP"/>
 <wire x1="294.64" y1="213.36" x2="292.1" y2="213.36" width="0.1524" layer="91"/>
 <junction x="294.64" y="213.36"/>
+</segment>
+</net>
+<net name="5V4" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="OUT1"/>
+<wire x1="121.92" y1="231.14" x2="129.54" y2="231.14" width="0.1524" layer="91"/>
+<label x="132.08" y="231.14" size="1.778" layer="95"/>
+<pinref part="U4" gate="G$1" pin="OUT2"/>
+<wire x1="129.54" y1="231.14" x2="137.16" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="228.6" x2="121.92" y2="231.14" width="0.1524" layer="91"/>
+<junction x="121.92" y="231.14"/>
+<pinref part="TP4" gate="G$1" pin="TP"/>
+<junction x="129.54" y="231.14"/>
 </segment>
 </net>
 </nets>
@@ -4582,6 +4137,13 @@ https://www.pycom.io/product/lopy/</description>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="143.51" x2="48.26" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+24V"/>
+</segment>
+</net>
+<net name="5V4" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="143.51" x2="73.66" y2="149.86" width="0.1524" layer="91"/>
+<label x="73.66" y="147.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
