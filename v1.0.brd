@@ -1764,6 +1764,21 @@ Number of pins: &lt;b&gt;7&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </package>
 </packages>
 </library>
+<library name="Seeed-OPL-2017-01-Fuse-Akita">
+<packages>
+<package name="TH_5MM_14MM">
+<description>Throughhole, pitch=5.1mm, 14x3mm</description>
+<pad name="P$1" x="-2.54" y="0" drill="0.6"/>
+<pad name="P$2" x="2.54" y="0" drill="0.6"/>
+<wire x1="-7" y1="1.5" x2="7" y2="1.5" width="0.127" layer="21"/>
+<wire x1="7" y1="1.5" x2="7" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="7" y1="-1.5" x2="-7" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="-1.5" x2="-7" y2="1.5" width="0.127" layer="21"/>
+<text x="-7" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2178,6 +2193,7 @@ design rules under a new name.</description>
 <element name="X21" library="Rembrandt Electronics - JST XH Connectors v1-0 2" package="JST-XH-05-PACKAGE-ROUND-PAD" value="JST-XH-05-PIN-ROUND-PAD" x="-143.51" y="-306.07"/>
 <element name="X22" library="Rembrandt Electronics - JST XH Connectors v1-0 2" package="JST-XH-05-PACKAGE-ROUND-PAD" value="JST-XH-05-PIN-ROUND-PAD" x="-143.51" y="-321.31"/>
 <element name="X23" library="Rembrandt Electronics - JST XH Connectors v1-0 2" package="JST-XH-05-PACKAGE-ROUND-PAD" value="JST-XH-05-PIN-ROUND-PAD" x="-143.51" y="-336.55"/>
+<element name="F1" library="Seeed-OPL-2017-01-Fuse-Akita" package="TH_5MM_14MM" value="307010005_DIP_PPTC_4A_0310" x="-148.59" y="-350.52"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2771,7 +2787,11 @@ design rules under a new name.</description>
 <signal name="+24V_UNREG_IN">
 <contactref element="J1" pad="+"/>
 <contactref element="D1" pad="+"/>
-<wire x1="-99.7585" y1="71.12" x2="-75.87" y2="120.65" width="0" layer="19" extent="1-1"/>
+<contactref element="F1" pad="P$2"/>
+<contactref element="F1" pad="P$1"/>
+<wire x1="-146.05" y1="-350.52" x2="-151.13" y2="-350.52" width="0" layer="19" extent="1-1"/>
+<wire x1="-99.7585" y1="71.12" x2="-146.05" y2="-350.52" width="0" layer="19" extent="1-1"/>
+<wire x1="-75.87" y1="120.65" x2="-99.7585" y2="71.12" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+24V">
 <contactref element="D1" pad="-"/>

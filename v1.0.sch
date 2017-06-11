@@ -5189,6 +5189,50 @@ SMD type&lt;br&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Seeed-OPL-2017-01-Fuse-Akita">
+<packages>
+<package name="TH_5MM_14MM">
+<description>Throughhole, pitch=5.1mm, 14x3mm</description>
+<pad name="P$1" x="-2.54" y="0" drill="0.6"/>
+<pad name="P$2" x="2.54" y="0" drill="0.6"/>
+<wire x1="-7" y1="1.5" x2="7" y2="1.5" width="0.127" layer="21"/>
+<wire x1="7" y1="1.5" x2="7" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="7" y1="-1.5" x2="-7" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="-1.5" x2="-7" y2="1.5" width="0.127" layer="21"/>
+<text x="-7" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="FUSE">
+<description>general Fuse</description>
+<pin name="P$1" x="-7.62" y="0" visible="off" length="middle" direction="pas"/>
+<pin name="P$2" x="7.62" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="307010005_DIP_PPTC_4A_0310" prefix="F">
+<description>DIP PPTC 4A-30V;0310, RLD30P400UF 2P, SKU: 307010005</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TH_5MM_14MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5345,6 +5389,7 @@ SMD type&lt;br&gt;</description>
 <part name="X21" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="X22" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="X23" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
+<part name="F1" library="Seeed-OPL-2017-01-Fuse-Akita" deviceset="307010005_DIP_PPTC_4A_0310" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6602,6 +6647,7 @@ SMD type&lt;br&gt;</description>
 <instance part="P+3" gate="1" x="129.54" y="104.14"/>
 <instance part="C10" gate="G$1" x="121.92" y="83.82" rot="R270"/>
 <instance part="TP1" gate="G$1" x="111.76" y="101.6"/>
+<instance part="F1" gate="G$1" x="20.32" y="231.14"/>
 </instances>
 <busses>
 </busses>
@@ -6615,7 +6661,12 @@ SMD type&lt;br&gt;</description>
 <segment>
 <pinref part="D1" gate="G$1" pin="+"/>
 <wire x1="34.29" y1="231.14" x2="27.94" y2="231.14" width="0.1524" layer="91"/>
-<label x="22.86" y="231.14" size="1.778" layer="95"/>
+<pinref part="F1" gate="G$1" pin="P$2"/>
+</segment>
+<segment>
+<pinref part="F1" gate="G$1" pin="P$1"/>
+<wire x1="12.7" y1="231.14" x2="10.16" y2="231.14" width="0.1524" layer="91"/>
+<label x="10.16" y="231.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GNDA" class="0">
@@ -7050,6 +7101,8 @@ SMD type&lt;br&gt;</description>
 <text x="5.08" y="134.62" size="1.778" layer="97">Add USB to UART on board or buy?</text>
 <wire x1="248.92" y1="215.9" x2="360.68" y2="215.9" width="0.1524" layer="97"/>
 <text x="299.72" y="254" size="1.778" layer="97">RPI UART</text>
+<text x="10.16" y="248.92" size="1.778" layer="97">Should I add polyfuse on Vin?</text>
+<text x="88.9" y="137.16" size="1.778" layer="97">RS485?</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="-22.86" y="5.08"/>
