@@ -6169,6 +6169,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="3"/>
 <wire x1="129.54" y1="41.91" x2="121.92" y2="41.91" width="0.1524" layer="91"/>
 <label x="116.5" y="42" size="1.778" layer="95"/>
+<wire x1="129.54" y1="41.91" x2="129.5" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="41.91" x2="129.5" y2="41" width="0.1524" layer="91"/>
+<junction x="129.54" y="41.91"/>
+<pinref part="U7" gate="G$1" pin="26"/>
+<wire x1="144.78" y1="41.91" x2="152.4" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="41" x2="144.78" y2="41" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="41" x2="144.78" y2="41.91" width="0.1524" layer="91"/>
+<junction x="144.78" y="41.91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -6201,6 +6209,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="46.99" x2="121.92" y2="46.99" width="0.1524" layer="91"/>
 <label x="117.1" y="46.7" size="1.778" layer="95"/>
+<wire x1="129.54" y1="46.99" x2="129.4" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="129.4" y1="46.99" x2="129.4" y2="46.2" width="0.1524" layer="91"/>
+<junction x="129.54" y="46.99"/>
+<pinref part="U7" gate="G$1" pin="28"/>
+<wire x1="144.78" y1="46.99" x2="152.4" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="129.4" y1="46.2" x2="144.78" y2="46.2" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="46.2" x2="144.78" y2="46.99" width="0.1524" layer="91"/>
+<junction x="144.78" y="46.99"/>
 </segment>
 </net>
 <net name="LOPY_3V3" class="0">
@@ -6243,6 +6259,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="44.45" x2="121.92" y2="44.45" width="0.1524" layer="91"/>
 <label x="117" y="44.2" size="1.778" layer="95"/>
+<wire x1="129.54" y1="44.45" x2="129.5" y2="44.45" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="44.45" x2="129.5" y2="43.2" width="0.1524" layer="91"/>
+<junction x="129.54" y="44.45"/>
+<pinref part="U7" gate="G$1" pin="27"/>
+<wire x1="144.78" y1="44.45" x2="152.4" y2="44.45" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="43.2" x2="144.78" y2="43.2" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="43.2" x2="144.78" y2="44.45" width="0.1524" layer="91"/>
+<junction x="144.78" y="44.45"/>
 </segment>
 </net>
 <net name="LOPY_RST" class="0">
@@ -6393,6 +6417,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="4"/>
 <wire x1="129.54" y1="39.37" x2="121.92" y2="39.37" width="0.1524" layer="91"/>
 <label x="115.1" y="39.6" size="1.778" layer="95"/>
+<wire x1="129.54" y1="39.37" x2="129.6" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="129.6" y1="39.37" x2="129.6" y2="38.2" width="0.1524" layer="91"/>
+<junction x="129.54" y="39.37"/>
+<pinref part="U7" gate="G$1" pin="25"/>
+<wire x1="144.78" y1="39.37" x2="152.4" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="129.6" y1="38.2" x2="144.78" y2="38.2" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="38.2" x2="144.78" y2="39.37" width="0.1524" layer="91"/>
+<junction x="144.78" y="39.37"/>
 </segment>
 </net>
 <net name="LOPY_P14" class="0">
@@ -6405,6 +6437,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="5"/>
 <wire x1="129.54" y1="36.83" x2="121.92" y2="36.83" width="0.1524" layer="91"/>
 <label x="115.7" y="36.7" size="1.778" layer="95"/>
+<wire x1="129.54" y1="36.83" x2="129.5" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="36.83" x2="129.5" y2="35.7" width="0.1524" layer="91"/>
+<junction x="129.54" y="36.83"/>
+<pinref part="U7" gate="G$1" pin="24"/>
+<wire x1="144.78" y1="36.83" x2="152.4" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="35.7" x2="144.78" y2="35.7" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="35.7" x2="144.78" y2="36.83" width="0.1524" layer="91"/>
+<junction x="144.78" y="36.83"/>
 </segment>
 </net>
 <net name="LOPY_P15" class="0">
@@ -6417,6 +6457,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="6"/>
 <wire x1="129.54" y1="34.29" x2="121.92" y2="34.29" width="0.1524" layer="91"/>
 <label x="115.9" y="34.1" size="1.778" layer="95"/>
+<wire x1="129.54" y1="34.29" x2="129.5" y2="34.29" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="34.29" x2="129.5" y2="33.3" width="0.1524" layer="91"/>
+<junction x="129.54" y="34.29"/>
+<pinref part="U7" gate="G$1" pin="23"/>
+<wire x1="144.78" y1="34.29" x2="152.4" y2="34.29" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="33.3" x2="144.78" y2="33.3" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="33.3" x2="144.78" y2="34.29" width="0.1524" layer="91"/>
+<junction x="144.78" y="34.29"/>
 </segment>
 </net>
 <net name="LOPY_P16" class="0">
@@ -6429,6 +6477,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="7"/>
 <wire x1="129.54" y1="31.75" x2="121.92" y2="31.75" width="0.1524" layer="91"/>
 <label x="115.8" y="31.5" size="1.778" layer="95"/>
+<wire x1="129.54" y1="31.75" x2="129.4" y2="31.75" width="0.1524" layer="91"/>
+<wire x1="129.4" y1="31.75" x2="129.4" y2="30.5" width="0.1524" layer="91"/>
+<junction x="129.54" y="31.75"/>
+<pinref part="U7" gate="G$1" pin="22"/>
+<wire x1="144.78" y1="31.75" x2="152.4" y2="31.75" width="0.1524" layer="91"/>
+<wire x1="129.4" y1="30.5" x2="144.78" y2="30.5" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="30.5" x2="144.78" y2="31.75" width="0.1524" layer="91"/>
+<junction x="144.78" y="31.75"/>
 </segment>
 </net>
 <net name="LOPY_P17" class="0">
@@ -6441,6 +6497,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="8"/>
 <wire x1="129.54" y1="29.21" x2="121.92" y2="29.21" width="0.1524" layer="91"/>
 <label x="115.5" y="28.7" size="1.778" layer="95"/>
+<wire x1="129.54" y1="29.21" x2="129.5" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="29.21" x2="129.5" y2="27.8" width="0.1524" layer="91"/>
+<junction x="129.54" y="29.21"/>
+<pinref part="U7" gate="G$1" pin="21"/>
+<wire x1="144.78" y1="29.21" x2="152.4" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="27.8" x2="144.78" y2="27.8" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="27.8" x2="144.78" y2="29.21" width="0.1524" layer="91"/>
+<junction x="144.78" y="29.21"/>
 </segment>
 </net>
 <net name="LOPY_P18" class="0">
@@ -6453,6 +6517,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="9"/>
 <wire x1="129.54" y1="26.67" x2="121.92" y2="26.67" width="0.1524" layer="91"/>
 <label x="115.7" y="26.3" size="1.778" layer="95"/>
+<wire x1="129.54" y1="26.67" x2="129.5" y2="26.67" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="26.67" x2="129.5" y2="25.6" width="0.1524" layer="91"/>
+<junction x="129.54" y="26.67"/>
+<pinref part="U7" gate="G$1" pin="20"/>
+<wire x1="144.78" y1="26.67" x2="152.4" y2="26.67" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="25.6" x2="144.78" y2="25.6" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="25.6" x2="144.78" y2="26.67" width="0.1524" layer="91"/>
+<junction x="144.78" y="26.67"/>
 </segment>
 </net>
 <net name="LOPY_P19" class="0">
@@ -6465,6 +6537,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="10"/>
 <wire x1="129.54" y1="24.13" x2="121.92" y2="24.13" width="0.1524" layer="91"/>
 <label x="115.9" y="23.9" size="1.778" layer="95"/>
+<wire x1="129.54" y1="24.13" x2="129.5" y2="24.13" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="24.13" x2="129.5" y2="22.9" width="0.1524" layer="91"/>
+<junction x="129.54" y="24.13"/>
+<pinref part="U7" gate="G$1" pin="19"/>
+<wire x1="144.78" y1="24.13" x2="152.4" y2="24.13" width="0.1524" layer="91"/>
+<wire x1="129.5" y1="22.9" x2="144.78" y2="22.9" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="22.9" x2="144.78" y2="24.13" width="0.1524" layer="91"/>
+<junction x="144.78" y="24.13"/>
 </segment>
 </net>
 <net name="LOPY_P20" class="0">
@@ -6477,6 +6557,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="11"/>
 <wire x1="129.54" y1="21.59" x2="121.92" y2="21.59" width="0.1524" layer="91"/>
 <label x="115.8" y="21.7" size="1.778" layer="95"/>
+<wire x1="129.54" y1="21.59" x2="129.8" y2="21.59" width="0.1524" layer="91"/>
+<wire x1="129.8" y1="21.59" x2="129.8" y2="20.5" width="0.1524" layer="91"/>
+<junction x="129.54" y="21.59"/>
+<pinref part="U7" gate="G$1" pin="18"/>
+<wire x1="144.78" y1="21.59" x2="152.4" y2="21.59" width="0.1524" layer="91"/>
+<wire x1="129.8" y1="20.5" x2="144.78" y2="20.5" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="20.5" x2="144.78" y2="21.59" width="0.1524" layer="91"/>
+<junction x="144.78" y="21.59"/>
 </segment>
 </net>
 <net name="LOPY_P21" class="0">
@@ -6489,6 +6577,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="12"/>
 <wire x1="129.54" y1="19.05" x2="121.92" y2="19.05" width="0.1524" layer="91"/>
 <label x="116.2" y="19.5" size="1.778" layer="95"/>
+<wire x1="129.54" y1="19.05" x2="129.7" y2="19.05" width="0.1524" layer="91"/>
+<wire x1="129.7" y1="19.05" x2="129.7" y2="17.7" width="0.1524" layer="91"/>
+<junction x="129.54" y="19.05"/>
+<pinref part="U7" gate="G$1" pin="17"/>
+<wire x1="144.78" y1="19.05" x2="152.4" y2="19.05" width="0.1524" layer="91"/>
+<wire x1="129.7" y1="17.7" x2="144.78" y2="17.7" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="17.7" x2="144.78" y2="19.05" width="0.1524" layer="91"/>
+<junction x="144.78" y="19.05"/>
 </segment>
 </net>
 <net name="LOPY_P22" class="0">
@@ -6501,6 +6597,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="13"/>
 <wire x1="129.54" y1="16.51" x2="121.92" y2="16.51" width="0.1524" layer="91"/>
 <label x="115.6" y="16.9" size="1.778" layer="95"/>
+<wire x1="129.54" y1="16.51" x2="129.9" y2="16.51" width="0.1524" layer="91"/>
+<wire x1="129.9" y1="16.51" x2="129.9" y2="15.7" width="0.1524" layer="91"/>
+<junction x="129.54" y="16.51"/>
+<pinref part="U7" gate="G$1" pin="16"/>
+<wire x1="144.78" y1="16.51" x2="152.4" y2="16.51" width="0.1524" layer="91"/>
+<wire x1="129.9" y1="15.7" x2="144.78" y2="15.7" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="15.7" x2="144.78" y2="16.51" width="0.1524" layer="91"/>
+<junction x="144.78" y="16.51"/>
 </segment>
 </net>
 <net name="LOPY_P23" class="0">
@@ -6513,6 +6617,14 @@ SMD type&lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="14"/>
 <wire x1="129.54" y1="13.97" x2="121.92" y2="13.97" width="0.1524" layer="91"/>
 <label x="115.6" y="14" size="1.778" layer="95"/>
+<wire x1="129.54" y1="13.97" x2="129.6" y2="13.97" width="0.1524" layer="91"/>
+<wire x1="129.6" y1="13.97" x2="129.6" y2="10.1" width="0.1524" layer="91"/>
+<junction x="129.54" y="13.97"/>
+<pinref part="U7" gate="G$1" pin="15"/>
+<wire x1="144.78" y1="13.97" x2="152.4" y2="13.97" width="0.1524" layer="91"/>
+<wire x1="129.6" y1="10.1" x2="144.78" y2="10.1" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="10.1" x2="144.78" y2="13.97" width="0.1524" layer="91"/>
+<junction x="144.78" y="13.97"/>
 </segment>
 </net>
 <net name="LOPY_RX1" class="0">
@@ -6691,100 +6803,19 @@ SMD type&lt;br&gt;</description>
 <wire x1="284.48" y1="114.3" x2="284.48" y2="118.11" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="N$45" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="28"/>
-<wire x1="144.78" y1="46.99" x2="152.4" y2="46.99" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="27"/>
-<wire x1="144.78" y1="44.45" x2="152.4" y2="44.45" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="26"/>
-<wire x1="144.78" y1="41.91" x2="152.4" y2="41.91" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="25"/>
-<wire x1="144.78" y1="39.37" x2="152.4" y2="39.37" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="24"/>
-<wire x1="144.78" y1="36.83" x2="152.4" y2="36.83" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="23"/>
-<wire x1="144.78" y1="34.29" x2="152.4" y2="34.29" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="22"/>
-<wire x1="144.78" y1="31.75" x2="152.4" y2="31.75" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$35" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="21"/>
-<wire x1="144.78" y1="29.21" x2="152.4" y2="29.21" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="20"/>
-<wire x1="144.78" y1="26.67" x2="152.4" y2="26.67" width="0.1524" layer="91"/>
+<wire x1="127.2" y1="21.6" x2="127" y2="21.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="19"/>
-<wire x1="144.78" y1="24.13" x2="152.4" y2="24.13" width="0.1524" layer="91"/>
+<wire x1="126.5" y1="19.1" x2="126.4" y2="19.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="N$43" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="18"/>
-<wire x1="144.78" y1="21.59" x2="152.4" y2="21.59" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$39" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="17"/>
-<wire x1="144.78" y1="19.05" x2="152.4" y2="19.05" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$40" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="16"/>
-<wire x1="144.78" y1="16.51" x2="152.4" y2="16.51" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$41" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="15"/>
-<wire x1="144.78" y1="13.97" x2="152.4" y2="13.97" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$55" class="0">
-<segment>
-<wire x1="127.2" y1="47" x2="127.2" y2="52.5" width="0.1524" layer="91"/>
-<wire x1="127.2" y1="52.5" x2="148.7" y2="52.5" width="0.1524" layer="91"/>
-<wire x1="148.7" y1="52.5" x2="148.7" y2="47" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$56" class="0">
-<segment>
-<wire x1="126.8" y1="44.4" x2="126.8" y2="42.5" width="0.1524" layer="91"/>
+<wire x1="122.2" y1="16.5" x2="122.1" y2="16.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
