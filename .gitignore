@@ -51,6 +51,8 @@ eagle.epf
 
 *.eps
 
+.DS_Store
+
 # file locks introduced since 7.x
 *.lck
 
