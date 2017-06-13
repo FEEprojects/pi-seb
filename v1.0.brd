@@ -2499,6 +2499,15 @@ design rules under a new name.</description>
 <element name="SW2" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" package="SW2-12.7-12.0X3.6X3.6MM" value="SW-200D" x="-1049.02" y="-656.59">
 <attribute name="MPN" value="SW-200D" x="-1049.02" y="-656.59" size="1.778" layer="27" display="off"/>
 </element>
+<element name="C18" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" package="C0603" value="100nf" x="-1065.53" y="-659.13">
+<attribute name="MPN" value="CC0603KRX7R9BB104" x="-1065.53" y="-659.13" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R20" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" package="R0603" value="15K 1/10W" x="-1070.61" y="-660.4">
+<attribute name="MPN" value="RC0603FR-0715KL" x="-1070.61" y="-660.4" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D13" library="Seeed-Diode-2016" library_urn="urn:adsk.eagle:library:453" package="DO-214AA" value="28V-5A" x="-1076.96" y="-657.86">
+<attribute name="MPN" value="SS54B" x="-1076.96" y="-657.86" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2578,7 +2587,6 @@ design rules under a new name.</description>
 <contactref element="U9" pad="5"/>
 <contactref element="X27" pad="3"/>
 <contactref element="X28" pad="3"/>
-<contactref element="U11" pad="3"/>
 <contactref element="X14" pad="3"/>
 <contactref element="X15" pad="3"/>
 <contactref element="X16" pad="3"/>
@@ -2594,6 +2602,12 @@ design rules under a new name.</description>
 <contactref element="X25" pad="3"/>
 <contactref element="SW1" pad="2"/>
 <contactref element="SW2" pad="2"/>
+<contactref element="U11" pad="3"/>
+<contactref element="R20" pad="2"/>
+<contactref element="D13" pad="-"/>
+<contactref element="C18" pad="2"/>
+<contactref element="R20" pad="1"/>
+<contactref element="C18" pad="1"/>
 <wire x1="-909.32" y1="-325.12" x2="-909.32" y2="-354.33" width="0" layer="19" extent="1-1"/>
 <wire x1="-909.32" y1="-295.91" x2="-909.32" y2="-325.12" width="0" layer="19" extent="1-1"/>
 <wire x1="-909.32" y1="-383.54" x2="-909.32" y2="-354.33" width="0" layer="19" extent="1-1"/>
@@ -2608,6 +2622,11 @@ design rules under a new name.</description>
 <wire x1="-1036.32" y1="-621.03" x2="-1036.32" y2="-598.17" width="0" layer="19" extent="1-1"/>
 <wire x1="-1055.37" y1="-642.62" x2="-1036.32" y2="-621.03" width="0" layer="19" extent="1-1"/>
 <wire x1="-1055.37" y1="-656.59" x2="-1055.37" y2="-642.62" width="0" layer="19" extent="1-1"/>
+<wire x1="-1065.53" y1="-658.368" x2="-1055.37" y2="-656.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-1065.53" y1="-659.892" x2="-1065.53" y2="-658.368" width="0" layer="19" extent="1-1"/>
+<wire x1="-1070.61" y1="-659.638" x2="-1065.53" y2="-659.892" width="0" layer="19" extent="1-1"/>
+<wire x1="-1070.61" y1="-661.162" x2="-1070.61" y2="-659.638" width="0" layer="19" extent="1-1"/>
+<wire x1="-1074.75" y1="-657.86" x2="-1070.61" y2="-659.638" width="0" layer="19" extent="1-1"/>
 <wire x1="-142.494" y1="-269.24" x2="-909.32" y2="-295.91" width="0" layer="19" extent="1-1"/>
 <wire x1="-134.62" y1="-255.27" x2="-142.494" y2="-269.24" width="0" layer="19" extent="1-1"/>
 <wire x1="-134.62" y1="-194.31" x2="-134.62" y2="-255.27" width="0" layer="19" extent="1-1"/>
@@ -3402,6 +3421,8 @@ design rules under a new name.</description>
 <contactref element="U4" pad="P$1"/>
 <contactref element="R5" pad="2"/>
 <contactref element="U11" pad="1"/>
+<contactref element="D13" pad="+"/>
+<wire x1="-144.526" y1="-268.3256" x2="-1079.17" y2="-657.86" width="0" layer="19" extent="1-1"/>
 <wire x1="-73.66" y1="72.39" x2="-144.526" y2="-268.3256" width="0" layer="19" extent="1-1"/>
 <wire x1="-73.66" y1="74.93" x2="-73.66" y2="72.39" width="0" layer="19" extent="1-1"/>
 <wire x1="-95.58" y1="143.51" x2="-73.66" y2="74.93" width="0" layer="19" extent="1-1"/>

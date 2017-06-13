@@ -4285,6 +4285,26 @@ https://www.seeedstudio.com/Adjustable-Step-Down-DC%26DC-Converter-%280.8V-18V%2
 </device>
 </devices>
 </deviceset>
+<deviceset name="CERAMIC-100NF-50V-10%-X7R(0603)" prefix="C" uservalue="yes" library_version="1">
+<description>302010138</description>
+<gates>
+<gate name="G$1" symbol="C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="CC0603KRX7R9BB104" constant="no"/>
+<attribute name="VALUE" value="100nf"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="Rembrandt Electronics - JST XH Connectors v1-0 2">
@@ -5464,6 +5484,26 @@ type 0207, grid 10 mm</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SMD-RES-15K-1%-1/10W(0603)" prefix="R" uservalue="yes" library_version="1">
+<description>301010241</description>
+<gates>
+<gate name="G$1" symbol="RES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="RC0603FR-0715KL" constant="no"/>
+<attribute name="VALUE" value="15K 1/10W" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="SP483">
@@ -6018,6 +6058,10 @@ at 27/07/2012 14:20:03</description>
 <part name="SW1" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
 <part name="SW2" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
 <part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C18" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
+<part name="R20" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-15K-1%-1/10W(0603)" device="" value="15K 1/10W"/>
+<part name="D13" library="Seeed-Diode-2016" library_urn="urn:adsk.eagle:library:453" deviceset="SMD-DIODE-SCHOTTKY-28V-5A(DO-214AA)" device="" value="28V-5A"/>
+<part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7552,6 +7596,10 @@ at 27/07/2012 14:20:03</description>
 <instance part="U11" gate="A" x="55.88" y="204.47" rot="R270"/>
 <instance part="SW2" gate="G$1" x="228.6" y="205.74" rot="R90"/>
 <instance part="GND41" gate="1" x="228.6" y="195.58"/>
+<instance part="C18" gate="G$1" x="60.96" y="181.61" rot="R90"/>
+<instance part="R20" gate="G$1" x="50.8" y="180.34" rot="R90"/>
+<instance part="D13" gate="G$1" x="80.01" y="215.9" rot="R270"/>
+<instance part="GND40" gate="1" x="60.96" y="163.83"/>
 </instances>
 <busses>
 </busses>
@@ -7595,9 +7643,8 @@ at 27/07/2012 14:20:03</description>
 <pinref part="GND22" gate="1" pin="GND"/>
 <pinref part="U4" gate="G$1" pin="GND_IN2"/>
 <wire x1="101.6" y1="185.42" x2="81.28" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="185.42" x2="81.28" y2="186.69" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="GND_IN1"/>
-<wire x1="81.28" y1="186.69" x2="81.28" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="185.42" x2="81.28" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="198.12" x2="81.28" y2="200.66" width="0.1524" layer="91"/>
 <junction x="81.28" y="198.12"/>
 <pinref part="U4" gate="G$1" pin="GND_OUT2"/>
@@ -7607,9 +7654,6 @@ at 27/07/2012 14:20:03</description>
 <pinref part="U4" gate="G$1" pin="GND_OUT1"/>
 <wire x1="121.92" y1="198.12" x2="121.92" y2="200.66" width="0.1524" layer="91"/>
 <junction x="121.92" y="198.12"/>
-<pinref part="U11" gate="A" pin="CATHODE"/>
-<wire x1="50.8" y1="186.69" x2="81.28" y2="186.69" width="0.1524" layer="91"/>
-<junction x="81.28" y="186.69"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="-"/>
@@ -7641,11 +7685,38 @@ at 27/07/2012 14:20:03</description>
 <pinref part="GND41" gate="1" pin="GND"/>
 <wire x1="228.6" y1="199.39" x2="228.6" y2="198.12" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U11" gate="A" pin="CATHODE"/>
+<wire x1="50.8" y1="186.69" x2="50.8" y2="184.15" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<pinref part="D13" gate="G$1" pin="-"/>
+<wire x1="80.01" y1="212.09" x2="69.85" y2="212.09" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="212.09" x2="69.85" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="187.96" x2="60.96" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="187.96" x2="50.8" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="187.96" x2="50.8" y2="186.69" width="0.1524" layer="91"/>
+<junction x="50.8" y="186.69"/>
+<wire x1="69.85" y1="187.96" x2="69.85" y2="172.72" width="0.1524" layer="91"/>
+<junction x="69.85" y="187.96"/>
+<pinref part="C18" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="187.96" x2="60.96" y2="185.42" width="0.1524" layer="91"/>
+<junction x="60.96" y="187.96"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="176.53" x2="50.8" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="172.72" x2="60.96" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="172.72" x2="69.85" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="177.8" x2="60.96" y2="172.72" width="0.1524" layer="91"/>
+<junction x="60.96" y="172.72"/>
+<wire x1="60.96" y1="172.72" x2="60.96" y2="166.37" width="0.1524" layer="91"/>
+<pinref part="GND40" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+24V" class="0">
 <segment>
-<wire x1="77.47" y1="231.14" x2="81.28" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="77.47" y1="231.14" x2="80.01" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="-"/>
+<wire x1="80.01" y1="231.14" x2="81.28" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="231.14" x2="77.47" y2="231.14" width="0.1524" layer="91"/>
 <junction x="77.47" y="231.14"/>
 <pinref part="P+7" gate="1" pin="+24V"/>
@@ -7657,6 +7728,9 @@ at 27/07/2012 14:20:03</description>
 <pinref part="U11" gate="A" pin="ANODE"/>
 <wire x1="77.47" y1="226.06" x2="55.88" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="226.06" x2="55.88" y2="222.25" width="0.1524" layer="91"/>
+<pinref part="D13" gate="G$1" pin="+"/>
+<wire x1="80.01" y1="231.14" x2="80.01" y2="219.71" width="0.1524" layer="91"/>
+<junction x="80.01" y="231.14"/>
 </segment>
 </net>
 <net name="3V3_SMOOTH" class="0">
