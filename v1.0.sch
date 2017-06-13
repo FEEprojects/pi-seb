@@ -5671,6 +5671,10 @@ SMD type&lt;br&gt;</description>
 <part name="X20" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="X21" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="X22" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
+<part name="X27" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
+<part name="X24" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
+<part name="X25" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
+<part name="X26" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
 </parts>
 <sheets>
 <sheet>
@@ -6180,9 +6184,7 @@ SMD type&lt;br&gt;</description>
 <text x="132.08" y="180.34" size="1.778" layer="97">lopy I2C</text>
 <text x="210.82" y="177.8" size="1.778" layer="97">lopy SPI</text>
 <text x="30.48" y="177.8" size="1.778" layer="97">lopy UART</text>
-<text x="203.2" y="215.9" size="1.778" layer="97">Lopy SPI does not seem to use a CS</text>
 <text x="-5.08" y="60.96" size="1.778" layer="97">Do we want RST P2 &amp;P12 connected to the Pi because the Pi does weird things to GPIO on boot?</text>
-<text x="195.58" y="182.88" size="1.778" layer="97">TODO: define and connect CS to IN pin</text>
 <text x="327.66" y="157.48" size="1.778" layer="97">SPI pull up/down resistors?</text>
 <wire x1="-7.62" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="97"/>
 <wire x1="104.14" y1="55.88" x2="104.14" y2="172.72" width="0.1524" layer="97"/>
@@ -7292,28 +7294,28 @@ SMD type&lt;br&gt;</description>
 <label x="116.84" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="ADC1-" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="CH1-"/>
 <wire x1="132.08" y1="182.88" x2="119.38" y2="182.88" width="0.1524" layer="91"/>
 <label x="119.38" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="ADC2+" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="CH2+"/>
 <wire x1="132.08" y1="180.34" x2="119.38" y2="180.34" width="0.1524" layer="91"/>
 <label x="119.38" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="ADC2-" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="CH2-"/>
 <wire x1="132.08" y1="177.8" x2="119.38" y2="177.8" width="0.1524" layer="91"/>
 <label x="119.38" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="ADC3+" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="CH3+"/>
 <wire x1="132.08" y1="175.26" x2="119.38" y2="175.26" width="0.1524" layer="91"/>
@@ -7391,88 +7393,88 @@ SMD type&lt;br&gt;</description>
 <pinref part="+3V3_SMOOTH4" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="U$1" gate="A" pin="CH1+"/>
-<wire x1="132.08" y1="185.42" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
-<label x="119.38" y="185.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$24" class="0">
+<net name="ADC3-" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="CH3-"/>
 <wire x1="132.08" y1="172.72" x2="119.38" y2="172.72" width="0.1524" layer="91"/>
 <label x="119.38" y="172.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="ADC4+" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="CH4+"/>
 <wire x1="132.08" y1="170.18" x2="119.38" y2="170.18" width="0.1524" layer="91"/>
 <label x="119.38" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="ADC4-" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="CH4-"/>
 <wire x1="132.08" y1="167.64" x2="119.38" y2="167.64" width="0.1524" layer="91"/>
 <label x="119.38" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="ADC5+" class="0">
 <segment>
 <pinref part="U$2" gate="A" pin="CH1+"/>
 <wire x1="132.08" y1="91.44" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
 <label x="119.38" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$35" class="0">
+<net name="ADC5-" class="0">
 <segment>
 <pinref part="U$2" gate="A" pin="CH1-"/>
 <wire x1="132.08" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
 <label x="119.38" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="ADC6+" class="0">
 <segment>
 <pinref part="U$2" gate="A" pin="CH2+"/>
 <wire x1="132.08" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
 <label x="119.38" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="ADC6-" class="0">
 <segment>
 <pinref part="U$2" gate="A" pin="CH2-"/>
 <wire x1="132.08" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
 <label x="119.38" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$40" class="0">
+<net name="ADC7+" class="0">
 <segment>
 <pinref part="U$2" gate="A" pin="CH3+"/>
 <wire x1="132.08" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
 <label x="119.38" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$41" class="0">
+<net name="ADC7-" class="0">
 <segment>
 <pinref part="U$2" gate="A" pin="CH3-"/>
 <wire x1="132.08" y1="78.74" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
 <label x="119.38" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$42" class="0">
+<net name="ADC8+" class="0">
 <segment>
 <pinref part="U$2" gate="A" pin="CH4+"/>
 <wire x1="132.08" y1="76.2" x2="119.38" y2="76.2" width="0.1524" layer="91"/>
 <label x="119.38" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$44" class="0">
+<net name="ADC8-" class="0">
 <segment>
 <pinref part="U$2" gate="A" pin="CH4-"/>
 <wire x1="132.08" y1="73.66" x2="119.38" y2="73.66" width="0.1524" layer="91"/>
 <label x="119.38" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC1+" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="CH1+"/>
+<wire x1="132.08" y1="185.42" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
+<label x="119.38" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -7648,15 +7650,18 @@ SMD type&lt;br&gt;</description>
 <text x="22.86" y="187.96" size="1.778" layer="97">I2C can support up to 1008 slave devices</text>
 <wire x1="248.92" y1="215.9" x2="248.92" y2="261.62" width="0.1524" layer="97"/>
 <wire x1="-17.78" y1="149.86" x2="248.92" y2="149.86" width="0.1524" layer="97"/>
-<wire x1="248.92" y1="149.86" x2="248.92" y2="195.58" width="0.1524" layer="97"/>
+<wire x1="248.92" y1="149.86" x2="248.92" y2="167.64" width="0.1524" layer="97"/>
 <text x="106.68" y="187.96" size="1.778" layer="97">RPI I2C Sockets</text>
 <text x="5.08" y="134.62" size="1.778" layer="97">Add USB to UART on board or buy?</text>
+<wire x1="248.92" y1="167.64" x2="248.92" y2="195.58" width="0.1524" layer="97"/>
 <wire x1="248.92" y1="215.9" x2="360.68" y2="215.9" width="0.1524" layer="97"/>
 <text x="299.72" y="254" size="1.778" layer="97">RPI UART</text>
 <text x="10.16" y="248.92" size="1.778" layer="97">Should I add polyfuse on Vin?</text>
 <text x="88.9" y="137.16" size="1.778" layer="97">RS485?</text>
 <text x="56.7" y="130" size="3.81" layer="97">RPI RS485</text>
 <text x="173.99" y="104.14" size="1.778" layer="97">disable for these LEDS?</text>
+<wire x1="248.92" y1="167.64" x2="360.68" y2="167.64" width="0.1524" layer="97"/>
+<text x="292.1" y="177.8" size="2.54" layer="97">ADC Sockets</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="-22.86" y="5.08"/>
@@ -7790,6 +7795,34 @@ SMD type&lt;br&gt;</description>
 <instance part="X22" gate="-3" x="223.52" y="170.18"/>
 <instance part="X22" gate="-4" x="223.52" y="167.64"/>
 <instance part="X22" gate="-5" x="223.52" y="165.1"/>
+<instance part="X27" gate="-1" x="264.16" y="205.74"/>
+<instance part="X27" gate="-2" x="264.16" y="203.2"/>
+<instance part="X27" gate="-3" x="264.16" y="200.66"/>
+<instance part="X27" gate="-4" x="264.16" y="198.12"/>
+<instance part="X27" gate="-5" x="264.16" y="195.58"/>
+<instance part="X27" gate="-6" x="264.16" y="193.04"/>
+<instance part="X27" gate="-7" x="264.16" y="190.5"/>
+<instance part="X24" gate="-1" x="289.56" y="205.74"/>
+<instance part="X24" gate="-2" x="289.56" y="203.2"/>
+<instance part="X24" gate="-3" x="289.56" y="200.66"/>
+<instance part="X24" gate="-4" x="289.56" y="198.12"/>
+<instance part="X24" gate="-5" x="289.56" y="195.58"/>
+<instance part="X24" gate="-6" x="289.56" y="193.04"/>
+<instance part="X24" gate="-7" x="289.56" y="190.5"/>
+<instance part="X25" gate="-1" x="314.96" y="205.74"/>
+<instance part="X25" gate="-2" x="314.96" y="203.2"/>
+<instance part="X25" gate="-3" x="314.96" y="200.66"/>
+<instance part="X25" gate="-4" x="314.96" y="198.12"/>
+<instance part="X25" gate="-5" x="314.96" y="195.58"/>
+<instance part="X25" gate="-6" x="314.96" y="193.04"/>
+<instance part="X25" gate="-7" x="314.96" y="190.5"/>
+<instance part="X26" gate="-1" x="337.82" y="205.74"/>
+<instance part="X26" gate="-2" x="337.82" y="203.2"/>
+<instance part="X26" gate="-3" x="337.82" y="200.66"/>
+<instance part="X26" gate="-4" x="337.82" y="198.12"/>
+<instance part="X26" gate="-5" x="337.82" y="195.58"/>
+<instance part="X26" gate="-6" x="337.82" y="193.04"/>
+<instance part="X26" gate="-7" x="337.82" y="190.5"/>
 </instances>
 <busses>
 </busses>
@@ -7949,6 +7982,26 @@ SMD type&lt;br&gt;</description>
 <pinref part="X22" gate="-3" pin="S"/>
 <wire x1="220.98" y1="170.18" x2="215.9" y2="170.18" width="0.1524" layer="91"/>
 <label x="213.36" y="170.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X27" gate="-3" pin="S"/>
+<wire x1="261.62" y1="200.66" x2="256.54" y2="200.66" width="0.1524" layer="91"/>
+<label x="254" y="200.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X24" gate="-3" pin="S"/>
+<wire x1="287.02" y1="200.66" x2="281.94" y2="200.66" width="0.1524" layer="91"/>
+<label x="279.4" y="200.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X25" gate="-3" pin="S"/>
+<wire x1="312.42" y1="200.66" x2="307.34" y2="200.66" width="0.1524" layer="91"/>
+<label x="304.8" y="200.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X26" gate="-3" pin="S"/>
+<wire x1="335.28" y1="200.66" x2="330.2" y2="200.66" width="0.1524" layer="91"/>
+<label x="327.66" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI_MISO" class="0">
@@ -8538,6 +8591,26 @@ SMD type&lt;br&gt;</description>
 <wire x1="297.18" y1="241.3" x2="294.64" y2="241.3" width="0.1524" layer="91"/>
 <label x="289.56" y="241.3" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X27" gate="-1" pin="S"/>
+<wire x1="261.62" y1="205.74" x2="256.54" y2="205.74" width="0.1524" layer="91"/>
+<label x="256.54" y="205.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X24" gate="-1" pin="S"/>
+<wire x1="287.02" y1="205.74" x2="281.94" y2="205.74" width="0.1524" layer="91"/>
+<label x="281.94" y="205.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X25" gate="-1" pin="S"/>
+<wire x1="312.42" y1="205.74" x2="307.34" y2="205.74" width="0.1524" layer="91"/>
+<label x="307.34" y="205.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X26" gate="-1" pin="S"/>
+<wire x1="335.28" y1="205.74" x2="330.2" y2="205.74" width="0.1524" layer="91"/>
+<label x="330.2" y="205.74" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="3V3_SMOOTH" class="0">
 <segment>
@@ -8634,6 +8707,138 @@ SMD type&lt;br&gt;</description>
 <pinref part="X23" gate="-2" pin="S"/>
 <wire x1="297.18" y1="238.76" x2="294.64" y2="238.76" width="0.1524" layer="91"/>
 <label x="289.56" y="238.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X27" gate="-2" pin="S"/>
+<wire x1="261.62" y1="203.2" x2="256.54" y2="203.2" width="0.1524" layer="91"/>
+<label x="254" y="203.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X24" gate="-2" pin="S"/>
+<wire x1="287.02" y1="203.2" x2="281.94" y2="203.2" width="0.1524" layer="91"/>
+<label x="279.4" y="203.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X25" gate="-2" pin="S"/>
+<wire x1="312.42" y1="203.2" x2="307.34" y2="203.2" width="0.1524" layer="91"/>
+<label x="304.8" y="203.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X26" gate="-2" pin="S"/>
+<wire x1="335.28" y1="203.2" x2="330.2" y2="203.2" width="0.1524" layer="91"/>
+<label x="327.66" y="203.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC7+" class="0">
+<segment>
+<pinref part="X26" gate="-4" pin="S"/>
+<wire x1="335.28" y1="198.12" x2="330.2" y2="198.12" width="0.1524" layer="91"/>
+<label x="327.66" y="198.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC7-" class="0">
+<segment>
+<pinref part="X26" gate="-5" pin="S"/>
+<wire x1="335.28" y1="195.58" x2="330.2" y2="195.58" width="0.1524" layer="91"/>
+<label x="330.2" y="195.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC8+" class="0">
+<segment>
+<pinref part="X26" gate="-6" pin="S"/>
+<wire x1="335.28" y1="193.04" x2="330.2" y2="193.04" width="0.1524" layer="91"/>
+<label x="327.66" y="193.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC8-" class="0">
+<segment>
+<pinref part="X26" gate="-7" pin="S"/>
+<wire x1="335.28" y1="190.5" x2="330.2" y2="190.5" width="0.1524" layer="91"/>
+<label x="327.66" y="190.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC1+" class="0">
+<segment>
+<pinref part="X27" gate="-4" pin="S"/>
+<wire x1="261.62" y1="198.12" x2="256.54" y2="198.12" width="0.1524" layer="91"/>
+<label x="254" y="198.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC1-" class="0">
+<segment>
+<pinref part="X27" gate="-5" pin="S"/>
+<wire x1="261.62" y1="195.58" x2="256.54" y2="195.58" width="0.1524" layer="91"/>
+<label x="256.54" y="195.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC2+" class="0">
+<segment>
+<pinref part="X27" gate="-6" pin="S"/>
+<wire x1="261.62" y1="193.04" x2="256.54" y2="193.04" width="0.1524" layer="91"/>
+<label x="254" y="193.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC2-" class="0">
+<segment>
+<pinref part="X27" gate="-7" pin="S"/>
+<wire x1="261.62" y1="190.5" x2="256.54" y2="190.5" width="0.1524" layer="91"/>
+<label x="254" y="190.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC3+" class="0">
+<segment>
+<pinref part="X24" gate="-4" pin="S"/>
+<wire x1="287.02" y1="198.12" x2="281.94" y2="198.12" width="0.1524" layer="91"/>
+<label x="279.4" y="198.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC3-" class="0">
+<segment>
+<pinref part="X24" gate="-5" pin="S"/>
+<wire x1="287.02" y1="195.58" x2="281.94" y2="195.58" width="0.1524" layer="91"/>
+<label x="281.94" y="195.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC4+" class="0">
+<segment>
+<pinref part="X24" gate="-6" pin="S"/>
+<wire x1="287.02" y1="193.04" x2="281.94" y2="193.04" width="0.1524" layer="91"/>
+<label x="279.4" y="193.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC4-" class="0">
+<segment>
+<pinref part="X24" gate="-7" pin="S"/>
+<wire x1="287.02" y1="190.5" x2="281.94" y2="190.5" width="0.1524" layer="91"/>
+<label x="279.4" y="190.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC5+" class="0">
+<segment>
+<pinref part="X25" gate="-4" pin="S"/>
+<wire x1="312.42" y1="198.12" x2="307.34" y2="198.12" width="0.1524" layer="91"/>
+<label x="304.8" y="198.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC5-" class="0">
+<segment>
+<pinref part="X25" gate="-5" pin="S"/>
+<wire x1="312.42" y1="195.58" x2="307.34" y2="195.58" width="0.1524" layer="91"/>
+<label x="307.34" y="195.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC6+" class="0">
+<segment>
+<pinref part="X25" gate="-6" pin="S"/>
+<wire x1="312.42" y1="193.04" x2="307.34" y2="193.04" width="0.1524" layer="91"/>
+<label x="304.8" y="193.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC6-" class="0">
+<segment>
+<pinref part="X25" gate="-7" pin="S"/>
+<wire x1="312.42" y1="190.5" x2="307.34" y2="190.5" width="0.1524" layer="91"/>
+<label x="304.8" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
