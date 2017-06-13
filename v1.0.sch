@@ -5262,6 +5262,34 @@ SMD type&lt;br&gt;</description>
 <text x="-1.016" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;NAME</text>
 <text x="1.435" y="-1.605" size="0.635" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
+<package name="PR-D2.3XL6.5MM" library_version="1">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+type 0207, grid 10 mm</description>
+<wire x1="5.207" y1="0" x2="4.191" y2="0" width="0.6096" layer="51"/>
+<wire x1="-4.953" y1="0" x2="-3.937" y2="0" width="0.6096" layer="51"/>
+<wire x1="-3.048" y1="0.889" x2="-2.794" y2="1.143" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.048" y1="-0.889" x2="-2.794" y2="-1.143" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.048" y1="-1.143" x2="3.302" y2="-0.889" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.048" y1="1.143" x2="3.302" y2="0.889" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.048" y1="-0.889" x2="-3.048" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="1.143" x2="-2.413" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="1.016" x2="-2.413" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="-1.143" x2="-2.413" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="-1.016" x2="-2.413" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="1.016" x2="2.667" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="1.016" x2="-2.286" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.016" x2="2.667" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.016" x2="-2.286" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="1.143" x2="2.667" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="-1.143" x2="2.667" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="3.302" y1="-0.889" x2="3.302" y2="0.889" width="0.1524" layer="21"/>
+<pad name="1" x="-4.953" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="5.207" y="0" drill="0.8128" shape="octagon"/>
+<text x="-2.413" y="1.397" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-2.413" y="-2.921" size="0.889" layer="27" ratio="11">&gt;VALUE</text>
+<rectangle x1="3.302" y1="-0.3048" x2="4.1656" y2="0.3048" layer="21"/>
+<rectangle x1="-3.9116" y1="-0.3048" x2="-3.048" y2="0.3048" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RES" library_version="1">
@@ -5371,6 +5399,66 @@ SMD type&lt;br&gt;</description>
 <technology name="">
 <attribute name="MPN" value="RC0603JR-0710KL" constant="no"/>
 <attribute name="VALUE" value="10K 1/10W" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIP-RES-220R-5%-1/4W(PR-D2.3XL6.5MM)" prefix="R" uservalue="yes" library_version="1">
+<description>301020011</description>
+<gates>
+<gate name="G$1" symbol="RES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PR-D2.3XL6.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="FHCFR-1/4W-221J" constant="no"/>
+<attribute name="VALUE" value="220R"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIP-RES-330K-5%-1/4W(PR-D2.3XL6.5MM)" prefix="R" uservalue="yes" library_version="1">
+<description>301020021</description>
+<gates>
+<gate name="G$1" symbol="RES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PR-D2.3XL6.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="FHCFR-1/4W-334J" constant="no"/>
+<attribute name="VALUE" value="330K"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIP-RES-100R-5%-1/4W(PR-D2.3XL6.5MM)" prefix="R" uservalue="yes" library_version="1">
+<description>301020017</description>
+<gates>
+<gate name="G$1" symbol="RES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PR-D2.3XL6.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="FHCFR-1/4W-101J" constant="no"/>
+<attribute name="VALUE" value="100R"/>
 </technology>
 </technologies>
 </device>
@@ -5622,6 +5710,69 @@ at 27/07/2012 14:20:03</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Seeed-Switch" urn="urn:adsk.eagle:library:476">
+<packages>
+<package name="SW2-12.7-12.0X3.6X3.6MM" library_version="1">
+<wire x1="3.81" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0" x2="0" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="0" x2="-1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="6" y1="1.8" x2="-6" y2="1.8" width="0.127" layer="21"/>
+<wire x1="-6" y1="-1.8" x2="6" y2="-1.8" width="0.127" layer="21"/>
+<pad name="1" x="6.35" y="0" drill="0.8" shape="square" rot="R270"/>
+<pad name="2" x="-6.35" y="0" drill="0.8" rot="R270"/>
+<text x="-1.905" y="2.54" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="0.889" layer="27" ratio="11">&gt;VALUE</text>
+<rectangle x1="-1.778" y1="-5.969" x2="1.778" y2="5.969" layer="39" rot="R270"/>
+<wire x1="-6" y1="1.8" x2="-6" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-6" y1="-1.8" x2="-6" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="6" y1="1.8" x2="6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="6" y1="-1.8" x2="6" y2="-0.8" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SWITCH-TILT-2P" library_version="1">
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="0" width="0.254" layer="94"/>
+<circle x="-1.27" y="0" radius="0.889" width="0" layer="94"/>
+<pin name="2" x="-6.35" y="0" visible="off" length="short"/>
+<pin name="1" x="6.35" y="0" visible="off" length="short" rot="R180"/>
+<text x="-3.81" y="2.54" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
+<wire x1="3.81" y1="0" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
+<text x="-6.35" y="0" size="0.8128" layer="95">OFF</text>
+<text x="5.08" y="0" size="0.8128" layer="95">ON</text>
+<wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" prefix="SW" uservalue="yes" library_version="1">
+<description>311100000</description>
+<gates>
+<gate name="G$1" symbol="SWITCH-TILT-2P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SW2-12.7-12.0X3.6X3.6MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="SW-200D" constant="no"/>
+<attribute name="VALUE" value="SW-200D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5669,11 +5820,11 @@ at 27/07/2012 14:20:03</description>
 <part name="D9" library="Seeed-LED-2016" library_urn="urn:adsk.eagle:library:458" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="RED-0603"/>
 <part name="D10" library="Seeed-LED-2016" library_urn="urn:adsk.eagle:library:458" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="RED-0603"/>
 <part name="R5" library="Seeed-Resistor-2016" library_urn="urn:adsk.eagle:library:460" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
-<part name="R6" library="Seeed-Resistor-2016" library_urn="urn:adsk.eagle:library:460" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
-<part name="R7" library="Seeed-Resistor-2016" library_urn="urn:adsk.eagle:library:460" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
+<part name="R6" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-220R-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="220R"/>
+<part name="R7" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-330K-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="330K"/>
 <part name="R8" library="Seeed-Resistor-2016" library_urn="urn:adsk.eagle:library:460" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
-<part name="R9" library="Seeed-Resistor-2016" library_urn="urn:adsk.eagle:library:460" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
-<part name="R10" library="Seeed-Resistor-2016" library_urn="urn:adsk.eagle:library:460" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
+<part name="R9" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-100R-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="100R"/>
+<part name="R10" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-100R-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="100R"/>
 <part name="R11" library="Seeed-Resistor-2016" library_urn="urn:adsk.eagle:library:460" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
@@ -5783,7 +5934,6 @@ at 27/07/2012 14:20:03</description>
 <part name="R16" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100K-5%-1/10W(0603)" device="" value="100K 1/10W"/>
 <part name="R17" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100K-5%-1/10W(0603)" device="" value="100K 1/10W"/>
 <part name="P+14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V3_SMOOTH1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="+3V3_SMOOTH"/>
 <part name="+3V3_SMOOTH3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="+3V3_SMOOTH"/>
 <part name="+3V3_SMOOTH4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="+3V3_SMOOTH"/>
@@ -5865,6 +6015,9 @@ at 27/07/2012 14:20:03</description>
 <part name="F45" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F46" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F47" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="SW1" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
+<part name="SW2" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
+<part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7357,7 +7510,6 @@ at 27/07/2012 14:20:03</description>
 <text x="78.74" y="248.92" size="2.54" layer="97">DC&amp;DC</text>
 <text x="262.89" y="245.11" size="6.4516" layer="97">Pi filter for 3V3</text>
 <text x="58.42" y="238.76" size="1.778" layer="97">overvoltage protection?</text>
-<text x="185.42" y="233.68" size="1.778" layer="97">Add override switch here</text>
 <wire x1="256.54" y1="255.27" x2="256.54" y2="193.04" width="0.1524" layer="97"/>
 <wire x1="256.54" y1="193.04" x2="180.34" y2="193.04" width="0.1524" layer="97"/>
 <text x="184.15" y="247.65" size="6.4516" layer="97">Pi Power Control</text>
@@ -7396,9 +7548,10 @@ at 27/07/2012 14:20:03</description>
 <instance part="R16" gate="G$1" x="217.17" y="236.22" rot="R90"/>
 <instance part="R17" gate="G$1" x="207.01" y="207.01" rot="R90"/>
 <instance part="P+14" gate="1" x="217.17" y="246.38"/>
-<instance part="GND40" gate="1" x="209.55" y="196.85"/>
 <instance part="+3V3_SMOOTH1" gate="G$1" x="316.23" y="228.6"/>
 <instance part="U11" gate="A" x="55.88" y="204.47" rot="R270"/>
+<instance part="SW2" gate="G$1" x="228.6" y="205.74" rot="R90"/>
+<instance part="GND41" gate="1" x="228.6" y="195.58"/>
 </instances>
 <busses>
 </busses>
@@ -7484,14 +7637,9 @@ at 27/07/2012 14:20:03</description>
 <wire x1="121.92" y1="80.01" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="207.01" y1="203.2" x2="207.01" y2="199.39" width="0.1524" layer="91"/>
-<wire x1="207.01" y1="199.39" x2="209.55" y2="199.39" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="N" pin="S"/>
-<wire x1="209.55" y1="199.39" x2="213.36" y2="199.39" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="199.39" x2="213.36" y2="212.09" width="0.1524" layer="91"/>
-<pinref part="GND40" gate="1" pin="GND"/>
-<junction x="209.55" y="199.39"/>
+<pinref part="SW2" gate="G$1" pin="2"/>
+<pinref part="GND41" gate="1" pin="GND"/>
+<wire x1="228.6" y1="199.39" x2="228.6" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+24V" class="0">
@@ -7619,6 +7767,22 @@ at 27/07/2012 14:20:03</description>
 <wire x1="224.79" y1="222.25" x2="238.76" y2="222.25" width="0.1524" layer="91"/>
 <junction x="224.79" y="222.25"/>
 <label x="232.41" y="222.25" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$65" class="0">
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="207.01" y1="203.2" x2="207.01" y2="199.39" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="N" pin="S"/>
+<wire x1="207.01" y1="199.39" x2="213.36" y2="199.39" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="199.39" x2="213.36" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="208.28" x2="213.36" y2="212.09" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="208.28" x2="219.71" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="219.71" y1="208.28" x2="219.71" y2="214.63" width="0.1524" layer="91"/>
+<junction x="213.36" y="208.28"/>
+<pinref part="SW2" gate="G$1" pin="1"/>
+<wire x1="219.71" y1="214.63" x2="228.6" y2="214.63" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="214.63" x2="228.6" y2="212.09" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -7861,9 +8025,9 @@ at 27/07/2012 14:20:03</description>
 <sheet>
 <description>LEDs</description>
 <plain>
-<text x="162.56" y="93.98" size="1.778" layer="97">insert DIP switch for LED disable</text>
-<text x="2.54" y="139.7" size="1.778" layer="97">Work out all required resitor values</text>
+<text x="2.54" y="140.97" size="1.778" layer="97">Work out all required resitor values</text>
 <text x="292.1" y="-7.62" size="6.4516" layer="97">LEDs</text>
+<text x="5.08" y="134.62" size="1.778" layer="97">Done up to 3V3_SMOOTH</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="-12.7" y="-17.78"/>
@@ -7876,16 +8040,17 @@ at 27/07/2012 14:20:03</description>
 <instance part="D9" gate="G$1" x="111.76" y="129.54" rot="R270"/>
 <instance part="D10" gate="G$1" x="124.46" y="129.54" rot="R270"/>
 <instance part="R5" gate="G$1" x="48.26" y="139.7" rot="R90"/>
-<instance part="R6" gate="G$1" x="60.96" y="139.7" rot="R90"/>
+<instance part="R6" gate="G$1" x="60.96" y="138.43" rot="R90"/>
 <instance part="R7" gate="G$1" x="73.66" y="139.7" rot="R90"/>
-<instance part="R8" gate="G$1" x="88.9" y="139.7" rot="R90"/>
-<instance part="R9" gate="G$1" x="101.6" y="139.7" rot="R90"/>
+<instance part="R8" gate="G$1" x="88.9" y="140.97" rot="R90"/>
+<instance part="R9" gate="G$1" x="101.6" y="140.97" rot="R90"/>
 <instance part="R10" gate="G$1" x="111.76" y="139.7" rot="R90"/>
 <instance part="R11" gate="G$1" x="124.46" y="139.7" rot="R90"/>
 <instance part="P+5" gate="1" x="60.96" y="149.86"/>
 <instance part="P+6" gate="1" x="48.26" y="152.4"/>
 <instance part="+3V3_SMOOTH2" gate="G$1" x="111.76" y="153.67"/>
 <instance part="+3V8" gate="G$1" x="101.6" y="152.4"/>
+<instance part="SW1" gate="G$1" x="180.34" y="102.87" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7900,7 +8065,8 @@ at 27/07/2012 14:20:03</description>
 <wire x1="88.9" y1="121.92" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="121.92" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="121.92" x2="325.12" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="121.92" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="121.92" x2="325.12" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="125.73" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
 <junction x="48.26" y="121.92"/>
 <pinref part="D5" gate="G$1" pin="-"/>
@@ -7921,6 +8087,9 @@ at 27/07/2012 14:20:03</description>
 <pinref part="D10" gate="G$1" pin="-"/>
 <wire x1="124.46" y1="125.73" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
 <junction x="124.46" y="121.92"/>
+<pinref part="SW1" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="109.22" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
+<junction x="180.34" y="121.92"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -7941,14 +8110,14 @@ at 27/07/2012 14:20:03</description>
 <segment>
 <pinref part="D8" gate="G$1" pin="+"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="133.35" x2="101.6" y2="135.89" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="133.35" x2="101.6" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="D7" gate="G$1" pin="+"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="133.35" x2="88.9" y2="135.89" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="133.35" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -7962,7 +8131,7 @@ at 27/07/2012 14:20:03</description>
 <segment>
 <pinref part="D5" gate="G$1" pin="+"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="133.35" x2="60.96" y2="135.89" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="133.35" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -7975,7 +8144,7 @@ at 27/07/2012 14:20:03</description>
 <net name="+5V" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="143.51" x2="60.96" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="142.24" x2="60.96" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <wire x1="60.96" y1="147.32" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
 <junction x="60.96" y="147.32"/>
@@ -7998,14 +8167,14 @@ at 27/07/2012 14:20:03</description>
 <net name="LOPY_USB_5V" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="143.51" x2="88.9" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="144.78" x2="88.9" y2="152.4" width="0.1524" layer="91"/>
 <label x="88.9" y="147.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="143.51" x2="101.6" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="144.78" x2="101.6" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
 <label x="101.6" y="143.51" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -8016,6 +8185,13 @@ at 27/07/2012 14:20:03</description>
 <wire x1="111.76" y1="143.51" x2="111.76" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="+3V3_SMOOTH2" gate="G$1" pin="+3V3"/>
 <label x="111.76" y="143.51" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="SW1" gate="G$1" pin="2"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="180.34" y1="96.52" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -8035,7 +8211,6 @@ at 27/07/2012 14:20:03</description>
 <wire x1="248.92" y1="167.64" x2="248.92" y2="195.58" width="0.1524" layer="97"/>
 <wire x1="248.92" y1="215.9" x2="360.68" y2="215.9" width="0.1524" layer="97"/>
 <text x="299.72" y="254" size="1.778" layer="97">RPI UART</text>
-<text x="88.9" y="137.16" size="1.778" layer="97">RS485?</text>
 <text x="56.7" y="130" size="3.81" layer="97">RPI RS485</text>
 <text x="173.99" y="104.14" size="1.778" layer="97">disable for these LEDS?</text>
 <wire x1="248.92" y1="167.64" x2="360.68" y2="167.64" width="0.1524" layer="97"/>
