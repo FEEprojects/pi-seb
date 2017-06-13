@@ -1733,6 +1733,51 @@ Number of pins: &lt;b&gt;7&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </package>
 </packages>
 </library>
+<library name="Diodes_Inc_By_element14_Batch_1">
+<description>Developed by element14 :&lt;br&gt;
+element14 CAD Library consolidation.ulp
+at 27/07/2012 14:20:03</description>
+<packages>
+<package name="SOT91P240X110-3N">
+<smd name="1" x="-1.016" y="0.9144" dx="1.3208" dy="0.5588" layer="1"/>
+<smd name="2" x="-1.016" y="-0.9144" dx="1.3208" dy="0.5588" layer="1"/>
+<smd name="3" x="1.016" y="0" dx="1.3208" dy="0.5588" layer="1"/>
+<wire x1="0.7112" y1="0.6096" x2="0.7112" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.2286" y1="-1.4986" x2="0.7112" y2="-1.4986" width="0.1524" layer="21"/>
+<wire x1="0.7112" y1="-1.4986" x2="0.7112" y2="-0.6096" width="0.1524" layer="21"/>
+<wire x1="0.7112" y1="1.4986" x2="0.3048" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.2286" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.7112" y1="0.3048" x2="-0.7112" y2="-0.3048" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.0254" y2="1.1938" width="0.1524" layer="21" curve="-95"/>
+<text x="-1.8542" y="1.3462" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<wire x1="-0.7112" y1="-1.4986" x2="0.7112" y2="-1.4986" width="0" layer="51"/>
+<wire x1="0.7112" y1="-1.4986" x2="0.7112" y2="-0.254" width="0" layer="51"/>
+<wire x1="0.7112" y1="-0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
+<wire x1="0.7112" y1="0.254" x2="0.7112" y2="1.4986" width="0" layer="51"/>
+<wire x1="0.7112" y1="1.4986" x2="0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.3048" y1="1.4986" x2="-0.7112" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.4986" x2="-0.7112" y2="1.1684" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.1684" x2="-0.7112" y2="0.6604" width="0" layer="51"/>
+<wire x1="-0.7112" y1="0.6604" x2="-0.7112" y2="-0.6604" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.1684" x2="-1.2446" y2="1.1684" width="0" layer="51"/>
+<wire x1="-1.2446" y1="1.1684" x2="-1.2446" y2="0.6604" width="0" layer="51"/>
+<wire x1="-1.2446" y1="0.6604" x2="-0.7112" y2="0.6604" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-1.4986" x2="-0.7112" y2="-1.1684" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-1.1684" x2="-0.7112" y2="-0.6604" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-0.6604" x2="-1.2446" y2="-0.6604" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-0.6604" x2="-1.2446" y2="-1.1684" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-1.1684" x2="-0.7112" y2="-1.1684" width="0" layer="51"/>
+<wire x1="0.7112" y1="-0.254" x2="1.2446" y2="-0.254" width="0" layer="51"/>
+<wire x1="1.2446" y1="-0.254" x2="1.2446" y2="0.254" width="0" layer="51"/>
+<wire x1="1.2446" y1="0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51" curve="-180"/>
+<text x="-1.8542" y="1.3462" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2211,6 +2256,13 @@ design rules under a new name.</description>
 <element name="X25" library="Rembrandt Electronics - JST XH Connectors v1-0 2" package="JST-XH-07-PACKAGE-ROUND-PAD" value="JST-XH-07-PIN-ROUND-PAD" x="-132.08" y="-224.79"/>
 <element name="X26" library="Rembrandt Electronics - JST XH Connectors v1-0 2" package="JST-XH-07-PACKAGE-ROUND-PAD" value="JST-XH-07-PIN-ROUND-PAD" x="-132.08" y="-240.03"/>
 <element name="X28" library="Rembrandt Electronics - JST XH Connectors v1-0 2" package="JST-XH-05-PACKAGE-ROUND-PAD" value="JST-XH-05-PIN-ROUND-PAD" x="-134.62" y="-255.27"/>
+<element name="U11" library="Diodes_Inc_By_element14_Batch_1" package="SOT91P240X110-3N" value="BZX84C30" x="-143.51" y="-269.24">
+<attribute name="MPN" value="BZX84C30" x="-143.51" y="-269.24" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1902456" x="-143.51" y="-269.24" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="-" x="-143.51" y="-269.24" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="SOT-23-3" x="-143.51" y="-269.24" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER" value="DIODES INC." x="-143.51" y="-269.24" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2306,6 +2358,7 @@ design rules under a new name.</description>
 <contactref element="X25" pad="3"/>
 <contactref element="X26" pad="3"/>
 <contactref element="X28" pad="3"/>
+<contactref element="U11" pad="3"/>
 <wire x1="-134.62" y1="-102.87" x2="-134.62" y2="-118.11" width="0" layer="19" extent="1-1"/>
 <wire x1="-134.62" y1="-87.63" x2="-134.62" y2="-102.87" width="0" layer="19" extent="1-1"/>
 <wire x1="-134.62" y1="-72.39" x2="-134.62" y2="-87.63" width="0" layer="19" extent="1-1"/>
@@ -2397,6 +2450,7 @@ design rules under a new name.</description>
 <wire x1="-134.62" y1="-224.79" x2="-134.62" y2="-209.55" width="0" layer="19" extent="1-1"/>
 <wire x1="-134.62" y1="-240.03" x2="-134.62" y2="-224.79" width="0" layer="19" extent="1-1"/>
 <wire x1="-134.62" y1="-255.27" x2="-134.62" y2="-240.03" width="0" layer="19" extent="1-1"/>
+<wire x1="-142.494" y1="-269.24" x2="-134.62" y2="-255.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="PCB1" pad="P$1"/>
@@ -3035,9 +3089,11 @@ design rules under a new name.</description>
 <contactref element="U4" pad="P$2"/>
 <contactref element="U4" pad="P$1"/>
 <contactref element="R5" pad="2"/>
-<wire x1="-95.58" y1="143.51" x2="-40.64" y2="156.718" width="0" layer="19" extent="1-1"/>
-<wire x1="-73.66" y1="74.93" x2="-95.58" y2="143.51" width="0" layer="19" extent="1-1"/>
-<wire x1="-73.66" y1="72.39" x2="-73.66" y2="74.93" width="0" layer="19" extent="1-1"/>
+<contactref element="U11" pad="1"/>
+<wire x1="-73.66" y1="72.39" x2="-144.526" y2="-268.3256" width="0" layer="19" extent="1-1"/>
+<wire x1="-73.66" y1="74.93" x2="-73.66" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="-95.58" y1="143.51" x2="-73.66" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="-40.64" y1="156.718" x2="-95.58" y2="143.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V3_SMOOTH">
 <contactref element="L2" pad="2"/>

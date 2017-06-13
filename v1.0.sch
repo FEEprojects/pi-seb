@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5489,6 +5489,90 @@ SMD type&lt;br&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Diodes_Inc_By_element14_Batch_1">
+<description>Developed by element14 :&lt;br&gt;
+element14 CAD Library consolidation.ulp
+at 27/07/2012 14:20:03</description>
+<packages>
+<package name="SOT91P240X110-3N">
+<smd name="1" x="-1.016" y="0.9144" dx="1.3208" dy="0.5588" layer="1"/>
+<smd name="2" x="-1.016" y="-0.9144" dx="1.3208" dy="0.5588" layer="1"/>
+<smd name="3" x="1.016" y="0" dx="1.3208" dy="0.5588" layer="1"/>
+<wire x1="0.7112" y1="0.6096" x2="0.7112" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.2286" y1="-1.4986" x2="0.7112" y2="-1.4986" width="0.1524" layer="21"/>
+<wire x1="0.7112" y1="-1.4986" x2="0.7112" y2="-0.6096" width="0.1524" layer="21"/>
+<wire x1="0.7112" y1="1.4986" x2="0.3048" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.2286" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.7112" y1="0.3048" x2="-0.7112" y2="-0.3048" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.0254" y2="1.1938" width="0.1524" layer="21" curve="-95"/>
+<text x="-1.8542" y="1.3462" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<wire x1="-0.7112" y1="-1.4986" x2="0.7112" y2="-1.4986" width="0" layer="51"/>
+<wire x1="0.7112" y1="-1.4986" x2="0.7112" y2="-0.254" width="0" layer="51"/>
+<wire x1="0.7112" y1="-0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
+<wire x1="0.7112" y1="0.254" x2="0.7112" y2="1.4986" width="0" layer="51"/>
+<wire x1="0.7112" y1="1.4986" x2="0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.3048" y1="1.4986" x2="-0.7112" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.4986" x2="-0.7112" y2="1.1684" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.1684" x2="-0.7112" y2="0.6604" width="0" layer="51"/>
+<wire x1="-0.7112" y1="0.6604" x2="-0.7112" y2="-0.6604" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.1684" x2="-1.2446" y2="1.1684" width="0" layer="51"/>
+<wire x1="-1.2446" y1="1.1684" x2="-1.2446" y2="0.6604" width="0" layer="51"/>
+<wire x1="-1.2446" y1="0.6604" x2="-0.7112" y2="0.6604" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-1.4986" x2="-0.7112" y2="-1.1684" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-1.1684" x2="-0.7112" y2="-0.6604" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-0.6604" x2="-1.2446" y2="-0.6604" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-0.6604" x2="-1.2446" y2="-1.1684" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-1.1684" x2="-0.7112" y2="-1.1684" width="0" layer="51"/>
+<wire x1="0.7112" y1="-0.254" x2="1.2446" y2="-0.254" width="0" layer="51"/>
+<wire x1="1.2446" y1="-0.254" x2="1.2446" y2="0.254" width="0" layer="51"/>
+<wire x1="1.2446" y1="0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51" curve="-180"/>
+<text x="-1.8542" y="1.3462" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="BZX84C30">
+<pin name="ANODE" x="-17.78" y="0" length="middle" direction="pas"/>
+<pin name="NC" x="-17.78" y="-5.08" length="middle" direction="nc"/>
+<pin name="CATHODE" x="17.78" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.4064" layer="94"/>
+<text x="-5.207" y="8.001" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.7846" y="-15.0368" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BZX84C30" prefix="U">
+<description>350mW SURFACE MOUNT ZENER DIODE</description>
+<gates>
+<gate name="A" symbol="BZX84C30" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT91P240X110-3N">
+<connects>
+<connect gate="A" pin="ANODE" pad="1"/>
+<connect gate="A" pin="CATHODE" pad="3"/>
+<connect gate="A" pin="NC" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="BZX84C30" constant="no"/>
+<attribute name="OC_FARNELL" value="1902456" constant="no"/>
+<attribute name="OC_NEWARK" value="-" constant="no"/>
+<attribute name="PACKAGE" value="SOT-23-3" constant="no"/>
+<attribute name="SUPPLIER" value="DIODES INC." constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5676,6 +5760,7 @@ SMD type&lt;br&gt;</description>
 <part name="X25" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
 <part name="X26" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
 <part name="X28" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
+<part name="U11" library="Diodes_Inc_By_element14_Batch_1" deviceset="BZX84C30" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7029,6 +7114,7 @@ SMD type&lt;br&gt;</description>
 <instance part="P+14" gate="1" x="217.17" y="246.38"/>
 <instance part="GND40" gate="1" x="209.55" y="196.85"/>
 <instance part="+3V3_SMOOTH1" gate="G$1" x="316.23" y="228.6"/>
+<instance part="U11" gate="A" x="55.88" y="204.47" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7072,8 +7158,9 @@ SMD type&lt;br&gt;</description>
 <pinref part="GND22" gate="1" pin="GND"/>
 <pinref part="U4" gate="G$1" pin="GND_IN2"/>
 <wire x1="101.6" y1="185.42" x2="81.28" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="185.42" x2="81.28" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="185.42" x2="81.28" y2="186.69" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="GND_IN1"/>
+<wire x1="81.28" y1="186.69" x2="81.28" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="198.12" x2="81.28" y2="200.66" width="0.1524" layer="91"/>
 <junction x="81.28" y="198.12"/>
 <pinref part="U4" gate="G$1" pin="GND_OUT2"/>
@@ -7083,6 +7170,9 @@ SMD type&lt;br&gt;</description>
 <pinref part="U4" gate="G$1" pin="GND_OUT1"/>
 <wire x1="121.92" y1="198.12" x2="121.92" y2="200.66" width="0.1524" layer="91"/>
 <junction x="121.92" y="198.12"/>
+<pinref part="U11" gate="A" pin="CATHODE"/>
+<wire x1="50.8" y1="186.69" x2="81.28" y2="186.69" width="0.1524" layer="91"/>
+<junction x="81.28" y="186.69"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="-"/>
@@ -7131,6 +7221,10 @@ SMD type&lt;br&gt;</description>
 <pinref part="U4" gate="G$1" pin="IN1"/>
 <wire x1="81.28" y1="228.6" x2="81.28" y2="231.14" width="0.1524" layer="91"/>
 <junction x="81.28" y="231.14"/>
+<wire x1="77.47" y1="231.14" x2="77.47" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="U11" gate="A" pin="ANODE"/>
+<wire x1="77.47" y1="226.06" x2="55.88" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="226.06" x2="55.88" y2="222.25" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V3_SMOOTH" class="0">
