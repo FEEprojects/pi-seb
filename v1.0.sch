@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.005" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5899,6 +5899,71 @@ at 27/07/2012 14:20:03</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="MCR703A">
+<packages>
+<package name="MCR703A">
+<wire x1="-3.35" y1="3.15" x2="-3.35" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.35" y1="3.15" x2="3.35" y2="3.15" width="0.127" layer="21"/>
+<wire x1="3.35" y1="3.15" x2="3.35" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.35" y1="-3.5" x2="-3.35" y2="-3.5" width="0.127" layer="21"/>
+<dimension x1="-3.35" y1="3.15" x2="-3.35" y2="-3.5" x3="-11.45" y3="-0.175" textsize="1.27" layer="21"/>
+<wire x1="-2.4" y1="4.2" x2="-2.3" y2="4.2" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="4.2" x2="2.3" y2="4.2" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="4.2" x2="-3.35" y2="3.15" width="0.127" layer="21"/>
+<wire x1="2.3" y1="4.15" x2="3.4" y2="3.05" width="0.127" layer="21"/>
+<wire x1="-2.05" y1="-3.6" x2="-2.1" y2="-3.6" width="1.14" layer="21"/>
+<wire x1="-2.1" y1="-3.6" x2="-2.1" y2="-12" width="1.14" layer="21"/>
+<wire x1="0.05" y1="-3.55" x2="0.05" y2="-12.1" width="1.14" layer="21"/>
+<wire x1="2.5" y1="-3.7" x2="2.5" y2="-12" width="1.14" layer="21"/>
+<dimension x1="-3.35" y1="-3.5" x2="-3.35" y2="-4.5" x3="-3.8" y3="-4" textsize="1.27" layer="21"/>
+<rectangle x1="-2.95" y1="-4.6" x2="-1.1" y2="-3.55" layer="21"/>
+<rectangle x1="-0.35" y1="-3.7" x2="0.6" y2="-3.5" layer="21"/>
+<rectangle x1="-0.75" y1="-4.6" x2="0.85" y2="-3.5" layer="21"/>
+<rectangle x1="1.4" y1="-4.85" x2="3.4" y2="-3.5" layer="21"/>
+<text x="-14.95" y="-6.6" size="1.27" layer="25">&gt;Name</text>
+<text x="-15" y="-9.05" size="1.27" layer="27">&gt;Value</text>
+<pad name="P$1" x="-2.25" y="-12" drill="0.6" shape="long" rot="R90"/>
+<pad name="P$2" x="0.3" y="-12.05" drill="0.6" shape="long" rot="R90"/>
+<pad name="P$3" x="2.45" y="-11.95" drill="0.6" shape="long" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MCR703A">
+<wire x1="0" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<text x="2.54" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="C" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="G" x="-2.54" y="-2.54" visible="off" length="point" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MCR703A">
+<gates>
+<gate name="G$1" symbol="MCR703A" x="-27.94" y="17.78"/>
+</gates>
+<devices>
+<device name="" package="MCR703A">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+<connect gate="G$1" pin="G" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6149,6 +6214,7 @@ at 27/07/2012 14:20:03</description>
 <part name="F45" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="J5" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-BLACK-MALE-HEADER-VERT(16P-2.54)" device="" value="16p-2.54"/>
 <part name="J6" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-BLACK-MALE-HEADER-VERT(16P-2.54)" device="" value="16p-2.54"/>
+<part name="U$3" library="MCR703A" deviceset="MCR703A" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7746,6 +7812,7 @@ at 27/07/2012 14:20:03</description>
 <instance part="C18" gate="G$1" x="60.96" y="181.61" rot="R90"/>
 <instance part="R20" gate="G$1" x="50.8" y="180.34" rot="R90"/>
 <instance part="GND40" gate="1" x="60.96" y="163.83"/>
+<instance part="U$3" gate="G$1" x="79.93" y="215.9"/>
 </instances>
 <busses>
 </busses>
@@ -8003,6 +8070,27 @@ at 27/07/2012 14:20:03</description>
 <pinref part="SW2" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="234.95" x2="190.5" y2="234.95" width="0.1524" layer="91"/>
 <label x="191.77" y="234.95" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$77" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="C"/>
+<wire x1="79.85" y1="212.1" x2="80.03" y2="212.1" width="0.1524" layer="91"/>
+<wire x1="80.03" y1="212.1" x2="79.93" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$78" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="A"/>
+<wire x1="79.93" y1="218.44" x2="80" y2="218.89" width="0.1524" layer="91"/>
+<wire x1="80" y1="218.89" x2="80" y2="220.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$79" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="G"/>
+<wire x1="77.39" y1="213.36" x2="60.9" y2="213.26" width="0.1524" layer="91"/>
+<wire x1="60.9" y1="213.26" x2="61" y2="187.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
