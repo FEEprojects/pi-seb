@@ -74,7 +74,7 @@
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="no"/>
@@ -5345,6 +5345,26 @@ type 0207, grid 10 mm</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SMD-RES-100K-5%-1/10W(0603)" prefix="R" uservalue="yes" library_version="1">
+<description>301010089</description>
+<gates>
+<gate name="G$1" symbol="RES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="RC0603JR-07100KL" constant="no"/>
+<attribute name="VALUE" value="100K 1/10W" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="SMD-RES-10K-5%-1/10W(0603)" prefix="R" uservalue="yes" library_version="1">
 <description>301010293</description>
 <gates>
@@ -5440,26 +5460,6 @@ type 0207, grid 10 mm</description>
 <technology name="">
 <attribute name="MPN" value="RC0603FR-0715KL" constant="no"/>
 <attribute name="VALUE" value="15K 1/10W" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SMD-RES-100K-5%-1/10W(0603)" prefix="R" uservalue="yes" library_version="1">
-<description>301010089</description>
-<gates>
-<gate name="G$1" symbol="RES" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="R0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="RC0603JR-07100KL" constant="no"/>
-<attribute name="VALUE" value="100K 1/10W" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6408,6 +6408,54 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </deviceset>
 </devicesets>
 </library>
+<library name="lm2596s_DC-DC">
+<packages>
+<package name="LM2596S">
+<wire x1="0" y1="0" x2="43.18" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-21.082" width="0.127" layer="21"/>
+<wire x1="0" y1="-21.082" x2="43.18" y2="-21.082" width="0.127" layer="21"/>
+<wire x1="43.18" y1="0" x2="43.18" y2="-21.082" width="0.127" layer="21"/>
+<pad name="P$1" x="1.8415" y="-1.9685" drill="0.65" diameter="2.54" shape="square"/>
+<pad name="P$2" x="1.8415" y="-19.1135" drill="0.65" diameter="2.54" shape="square"/>
+<pad name="P$3" x="41.3385" y="-1.9685" drill="0.65" diameter="2.54" shape="square"/>
+<pad name="P$4" x="41.3385" y="-19.1135" drill="0.65" diameter="2.54" shape="square"/>
+<hole x="8.4455" y="-2.54" drill="4.8"/>
+<hole x="34.7345" y="-18.542" drill="4.9"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LM2596S_DC-DC">
+<wire x1="-48.26" y1="17.78" x2="-20.32" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="17.78" x2="-20.32" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-17.78" x2="-48.26" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-48.26" y1="-17.78" x2="-48.26" y2="17.78" width="0.254" layer="94"/>
+<pin name="P$1" x="-53.34" y="15.24" length="middle" direction="pwr"/>
+<pin name="P$2" x="-53.34" y="-15.24" length="middle" direction="pwr"/>
+<pin name="P$3" x="-15.24" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="P$4" x="-15.24" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LM2596S">
+<gates>
+<gate name="G$1" symbol="LM2596S_DC-DC" x="27.94" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="LM2596S">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 <library name="Seeed-Transistor" urn="urn:adsk.eagle:library:477">
 <packages>
 <package name="SOT-23" library_version="1">
@@ -6570,54 +6618,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </deviceset>
 </devicesets>
 </library>
-<library name="lm2596s_DC-DC">
-<packages>
-<package name="LM2596S">
-<wire x1="0" y1="0" x2="43.18" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="-21.082" width="0.127" layer="21"/>
-<wire x1="0" y1="-21.082" x2="43.18" y2="-21.082" width="0.127" layer="21"/>
-<wire x1="43.18" y1="0" x2="43.18" y2="-21.082" width="0.127" layer="21"/>
-<pad name="P$1" x="1.8415" y="-1.9685" drill="0.65" diameter="2.54" shape="square"/>
-<pad name="P$2" x="1.8415" y="-19.1135" drill="0.65" diameter="2.54" shape="square"/>
-<pad name="P$3" x="41.3385" y="-1.9685" drill="0.65" diameter="2.54" shape="square"/>
-<pad name="P$4" x="41.3385" y="-19.1135" drill="0.65" diameter="2.54" shape="square"/>
-<hole x="8.4455" y="-2.54" drill="4.8"/>
-<hole x="34.7345" y="-18.542" drill="4.9"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LM2596S_DC-DC">
-<wire x1="-48.26" y1="17.78" x2="-20.32" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="17.78" x2="-20.32" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-17.78" x2="-48.26" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-48.26" y1="-17.78" x2="-48.26" y2="17.78" width="0.254" layer="94"/>
-<pin name="P$1" x="-53.34" y="15.24" length="middle" direction="pwr"/>
-<pin name="P$2" x="-53.34" y="-15.24" length="middle" direction="pwr"/>
-<pin name="P$3" x="-15.24" y="15.24" length="middle" direction="pwr" rot="R180"/>
-<pin name="P$4" x="-15.24" y="-15.24" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LM2596S">
-<gates>
-<gate name="G$1" symbol="LM2596S_DC-DC" x="27.94" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="LM2596S">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
-<connect gate="G$1" pin="P$4" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6741,8 +6741,11 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="J4" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-BLACK-MALE-HEADER-VERT(2P-2.54)" device="" value="2p-2.54"/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U7" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-IC-SOCKET(2X14P-2.54)" device="" value="2x14p-2.54"/>
+<part name="+3V3_SMOOTH1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="+3V3_SMOOTH"/>
 <part name="+3V3_SMOOTH3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="+3V3_SMOOTH"/>
 <part name="+3V3_SMOOTH4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="+3V3_SMOOTH"/>
+<part name="+3V3_SMOOTH2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="+3V3_SMOOTH"/>
+<part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R2" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-10K-5%-1/10W(0603)" device="" value="10K 1/10W"/>
 <part name="R18" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
 <part name="R19" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
@@ -6765,6 +6768,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="F46" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F47" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="SW1" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
+<part name="SW2" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
 <part name="C18" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="R20" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-15K-1%-1/10W(0603)" device="" value="15K 1/10W"/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -6900,38 +6904,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="X12" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
 <part name="F34" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F35" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="X21" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
-<part name="F21" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="F22" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="X26" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
-<part name="F48" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="F49" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="X30" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
-<part name="F52" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="F53" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="X31" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
-<part name="F54" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="F55" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="X24" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
-<part name="F38" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="F39" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="X25" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
-<part name="F42" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="F43" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="X27" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
-<part name="F44" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="F45" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="SW2" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
-<part name="Q2" library="Seeed-Transistor" library_urn="urn:adsk.eagle:library:477" deviceset="SMD-MOSFET-P-CH-20V-6A-SSM3J328R(SOT-23)" device="" value="SSM3J328R,LF"/>
-<part name="Q4" library="Seeed-Transistor" library_urn="urn:adsk.eagle:library:477" deviceset="SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F(SOT-23)" device="" value="BSS138W-7-F"/>
-<part name="R39" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100K-5%-1/10W(0603)" device="" value="100K 1/10W"/>
-<part name="R40" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100K-5%-1/10W(0603)" device="" value="100K 1/10W"/>
-<part name="Q5" library="Seeed-Transistor" library_urn="urn:adsk.eagle:library:477" deviceset="SMD-MOSFET-P-CH-20V-6A-SSM3J328R(SOT-23)" device="" value="SSM3J328R,LF"/>
-<part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="U$5" library="lm2596s_DC-DC" deviceset="LM2596S" device=""/>
 <part name="X13" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="F5" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F6" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
@@ -6956,9 +6928,38 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="X20" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="F19" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F20" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="X21" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
+<part name="F21" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="F22" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="X23" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="F36" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F37" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="X26" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
+<part name="F48" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="F49" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="X30" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
+<part name="F52" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="F53" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="X31" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
+<part name="F54" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="F55" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="X24" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
+<part name="F38" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="F39" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="X25" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
+<part name="F42" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="F43" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="X27" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
+<part name="F44" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="F45" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="U$5" library="lm2596s_DC-DC" deviceset="LM2596S" device=""/>
+<part name="Q2" library="Seeed-Transistor" library_urn="urn:adsk.eagle:library:477" deviceset="SMD-MOSFET-P-CH-20V-6A-SSM3J328R(SOT-23)" device="" value="SSM3J328R,LF"/>
+<part name="Q4" library="Seeed-Transistor" library_urn="urn:adsk.eagle:library:477" deviceset="SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F(SOT-23)" device="" value="BSS138W-7-F"/>
+<part name="R39" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100K-5%-1/10W(0603)" device="" value="100K 1/10W"/>
+<part name="R40" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100K-5%-1/10W(0603)" device="" value="100K 1/10W"/>
+<part name="Q5" library="Seeed-Transistor" library_urn="urn:adsk.eagle:library:477" deviceset="SMD-MOSFET-P-CH-20V-6A-SSM3J328R(SOT-23)" device="" value="SSM3J328R,LF"/>
+<part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7041,7 +7042,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="TP6" gate="G$1" x="351.79" y="160.02"/>
 <instance part="TP7" gate="G$1" x="355.6" y="154.94"/>
 <instance part="GND44" gate="1" x="351.79" y="138.43"/>
-<instance part="+3V10" gate="G$1" x="81.28" y="190.5" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7196,6 +7196,9 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <pinref part="PCB1" gate="G$1" pin="3V3@1"/>
 <wire x1="71.12" y1="231.14" x2="91.44" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="3V3@17"/>
+<wire x1="91.44" y1="190.5" x2="91.44" y2="231.14" width="0.1524" layer="91"/>
+<junction x="91.44" y="231.14"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="VDD"/>
@@ -7231,12 +7234,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <wire x1="323.85" y1="232.41" x2="331.47" y2="232.41" width="0.1524" layer="91"/>
 <wire x1="323.85" y1="234.95" x2="323.85" y2="232.41" width="0.1524" layer="91"/>
 <junction x="323.85" y="232.41"/>
-</segment>
-<segment>
-<pinref part="PCB1" gate="G$1" pin="3V3@17"/>
-<wire x1="91.44" y1="190.5" x2="83.82" y2="190.5" width="0.1524" layer="91"/>
-<label x="81.28" y="190.5" size="1.778" layer="95"/>
-<pinref part="+3V10" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="SCL_3V3" class="0">
@@ -7732,19 +7729,27 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <junction x="364.49" y="182.88"/>
 </segment>
 </net>
+<net name="N$119" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="SCL"/>
+<wire x1="345.44" y1="172.72" x2="359.41" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="R37" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$120" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="SDA"/>
+<wire x1="345.44" y1="167.64" x2="358.14" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="R38" gate="G$1" pin="1"/>
+<wire x1="358.14" y1="167.64" x2="359.41" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="364.49" y1="167.64" x2="359.41" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="ID_SD" class="0">
 <segment>
 <pinref part="PCB1" gate="G$1" pin="ID_SD*"/>
 <wire x1="91.44" y1="165.1" x2="81.28" y2="165.1" width="0.1524" layer="91"/>
 <label x="78.74" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U8" gate="G$1" pin="SDA"/>
-<wire x1="345.44" y1="167.64" x2="364.49" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="R38" gate="G$1" pin="1"/>
-<wire x1="364.49" y1="167.64" x2="378.46" y2="167.64" width="0.1524" layer="91"/>
-<junction x="364.49" y="167.64"/>
-<label x="375.92" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ID_SC" class="0">
@@ -7752,14 +7757,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="PCB1" gate="G$1" pin="ID_SC*"/>
 <wire x1="119.38" y1="165.1" x2="130.81" y2="165.1" width="0.1524" layer="91"/>
 <label x="132.08" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U8" gate="G$1" pin="SCL"/>
-<wire x1="345.44" y1="172.72" x2="359.41" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="R37" gate="G$1" pin="1"/>
-<wire x1="359.41" y1="172.72" x2="378.46" y2="172.72" width="0.1524" layer="91"/>
-<junction x="359.41" y="172.72"/>
-<label x="375.92" y="172.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$97" class="0">
@@ -8676,21 +8673,22 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <plain>
 <text x="307.34" y="10.16" size="6.4516" layer="97">PSU</text>
 <wire x1="5.08" y1="152.4" x2="180.34" y2="154.94" width="0.1524" layer="97"/>
-<wire x1="180.34" y1="154.94" x2="180.34" y2="256.54" width="0.1524" layer="97"/>
-<wire x1="180.34" y1="154.94" x2="180.34" y2="142.24" width="0.1524" layer="97"/>
+<wire x1="180.34" y1="154.94" x2="180.34" y2="175.26" width="0.1524" layer="97"/>
+<wire x1="180.34" y1="175.26" x2="180.34" y2="256.54" width="0.1524" layer="97"/>
+<wire x1="180.34" y1="154.94" x2="180.34" y2="7.62" width="0.1524" layer="97"/>
 <text x="81.28" y="132.08" size="2.54" layer="97">LDO</text>
 <text x="78.74" y="248.92" size="2.54" layer="97">DC&amp;DC</text>
 <text x="262.89" y="245.11" size="6.4516" layer="97">Pi filter for 3V3</text>
 <text x="58.42" y="238.76" size="1.778" layer="97">overvoltage protection?</text>
-<wire x1="180.34" y1="142.24" x2="180.34" y2="7.62" width="0.1524" layer="97"/>
 <wire x1="256.54" y1="255.27" x2="256.54" y2="193.04" width="0.1524" layer="97"/>
-<text x="184.15" y="176.53" size="6.4516" layer="97">Pi Power Control</text>
+<text x="184.15" y="247.65" size="6.4516" layer="97">Pi Power Control</text>
 <wire x1="256.54" y1="193.04" x2="330.2" y2="193.04" width="0.1524" layer="97"/>
 <wire x1="330.2" y1="193.04" x2="330.2" y2="256.54" width="0.1524" layer="97"/>
 <wire x1="330.2" y1="256.54" x2="331.47" y2="256.54" width="0.1524" layer="97"/>
 <text x="74.93" y="209.55" size="1.778" layer="97">my library</text>
-<wire x1="256.54" y1="193.04" x2="256.54" y2="142.24" width="0.1524" layer="97"/>
-<wire x1="256.54" y1="142.24" x2="180.34" y2="142.24" width="0.1524" layer="97"/>
+<wire x1="256.54" y1="193.04" x2="255.27" y2="193.04" width="0.1524" layer="97"/>
+<wire x1="255.27" y1="193.04" x2="255.27" y2="175.26" width="0.1524" layer="97"/>
+<wire x1="255.27" y1="175.26" x2="180.34" y2="175.26" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="17.78" y="205.74"/>
@@ -8716,21 +8714,22 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="C10" gate="G$1" x="121.92" y="83.82" rot="R270"/>
 <instance part="TP1" gate="G$1" x="111.76" y="101.6"/>
 <instance part="F1" gate="G$1" x="44.45" y="231.14"/>
+<instance part="+3V3_SMOOTH1" gate="G$1" x="316.23" y="228.6"/>
 <instance part="U11" gate="A" x="49.53" y="208.28" rot="R90"/>
+<instance part="SW2" gate="G$1" x="191.77" y="214.63" rot="R90"/>
 <instance part="C18" gate="G$1" x="60.96" y="181.61" rot="R90"/>
 <instance part="R20" gate="G$1" x="50.8" y="180.34" rot="R90"/>
 <instance part="GND40" gate="1" x="60.96" y="163.83"/>
 <instance part="U$3" gate="G$1" x="81.28" y="215.9"/>
 <instance part="U$4" gate="G$1" x="86.36" y="99.06"/>
-<instance part="SW2" gate="G$1" x="199.39" y="229.87" rot="R90"/>
-<instance part="Q2" gate="G$1" x="227.33" y="229.87"/>
-<instance part="Q4" gate="G$1" x="214.63" y="217.17"/>
-<instance part="R39" gate="G$1" x="214.63" y="238.76" rot="R90"/>
-<instance part="R40" gate="G$1" x="203.2" y="205.74" rot="R90"/>
-<instance part="Q5" gate="G$1" x="241.3" y="224.79" rot="R90"/>
-<instance part="GND45" gate="1" x="195.58" y="193.04"/>
-<instance part="P+1" gate="1" x="220.98" y="251.46"/>
 <instance part="U$5" gate="G$1" x="137.16" y="215.9"/>
+<instance part="Q2" gate="G$1" x="219.71" y="214.63"/>
+<instance part="Q4" gate="G$1" x="207.01" y="201.93"/>
+<instance part="R39" gate="G$1" x="207.01" y="223.52" rot="R90"/>
+<instance part="R40" gate="G$1" x="195.58" y="190.5" rot="R90"/>
+<instance part="Q5" gate="G$1" x="233.68" y="209.55" rot="R90"/>
+<instance part="GND45" gate="1" x="187.96" y="177.8"/>
+<instance part="P+1" gate="1" x="213.36" y="236.22"/>
 </instances>
 <busses>
 </busses>
@@ -8764,17 +8763,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <wire x1="276.86" y1="215.9" x2="276.86" y2="217.17" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <junction x="276.86" y="215.9"/>
-</segment>
-<segment>
-<pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="101.6" y1="185.42" x2="81.28" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="185.42" x2="81.28" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="185.42" x2="121.92" y2="185.42" width="0.1524" layer="91"/>
-<junction x="101.6" y="185.42"/>
-<pinref part="U$5" gate="G$1" pin="P$4"/>
-<wire x1="121.92" y1="200.66" x2="121.92" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="P$2"/>
-<wire x1="83.82" y1="200.66" x2="81.28" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="-"/>
@@ -8817,38 +8805,42 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <wire x1="81.28" y1="213.36" x2="81.28" y2="212.09" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="195.58" y1="198.12" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$2"/>
+<wire x1="83.82" y1="200.66" x2="83.82" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$4"/>
+<wire x1="83.82" y1="187.96" x2="101.6" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="187.96" x2="121.92" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="187.96" x2="121.92" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="101.6" y1="187.96" x2="101.6" y2="185.42" width="0.1524" layer="91"/>
+<junction x="101.6" y="187.96"/>
+</segment>
+<segment>
+<wire x1="187.96" y1="182.88" x2="233.68" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="Q5" gate="G$1" pin="G"/>
-<wire x1="203.2" y1="198.12" x2="214.63" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="214.63" y1="198.12" x2="241.3" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="198.12" x2="254" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="219.71" x2="241.3" y2="198.12" width="0.1524" layer="91"/>
-<junction x="241.3" y="198.12"/>
+<wire x1="233.68" y1="182.88" x2="246.38" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="204.47" x2="233.68" y2="182.88" width="0.1524" layer="91"/>
+<junction x="233.68" y="182.88"/>
 <pinref part="GND45" gate="1" pin="GND"/>
-<wire x1="195.58" y1="198.12" x2="195.58" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="Q4" gate="G$1" pin="S"/>
-<wire x1="214.63" y1="212.09" x2="214.63" y2="198.12" width="0.1524" layer="91"/>
-<junction x="214.63" y="198.12"/>
-<pinref part="R40" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="201.93" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
-<junction x="203.2" y="198.12"/>
+<wire x1="187.96" y1="182.88" x2="187.96" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+24V" class="0">
 <segment>
+<wire x1="77.47" y1="231.14" x2="80.01" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="-"/>
-<wire x1="77.47" y1="231.14" x2="81.28" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="231.14" x2="77.47" y2="231.14" width="0.1524" layer="91"/>
 <junction x="77.47" y="231.14"/>
 <pinref part="P+7" gate="1" pin="+24V"/>
 <wire x1="77.47" y1="231.14" x2="77.47" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="231.14" x2="81.28" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="231.14" x2="80.01" y2="218.44" width="0.1524" layer="91"/>
+<junction x="80.01" y="231.14"/>
 <pinref part="U11" gate="A" pin="CATHODE"/>
 <wire x1="54.61" y1="226.06" x2="77.47" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="A"/>
+<wire x1="81.28" y1="218.44" x2="80.01" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="P$1"/>
-<wire x1="83.82" y1="231.14" x2="81.28" y2="231.14" width="0.1524" layer="91"/>
-<junction x="81.28" y="231.14"/>
+<wire x1="83.82" y1="231.14" x2="80.01" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V3_SMOOTH" class="0">
@@ -8860,9 +8852,10 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <wire x1="292.1" y1="226.06" x2="294.64" y2="226.06" width="0.1524" layer="91"/>
 <junction x="292.1" y="226.06"/>
 <pinref part="TP3" gate="G$1" pin="TP"/>
-<wire x1="294.64" y1="226.06" x2="312.42" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="226.06" x2="316.23" y2="226.06" width="0.1524" layer="91"/>
 <junction x="294.64" y="226.06"/>
-<label x="299.72" y="226.06" size="1.778" layer="95"/>
+<pinref part="+3V3_SMOOTH1" gate="G$1" pin="+3V3"/>
+<label x="297.18" y="226.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -8881,12 +8874,12 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </net>
 <net name="5V35" class="0">
 <segment>
+<wire x1="121.92" y1="231.14" x2="129.54" y2="231.14" width="0.1524" layer="91"/>
 <label x="132.08" y="231.14" size="1.778" layer="95"/>
 <wire x1="129.54" y1="231.14" x2="137.16" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="TP4" gate="G$1" pin="TP"/>
-<pinref part="U$5" gate="G$1" pin="P$3"/>
-<wire x1="121.92" y1="231.14" x2="129.54" y2="231.14" width="0.1524" layer="91"/>
 <junction x="129.54" y="231.14"/>
+<pinref part="U$5" gate="G$1" pin="P$3"/>
 </segment>
 <segment>
 <label x="48.26" y="101.6" size="1.778" layer="95"/>
@@ -8915,12 +8908,34 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <segment>
 <pinref part="R39" gate="G$1" pin="2"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
-<wire x1="214.63" y1="242.57" x2="220.98" y2="242.57" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="242.57" x2="227.33" y2="242.57" width="0.1524" layer="91"/>
-<wire x1="227.33" y1="242.57" x2="227.33" y2="234.95" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="242.57" x2="220.98" y2="248.92" width="0.1524" layer="91"/>
-<junction x="220.98" y="242.57"/>
+<wire x1="207.01" y1="227.33" x2="213.36" y2="227.33" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="227.33" x2="219.71" y2="227.33" width="0.1524" layer="91"/>
+<wire x1="219.71" y1="227.33" x2="219.71" y2="219.71" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="227.33" x2="213.36" y2="233.68" width="0.1524" layer="91"/>
+<junction x="213.36" y="227.33"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
+</segment>
+</net>
+<net name="PI_PWR_CTRL" class="0">
+<segment>
+<pinref part="Q4" gate="G$1" pin="G"/>
+<wire x1="201.93" y1="201.93" x2="195.58" y2="201.93" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="201.93" x2="191.77" y2="201.93" width="0.1524" layer="91"/>
+<wire x1="191.77" y1="201.93" x2="187.96" y2="201.93" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="201.93" x2="195.58" y2="194.31" width="0.1524" layer="91"/>
+<junction x="195.58" y="201.93"/>
+<pinref part="R40" gate="G$1" pin="2"/>
+<label x="181.61" y="201.93" size="1.778" layer="95"/>
+<pinref part="SW2" gate="G$1" pin="2"/>
+<wire x1="191.77" y1="208.28" x2="191.77" y2="201.93" width="0.1524" layer="91"/>
+<junction x="191.77" y="201.93"/>
+</segment>
+</net>
+<net name="PI_5V" class="0">
+<segment>
+<pinref part="Q5" gate="G$1" pin="S"/>
+<wire x1="238.76" y1="209.55" x2="245.11" y2="209.55" width="0.1524" layer="91"/>
+<label x="248.92" y="209.55" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$68" class="0">
@@ -8928,6 +8943,18 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="D1" gate="G$1" pin="+"/>
 <pinref part="F1" gate="G$1" pin="P$2"/>
 <wire x1="63.5" y1="231.14" x2="52.07" y2="231.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LOPY_3V3" class="0">
+<segment>
+<pinref part="SW2" gate="G$1" pin="1"/>
+<wire x1="191.77" y1="220.98" x2="181.61" y2="220.98" width="0.1524" layer="91"/>
+<label x="182.88" y="220.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$78" class="0">
+<segment>
+<wire x1="80" y1="218.89" x2="80" y2="220.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$80" class="0">
@@ -8948,51 +8975,34 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <wire x1="78.74" y1="213.36" x2="68.58" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PI_PWR_CTRL" class="0">
-<segment>
-<pinref part="Q4" gate="G$1" pin="G"/>
-<wire x1="209.55" y1="217.17" x2="203.2" y2="217.17" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="217.17" x2="199.39" y2="217.17" width="0.1524" layer="91"/>
-<wire x1="199.39" y1="217.17" x2="195.58" y2="217.17" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="217.17" x2="203.2" y2="209.55" width="0.1524" layer="91"/>
-<junction x="203.2" y="217.17"/>
-<pinref part="R40" gate="G$1" pin="2"/>
-<pinref part="SW2" gate="G$1" pin="2"/>
-<wire x1="199.39" y1="223.52" x2="199.39" y2="217.17" width="0.1524" layer="91"/>
-<junction x="199.39" y="217.17"/>
-<label x="185.42" y="217.17" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PI_5V" class="0">
-<segment>
-<pinref part="Q5" gate="G$1" pin="S"/>
-<wire x1="246.38" y1="224.79" x2="252.73" y2="224.79" width="0.1524" layer="91"/>
-<label x="246.38" y="226.06" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LOPY_3V3" class="0">
-<segment>
-<pinref part="SW2" gate="G$1" pin="1"/>
-<wire x1="199.39" y1="236.22" x2="189.23" y2="236.22" width="0.1524" layer="91"/>
-<label x="187.96" y="236.22" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$123" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="G"/>
-<wire x1="222.25" y1="229.87" x2="214.63" y2="229.87" width="0.1524" layer="91"/>
-<wire x1="214.63" y1="229.87" x2="214.63" y2="234.95" width="0.1524" layer="91"/>
+<wire x1="214.63" y1="214.63" x2="207.01" y2="214.63" width="0.1524" layer="91"/>
+<wire x1="207.01" y1="214.63" x2="207.01" y2="219.71" width="0.1524" layer="91"/>
 <pinref part="R39" gate="G$1" pin="1"/>
 <pinref part="Q4" gate="G$1" pin="D"/>
-<wire x1="214.63" y1="229.87" x2="214.63" y2="222.25" width="0.1524" layer="91"/>
-<junction x="214.63" y="229.87"/>
+<wire x1="207.01" y1="214.63" x2="207.01" y2="207.01" width="0.1524" layer="91"/>
+<junction x="207.01" y="214.63"/>
+</segment>
+</net>
+<net name="N$127" class="0">
+<segment>
+<pinref part="Q4" gate="G$1" pin="S"/>
+<wire x1="207.01" y1="196.85" x2="207.01" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$128" class="0">
+<segment>
+<pinref part="R40" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="186.69" x2="195.58" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$122" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="S"/>
 <pinref part="Q5" gate="G$1" pin="D"/>
-<wire x1="227.33" y1="224.79" x2="236.22" y2="224.79" width="0.1524" layer="91"/>
+<wire x1="219.71" y1="209.55" x2="228.6" y2="209.55" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -9252,6 +9262,8 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="R10" gate="G$1" x="111.76" y="139.7" rot="R90"/>
 <instance part="P+5" gate="1" x="60.96" y="149.86"/>
 <instance part="P+6" gate="1" x="48.26" y="152.4"/>
+<instance part="+3V3_SMOOTH2" gate="G$1" x="111.76" y="153.67"/>
+<instance part="+3V8" gate="G$1" x="101.6" y="152.4"/>
 <instance part="SW1" gate="G$1" x="83.82" y="105.41" rot="R90"/>
 <instance part="D13" gate="G$1" x="124.46" y="129.54" rot="R270"/>
 <instance part="R21" gate="G$1" x="124.46" y="138.43" rot="R90"/>
@@ -9265,7 +9277,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="SW4" gate="G$1" x="27.94" y="105.41" rot="R90"/>
 <instance part="R35" gate="G$1" x="5.08" y="140.97" rot="R90"/>
 <instance part="D11" gate="G$1" x="5.08" y="129.54" rot="R270"/>
-<instance part="+3V8" gate="G$1" x="101.6" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -9335,6 +9346,22 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="33.02" y="147.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
+<net name="+3V3" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="144.78" x2="101.6" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="+3V8" gate="G$1" pin="+3V3"/>
+<label x="101.6" y="143.51" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="+3V3_SMOOTH" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="143.51" x2="111.76" y2="151.13" width="0.1524" layer="91"/>
+<pinref part="+3V3_SMOOTH2" gate="G$1" pin="+3V3"/>
+<label x="111.76" y="143.51" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="SW1" gate="G$1" pin="2"/>
@@ -9380,15 +9407,13 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <segment>
 <pinref part="D8" gate="G$1" pin="-"/>
 <wire x1="101.6" y1="125.73" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="D9" gate="G$1" pin="-"/>
+<wire x1="111.76" y1="125.73" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="D13" gate="G$1" pin="-"/>
 <wire x1="124.46" y1="125.73" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="D9" gate="G$1" pin="-"/>
 <wire x1="111.76" y1="121.92" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="125.73" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
 <junction x="111.76" y="121.92"/>
-<pinref part="SW3" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="121.92" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$87" class="0">
@@ -9396,6 +9421,12 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="D13" gate="G$1" pin="+"/>
 <pinref part="R21" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="133.35" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$89" class="0">
+<segment>
+<pinref part="SW3" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="121.92" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$77" class="0">
@@ -9448,20 +9479,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="R35" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="144.78" x2="5.08" y2="154.94" width="0.1524" layer="91"/>
 <label x="0" y="154.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="3V3_SMOOTH" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="143.51" x2="111.76" y2="147.32" width="0.1524" layer="91"/>
-<label x="111.76" y="144.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="+3V3" class="0">
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="144.78" x2="101.6" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="+3V8" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 </nets>
@@ -9583,6 +9600,62 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="X12" gate="-7" x="212.09" y="217.17"/>
 <instance part="F34" gate="G$1" x="203.2" y="232.41"/>
 <instance part="F35" gate="G$1" x="203.2" y="229.87"/>
+<instance part="X13" gate="-1" x="17.78" y="210.82"/>
+<instance part="X13" gate="-2" x="17.78" y="208.28"/>
+<instance part="X13" gate="-3" x="17.78" y="205.74"/>
+<instance part="X13" gate="-4" x="17.78" y="203.2"/>
+<instance part="X13" gate="-5" x="17.78" y="200.66"/>
+<instance part="F5" gate="G$1" x="8.89" y="210.82"/>
+<instance part="F6" gate="G$1" x="6.35" y="208.28"/>
+<instance part="X14" gate="-1" x="17.78" y="195.58"/>
+<instance part="X14" gate="-2" x="17.78" y="193.04"/>
+<instance part="X14" gate="-3" x="17.78" y="190.5"/>
+<instance part="X14" gate="-4" x="17.78" y="187.96"/>
+<instance part="X14" gate="-5" x="17.78" y="185.42"/>
+<instance part="F7" gate="G$1" x="8.89" y="195.58"/>
+<instance part="F8" gate="G$1" x="6.35" y="193.04"/>
+<instance part="X15" gate="-1" x="17.78" y="177.8"/>
+<instance part="X15" gate="-2" x="17.78" y="175.26"/>
+<instance part="X15" gate="-3" x="17.78" y="172.72"/>
+<instance part="X15" gate="-4" x="17.78" y="170.18"/>
+<instance part="X15" gate="-5" x="17.78" y="167.64"/>
+<instance part="F9" gate="G$1" x="8.89" y="177.8"/>
+<instance part="F10" gate="G$1" x="6.35" y="175.26"/>
+<instance part="X16" gate="-1" x="82.55" y="210.82"/>
+<instance part="X16" gate="-2" x="82.55" y="208.28"/>
+<instance part="X16" gate="-3" x="82.55" y="205.74"/>
+<instance part="X16" gate="-4" x="82.55" y="203.2"/>
+<instance part="X16" gate="-5" x="82.55" y="200.66"/>
+<instance part="F11" gate="G$1" x="73.66" y="210.82"/>
+<instance part="F12" gate="G$1" x="71.12" y="208.28"/>
+<instance part="X17" gate="-1" x="67.31" y="193.04"/>
+<instance part="X17" gate="-2" x="67.31" y="190.5"/>
+<instance part="X17" gate="-3" x="67.31" y="187.96"/>
+<instance part="X17" gate="-4" x="67.31" y="185.42"/>
+<instance part="X17" gate="-5" x="67.31" y="182.88"/>
+<instance part="F13" gate="G$1" x="58.42" y="193.04"/>
+<instance part="F14" gate="G$1" x="55.88" y="190.5"/>
+<instance part="X18" gate="-1" x="60.96" y="171.45"/>
+<instance part="X18" gate="-2" x="60.96" y="168.91"/>
+<instance part="X18" gate="-3" x="60.96" y="166.37"/>
+<instance part="X18" gate="-4" x="60.96" y="163.83"/>
+<instance part="X18" gate="-5" x="60.96" y="161.29"/>
+<instance part="F15" gate="G$1" x="52.07" y="171.45"/>
+<instance part="F16" gate="G$1" x="49.53" y="168.91"/>
+<instance part="X19" gate="-1" x="127" y="209.55"/>
+<instance part="X19" gate="-2" x="127" y="207.01"/>
+<instance part="X19" gate="-3" x="127" y="204.47"/>
+<instance part="X19" gate="-4" x="127" y="201.93"/>
+<instance part="X19" gate="-5" x="127" y="199.39"/>
+<instance part="F17" gate="G$1" x="118.11" y="209.55"/>
+<instance part="F18" gate="G$1" x="115.57" y="207.01"/>
+<instance part="X20" gate="-1" x="124.46" y="190.5"/>
+<instance part="X20" gate="-2" x="124.46" y="187.96"/>
+<instance part="X20" gate="-3" x="124.46" y="185.42"/>
+<instance part="X20" gate="-4" x="124.46" y="182.88"/>
+<instance part="X20" gate="-5" x="124.46" y="180.34"/>
+<instance part="F19" gate="G$1" x="115.57" y="190.5"/>
+<instance part="F20" gate="G$1" x="113.03" y="187.96"/>
 <instance part="X21" gate="-1" x="116.84" y="166.37"/>
 <instance part="X21" gate="-2" x="116.84" y="163.83"/>
 <instance part="X21" gate="-3" x="116.84" y="161.29"/>
@@ -9590,6 +9663,13 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="X21" gate="-5" x="116.84" y="156.21"/>
 <instance part="F21" gate="G$1" x="107.95" y="166.37"/>
 <instance part="F22" gate="G$1" x="105.41" y="163.83"/>
+<instance part="X23" gate="-1" x="185.42" y="207.01"/>
+<instance part="X23" gate="-2" x="185.42" y="204.47"/>
+<instance part="X23" gate="-3" x="185.42" y="201.93"/>
+<instance part="X23" gate="-4" x="185.42" y="199.39"/>
+<instance part="X23" gate="-5" x="185.42" y="196.85"/>
+<instance part="F36" gate="G$1" x="176.53" y="207.01"/>
+<instance part="F37" gate="G$1" x="173.99" y="204.47"/>
 <instance part="X26" gate="-1" x="96.52" y="127"/>
 <instance part="X26" gate="-2" x="96.52" y="124.46"/>
 <instance part="X26" gate="-3" x="96.52" y="121.92"/>
@@ -9638,69 +9718,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="X27" gate="-7" x="328.93" y="172.72"/>
 <instance part="F44" gate="G$1" x="320.04" y="187.96"/>
 <instance part="F45" gate="G$1" x="320.04" y="185.42"/>
-<instance part="X13" gate="-1" x="16.51" y="208.28"/>
-<instance part="X13" gate="-2" x="16.51" y="205.74"/>
-<instance part="X13" gate="-3" x="16.51" y="203.2"/>
-<instance part="X13" gate="-4" x="16.51" y="200.66"/>
-<instance part="X13" gate="-5" x="16.51" y="198.12"/>
-<instance part="F5" gate="G$1" x="7.62" y="208.28"/>
-<instance part="F6" gate="G$1" x="5.08" y="205.74"/>
-<instance part="X14" gate="-1" x="17.78" y="181.61"/>
-<instance part="X14" gate="-2" x="17.78" y="179.07"/>
-<instance part="X14" gate="-3" x="17.78" y="176.53"/>
-<instance part="X14" gate="-4" x="17.78" y="173.99"/>
-<instance part="X14" gate="-5" x="17.78" y="171.45"/>
-<instance part="F7" gate="G$1" x="8.89" y="181.61"/>
-<instance part="F8" gate="G$1" x="6.35" y="179.07"/>
-<instance part="X15" gate="-1" x="69.85" y="203.2"/>
-<instance part="X15" gate="-2" x="69.85" y="200.66"/>
-<instance part="X15" gate="-3" x="69.85" y="198.12"/>
-<instance part="X15" gate="-4" x="69.85" y="195.58"/>
-<instance part="X15" gate="-5" x="69.85" y="193.04"/>
-<instance part="F9" gate="G$1" x="60.96" y="203.2"/>
-<instance part="F10" gate="G$1" x="58.42" y="200.66"/>
-<instance part="X16" gate="-1" x="62.23" y="173.99"/>
-<instance part="X16" gate="-2" x="62.23" y="171.45"/>
-<instance part="X16" gate="-3" x="62.23" y="168.91"/>
-<instance part="X16" gate="-4" x="62.23" y="166.37"/>
-<instance part="X16" gate="-5" x="62.23" y="163.83"/>
-<instance part="F11" gate="G$1" x="53.34" y="173.99"/>
-<instance part="F12" gate="G$1" x="50.8" y="171.45"/>
-<instance part="X17" gate="-1" x="114.3" y="198.12"/>
-<instance part="X17" gate="-2" x="114.3" y="195.58"/>
-<instance part="X17" gate="-3" x="114.3" y="193.04"/>
-<instance part="X17" gate="-4" x="114.3" y="190.5"/>
-<instance part="X17" gate="-5" x="114.3" y="187.96"/>
-<instance part="F13" gate="G$1" x="105.41" y="198.12"/>
-<instance part="F14" gate="G$1" x="102.87" y="195.58"/>
-<instance part="X18" gate="-1" x="160.02" y="191.77"/>
-<instance part="X18" gate="-2" x="160.02" y="189.23"/>
-<instance part="X18" gate="-3" x="160.02" y="186.69"/>
-<instance part="X18" gate="-4" x="160.02" y="184.15"/>
-<instance part="X18" gate="-5" x="160.02" y="181.61"/>
-<instance part="F15" gate="G$1" x="151.13" y="191.77"/>
-<instance part="F16" gate="G$1" x="148.59" y="189.23"/>
-<instance part="X19" gate="-1" x="207.01" y="208.28"/>
-<instance part="X19" gate="-2" x="207.01" y="205.74"/>
-<instance part="X19" gate="-3" x="207.01" y="203.2"/>
-<instance part="X19" gate="-4" x="207.01" y="200.66"/>
-<instance part="X19" gate="-5" x="207.01" y="198.12"/>
-<instance part="F17" gate="G$1" x="198.12" y="208.28"/>
-<instance part="F18" gate="G$1" x="195.58" y="205.74"/>
-<instance part="X20" gate="-1" x="207.01" y="185.42"/>
-<instance part="X20" gate="-2" x="207.01" y="182.88"/>
-<instance part="X20" gate="-3" x="207.01" y="180.34"/>
-<instance part="X20" gate="-4" x="207.01" y="177.8"/>
-<instance part="X20" gate="-5" x="207.01" y="175.26"/>
-<instance part="F19" gate="G$1" x="198.12" y="185.42"/>
-<instance part="F20" gate="G$1" x="195.58" y="182.88"/>
-<instance part="X23" gate="-1" x="187.96" y="163.83"/>
-<instance part="X23" gate="-2" x="187.96" y="161.29"/>
-<instance part="X23" gate="-3" x="187.96" y="158.75"/>
-<instance part="X23" gate="-4" x="187.96" y="156.21"/>
-<instance part="X23" gate="-5" x="187.96" y="153.67"/>
-<instance part="F36" gate="G$1" x="179.07" y="163.83"/>
-<instance part="F37" gate="G$1" x="176.53" y="161.29"/>
 </instances>
 <busses>
 </busses>
@@ -9747,9 +9764,54 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <wire x1="209.55" y1="217.17" x2="181.61" y2="217.17" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="X13" gate="-5" pin="S"/>
+<label x="-11.43" y="200.66" size="1.778" layer="95"/>
+<wire x1="15.24" y1="200.66" x2="-11.43" y2="200.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X14" gate="-5" pin="S"/>
+<label x="-11.43" y="185.42" size="1.778" layer="95"/>
+<wire x1="15.24" y1="185.42" x2="-11.43" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X15" gate="-5" pin="S"/>
+<label x="-11.43" y="167.64" size="1.778" layer="95"/>
+<wire x1="15.24" y1="167.64" x2="-11.43" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X16" gate="-5" pin="S"/>
+<label x="53.34" y="200.66" size="1.778" layer="95"/>
+<wire x1="80.01" y1="200.66" x2="53.34" y2="200.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X17" gate="-5" pin="S"/>
+<label x="38.1" y="182.88" size="1.778" layer="95"/>
+<wire x1="64.77" y1="182.88" x2="38.1" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X18" gate="-5" pin="S"/>
+<label x="31.75" y="161.29" size="1.778" layer="95"/>
+<wire x1="58.42" y1="161.29" x2="31.75" y2="161.29" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X19" gate="-5" pin="S"/>
+<label x="97.79" y="199.39" size="1.778" layer="95"/>
+<wire x1="124.46" y1="199.39" x2="97.79" y2="199.39" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X20" gate="-5" pin="S"/>
+<label x="95.25" y="180.34" size="1.778" layer="95"/>
+<wire x1="121.92" y1="180.34" x2="95.25" y2="180.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="X21" gate="-5" pin="S"/>
 <label x="87.63" y="156.21" size="1.778" layer="95"/>
 <wire x1="114.3" y1="156.21" x2="87.63" y2="156.21" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X23" gate="-5" pin="S"/>
+<label x="156.21" y="196.85" size="1.778" layer="95"/>
+<wire x1="182.88" y1="196.85" x2="156.21" y2="196.85" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X29" gate="-5" pin="S"/>
@@ -9795,51 +9857,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="X27" gate="-7" pin="S"/>
 <wire x1="326.39" y1="172.72" x2="303.53" y2="172.72" width="0.1524" layer="91"/>
 <label x="303.53" y="172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="X13" gate="-5" pin="S"/>
-<label x="-12.7" y="198.12" size="1.778" layer="95"/>
-<wire x1="13.97" y1="198.12" x2="-12.7" y2="198.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X14" gate="-5" pin="S"/>
-<label x="-11.43" y="171.45" size="1.778" layer="95"/>
-<wire x1="15.24" y1="171.45" x2="-11.43" y2="171.45" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X15" gate="-5" pin="S"/>
-<label x="40.64" y="193.04" size="1.778" layer="95"/>
-<wire x1="67.31" y1="193.04" x2="40.64" y2="193.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X16" gate="-5" pin="S"/>
-<label x="33.02" y="163.83" size="1.778" layer="95"/>
-<wire x1="59.69" y1="163.83" x2="33.02" y2="163.83" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X17" gate="-5" pin="S"/>
-<label x="85.09" y="187.96" size="1.778" layer="95"/>
-<wire x1="111.76" y1="187.96" x2="85.09" y2="187.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X18" gate="-5" pin="S"/>
-<label x="130.81" y="181.61" size="1.778" layer="95"/>
-<wire x1="157.48" y1="181.61" x2="130.81" y2="181.61" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X19" gate="-5" pin="S"/>
-<label x="177.8" y="198.12" size="1.778" layer="95"/>
-<wire x1="204.47" y1="198.12" x2="177.8" y2="198.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X20" gate="-5" pin="S"/>
-<label x="177.8" y="175.26" size="1.778" layer="95"/>
-<wire x1="204.47" y1="175.26" x2="177.8" y2="175.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X23" gate="-5" pin="S"/>
-<label x="158.75" y="153.67" size="1.778" layer="95"/>
-<wire x1="185.42" y1="153.67" x2="158.75" y2="153.67" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI_MISO" class="0">
@@ -10140,9 +10157,54 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="181.61" y="229.87" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="F6" gate="G$1" pin="1"/>
+<wire x1="1.27" y1="208.28" x2="-11.43" y2="208.28" width="0.1524" layer="91"/>
+<label x="-11.43" y="208.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F8" gate="G$1" pin="1"/>
+<wire x1="1.27" y1="193.04" x2="-11.43" y2="193.04" width="0.1524" layer="91"/>
+<label x="-11.43" y="193.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F10" gate="G$1" pin="1"/>
+<wire x1="1.27" y1="175.26" x2="-11.43" y2="175.26" width="0.1524" layer="91"/>
+<label x="-11.43" y="175.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F12" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="208.28" x2="53.34" y2="208.28" width="0.1524" layer="91"/>
+<label x="53.34" y="208.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F14" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="190.5" x2="38.1" y2="190.5" width="0.1524" layer="91"/>
+<label x="38.1" y="190.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F16" gate="G$1" pin="1"/>
+<wire x1="44.45" y1="168.91" x2="31.75" y2="168.91" width="0.1524" layer="91"/>
+<label x="31.75" y="168.91" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F18" gate="G$1" pin="1"/>
+<wire x1="110.49" y1="207.01" x2="97.79" y2="207.01" width="0.1524" layer="91"/>
+<label x="97.79" y="207.01" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F20" gate="G$1" pin="1"/>
+<wire x1="107.95" y1="187.96" x2="95.25" y2="187.96" width="0.1524" layer="91"/>
+<label x="95.25" y="187.96" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="F22" gate="G$1" pin="1"/>
 <wire x1="100.33" y1="163.83" x2="87.63" y2="163.83" width="0.1524" layer="91"/>
 <label x="87.63" y="163.83" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F37" gate="G$1" pin="1"/>
+<wire x1="168.91" y1="204.47" x2="156.21" y2="204.47" width="0.1524" layer="91"/>
+<label x="156.21" y="204.47" size="1.778" layer="95"/>
 </segment>
 <segment>
 <label x="68.58" y="124.46" size="1.778" layer="95"/>
@@ -10174,51 +10236,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <wire x1="314.96" y1="185.42" x2="303.53" y2="185.42" width="0.1524" layer="91"/>
 <label x="303.53" y="185.42" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="F6" gate="G$1" pin="1"/>
-<wire x1="0" y1="205.74" x2="-12.7" y2="205.74" width="0.1524" layer="91"/>
-<label x="-12.7" y="205.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F8" gate="G$1" pin="1"/>
-<wire x1="1.27" y1="179.07" x2="-11.43" y2="179.07" width="0.1524" layer="91"/>
-<label x="-11.43" y="179.07" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F10" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="200.66" x2="40.64" y2="200.66" width="0.1524" layer="91"/>
-<label x="40.64" y="200.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F12" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="171.45" x2="33.02" y2="171.45" width="0.1524" layer="91"/>
-<label x="33.02" y="171.45" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F14" gate="G$1" pin="1"/>
-<wire x1="97.79" y1="195.58" x2="85.09" y2="195.58" width="0.1524" layer="91"/>
-<label x="85.09" y="195.58" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F16" gate="G$1" pin="1"/>
-<wire x1="143.51" y1="189.23" x2="130.81" y2="189.23" width="0.1524" layer="91"/>
-<label x="130.81" y="189.23" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F18" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="205.74" x2="177.8" y2="205.74" width="0.1524" layer="91"/>
-<label x="177.8" y="205.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F20" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="182.88" x2="177.8" y2="182.88" width="0.1524" layer="91"/>
-<label x="177.8" y="182.88" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F37" gate="G$1" pin="1"/>
-<wire x1="171.45" y1="161.29" x2="158.75" y2="161.29" width="0.1524" layer="91"/>
-<label x="158.75" y="161.29" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="3V3_SMOOTH3" class="0">
 <segment>
@@ -10232,6 +10249,16 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="X22" gate="-1" pin="S"/>
 <wire x1="274.32" y1="210.82" x2="273.05" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="F40" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="3V3_SMOOTH4" class="0">
+<segment>
+<wire x1="287.02" y1="208.28" x2="285.75" y2="208.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V4" class="0">
+<segment>
+<wire x1="287.02" y1="210.82" x2="285.75" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$62" class="0">
@@ -10460,158 +10487,264 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </net>
 <net name="SDA_3V3" class="0">
 <segment>
+<pinref part="X13" gate="-3" pin="S"/>
+<wire x1="15.24" y1="205.74" x2="-11.43" y2="205.74" width="0.1524" layer="91"/>
+<label x="-11.43" y="205.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X14" gate="-3" pin="S"/>
+<wire x1="15.24" y1="190.5" x2="-11.43" y2="190.5" width="0.1524" layer="91"/>
+<label x="-11.43" y="190.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X15" gate="-3" pin="S"/>
+<wire x1="15.24" y1="172.72" x2="-11.43" y2="172.72" width="0.1524" layer="91"/>
+<label x="-11.43" y="172.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X16" gate="-3" pin="S"/>
+<wire x1="80.01" y1="205.74" x2="53.34" y2="205.74" width="0.1524" layer="91"/>
+<label x="53.34" y="205.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X17" gate="-3" pin="S"/>
+<wire x1="64.77" y1="187.96" x2="38.1" y2="187.96" width="0.1524" layer="91"/>
+<label x="38.1" y="187.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X18" gate="-3" pin="S"/>
+<wire x1="58.42" y1="166.37" x2="31.75" y2="166.37" width="0.1524" layer="91"/>
+<label x="31.75" y="166.37" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X19" gate="-3" pin="S"/>
+<wire x1="124.46" y1="204.47" x2="97.79" y2="204.47" width="0.1524" layer="91"/>
+<label x="97.79" y="204.47" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X20" gate="-3" pin="S"/>
+<wire x1="121.92" y1="185.42" x2="95.25" y2="185.42" width="0.1524" layer="91"/>
+<label x="95.25" y="185.42" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="X21" gate="-3" pin="S"/>
 <wire x1="114.3" y1="161.29" x2="87.63" y2="161.29" width="0.1524" layer="91"/>
 <label x="87.63" y="161.29" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X13" gate="-3" pin="S"/>
-<wire x1="13.97" y1="203.2" x2="-12.7" y2="203.2" width="0.1524" layer="91"/>
-<label x="-12.7" y="203.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="X14" gate="-3" pin="S"/>
-<wire x1="15.24" y1="176.53" x2="-11.43" y2="176.53" width="0.1524" layer="91"/>
-<label x="-11.43" y="176.53" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="X15" gate="-3" pin="S"/>
-<wire x1="67.31" y1="198.12" x2="40.64" y2="198.12" width="0.1524" layer="91"/>
-<label x="40.64" y="198.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="X16" gate="-3" pin="S"/>
-<wire x1="59.69" y1="168.91" x2="33.02" y2="168.91" width="0.1524" layer="91"/>
-<label x="33.02" y="168.91" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="X17" gate="-3" pin="S"/>
-<wire x1="111.76" y1="193.04" x2="85.09" y2="193.04" width="0.1524" layer="91"/>
-<label x="85.09" y="193.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="X18" gate="-3" pin="S"/>
-<wire x1="157.48" y1="186.69" x2="130.81" y2="186.69" width="0.1524" layer="91"/>
-<label x="130.81" y="186.69" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="X19" gate="-3" pin="S"/>
-<wire x1="204.47" y1="203.2" x2="177.8" y2="203.2" width="0.1524" layer="91"/>
-<label x="177.8" y="203.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="X20" gate="-3" pin="S"/>
-<wire x1="204.47" y1="180.34" x2="177.8" y2="180.34" width="0.1524" layer="91"/>
-<label x="177.8" y="180.34" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="X23" gate="-3" pin="S"/>
-<wire x1="185.42" y1="158.75" x2="158.75" y2="158.75" width="0.1524" layer="91"/>
-<label x="158.75" y="158.75" size="1.778" layer="95"/>
+<wire x1="182.88" y1="201.93" x2="156.21" y2="201.93" width="0.1524" layer="91"/>
+<label x="156.21" y="201.93" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL_3V3" class="0">
+<segment>
+<pinref part="X13" gate="-4" pin="S"/>
+<label x="-11.43" y="203.2" size="1.778" layer="95"/>
+<wire x1="15.24" y1="203.2" x2="-11.43" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X14" gate="-4" pin="S"/>
+<label x="-11.43" y="187.96" size="1.778" layer="95"/>
+<wire x1="15.24" y1="187.96" x2="-11.43" y2="187.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X15" gate="-4" pin="S"/>
+<label x="-11.43" y="170.18" size="1.778" layer="95"/>
+<wire x1="15.24" y1="170.18" x2="-11.43" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X16" gate="-4" pin="S"/>
+<label x="53.34" y="203.2" size="1.778" layer="95"/>
+<wire x1="80.01" y1="203.2" x2="53.34" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X17" gate="-4" pin="S"/>
+<label x="38.1" y="185.42" size="1.778" layer="95"/>
+<wire x1="64.77" y1="185.42" x2="38.1" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X18" gate="-4" pin="S"/>
+<label x="31.75" y="163.83" size="1.778" layer="95"/>
+<wire x1="58.42" y1="163.83" x2="31.75" y2="163.83" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X19" gate="-4" pin="S"/>
+<label x="97.79" y="201.93" size="1.778" layer="95"/>
+<wire x1="124.46" y1="201.93" x2="97.79" y2="201.93" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X20" gate="-4" pin="S"/>
+<label x="95.25" y="182.88" size="1.778" layer="95"/>
+<wire x1="121.92" y1="182.88" x2="95.25" y2="182.88" width="0.1524" layer="91"/>
+</segment>
 <segment>
 <pinref part="X21" gate="-4" pin="S"/>
 <label x="87.63" y="158.75" size="1.778" layer="95"/>
 <wire x1="114.3" y1="158.75" x2="87.63" y2="158.75" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X13" gate="-4" pin="S"/>
-<label x="-12.7" y="200.66" size="1.778" layer="95"/>
-<wire x1="13.97" y1="200.66" x2="-12.7" y2="200.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X14" gate="-4" pin="S"/>
-<label x="-11.43" y="173.99" size="1.778" layer="95"/>
-<wire x1="15.24" y1="173.99" x2="-11.43" y2="173.99" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X15" gate="-4" pin="S"/>
-<label x="40.64" y="195.58" size="1.778" layer="95"/>
-<wire x1="67.31" y1="195.58" x2="40.64" y2="195.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X16" gate="-4" pin="S"/>
-<label x="33.02" y="166.37" size="1.778" layer="95"/>
-<wire x1="59.69" y1="166.37" x2="33.02" y2="166.37" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X17" gate="-4" pin="S"/>
-<label x="85.09" y="190.5" size="1.778" layer="95"/>
-<wire x1="111.76" y1="190.5" x2="85.09" y2="190.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X18" gate="-4" pin="S"/>
-<label x="130.81" y="184.15" size="1.778" layer="95"/>
-<wire x1="157.48" y1="184.15" x2="130.81" y2="184.15" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X19" gate="-4" pin="S"/>
-<label x="177.8" y="200.66" size="1.778" layer="95"/>
-<wire x1="204.47" y1="200.66" x2="177.8" y2="200.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X20" gate="-4" pin="S"/>
-<label x="177.8" y="177.8" size="1.778" layer="95"/>
-<wire x1="204.47" y1="177.8" x2="177.8" y2="177.8" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="X23" gate="-4" pin="S"/>
-<label x="158.75" y="156.21" size="1.778" layer="95"/>
-<wire x1="185.42" y1="156.21" x2="158.75" y2="156.21" width="0.1524" layer="91"/>
+<label x="156.21" y="199.39" size="1.778" layer="95"/>
+<wire x1="182.88" y1="199.39" x2="156.21" y2="199.39" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
+<segment>
+<pinref part="X13" gate="-1" pin="S"/>
+<pinref part="F5" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="210.82" x2="13.97" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="F5" gate="G$1" pin="1"/>
+<wire x1="3.81" y1="210.82" x2="-11.43" y2="210.82" width="0.1524" layer="91"/>
+<label x="-11.43" y="210.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X14" gate="-1" pin="S"/>
+<pinref part="F7" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="195.58" x2="13.97" y2="195.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="F7" gate="G$1" pin="1"/>
+<wire x1="3.81" y1="195.58" x2="-11.43" y2="195.58" width="0.1524" layer="91"/>
+<label x="-11.43" y="195.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X15" gate="-1" pin="S"/>
+<pinref part="F9" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="177.8" x2="13.97" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="F9" gate="G$1" pin="1"/>
+<wire x1="3.81" y1="177.8" x2="-11.43" y2="177.8" width="0.1524" layer="91"/>
+<label x="-11.43" y="177.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X16" gate="-1" pin="S"/>
+<pinref part="F11" gate="G$1" pin="2"/>
+<wire x1="80.01" y1="210.82" x2="78.74" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="F11" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="210.82" x2="53.34" y2="210.82" width="0.1524" layer="91"/>
+<label x="53.34" y="210.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X17" gate="-1" pin="S"/>
+<pinref part="F13" gate="G$1" pin="2"/>
+<wire x1="64.77" y1="193.04" x2="63.5" y2="193.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="F13" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="193.04" x2="38.1" y2="193.04" width="0.1524" layer="91"/>
+<label x="38.1" y="193.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X18" gate="-1" pin="S"/>
+<pinref part="F15" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="171.45" x2="57.15" y2="171.45" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="F15" gate="G$1" pin="1"/>
+<wire x1="46.99" y1="171.45" x2="31.75" y2="171.45" width="0.1524" layer="91"/>
+<label x="31.75" y="171.45" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X19" gate="-1" pin="S"/>
+<pinref part="F17" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="209.55" x2="123.19" y2="209.55" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="F17" gate="G$1" pin="1"/>
+<wire x1="113.03" y1="209.55" x2="97.79" y2="209.55" width="0.1524" layer="91"/>
+<label x="97.79" y="209.55" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X20" gate="-1" pin="S"/>
+<pinref part="F19" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="190.5" x2="120.65" y2="190.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="F19" gate="G$1" pin="1"/>
+<wire x1="110.49" y1="190.5" x2="95.25" y2="190.5" width="0.1524" layer="91"/>
+<label x="95.25" y="190.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X21" gate="-1" pin="S"/>
+<pinref part="F21" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="166.37" x2="113.03" y2="166.37" width="0.1524" layer="91"/>
+</segment>
 <segment>
 <pinref part="F21" gate="G$1" pin="1"/>
 <wire x1="102.87" y1="166.37" x2="87.63" y2="166.37" width="0.1524" layer="91"/>
 <label x="87.63" y="166.37" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="F5" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="208.28" x2="-12.7" y2="208.28" width="0.1524" layer="91"/>
-<label x="-12.7" y="208.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F7" gate="G$1" pin="1"/>
-<wire x1="3.81" y1="181.61" x2="-11.43" y2="181.61" width="0.1524" layer="91"/>
-<label x="-11.43" y="181.61" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F9" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="203.2" x2="40.64" y2="203.2" width="0.1524" layer="91"/>
-<label x="40.64" y="203.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F11" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="173.99" x2="33.02" y2="173.99" width="0.1524" layer="91"/>
-<label x="33.02" y="173.99" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F13" gate="G$1" pin="1"/>
-<wire x1="100.33" y1="198.12" x2="85.09" y2="198.12" width="0.1524" layer="91"/>
-<label x="85.09" y="198.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F15" gate="G$1" pin="1"/>
-<wire x1="146.05" y1="191.77" x2="130.81" y2="191.77" width="0.1524" layer="91"/>
-<label x="130.81" y="191.77" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F17" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="208.28" x2="177.8" y2="208.28" width="0.1524" layer="91"/>
-<label x="177.8" y="208.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="F19" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="185.42" x2="177.8" y2="185.42" width="0.1524" layer="91"/>
-<label x="177.8" y="185.42" size="1.778" layer="95"/>
+<pinref part="X23" gate="-1" pin="S"/>
+<pinref part="F36" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="207.01" x2="181.61" y2="207.01" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="F36" gate="G$1" pin="1"/>
-<wire x1="173.99" y1="163.83" x2="158.75" y2="163.83" width="0.1524" layer="91"/>
-<label x="158.75" y="163.83" size="1.778" layer="95"/>
+<wire x1="171.45" y1="207.01" x2="156.21" y2="207.01" width="0.1524" layer="91"/>
+<label x="156.21" y="207.01" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$49" class="0">
+<segment>
+<pinref part="F6" gate="G$1" pin="2"/>
+<pinref part="X13" gate="-2" pin="S"/>
+<wire x1="11.43" y1="208.28" x2="15.24" y2="208.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="F8" gate="G$1" pin="2"/>
+<pinref part="X14" gate="-2" pin="S"/>
+<wire x1="11.43" y1="193.04" x2="15.24" y2="193.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$48" class="0">
+<segment>
+<pinref part="F10" gate="G$1" pin="2"/>
+<pinref part="X15" gate="-2" pin="S"/>
+<wire x1="11.43" y1="175.26" x2="15.24" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<pinref part="F12" gate="G$1" pin="2"/>
+<pinref part="X16" gate="-2" pin="S"/>
+<wire x1="76.2" y1="208.28" x2="80.01" y2="208.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$51" class="0">
+<segment>
+<pinref part="F14" gate="G$1" pin="2"/>
+<pinref part="X17" gate="-2" pin="S"/>
+<wire x1="60.96" y1="190.5" x2="64.77" y2="190.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$52" class="0">
+<segment>
+<pinref part="F16" gate="G$1" pin="2"/>
+<pinref part="X18" gate="-2" pin="S"/>
+<wire x1="54.61" y1="168.91" x2="58.42" y2="168.91" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$53" class="0">
+<segment>
+<pinref part="F18" gate="G$1" pin="2"/>
+<pinref part="X19" gate="-2" pin="S"/>
+<wire x1="120.65" y1="207.01" x2="124.46" y2="207.01" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$54" class="0">
+<segment>
+<pinref part="F20" gate="G$1" pin="2"/>
+<pinref part="X20" gate="-2" pin="S"/>
+<wire x1="118.11" y1="187.96" x2="121.92" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$55" class="0">
@@ -10619,6 +10752,13 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="F22" gate="G$1" pin="2"/>
 <pinref part="X21" gate="-2" pin="S"/>
 <wire x1="110.49" y1="163.83" x2="114.3" y2="163.83" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$56" class="0">
+<segment>
+<pinref part="F37" gate="G$1" pin="2"/>
+<pinref part="X23" gate="-2" pin="S"/>
+<wire x1="179.07" y1="204.47" x2="182.88" y2="204.47" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$79" class="0">
@@ -10719,6 +10859,16 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="F38" gate="G$1" pin="2"/>
 </segment>
 </net>
+<net name="3V3_SMOOTH2" class="0">
+<segment>
+<wire x1="339.09" y1="207.01" x2="337.82" y2="207.01" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V2" class="0">
+<segment>
+<wire x1="339.09" y1="209.55" x2="337.82" y2="209.55" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="3V3_SMOOTH5" class="0">
 <segment>
 <pinref part="X25" gate="-2" pin="S"/>
@@ -10733,6 +10883,16 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="F42" gate="G$1" pin="2"/>
 </segment>
 </net>
+<net name="3V3_SMOOTH6" class="0">
+<segment>
+<wire x1="288.29" y1="186.69" x2="287.02" y2="186.69" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V6" class="0">
+<segment>
+<wire x1="288.29" y1="189.23" x2="287.02" y2="189.23" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="3V3_SMOOTH7" class="0">
 <segment>
 <pinref part="X27" gate="-2" pin="S"/>
@@ -10745,6 +10905,16 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="X27" gate="-1" pin="S"/>
 <wire x1="326.39" y1="187.96" x2="325.12" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="F44" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="3V3_SMOOTH8" class="0">
+<segment>
+<wire x1="339.09" y1="185.42" x2="337.82" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V8" class="0">
+<segment>
+<wire x1="339.09" y1="187.96" x2="337.82" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC3+" class="0">
@@ -10829,139 +10999,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="X27" gate="-6" pin="S"/>
 <wire x1="326.39" y1="175.26" x2="303.53" y2="175.26" width="0.1524" layer="91"/>
 <label x="303.53" y="175.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="X21" gate="-1" pin="S"/>
-<pinref part="F21" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="166.37" x2="113.03" y2="166.37" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="F6" gate="G$1" pin="2"/>
-<pinref part="X13" gate="-2" pin="S"/>
-<wire x1="10.16" y1="205.74" x2="13.97" y2="205.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<pinref part="X13" gate="-1" pin="S"/>
-<pinref part="F5" gate="G$1" pin="2"/>
-<wire x1="13.97" y1="208.28" x2="12.7" y2="208.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$49" class="0">
-<segment>
-<pinref part="F8" gate="G$1" pin="2"/>
-<pinref part="X14" gate="-2" pin="S"/>
-<wire x1="11.43" y1="179.07" x2="15.24" y2="179.07" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$50" class="0">
-<segment>
-<pinref part="X14" gate="-1" pin="S"/>
-<pinref part="F7" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="181.61" x2="13.97" y2="181.61" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$51" class="0">
-<segment>
-<pinref part="F10" gate="G$1" pin="2"/>
-<pinref part="X15" gate="-2" pin="S"/>
-<wire x1="63.5" y1="200.66" x2="67.31" y2="200.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$52" class="0">
-<segment>
-<pinref part="X15" gate="-1" pin="S"/>
-<pinref part="F9" gate="G$1" pin="2"/>
-<wire x1="67.31" y1="203.2" x2="66.04" y2="203.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$53" class="0">
-<segment>
-<pinref part="F12" gate="G$1" pin="2"/>
-<pinref part="X16" gate="-2" pin="S"/>
-<wire x1="55.88" y1="171.45" x2="59.69" y2="171.45" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$54" class="0">
-<segment>
-<pinref part="X16" gate="-1" pin="S"/>
-<pinref part="F11" gate="G$1" pin="2"/>
-<wire x1="59.69" y1="173.99" x2="58.42" y2="173.99" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$56" class="0">
-<segment>
-<pinref part="F14" gate="G$1" pin="2"/>
-<pinref part="X17" gate="-2" pin="S"/>
-<wire x1="107.95" y1="195.58" x2="111.76" y2="195.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$78" class="0">
-<segment>
-<pinref part="X17" gate="-1" pin="S"/>
-<pinref part="F13" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="198.12" x2="110.49" y2="198.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$89" class="0">
-<segment>
-<pinref part="F16" gate="G$1" pin="2"/>
-<pinref part="X18" gate="-2" pin="S"/>
-<wire x1="153.67" y1="189.23" x2="157.48" y2="189.23" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$119" class="0">
-<segment>
-<pinref part="X18" gate="-1" pin="S"/>
-<pinref part="F15" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="191.77" x2="156.21" y2="191.77" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$120" class="0">
-<segment>
-<pinref part="F18" gate="G$1" pin="2"/>
-<pinref part="X19" gate="-2" pin="S"/>
-<wire x1="200.66" y1="205.74" x2="204.47" y2="205.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$124" class="0">
-<segment>
-<pinref part="X19" gate="-1" pin="S"/>
-<pinref part="F17" gate="G$1" pin="2"/>
-<wire x1="204.47" y1="208.28" x2="203.2" y2="208.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$125" class="0">
-<segment>
-<pinref part="F20" gate="G$1" pin="2"/>
-<pinref part="X20" gate="-2" pin="S"/>
-<wire x1="200.66" y1="182.88" x2="204.47" y2="182.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$126" class="0">
-<segment>
-<pinref part="X20" gate="-1" pin="S"/>
-<pinref part="F19" gate="G$1" pin="2"/>
-<wire x1="204.47" y1="185.42" x2="203.2" y2="185.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$127" class="0">
-<segment>
-<pinref part="F37" gate="G$1" pin="2"/>
-<pinref part="X23" gate="-2" pin="S"/>
-<wire x1="181.61" y1="161.29" x2="185.42" y2="161.29" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$128" class="0">
-<segment>
-<pinref part="X23" gate="-1" pin="S"/>
-<pinref part="F36" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="163.83" x2="184.15" y2="163.83" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -11994,9 +12031,10 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </sheet>
 </sheets>
 <errors>
+<approved hash="102,3,316.23,226.06,+3V3,3V3_SMOOTH,,,,"/>
 <approved hash="102,4,121.92,109.22,+3V3,+3V3_SMOOTH,,,,"/>
 <approved hash="102,4,119.38,204.47,+3V3,+3V3_SMOOTH,,,,"/>
-<approved hash="102,7,17.78,248.92,VBUS,5V_USB_HUB,,,,"/>
+<approved hash="102,5,111.76,151.13,+3V3,+3V3_SMOOTH,,,,"/>
 <approved hash="104,1,203.2,226.06,U1,VDD,+3V3,,,"/>
 <approved hash="104,1,203.2,200.66,U1,VSS,GND,,,"/>
 <approved hash="104,4,132.08,190.5,U$1,VDD,+3V3_SMOOTH,,,"/>
@@ -12007,6 +12045,14 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <approved hash="104,1,200.66,142.24,U10,VCC,PI_5V,,,"/>
 <approved hash="104,2,27.94,144.78,U3,5V,+5V,,,"/>
 <approved hash="104,2,38.1,144.78,U3,3V3,LOPY_3V3,,,"/>
+<approved hash="104,3,81.28,231.14,U4,IN1,+24V,,,"/>
+<approved hash="104,3,81.28,228.6,U4,IN2,+24V,,,"/>
+<approved hash="104,3,81.28,200.66,U4,GND_IN1,GND,,,"/>
+<approved hash="104,3,81.28,198.12,U4,GND_IN2,GND,,,"/>
+<approved hash="104,3,121.92,231.14,U4,OUT1,6V5,,,"/>
+<approved hash="104,3,121.92,228.6,U4,OUT2,6V5,,,"/>
+<approved hash="104,3,121.92,200.66,U4,GND_OUT1,GND,,,"/>
+<approved hash="104,3,121.92,198.12,U4,GND_OUT2,GND,,,"/>
 <approved hash="104,1,205.74,58.42,U2,VCC,+3V3,,,"/>
 <approved hash="104,1,205.74,55.88,U2,VBAT,RTC_BATT,,,"/>
 <approved hash="104,1,205.74,43.18,U2,VSS,GND,,,"/>
@@ -12022,35 +12068,33 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <approved hash="202,2,242.57,110.49,U6,CBUS3,,,,"/>
 <approved hash="202,2,242.57,107.95,U6,CBUS4,,,,"/>
 <approved hash="202,2,214.63,133.35,U6,!RESET,,,,"/>
-<approved hash="104,7,238.76,193.04,U12,VCC,PI_5V,,,"/>
-<approved hash="104,1,345.44,182.88,U8,VCC,3V3,,,"/>
-<approved hash="104,3,83.82,231.14,U$5,P$1,+24V,,,"/>
-<approved hash="104,3,83.82,200.66,U$5,P$2,GND,,,"/>
-<approved hash="104,3,121.92,231.14,U$5,P$3,5V35,,,"/>
-<approved hash="104,3,121.92,200.66,U$5,P$4,GND,,,"/>
+<approved hash="202,6,105.41,86.36,U8,OSCO,,,,"/>
+<approved hash="202,6,105.41,88.9,U8,OSCI,,,,"/>
+<approved hash="202,6,133.35,96.52,U8,!RTS,,,,"/>
+<approved hash="202,6,133.35,93.98,U8,!CTS,,,,"/>
+<approved hash="202,6,133.35,91.44,U8,!DTR,,,,"/>
+<approved hash="202,6,133.35,88.9,U8,!DSR,,,,"/>
+<approved hash="202,6,133.35,86.36,U8,!DCD,,,,"/>
+<approved hash="202,6,133.35,83.82,U8,!RI,,,,"/>
+<approved hash="202,6,133.35,68.58,U8,CBUS4,,,,"/>
+<approved hash="104,6,231.14,91.44,U9,VCC,PI_5V,,,"/>
 <approved hash="208,2,27.94,157.48,+5V,sup,,,,"/>
-<approved hash="208,3,129.54,101.6,+5V,sup,,,,"/>
 <approved hash="208,3,106.68,99.06,+5V,out,,,,"/>
+<approved hash="208,3,129.54,101.6,+5V,sup,,,,"/>
+<approved hash="208,3,217.17,243.84,+5V,sup,,,,"/>
 <approved hash="208,5,60.96,147.32,+5V,sup,,,,"/>
-<approved hash="209,7,238.76,185.42,FTDI2_TE,,,,,"/>
-<approved hash="106,2,15.24,124.46,LOPY_RST,,,,,"/>
-<approved hash="106,1,238.76,226.06,N$2,,,,,"/>
-<approved hash="106,1,238.76,223.52,N$3,,,,,"/>
-<approved hash="106,2,322.58,198.12,N$18,,,,,"/>
-<approved hash="106,2,322.58,180.34,N$20,,,,,"/>
-<approved hash="106,2,322.58,177.8,N$21,,,,,"/>
+<approved hash="209,6,231.14,83.82,FTDI2_TE,,,,,"/>
+<approved hash="209,6,133.35,73.66,FTDI2_TE,,,,,"/>
+<approved hash="209,6,231.14,86.36,FTDI2_TXD,,,,,"/>
+<approved hash="209,6,133.35,101.6,FTDI2_TXD,,,,,"/>
 <approved hash="106,1,91.44,215.9,SCLK,,,,,"/>
 <approved hash="117,2,127,137.16,SHIELD,,,,,"/>
-<approved hash="111,1,359.41,177.8,N$97,,,,,"/>
-<approved hash="111,1,364.49,172.72,ID_SC,,,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME1,,,,,"/>
 <approved hash="113,2,180.871,97.051,FRAME2,,,,,"/>
 <approved hash="113,3,193.571,130.071,FRAME3,,,,,"/>
 <approved hash="113,4,180.871,114.831,FRAME4,,,,,"/>
 <approved hash="113,5,180.871,112.291,FRAME5,,,,,"/>
 <approved hash="113,6,170.711,135.151,FRAME6,,,,,"/>
-<approved hash="113,7,178.331,132.611,FRAME7,,,,,"/>
-<approved hash="113,8,310.411,180.871,FRAME8,,,,,"/>
 </errors>
 </schematic>
 </drawing>
