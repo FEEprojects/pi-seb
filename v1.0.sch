@@ -1453,7 +1453,7 @@ More information and support community is available at http://www.element14.com/
 </deviceset>
 </devicesets>
 </library>
-<library name="Seeed-Diode-2016" urn="urn:adsk.eagle:library:453">
+<library name="Seeed-Diode-2016">
 <packages>
 <package name="DO-214AA">
 <wire x1="2.16" y1="-1.78" x2="-2.14" y2="-1.78" width="0.2032" layer="21"/>
@@ -2913,7 +2913,7 @@ https://www.pycom.io/product/lopy/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="crystal">
+<library name="crystal" urn="urn:adsk.eagle:library:204">
 <description>&lt;b&gt;Crystals and Crystal Resonators&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
@@ -6715,7 +6715,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="J1" library="Seeed-Connector -2016" library_urn="urn:adsk.eagle:library:451" deviceset="JACK-DC-044-A" device="" value="DC-044-A"/>
-<part name="D1" library="Seeed-Diode-2016" library_urn="urn:adsk.eagle:library:453" deviceset="SMD-DIODE-SCHOTTKY-28V-5A(DO-214AA)" device="" value="28V-5A"/>
+<part name="D1" library="Seeed-Diode-2016" deviceset="SMD-DIODE-SCHOTTKY-28V-5A(DO-214AA)" device="" value="28V-5A"/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FRAME5" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
@@ -6772,13 +6772,13 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C2" library="Seeed-Capacitor-2016" library_urn="urn:adsk.eagle:library:450" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="Q3" library="crystal" deviceset="CRYTAL" device="68SMX" value="6pF@32.7680kHz"/>
+<part name="Q3" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYTAL" device="68SMX" value="6pF@32.7680kHz"/>
 <part name="C1" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-10PF-50V-5%-NPO(0603)" device="" value="10pf"/>
 <part name="C3" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-10PF-50V-5%-NPO(0603)" device="" value="10pf"/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X1" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
-<part name="X2" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
-<part name="X3" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
+<part name="LOPY_UART0" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
+<part name="LOPY_UART1" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
+<part name="LOPY_I2C" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="C4" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-10UF-10V-10%-X5R(0603)" device="" value="10uf"/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -6788,7 +6788,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
 <part name="U6" library="Seeed-IC" library_urn="urn:adsk.eagle:library:470" deviceset="INTERFACE-FT232RL(SSOP28)" device="" value="FT232RL-SSOP28"/>
 <part name="J2" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="MICRO-SD-CARD-HOLDER-9P" device="" value="MICROSD-9P"/>
-<part name="X4" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
+<part name="LOPY_SPI" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
 <part name="USB3" library="Seeed-Connector -2016" deviceset="MICRO-USB-SMD(ZX62-B-5PA)" device="" value="ZX62-B-5PA"/>
 <part name="C9" library="Seeed-Capacitor-2016" deviceset="CERAMIC-10NF-50V-5%-X7R(0805)" device="" value="10nf"/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -7033,6 +7033,9 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="J10" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-LONG-BLACK-FEMALE-HEADER-VERT(10P-2.54)" device="" value="10p-2.54"/>
 <part name="J11" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-LONG-BLACK-FEMALE-HEADER-VERT(10P-2.54)" device="" value="10p-2.54"/>
 <part name="J12" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-LONG-BLACK-FEMALE-HEADER-VERT(10P-2.54)" device="" value="10p-2.54"/>
+<part name="F56" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="F57" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="F58" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7121,6 +7124,8 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="J10" gate="G$1" x="314.96" y="60.96"/>
 <instance part="J11" gate="G$1" x="322.58" y="86.36" rot="R180"/>
 <instance part="J12" gate="G$1" x="322.58" y="60.96" rot="R180"/>
+<instance part="F57" gate="G$1" x="252.73" y="243.84"/>
+<instance part="F58" gate="G$1" x="252.73" y="248.92"/>
 </instances>
 <busses>
 </busses>
@@ -7592,13 +7597,14 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </segment>
 <segment>
 <pinref part="J7" gate="J" pin="1"/>
-<wire x1="265.43" y1="248.92" x2="255.27" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="265.43" y1="248.92" x2="257.81" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="J7" gate="J" pin="6"/>
 <wire x1="265.43" y1="248.92" x2="283.21" y2="248.92" width="0.1524" layer="91"/>
 <junction x="265.43" y="248.92"/>
 <wire x1="283.21" y1="248.92" x2="288.29" y2="248.92" width="0.1524" layer="91"/>
 <junction x="283.21" y="248.92"/>
 <label x="256.54" y="248.92" size="1.778" layer="95"/>
+<pinref part="F58" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7783,13 +7789,14 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <net name="3V3" class="0">
 <segment>
 <pinref part="J7" gate="J" pin="3"/>
-<wire x1="265.43" y1="243.84" x2="256.54" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="265.43" y1="243.84" x2="257.81" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="J7" gate="J" pin="4"/>
 <wire x1="283.21" y1="243.84" x2="288.29" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="265.43" y1="243.84" x2="283.21" y2="243.84" width="0.1524" layer="91"/>
 <junction x="265.43" y="243.84"/>
 <junction x="283.21" y="243.84"/>
 <label x="255.27" y="243.84" size="1.778" layer="95"/>
+<pinref part="F57" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="VCC"/>
@@ -7872,6 +7879,18 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="78.74" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$130" class="0">
+<segment>
+<pinref part="F58" gate="G$1" pin="1"/>
+<wire x1="247.65" y1="248.92" x2="241.3" y2="248.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$131" class="0">
+<segment>
+<pinref part="F57" gate="G$1" pin="1"/>
+<wire x1="247.65" y1="243.84" x2="241.3" y2="243.84" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -7911,30 +7930,30 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="U3" gate="G$1" x="33.02" y="106.68"/>
 <instance part="GND21" gate="1" x="33.02" y="71.12"/>
 <instance part="P+2" gate="1" x="27.94" y="160.02"/>
-<instance part="X1" gate="-1" x="20.32" y="203.2"/>
-<instance part="X1" gate="-2" x="20.32" y="200.66"/>
-<instance part="X1" gate="-3" x="20.32" y="198.12"/>
-<instance part="X1" gate="-4" x="20.32" y="195.58"/>
-<instance part="X1" gate="-5" x="20.32" y="193.04"/>
-<instance part="X2" gate="-1" x="76.2" y="200.66"/>
-<instance part="X2" gate="-2" x="76.2" y="198.12"/>
-<instance part="X2" gate="-3" x="76.2" y="195.58"/>
-<instance part="X2" gate="-4" x="76.2" y="193.04"/>
-<instance part="X2" gate="-5" x="76.2" y="190.5"/>
-<instance part="X3" gate="-1" x="160.02" y="203.2"/>
-<instance part="X3" gate="-2" x="160.02" y="200.66"/>
-<instance part="X3" gate="-3" x="160.02" y="198.12"/>
-<instance part="X3" gate="-4" x="160.02" y="195.58"/>
-<instance part="X3" gate="-5" x="160.02" y="193.04"/>
+<instance part="LOPY_UART0" gate="-1" x="20.32" y="203.2"/>
+<instance part="LOPY_UART0" gate="-2" x="20.32" y="200.66"/>
+<instance part="LOPY_UART0" gate="-3" x="20.32" y="198.12"/>
+<instance part="LOPY_UART0" gate="-4" x="20.32" y="195.58"/>
+<instance part="LOPY_UART0" gate="-5" x="20.32" y="193.04"/>
+<instance part="LOPY_UART1" gate="-1" x="76.2" y="200.66"/>
+<instance part="LOPY_UART1" gate="-2" x="76.2" y="198.12"/>
+<instance part="LOPY_UART1" gate="-3" x="76.2" y="195.58"/>
+<instance part="LOPY_UART1" gate="-4" x="76.2" y="193.04"/>
+<instance part="LOPY_UART1" gate="-5" x="76.2" y="190.5"/>
+<instance part="LOPY_I2C" gate="-1" x="160.02" y="203.2"/>
+<instance part="LOPY_I2C" gate="-2" x="160.02" y="200.66"/>
+<instance part="LOPY_I2C" gate="-3" x="160.02" y="198.12"/>
+<instance part="LOPY_I2C" gate="-4" x="160.02" y="195.58"/>
+<instance part="LOPY_I2C" gate="-5" x="160.02" y="193.04"/>
 <instance part="U6" gate="1" x="228.6" y="116.84"/>
 <instance part="J2" gate="G$1" x="340.36" y="187.96"/>
-<instance part="X4" gate="-1" x="236.22" y="203.2"/>
-<instance part="X4" gate="-2" x="236.22" y="200.66"/>
-<instance part="X4" gate="-3" x="236.22" y="198.12"/>
-<instance part="X4" gate="-4" x="236.22" y="195.58"/>
-<instance part="X4" gate="-5" x="236.22" y="193.04"/>
-<instance part="X4" gate="-6" x="236.22" y="190.5"/>
-<instance part="X4" gate="-7" x="236.22" y="187.96"/>
+<instance part="LOPY_SPI" gate="-1" x="236.22" y="203.2"/>
+<instance part="LOPY_SPI" gate="-2" x="236.22" y="200.66"/>
+<instance part="LOPY_SPI" gate="-3" x="236.22" y="198.12"/>
+<instance part="LOPY_SPI" gate="-4" x="236.22" y="195.58"/>
+<instance part="LOPY_SPI" gate="-5" x="236.22" y="193.04"/>
+<instance part="LOPY_SPI" gate="-6" x="236.22" y="190.5"/>
+<instance part="LOPY_SPI" gate="-7" x="236.22" y="187.96"/>
 <instance part="USB3" gate="G$1" x="116.84" y="144.78"/>
 <instance part="C9" gate="G$1" x="152.4" y="147.32" rot="R90"/>
 <instance part="GND26" gate="1" x="144.78" y="111.76"/>
@@ -7966,6 +7985,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="F75" gate="G$1" x="219.71" y="200.66"/>
 <instance part="F76" gate="G$1" x="123.19" y="46.99"/>
 <instance part="F77" gate="G$1" x="119.38" y="44.45"/>
+<instance part="F56" gate="G$1" x="119.38" y="39.37"/>
 </instances>
 <busses>
 </busses>
@@ -8070,22 +8090,22 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <junction x="144.78" y="41.91"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-5" pin="S"/>
+<pinref part="LOPY_UART0" gate="-5" pin="S"/>
 <wire x1="17.78" y1="193.04" x2="10.16" y2="193.04" width="0.1524" layer="91"/>
 <label x="2.54" y="193.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-5" pin="S"/>
+<pinref part="LOPY_I2C" gate="-5" pin="S"/>
 <label x="119.38" y="193.04" size="1.778" layer="95"/>
 <wire x1="157.48" y1="193.04" x2="124.46" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X4" gate="-7" pin="S"/>
+<pinref part="LOPY_SPI" gate="-7" pin="S"/>
 <wire x1="233.68" y1="187.96" x2="210.82" y2="187.96" width="0.1524" layer="91"/>
 <label x="205.74" y="187.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X2" gate="-5" pin="S"/>
+<pinref part="LOPY_UART1" gate="-5" pin="S"/>
 <label x="63.5" y="190.5" size="1.778" layer="95"/>
 <wire x1="73.66" y1="190.5" x2="68.58" y2="190.5" width="0.1524" layer="91"/>
 </segment>
@@ -8178,8 +8198,9 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="4"/>
-<wire x1="129.54" y1="39.37" x2="121.92" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="39.37" x2="124.46" y2="39.37" width="0.1524" layer="91"/>
 <label x="115.1" y="39.6" size="1.778" layer="95"/>
+<wire x1="124.46" y1="39.37" x2="121.92" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="39.37" x2="129.6" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="129.6" y1="39.37" x2="129.6" y2="38.2" width="0.1524" layer="91"/>
 <junction x="129.54" y="39.37"/>
@@ -8188,6 +8209,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <wire x1="129.6" y1="38.2" x2="144.78" y2="38.2" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="38.2" x2="144.78" y2="39.37" width="0.1524" layer="91"/>
 <junction x="144.78" y="39.37"/>
+<pinref part="F56" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="LOPY_RST" class="0">
@@ -8204,7 +8226,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="60.96" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-4" pin="S"/>
+<pinref part="LOPY_UART0" gate="-4" pin="S"/>
 <label x="2.54" y="195.58" size="1.778" layer="95"/>
 <wire x1="17.78" y1="195.58" x2="10.16" y2="195.58" width="0.1524" layer="91"/>
 </segment>
@@ -8226,7 +8248,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="243.84" y="138.43" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-3" pin="S"/>
+<pinref part="LOPY_UART0" gate="-3" pin="S"/>
 <wire x1="17.78" y1="198.12" x2="10.16" y2="198.12" width="0.1524" layer="91"/>
 <label x="2.54" y="198.12" size="1.778" layer="95"/>
 </segment>
@@ -8250,7 +8272,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="60.96" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X2" gate="-4" pin="S"/>
+<pinref part="LOPY_UART1" gate="-4" pin="S"/>
 <label x="63.5" y="193.04" size="1.778" layer="95"/>
 <wire x1="73.66" y1="193.04" x2="68.58" y2="193.04" width="0.1524" layer="91"/>
 </segment>
@@ -8262,7 +8284,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="60.96" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-3" pin="S"/>
+<pinref part="LOPY_I2C" gate="-3" pin="S"/>
 <wire x1="157.48" y1="198.12" x2="124.46" y2="198.12" width="0.1524" layer="91"/>
 <label x="119.38" y="198.12" size="1.778" layer="95"/>
 </segment>
@@ -8274,7 +8296,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="60.96" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X4" gate="-6" pin="S"/>
+<pinref part="LOPY_SPI" gate="-6" pin="S"/>
 <wire x1="233.68" y1="190.5" x2="210.82" y2="190.5" width="0.1524" layer="91"/>
 <label x="205.74" y="190.5" size="1.778" layer="95"/>
 </segment>
@@ -8284,7 +8306,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="309.88" y="187.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-4" pin="S"/>
+<pinref part="LOPY_I2C" gate="-4" pin="S"/>
 <label x="119.38" y="195.58" size="1.778" layer="95"/>
 <wire x1="157.48" y1="195.58" x2="124.46" y2="195.58" width="0.1524" layer="91"/>
 </segment>
@@ -8296,7 +8318,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="60.96" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X4" gate="-4" pin="S"/>
+<pinref part="LOPY_SPI" gate="-4" pin="S"/>
 <wire x1="233.68" y1="195.58" x2="210.82" y2="195.58" width="0.1524" layer="91"/>
 <label x="205.74" y="195.58" size="1.778" layer="95"/>
 </segment>
@@ -8313,7 +8335,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="60.96" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X4" gate="-5" pin="S"/>
+<pinref part="LOPY_SPI" gate="-5" pin="S"/>
 <wire x1="233.68" y1="193.04" x2="210.82" y2="193.04" width="0.1524" layer="91"/>
 <label x="205.74" y="193.04" size="1.778" layer="95"/>
 </segment>
@@ -8515,7 +8537,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="60.96" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X2" gate="-3" pin="S"/>
+<pinref part="LOPY_UART1" gate="-3" pin="S"/>
 <wire x1="73.66" y1="195.58" x2="68.58" y2="195.58" width="0.1524" layer="91"/>
 <label x="63.5" y="195.58" size="1.778" layer="95"/>
 </segment>
@@ -8527,7 +8549,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="60.96" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X4" gate="-3" pin="S"/>
+<pinref part="LOPY_SPI" gate="-3" pin="S"/>
 <wire x1="233.68" y1="198.12" x2="210.82" y2="198.12" width="0.1524" layer="91"/>
 <label x="205.74" y="198.12" size="1.778" layer="95"/>
 </segment>
@@ -8655,42 +8677,42 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </net>
 <net name="N$41" class="0">
 <segment>
-<pinref part="X1" gate="-1" pin="S"/>
+<pinref part="LOPY_UART0" gate="-1" pin="S"/>
 <pinref part="F78" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="203.2" x2="16.51" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$42" class="0">
 <segment>
-<pinref part="X1" gate="-2" pin="S"/>
+<pinref part="LOPY_UART0" gate="-2" pin="S"/>
 <wire x1="17.78" y1="200.66" x2="16.51" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="F79" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$43" class="0">
 <segment>
-<pinref part="X2" gate="-1" pin="S"/>
+<pinref part="LOPY_UART1" gate="-1" pin="S"/>
 <wire x1="73.66" y1="200.66" x2="72.39" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="F80" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
-<pinref part="X2" gate="-2" pin="S"/>
+<pinref part="LOPY_UART1" gate="-2" pin="S"/>
 <pinref part="F81" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="198.12" x2="67.31" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
-<pinref part="X3" gate="-1" pin="S"/>
+<pinref part="LOPY_I2C" gate="-1" pin="S"/>
 <wire x1="157.48" y1="203.2" x2="153.67" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="F82" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$47" class="0">
 <segment>
-<pinref part="X4" gate="-1" pin="S"/>
+<pinref part="LOPY_SPI" gate="-1" pin="S"/>
 <wire x1="233.68" y1="203.2" x2="231.14" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="F74" gate="G$1" pin="2"/>
 </segment>
@@ -8718,14 +8740,14 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <net name="N$66" class="0">
 <segment>
 <pinref part="F75" gate="G$1" pin="2"/>
-<pinref part="X4" gate="-2" pin="S"/>
+<pinref part="LOPY_SPI" gate="-2" pin="S"/>
 <wire x1="224.79" y1="200.66" x2="233.68" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$67" class="0">
 <segment>
 <pinref part="F83" gate="G$1" pin="2"/>
-<pinref part="X3" gate="-2" pin="S"/>
+<pinref part="LOPY_I2C" gate="-2" pin="S"/>
 <wire x1="146.05" y1="200.66" x2="157.48" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8746,6 +8768,12 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="J2" gate="G$1" pin="CS"/>
 <wire x1="322.58" y1="195.58" x2="317.5" y2="195.58" width="0.1524" layer="91"/>
 <label x="312.42" y="195.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$129" class="0">
+<segment>
+<pinref part="F56" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="39.37" x2="106.68" y2="39.37" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
