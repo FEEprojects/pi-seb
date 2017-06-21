@@ -384,6 +384,10 @@ For more documentation, please visit http://www.raspberrypi.org/documentation/ha
 <text x="81.6" y="39.6" size="1.016" layer="21">USB</text>
 <text x="6" y="37" size="0.8128" layer="21">J4</text>
 <text x="29.21" y="43.18" size="1.778" layer="21">Raspberry Pi 2 Model B V1.1</text>
+<hole x="61.5" y="29.5" drill="2.75"/>
+<circle x="61.5" y="29.5" radius="3" width="0.127" layer="51"/>
+<hole x="3.5" y="29.5" drill="2.75"/>
+<circle x="3.5" y="29.5" radius="3" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -4582,30 +4586,6 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <wire x1="-1.27" y1="-20.32" x2="-1.27" y2="20.32" width="0.254" layer="21"/>
 <wire x1="1.27" y1="20.32" x2="1.27" y2="-20.32" width="0.254" layer="21"/>
 </package>
-<package name="H10-2.54" library_version="1">
-<wire x1="-1.27" y1="12.7" x2="1.27" y2="12.7" width="0.127" layer="21"/>
-<wire x1="1.27" y1="12.7" x2="1.27" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-12.7" x2="-1.27" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-12.7" x2="-1.27" y2="12.7" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="12.7" x2="1.27" y2="12.7" width="0" layer="39"/>
-<wire x1="1.27" y1="12.7" x2="1.27" y2="-12.7" width="0" layer="39"/>
-<wire x1="1.27" y1="-12.7" x2="-1.27" y2="-12.7" width="0" layer="39"/>
-<wire x1="-1.27" y1="-12.7" x2="-1.27" y2="12.7" width="0" layer="39"/>
-<pad name="1" x="0" y="11.43" drill="0.889" diameter="1.651" shape="square"/>
-<pad name="2" x="0" y="8.89" drill="0.889" diameter="1.651"/>
-<pad name="3" x="0" y="6.35" drill="0.889" diameter="1.651"/>
-<pad name="4" x="0" y="3.81" drill="0.889" diameter="1.651"/>
-<pad name="5" x="0" y="1.27" drill="0.889" diameter="1.651"/>
-<pad name="6" x="0" y="-1.27" drill="0.889" diameter="1.651"/>
-<pad name="7" x="0" y="-3.81" drill="0.889" diameter="1.651"/>
-<pad name="8" x="0" y="-6.35" drill="0.889" diameter="1.651"/>
-<pad name="9" x="0" y="-8.89" drill="0.889" diameter="1.651"/>
-<pad name="10" x="0" y="-11.43" drill="0.889" diameter="1.651"/>
-<text x="2.54" y="-1.27" size="0.889" layer="27" ratio="11" rot="R90">&gt;value</text>
-<text x="-1.905" y="-1.27" size="0.889" layer="25" ratio="11" rot="R90">&gt;name</text>
-<text x="0.635" y="2.54" size="1.27" layer="33" ratio="10" rot="R90">&gt;name</text>
-<rectangle x1="-1.27" y1="-12.7" x2="1.27" y2="12.7" layer="39"/>
-</package>
 </packages>
 <symbols>
 <symbol name="MICRO-SD-CARD-HOLDER-9P" library_version="1">
@@ -4752,24 +4732,6 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <pin name="15" x="-7.62" y="-15.24" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="16" x="-7.62" y="-17.78" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="HEADER-10P" library_version="1">
-<wire x1="-1.27" y1="12.7" x2="3.81" y2="12.7" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="12.7" x2="3.81" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-12.7" x2="-1.27" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-12.7" x2="-1.27" y2="12.7" width="0.1524" layer="94"/>
-<text x="-7.62" y="13.97" size="1.27" layer="95" ratio="10">&gt;name</text>
-<text x="-1.27" y="13.97" size="1.27" layer="95" ratio="10">&gt;value</text>
-<pin name="1" x="-6.35" y="11.43" visible="pad" length="middle" function="dotclk"/>
-<pin name="2" x="-6.35" y="8.89" visible="pad" length="middle"/>
-<pin name="3" x="-6.35" y="6.35" visible="pad" length="middle"/>
-<pin name="4" x="-6.35" y="3.81" visible="pad" length="middle"/>
-<pin name="5" x="-6.35" y="1.27" visible="pad" length="middle"/>
-<pin name="6" x="-6.35" y="-1.27" visible="pad" length="middle"/>
-<pin name="7" x="-6.35" y="-3.81" visible="pad" length="middle"/>
-<pin name="8" x="-6.35" y="-6.35" visible="pad" length="middle"/>
-<pin name="9" x="-6.35" y="-8.89" visible="pad" length="middle"/>
-<pin name="10" x="-6.35" y="-11.43" visible="pad" length="middle"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MICRO-SD-CARD-HOLDER-9P" prefix="J" uservalue="yes" library_version="1">
@@ -4897,34 +4859,6 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <technology name="">
 <attribute name="MPN" value="P125-1116A0BS116AX"/>
 <attribute name="VALUE" value="16p-2.54"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DIP-LONG-BLACK-FEMALE-HEADER-VERT(10P-2.54)" prefix="J" uservalue="yes" library_version="1">
-<description>320030039</description>
-<gates>
-<gate name="G$1" symbol="HEADER-10P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="H10-2.54">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="F185-1110A1BSYA1" constant="no"/>
-<attribute name="VALUE" value="10p-2.54" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5470,6 +5404,26 @@ type 0207, grid 10 mm</description>
 <technology name="">
 <attribute name="MPN" value="FHCFR-1/4W-334J" constant="no"/>
 <attribute name="VALUE" value="330K"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD-RES-100R-5%-1/10W(0603)" prefix="R" uservalue="yes" library_version="1">
+<description>301010090</description>
+<gates>
+<gate name="G$1" symbol="RES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="RC0603JR-07100RL" constant="no"/>
+<attribute name="VALUE" value="100R"/>
 </technology>
 </technologies>
 </device>
@@ -6736,7 +6690,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="R6" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-220R-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="220R"/>
 <part name="R7" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-330K-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="330K"/>
 <part name="R9" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-100R-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="100R"/>
-<part name="R10" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-100R-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="100R"/>
+<part name="R10" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100R-5%-1/10W(0603)" device="" value="100R"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
@@ -7029,10 +6983,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="I2C_10" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="F36" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F37" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="J9" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-LONG-BLACK-FEMALE-HEADER-VERT(10P-2.54)" device="" value="10p-2.54"/>
-<part name="J10" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-LONG-BLACK-FEMALE-HEADER-VERT(10P-2.54)" device="" value="10p-2.54"/>
-<part name="J11" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-LONG-BLACK-FEMALE-HEADER-VERT(10P-2.54)" device="" value="10p-2.54"/>
-<part name="J12" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-LONG-BLACK-FEMALE-HEADER-VERT(10P-2.54)" device="" value="10p-2.54"/>
 <part name="F56" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F57" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F58" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
@@ -7066,7 +7016,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <text x="162.56" y="53.34" size="1.778" layer="97">the only battery holder on seeed</text>
 <wire x1="289.56" y1="119.38" x2="383.54" y2="119.38" width="0.1524" layer="97"/>
 <text x="323.85" y="127" size="5.08" layer="97">ID EEPROM</text>
-<text x="294.64" y="111.76" size="2.1844" layer="97">4x2.54 - not good practice, but they have the pi will fit and won't need to solder.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -7120,10 +7069,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="TP7" gate="G$1" x="355.6" y="154.94"/>
 <instance part="GND44" gate="1" x="351.79" y="138.43"/>
 <instance part="+3V10" gate="G$1" x="81.28" y="190.5" rot="R90"/>
-<instance part="J9" gate="G$1" x="314.96" y="86.36"/>
-<instance part="J10" gate="G$1" x="314.96" y="60.96"/>
-<instance part="J11" gate="G$1" x="322.58" y="86.36" rot="R180"/>
-<instance part="J12" gate="G$1" x="322.58" y="60.96" rot="R180"/>
 <instance part="F57" gate="G$1" x="252.73" y="243.84"/>
 <instance part="F58" gate="G$1" x="252.73" y="248.92"/>
 </instances>
