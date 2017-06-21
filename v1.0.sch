@@ -5247,34 +5247,6 @@ SMD type&lt;br&gt;</description>
 <text x="-1.016" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;NAME</text>
 <text x="1.435" y="-1.605" size="0.635" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
-<package name="PR-D2.3XL6.5MM" library_version="1">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-type 0207, grid 10 mm</description>
-<wire x1="5.207" y1="0" x2="4.191" y2="0" width="0.6096" layer="51"/>
-<wire x1="-4.953" y1="0" x2="-3.937" y2="0" width="0.6096" layer="51"/>
-<wire x1="-3.048" y1="0.889" x2="-2.794" y2="1.143" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.048" y1="-0.889" x2="-2.794" y2="-1.143" width="0.1524" layer="21" curve="90"/>
-<wire x1="3.048" y1="-1.143" x2="3.302" y2="-0.889" width="0.1524" layer="21" curve="90"/>
-<wire x1="3.048" y1="1.143" x2="3.302" y2="0.889" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.048" y1="-0.889" x2="-3.048" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="-2.794" y1="1.143" x2="-2.413" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="-2.286" y1="1.016" x2="-2.413" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="-2.794" y1="-1.143" x2="-2.413" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="-2.286" y1="-1.016" x2="-2.413" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="1.016" x2="2.667" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="1.016" x2="-2.286" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-1.016" x2="2.667" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-1.016" x2="-2.286" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="1.143" x2="2.667" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="-1.143" x2="2.667" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="3.302" y1="-0.889" x2="3.302" y2="0.889" width="0.1524" layer="21"/>
-<pad name="1" x="-4.953" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="5.207" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.413" y="1.397" size="0.889" layer="25" ratio="11">&gt;NAME</text>
-<text x="-2.413" y="-2.921" size="0.889" layer="27" ratio="11">&gt;VALUE</text>
-<rectangle x1="3.302" y1="-0.3048" x2="4.1656" y2="0.3048" layer="21"/>
-<rectangle x1="-3.9116" y1="-0.3048" x2="-3.048" y2="0.3048" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="RES" library_version="1">
@@ -5369,41 +5341,21 @@ type 0207, grid 10 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIP-RES-220R-5%-1/4W(PR-D2.3XL6.5MM)" prefix="R" uservalue="yes" library_version="1">
-<description>301020011</description>
+<deviceset name="SMD-RES-220R-5%-1/10W(0603)" prefix="R" uservalue="yes" library_version="1">
+<description>301010163</description>
 <gates>
 <gate name="G$1" symbol="RES" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PR-D2.3XL6.5MM">
+<device name="" package="R0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MPN" value="FHCFR-1/4W-221J" constant="no"/>
+<attribute name="MPN" value="RC0603JR-07220RL" constant="no"/>
 <attribute name="VALUE" value="220R"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DIP-RES-330K-5%-1/4W(PR-D2.3XL6.5MM)" prefix="R" uservalue="yes" library_version="1">
-<description>301020021</description>
-<gates>
-<gate name="G$1" symbol="RES" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PR-D2.3XL6.5MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="FHCFR-1/4W-334J" constant="no"/>
-<attribute name="VALUE" value="330K"/>
 </technology>
 </technologies>
 </device>
@@ -5423,26 +5375,6 @@ type 0207, grid 10 mm</description>
 <technologies>
 <technology name="">
 <attribute name="MPN" value="RC0603JR-07100RL" constant="no"/>
-<attribute name="VALUE" value="100R"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DIP-RES-100R-5%-1/4W(PR-D2.3XL6.5MM)" prefix="R" uservalue="yes" library_version="1">
-<description>301020017</description>
-<gates>
-<gate name="G$1" symbol="RES" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PR-D2.3XL6.5MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="FHCFR-1/4W-101J" constant="no"/>
 <attribute name="VALUE" value="100R"/>
 </technology>
 </technologies>
@@ -6687,9 +6619,9 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="D8" library="Seeed-LED-2016" library_urn="urn:adsk.eagle:library:458" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="RED-0603"/>
 <part name="D9" library="Seeed-LED-2016" library_urn="urn:adsk.eagle:library:458" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="RED-0603"/>
 <part name="R5" library="Seeed-Resistor-2016" library_urn="urn:adsk.eagle:library:460" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
-<part name="R6" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-220R-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="220R"/>
-<part name="R7" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-330K-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="330K"/>
-<part name="R9" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-100R-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="100R"/>
+<part name="R6" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-220R-5%-1/10W(0603)" device="" value="220R"/>
+<part name="R7" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-330R-1%-1/10W(0603)" device="" value="330R"/>
+<part name="R9" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100R-5%-1/10W(0603)" device="" value="100R"/>
 <part name="R10" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100R-5%-1/10W(0603)" device="" value="100R"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
@@ -6800,13 +6732,13 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="U$3" library="C106DG_thyristor" deviceset="C106DG" device=""/>
 <part name="U$4" library="mic29300" deviceset="MCR29300" device=""/>
 <part name="D13" library="Seeed-LED-2016" library_urn="urn:adsk.eagle:library:458" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="RED-0603"/>
-<part name="R21" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-220R-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="220R"/>
+<part name="R21" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-220R-5%-1/10W(0603)" device="" value="220R"/>
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SW3" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
 <part name="D10" library="Seeed-LED-2016" library_urn="urn:adsk.eagle:library:458" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="RED-0603"/>
 <part name="R11" library="Seeed-Resistor-2016" library_urn="urn:adsk.eagle:library:460" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
 <part name="D14" library="Seeed-LED-2016" library_urn="urn:adsk.eagle:library:458" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="RED-0603"/>
-<part name="R22" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="DIP-RES-100R-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="100R"/>
+<part name="R22" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100R-5%-1/10W(0603)" device="" value="100R"/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SW4" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
 <part name="FRAME7" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
@@ -6986,6 +6918,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="F56" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F57" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F58" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="TP8" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
 </parts>
 <sheets>
 <sheet>
@@ -8783,6 +8716,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="GND45" gate="1" x="195.58" y="193.04"/>
 <instance part="P+1" gate="1" x="220.98" y="251.46"/>
 <instance part="U$5" gate="G$1" x="137.16" y="215.9"/>
+<instance part="TP8" gate="G$1" x="58.42" y="233.68"/>
 </instances>
 <busses>
 </busses>
@@ -8979,7 +8913,10 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <segment>
 <pinref part="D1" gate="G$1" pin="+"/>
 <pinref part="F1" gate="G$1" pin="P$2"/>
-<wire x1="63.5" y1="231.14" x2="52.07" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="231.14" x2="58.42" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="TP8" gate="G$1" pin="TP"/>
+<wire x1="58.42" y1="231.14" x2="52.07" y2="231.14" width="0.1524" layer="91"/>
+<junction x="58.42" y="231.14"/>
 </segment>
 </net>
 <net name="N$80" class="0">
