@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6526,45 +6526,169 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </deviceset>
 </devicesets>
 </library>
-<library name="lm2596s_DC-DC">
+<library name="diy-modules">
+<description>&lt;b&gt;DIY Modules for Arduino, Raspberry Pi, CubieBoard etc.&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+The library contains a list of symbols and footprints for popular, cheap and easy-to-use electronic modules.&lt;br&gt;
+The modules are intend to work with microprocessor-based platforms such as &lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt;, &lt;a href="http://raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt;, &lt;a href="http://cubieboard.org/"&gt;CubieBoard&lt;/a&gt;, &lt;a href="http://beagleboard.org/"&gt;BeagleBone&lt;/a&gt; and many others. There are many manufacturers of the modules in the world. Almost all of them can be bought on &lt;a href="ebay.com"&gt;ebay.com&lt;/a&gt;.&lt;br&gt;
+&lt;br&gt;
+By using this library, you can design a PCB for devices created with usage of modules. Even if you do not need to create PCB design, you can also use the library to quickly document your work by drawing schematics of devices built by you.&lt;br&gt;
+&lt;br&gt;
+The latest version, examples, photos and much more can be found at: &lt;b&gt;&lt;a href="http://diymodules.org/eagle"&gt;diymodules.org/eagle&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailto:eagle@diymodules.org"&gt;eagle@diymodules.org&lt;/b&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Version: 1.7.0 (2017-May-20)&lt;/i&gt;&lt;br&gt;
+&lt;i&gt;Created by: Miroslaw Brudnowski&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Released under the Creative Commons Attribution 4.0 International License: &lt;a href="http://creativecommons.org/licenses/by/4.0"&gt;http://creativecommons.org/licenses/by/4.0&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;center&gt;
+&lt;a href="http://diymodules.org/eagle"&gt;&lt;img src="http://www.diymodules.org/img/diymodules-lbr-image.php?v=1.7.0" alt="DIYmodules.org"&gt;&lt;/a&gt;
+&lt;/center&gt;</description>
 <packages>
-<package name="LM2596S">
-<wire x1="0" y1="0" x2="43.18" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="-21.082" width="0.127" layer="21"/>
-<wire x1="0" y1="-21.082" x2="43.18" y2="-21.082" width="0.127" layer="21"/>
-<wire x1="43.18" y1="0" x2="43.18" y2="-21.082" width="0.127" layer="21"/>
-<pad name="P$1" x="1.8415" y="-1.9685" drill="0.65" diameter="2.54" shape="square"/>
-<pad name="P$2" x="1.8415" y="-19.1135" drill="0.65" diameter="2.54" shape="square"/>
-<pad name="P$3" x="41.3385" y="-1.9685" drill="0.65" diameter="2.54" shape="square"/>
-<pad name="P$4" x="41.3385" y="-19.1135" drill="0.65" diameter="2.54" shape="square"/>
-<hole x="8.4455" y="-2.54" drill="4.8"/>
-<hole x="34.7345" y="-18.542" drill="4.9"/>
+<package name="TEMP-HUM-SENSOR-DHT22">
+<description>&lt;b&gt;DHT22 - digital humidity &amp; temperature sensor&lt;/b&gt;</description>
+<wire x1="-7.62" y1="2.54" x2="-1.524" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="2.54" x2="1.524" y2="2.54" width="0.127" layer="21"/>
+<wire x1="1.524" y1="2.54" x2="7.62" y2="2.54" width="0.127" layer="21"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="1.016" width="0.127" layer="21"/>
+<wire x1="7.62" y1="1.016" x2="7.62" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-5.334" x2="3.175" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-5.334" x2="1.905" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-5.334" x2="0.635" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-5.334" x2="-0.635" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-5.334" x2="-1.905" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-5.334" x2="-3.175" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-5.334" x2="-7.62" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-5.334" x2="-7.62" y2="1.016" width="0.127" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="0.8" shape="square"/>
+<pad name="2" x="-1.27" y="0" drill="0.8"/>
+<text x="0" y="3.81" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<pad name="3" x="1.27" y="0" drill="0.8"/>
+<pad name="4" x="3.81" y="0" drill="0.8"/>
+<wire x1="-7.62" y1="1.016" x2="-7.62" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-5.334" x2="-0.635" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-1.905" x2="0.635" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-1.905" x2="0.635" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-5.334" x2="-3.175" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-1.905" x2="-1.905" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-1.905" x2="-1.905" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-5.334" x2="1.905" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-1.905" x2="3.175" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.905" x2="3.175" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="1.016" x2="-1.524" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="1.016" x2="1.524" y2="1.016" width="0.127" layer="21"/>
+<wire x1="1.524" y1="1.016" x2="7.62" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="1.016" x2="-1.524" y2="2.54" width="0.127" layer="21"/>
+<wire x1="1.524" y1="1.016" x2="1.524" y2="2.54" width="0.127" layer="21"/>
+</package>
+<package name="DC-DC-STEP-DOWN-LM2596">
+<description>&lt;b&gt;DC/DC Step-Down Regulator&lt;/b&gt; based on &lt;b&gt;LM2596-ADJ&lt;/b&gt; chip</description>
+<wire x1="-21.59" y1="10.414" x2="21.59" y2="10.414" width="0.127" layer="21"/>
+<wire x1="21.59" y1="10.414" x2="21.59" y2="-10.414" width="0.127" layer="21"/>
+<wire x1="21.59" y1="-10.414" x2="-21.59" y2="-10.414" width="0.127" layer="21"/>
+<wire x1="-21.59" y1="-10.414" x2="-21.59" y2="10.414" width="0.127" layer="21"/>
+<pad name="IN+" x="-19.812" y="8.636" drill="1.5" diameter="2.5" shape="square"/>
+<pad name="IN-" x="-19.812" y="-8.636" drill="1.5" diameter="2.5" shape="square"/>
+<pad name="OUT-" x="19.812" y="-8.636" drill="1.5" diameter="2.5" shape="square"/>
+<pad name="OUT+" x="19.812" y="8.636" drill="1.5" diameter="2.5" shape="square"/>
+<hole x="-14.478" y="7.62" drill="3"/>
+<hole x="15.24" y="-7.62" drill="3"/>
+<text x="0" y="11.43" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="-19.685" y="0" size="1.778" layer="21" rot="R90" align="center">IN</text>
+<text x="19.685" y="0" size="1.778" layer="21" rot="R90" align="center">OUT</text>
+<wire x1="19.685" y1="6.985" x2="19.685" y2="5.715" width="0.254" layer="21"/>
+<wire x1="19.05" y1="6.35" x2="20.32" y2="6.35" width="0.254" layer="21"/>
+<wire x1="-19.685" y1="-6.985" x2="-19.685" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="19.685" y1="-6.985" x2="19.685" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="-19.685" y1="6.985" x2="-19.685" y2="5.715" width="0.254" layer="21"/>
+<wire x1="-20.32" y1="6.35" x2="-19.05" y2="6.35" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
-<symbol name="LM2596S_DC-DC">
-<wire x1="-48.26" y1="17.78" x2="-20.32" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="17.78" x2="-20.32" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-17.78" x2="-48.26" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-48.26" y1="-17.78" x2="-48.26" y2="17.78" width="0.254" layer="94"/>
-<pin name="P$1" x="-53.34" y="15.24" length="middle" direction="pwr"/>
-<pin name="P$2" x="-53.34" y="-15.24" length="middle" direction="pwr"/>
-<pin name="P$3" x="-15.24" y="15.24" length="middle" direction="pwr" rot="R180"/>
-<pin name="P$4" x="-15.24" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+<symbol name="TEMP-HUM-SENSOR-DHT22">
+<description>&lt;b&gt;DHT22 - digital humidity &amp; temperature sensor&lt;/b&gt;</description>
+<pin name="VDD" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="DAT" x="-12.7" y="2.54" length="middle"/>
+<pin name="N.C." x="-12.7" y="0" length="middle" direction="pas"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle" direction="pwr"/>
+<wire x1="-7.62" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="4.064" width="0.254" layer="94"/>
+<wire x1="5.08" y1="4.064" x2="5.08" y2="2.286" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.286" x2="5.08" y2="0.254" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0.254" x2="5.08" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.524" x2="5.08" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-3.556" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="4.826" y1="6.096" x2="1.27" y2="6.096" width="0.254" layer="94"/>
+<wire x1="1.27" y1="6.096" x2="1.27" y2="4.064" width="0.254" layer="94"/>
+<wire x1="1.27" y1="4.064" x2="5.08" y2="4.064" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.286" x2="1.27" y2="2.286" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.286" x2="1.27" y2="0.254" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.254" x2="5.08" y2="0.254" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.524" x2="1.27" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.524" x2="1.27" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-3.556" x2="5.08" y2="-3.556" width="0.254" layer="94"/>
+<text x="-7.62" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="12.7" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="DC-DC-STEP-DOWN-LM2596">
+<description>&lt;b&gt;DC/DC Step-Down Regulator&lt;/b&gt; based on &lt;b&gt;LM2596-ADJ&lt;/b&gt; chip</description>
+<pin name="IN+" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="IN-" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="OUT+" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT-" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LM2596S">
+<deviceset name="TEMP-HUM-SENSOR-DHT22">
+<description>&lt;b&gt;DHT22 - digital humidity &amp; temperature sensor&lt;/b&gt;&lt;br /&gt;
+Also known as: &lt;b&gt;AM2302&lt;/b&gt;
+&lt;p&gt;&lt;b&gt;AM2302&lt;/b&gt; datasheet available here:&lt;br&gt;
+&lt;a href="http://akizukidenshi.com/download/ds/aosong/AM2302.pdf"&gt;http://akizukidenshi.com/download/ds/aosong/AM2302.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;a href="http://www.ebay.com/sch/dht22+digital+sensor"&gt;Click here to find device on ebay.com&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="photo" src="http://www.diymodules.org/img/device-photo.php?name=TEMP-HUM-SENSOR-DHT22"&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="LM2596S_DC-DC" x="27.94" y="-2.54"/>
+<gate name="G$1" symbol="TEMP-HUM-SENSOR-DHT22" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="LM2596S">
+<device name="" package="TEMP-HUM-SENSOR-DHT22">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
-<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="DAT" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="N.C." pad="3"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DC-DC-STEP-DOWN-LM2596">
+<description>&lt;b&gt;DC/DC Step-Down Regulator&lt;/b&gt; based on &lt;b&gt;LM2596-ADJ&lt;/b&gt; chip
+&lt;p&gt;&lt;b&gt;LM2596&lt;/b&gt; datasheet available here:&lt;br /&gt;&lt;a href="http://www.ti.com/lit/ds/symlink/lm2596.pdf"&gt;http://www.ti.com/lit/ds/symlink/lm2596.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;a href="http://www.ebay.com/sch/lm2596+power+regulator"&gt;Click here to find device on ebay.com&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="photo" src="http://www.diymodules.org/img/device-photo.php?name=DC-DC-STEP-DOWN-LM2596"&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DC-DC-STEP-DOWN-LM2596" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DC-DC-STEP-DOWN-LM2596">
+<connects>
+<connect gate="G$1" pin="IN+" pad="IN+"/>
+<connect gate="G$1" pin="IN-" pad="IN-"/>
+<connect gate="G$1" pin="OUT+" pad="OUT+"/>
+<connect gate="G$1" pin="OUT-" pad="OUT-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6887,7 +7011,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="Q5" library="Seeed-Transistor" library_urn="urn:adsk.eagle:library:477" deviceset="SMD-MOSFET-P-CH-20V-6A-SSM3J328R(SOT-23)" device="" value="SSM3J328R,LF"/>
 <part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="U$5" library="lm2596s_DC-DC" deviceset="LM2596S" device=""/>
 <part name="I2C_1" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="F5" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F6" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
@@ -6919,6 +7042,10 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <part name="F57" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F58" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="TP8" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
+<part name="U$7" library="diy-modules" deviceset="TEMP-HUM-SENSOR-DHT22" device=""/>
+<part name="U$5" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
+<part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R16" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -7002,8 +7129,11 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="TP7" gate="G$1" x="355.6" y="154.94"/>
 <instance part="GND44" gate="1" x="351.79" y="138.43"/>
 <instance part="+3V10" gate="G$1" x="81.28" y="190.5" rot="R90"/>
-<instance part="F57" gate="G$1" x="252.73" y="243.84"/>
+<instance part="F57" gate="G$1" x="255.27" y="243.84"/>
 <instance part="F58" gate="G$1" x="252.73" y="248.92"/>
+<instance part="U$7" gate="G$1" x="347.98" y="78.74"/>
+<instance part="GND41" gate="1" x="327.66" y="68.58"/>
+<instance part="R16" gate="G$1" x="320.04" y="78.74" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7152,6 +7282,13 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <wire x1="351.79" y1="140.97" x2="351.79" y2="139.7" width="0.1524" layer="91"/>
 <junction x="351.79" y="140.97"/>
 </segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="GND"/>
+<wire x1="335.28" y1="76.2" x2="327.66" y2="76.2" width="0.1524" layer="91"/>
+<label x="327.66" y="76.2" size="1.778" layer="95"/>
+<wire x1="327.66" y1="76.2" x2="327.66" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="GND41" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -7199,6 +7336,22 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <wire x1="91.44" y1="190.5" x2="83.82" y2="190.5" width="0.1524" layer="91"/>
 <label x="81.28" y="190.5" size="1.778" layer="95"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="F57" gate="G$1" pin="1"/>
+<wire x1="250.19" y1="243.84" x2="241.3" y2="243.84" width="0.1524" layer="91"/>
+<label x="243.84" y="245.11" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F57" gate="G$1" pin="2"/>
+<pinref part="J7" gate="J" pin="3"/>
+<wire x1="260.35" y1="243.84" x2="265.43" y2="243.84" width="0.1524" layer="91"/>
+<pinref part="J7" gate="J" pin="4"/>
+<wire x1="283.21" y1="243.84" x2="288.29" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="265.43" y1="243.84" x2="283.21" y2="243.84" width="0.1524" layer="91"/>
+<junction x="265.43" y="243.84"/>
+<junction x="283.21" y="243.84"/>
+<label x="283.21" y="241.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL_3V3" class="0">
@@ -7304,11 +7457,22 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="139.7" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SCLK" class="0">
+<net name="GPIO4" class="0">
 <segment>
 <pinref part="PCB1" gate="G$1" pin="GPIO4"/>
 <wire x1="91.44" y1="215.9" x2="73.66" y2="215.9" width="0.1524" layer="91"/>
 <label x="71.12" y="215.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="DAT"/>
+<wire x1="335.28" y1="81.28" x2="322.58" y2="81.28" width="0.1524" layer="91"/>
+<label x="327.66" y="81.28" size="1.778" layer="95"/>
+<wire x1="322.58" y1="81.28" x2="322.58" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="322.58" y1="73.66" x2="320.04" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="73.66" x2="320.04" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="73.66" x2="307.34" y2="73.66" width="0.1524" layer="91"/>
+<junction x="320.04" y="73.66"/>
 </segment>
 </net>
 <net name="RTC_BATT" class="0">
@@ -7481,8 +7645,13 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <junction x="265.43" y="248.92"/>
 <wire x1="283.21" y1="248.92" x2="288.29" y2="248.92" width="0.1524" layer="91"/>
 <junction x="283.21" y="248.92"/>
-<label x="256.54" y="248.92" size="1.778" layer="95"/>
 <pinref part="F58" gate="G$1" pin="2"/>
+<label x="284.48" y="248.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F58" gate="G$1" pin="1"/>
+<wire x1="247.65" y1="248.92" x2="241.3" y2="248.92" width="0.1524" layer="91"/>
+<label x="241.3" y="248.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7666,17 +7835,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </net>
 <net name="3V3" class="0">
 <segment>
-<pinref part="J7" gate="J" pin="3"/>
-<wire x1="265.43" y1="243.84" x2="257.81" y2="243.84" width="0.1524" layer="91"/>
-<pinref part="J7" gate="J" pin="4"/>
-<wire x1="283.21" y1="243.84" x2="288.29" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="265.43" y1="243.84" x2="283.21" y2="243.84" width="0.1524" layer="91"/>
-<junction x="265.43" y="243.84"/>
-<junction x="283.21" y="243.84"/>
-<label x="255.27" y="243.84" size="1.778" layer="95"/>
-<pinref part="F57" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="U8" gate="G$1" pin="VCC"/>
 <wire x1="345.44" y1="182.88" x2="358.14" y2="182.88" width="0.1524" layer="91"/>
 <label x="367.03" y="184.15" size="1.778" layer="95"/>
@@ -7757,16 +7915,16 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="78.74" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$130" class="0">
+<net name="3V3_SMOOTH" class="0">
 <segment>
-<pinref part="F58" gate="G$1" pin="1"/>
-<wire x1="247.65" y1="248.92" x2="241.3" y2="248.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$131" class="0">
-<segment>
-<pinref part="F57" gate="G$1" pin="1"/>
-<wire x1="247.65" y1="243.84" x2="241.3" y2="243.84" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="VDD"/>
+<label x="317.5" y="93.98" size="1.778" layer="95"/>
+<wire x1="335.28" y1="83.82" x2="320.04" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="83.82" x2="317.5" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="83.82" x2="317.5" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="320.04" y1="82.55" x2="320.04" y2="83.82" width="0.1524" layer="91"/>
+<junction x="320.04" y="83.82"/>
 </segment>
 </net>
 </nets>
@@ -7863,7 +8021,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="F75" gate="G$1" x="219.71" y="200.66"/>
 <instance part="F76" gate="G$1" x="123.19" y="46.99"/>
 <instance part="F77" gate="G$1" x="119.38" y="44.45"/>
-<instance part="F56" gate="G$1" x="119.38" y="39.37"/>
+<instance part="F56" gate="G$1" x="114.3" y="39.37"/>
 </instances>
 <busses>
 </busses>
@@ -8032,6 +8190,19 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <wire x1="144.78" y1="35.7" x2="144.78" y2="36.83" width="0.1524" layer="91"/>
 <junction x="144.78" y="36.83"/>
 </segment>
+<segment>
+<pinref part="F76" gate="G$1" pin="2"/>
+<pinref part="U7" gate="G$1" pin="1"/>
+<wire x1="128.27" y1="46.99" x2="129.54" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="46.99" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
+<junction x="129.54" y="46.99"/>
+<pinref part="U7" gate="G$1" pin="28"/>
+<wire x1="144.78" y1="46.99" x2="152.4" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="45.72" x2="144.78" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="45.72" x2="144.78" y2="46.99" width="0.1524" layer="91"/>
+<junction x="144.78" y="46.99"/>
+<label x="148.59" y="46.99" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LOPY_3V3" class="0">
 <segment>
@@ -8076,18 +8247,34 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="4"/>
-<wire x1="129.54" y1="39.37" x2="124.46" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="39.37" x2="119.38" y2="39.37" width="0.1524" layer="91"/>
 <label x="115.1" y="39.6" size="1.778" layer="95"/>
-<wire x1="124.46" y1="39.37" x2="121.92" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="39.37" x2="129.6" y2="39.37" width="0.1524" layer="91"/>
-<wire x1="129.6" y1="39.37" x2="129.6" y2="38.2" width="0.1524" layer="91"/>
+<pinref part="F56" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="39.37" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
 <junction x="129.54" y="39.37"/>
 <pinref part="U7" gate="G$1" pin="25"/>
 <wire x1="144.78" y1="39.37" x2="152.4" y2="39.37" width="0.1524" layer="91"/>
-<wire x1="129.6" y1="38.2" x2="144.78" y2="38.2" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="38.2" x2="144.78" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="38.1" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="38.1" x2="144.78" y2="39.37" width="0.1524" layer="91"/>
 <junction x="144.78" y="39.37"/>
-<pinref part="F56" gate="G$1" pin="2"/>
+<label x="147.32" y="39.37" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F56" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="39.37" x2="106.68" y2="39.37" width="0.1524" layer="91"/>
+<label x="105.41" y="39.37" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F77" gate="G$1" pin="2"/>
+<pinref part="U7" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="44.45" x2="129.54" y2="44.45" width="0.1524" layer="91"/>
+<pinref part="U7" gate="G$1" pin="27"/>
+<wire x1="144.78" y1="44.45" x2="152.4" y2="44.45" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="44.45" x2="144.78" y2="44.45" width="0.1524" layer="91"/>
+<junction x="129.54" y="44.45"/>
+<junction x="144.78" y="44.45"/>
+<label x="147.32" y="44.45" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_RST" class="0">
@@ -8595,26 +8782,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="F74" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$63" class="0">
-<segment>
-<pinref part="F76" gate="G$1" pin="2"/>
-<pinref part="U7" gate="G$1" pin="1"/>
-<wire x1="128.27" y1="46.99" x2="129.54" y2="46.99" width="0.1524" layer="91"/>
-<pinref part="U7" gate="G$1" pin="28"/>
-<wire x1="129.54" y1="46.99" x2="144.78" y2="46.99" width="0.1524" layer="91"/>
-<junction x="129.54" y="46.99"/>
-</segment>
-</net>
-<net name="N$64" class="0">
-<segment>
-<pinref part="F77" gate="G$1" pin="2"/>
-<pinref part="U7" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="44.45" x2="129.54" y2="44.45" width="0.1524" layer="91"/>
-<pinref part="U7" gate="G$1" pin="27"/>
-<wire x1="129.54" y1="44.45" x2="144.78" y2="44.45" width="0.1524" layer="91"/>
-<junction x="129.54" y="44.45"/>
-</segment>
-</net>
 <net name="N$66" class="0">
 <segment>
 <pinref part="F75" gate="G$1" pin="2"/>
@@ -8646,12 +8813,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="J2" gate="G$1" pin="CS"/>
 <wire x1="322.58" y1="195.58" x2="317.5" y2="195.58" width="0.1524" layer="91"/>
 <label x="312.42" y="195.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$129" class="0">
-<segment>
-<pinref part="F56" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="39.37" x2="106.68" y2="39.37" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -8715,8 +8876,8 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <instance part="Q5" gate="G$1" x="241.3" y="224.79" rot="R90"/>
 <instance part="GND45" gate="1" x="195.58" y="193.04"/>
 <instance part="P+1" gate="1" x="220.98" y="251.46"/>
-<instance part="U$5" gate="G$1" x="137.16" y="215.9"/>
 <instance part="TP8" gate="G$1" x="58.42" y="233.68"/>
+<instance part="U$5" gate="G$1" x="101.6" y="226.06"/>
 </instances>
 <busses>
 </busses>
@@ -8753,14 +8914,13 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </segment>
 <segment>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="101.6" y1="185.42" x2="81.28" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="185.42" x2="81.28" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="185.42" x2="121.92" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="185.42" x2="83.82" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="185.42" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
 <junction x="101.6" y="185.42"/>
-<pinref part="U$5" gate="G$1" pin="P$4"/>
-<wire x1="121.92" y1="200.66" x2="121.92" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="P$2"/>
-<wire x1="83.82" y1="200.66" x2="81.28" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="OUT-"/>
+<wire x1="119.38" y1="220.98" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="IN-"/>
+<wire x1="83.82" y1="220.98" x2="83.82" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="-"/>
@@ -8832,9 +8992,9 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <pinref part="U11" gate="A" pin="CATHODE"/>
 <wire x1="54.61" y1="226.06" x2="77.47" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="A"/>
-<pinref part="U$5" gate="G$1" pin="P$1"/>
 <wire x1="83.82" y1="231.14" x2="81.28" y2="231.14" width="0.1524" layer="91"/>
 <junction x="81.28" y="231.14"/>
+<pinref part="U$5" gate="G$1" pin="IN+"/>
 </segment>
 </net>
 <net name="3V3_SMOOTH" class="0">
@@ -8870,9 +9030,9 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <label x="132.08" y="231.14" size="1.778" layer="95"/>
 <wire x1="129.54" y1="231.14" x2="137.16" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="TP4" gate="G$1" pin="TP"/>
-<pinref part="U$5" gate="G$1" pin="P$3"/>
-<wire x1="121.92" y1="231.14" x2="129.54" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="231.14" x2="129.54" y2="231.14" width="0.1524" layer="91"/>
 <junction x="129.54" y="231.14"/>
+<pinref part="U$5" gate="G$1" pin="OUT+"/>
 </segment>
 <segment>
 <label x="48.26" y="101.6" size="1.778" layer="95"/>
@@ -12013,10 +12173,7 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <approved hash="202,2,214.63,133.35,U6,!RESET,,,,"/>
 <approved hash="104,7,238.76,193.04,U12,VCC,PI_5V,,,"/>
 <approved hash="104,1,345.44,182.88,U8,VCC,3V3,,,"/>
-<approved hash="104,3,83.82,231.14,U$5,P$1,+24V,,,"/>
-<approved hash="104,3,83.82,200.66,U$5,P$2,GND,,,"/>
-<approved hash="104,3,121.92,231.14,U$5,P$3,5V35,,,"/>
-<approved hash="104,3,121.92,200.66,U$5,P$4,GND,,,"/>
+<approved hash="104,1,335.28,83.82,U$7,VDD,3V3_SMOOTH,,,"/>
 <approved hash="208,2,27.94,157.48,+5V,sup,,,,"/>
 <approved hash="208,3,129.54,101.6,+5V,sup,,,,"/>
 <approved hash="208,3,106.68,99.06,+5V,out,,,,"/>
@@ -12028,7 +12185,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <approved hash="106,2,322.58,198.12,N$18,,,,,"/>
 <approved hash="106,2,322.58,180.34,N$20,,,,,"/>
 <approved hash="106,2,322.58,177.8,N$21,,,,,"/>
-<approved hash="106,1,91.44,215.9,SCLK,,,,,"/>
 <approved hash="117,2,127,137.16,SHIELD,,,,,"/>
 <approved hash="111,1,359.41,177.8,N$97,,,,,"/>
 <approved hash="111,1,364.49,172.72,ID_SC,,,,,"/>
