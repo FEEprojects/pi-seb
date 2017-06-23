@@ -4003,26 +4003,6 @@ https://www.pycom.io/product/lopy/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CERAMIC-10UF-10V-10%-X5R(0603)" prefix="C" uservalue="yes" library_version="1">
-<description>302010103</description>
-<gates>
-<gate name="G$1" symbol="C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="C0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="CC0603KRX5R6BB106" constant="no"/>
-<attribute name="VALUE" value="10uf"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TANTALUM-SMD-10UF-10V-10%(AVX-A)" prefix="C" uservalue="yes" library_version="1">
 <description>302020011</description>
 <gates>
@@ -5729,60 +5709,56 @@ at 27/07/2012 14:20:03</description>
 </library>
 <library name="Seeed-Switch" urn="urn:adsk.eagle:library:476">
 <packages>
-<package name="SW2-12.7-12.0X3.6X3.6MM" library_version="1">
-<wire x1="3.81" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
-<wire x1="1.27" y1="0" x2="0" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="0" x2="-1.27" y2="0" width="0.127" layer="21"/>
-<wire x1="6" y1="1.8" x2="-6" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-6" y1="-1.8" x2="6" y2="-1.8" width="0.127" layer="21"/>
-<pad name="1" x="6.35" y="0" drill="0.8" shape="square" rot="R270"/>
-<pad name="2" x="-6.35" y="0" drill="0.8" rot="R270"/>
-<text x="-1.905" y="2.54" size="0.889" layer="25" ratio="11">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="0.889" layer="27" ratio="11">&gt;VALUE</text>
-<rectangle x1="-1.778" y1="-5.969" x2="1.778" y2="5.969" layer="39" rot="R270"/>
-<wire x1="-6" y1="1.8" x2="-6" y2="0.7" width="0.127" layer="21"/>
-<wire x1="-6" y1="-1.8" x2="-6" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="6" y1="1.8" x2="6" y2="0.8" width="0.127" layer="21"/>
-<wire x1="6" y1="-1.8" x2="6" y2="-0.8" width="0.127" layer="21"/>
+<package name="SW2-5.0-6.0X3.0X4.3MM" library_version="1">
+<pad name="1" x="-2.5" y="0" drill="0.8" diameter="1.27"/>
+<pad name="2" x="2.5" y="0" drill="0.8" diameter="1.27"/>
+<wire x1="-3" y1="-1.15" x2="3" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.15" x2="-3" y2="2.35" width="0.127" layer="51"/>
+<wire x1="-3" y1="2.35" x2="-1.5" y2="2.35" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2.35" x2="1.5" y2="2.35" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2.35" x2="3" y2="2.35" width="0.127" layer="21"/>
+<wire x1="3" y1="2.35" x2="3" y2="-1.15" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="2.35" x2="-1.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="3.5" x2="1.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="3.5" x2="1.5" y2="2.35" width="0.127" layer="21"/>
+<rectangle x1="-3.048" y1="-1.143" x2="2.921" y2="2.286" layer="39"/>
+<text x="-1.905" y="3.81" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.778" y="0" size="0.635" layer="27" ratio="11">&gt;VALUE</text>
+<wire x1="-3" y1="-1.15" x2="-3" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-3" y1="2.3" x2="-3" y2="0.6" width="0.127" layer="21"/>
+<wire x1="3" y1="2.3" x2="3" y2="0.6" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.15" x2="3" y2="-0.6" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
-<symbol name="SWITCH-TILT-2P" library_version="1">
-<wire x1="-3.81" y1="2.54" x2="-3.81" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="3.81" y1="2.54" x2="3.81" y2="0" width="0.254" layer="94"/>
-<circle x="-1.27" y="0" radius="0.889" width="0" layer="94"/>
-<pin name="2" x="-6.35" y="0" visible="off" length="short"/>
-<pin name="1" x="6.35" y="0" visible="off" length="short" rot="R180"/>
-<text x="-3.81" y="2.54" size="1.27" layer="95" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
-<wire x1="3.81" y1="0" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="-3.81" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-2.54" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
-<text x="-6.35" y="0" size="0.8128" layer="95">OFF</text>
-<text x="5.08" y="0" size="0.8128" layer="95">ON</text>
-<wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
+<symbol name="BUTTON-2P" library_version="1">
+<pin name="1" x="-7.62" y="0" length="short"/>
+<pin name="2" x="7.62" y="0" length="short" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<circle x="-1.905" y="0" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0.635" x2="1.27" y2="1.905" width="0.1524" layer="94"/>
+<circle x="1.905" y="0" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<text x="-7.62" y="1.27" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="1.27" y="1.27" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" prefix="SW" uservalue="yes" library_version="1">
-<description>311100000</description>
+<deviceset name="DIP-BUTTON(2P-6.0X3.0X4.3MM)" prefix="SW" uservalue="yes" library_version="1">
+<description>311020025</description>
 <gates>
-<gate name="G$1" symbol="SWITCH-TILT-2P" x="0" y="0"/>
+<gate name="G$1" symbol="BUTTON-2P" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SW2-12.7-12.0X3.6X3.6MM">
+<device name="-TS-1101F" package="SW2-5.0-6.0X3.0X4.3MM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MPN" value="SW-200D" constant="no"/>
-<attribute name="VALUE" value="SW-200D" constant="no"/>
+<attribute name="MPN" value="TS-1101F" constant="no"/>
+<attribute name="VALUE" value="TS-1101F" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5917,7 +5893,7 @@ at 27/07/2012 14:20:03</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCR29300">
+<deviceset name="MIC29300">
 <gates>
 <gate name="G$1" symbol="MICR29300" x="-12.7" y="10.16"/>
 </gates>
@@ -6270,69 +6246,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 <technology name="">
 <attribute name="MPN" value="19-217-BHC-ZL1M2RY-3T" constant="no"/>
 <attribute name="VALUE" value="BLUE-0603" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="Seeed-Switch-2016">
-<packages>
-<package name="SW2-12.7-12.0X3.6X3.6MM">
-<wire x1="3.81" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
-<wire x1="1.27" y1="0" x2="0" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="0" x2="-1.27" y2="0" width="0.127" layer="21"/>
-<wire x1="6" y1="1.8" x2="-6" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-6" y1="-1.8" x2="6" y2="-1.8" width="0.127" layer="21"/>
-<pad name="1" x="6.35" y="0" drill="0.8" shape="square" rot="R270"/>
-<pad name="2" x="-6.35" y="0" drill="0.8" rot="R270"/>
-<text x="-1.905" y="2.54" size="0.889" layer="25" ratio="11">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="0.889" layer="27" ratio="11">&gt;VALUE</text>
-<rectangle x1="-1.778" y1="-5.969" x2="1.778" y2="5.969" layer="39" rot="R270"/>
-<wire x1="-6" y1="1.8" x2="-6" y2="0.7" width="0.127" layer="21"/>
-<wire x1="-6" y1="-1.8" x2="-6" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="6" y1="1.8" x2="6" y2="0.8" width="0.127" layer="21"/>
-<wire x1="6" y1="-1.8" x2="6" y2="-0.8" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SWITCH-TILT-2P">
-<wire x1="-3.81" y1="2.54" x2="-3.81" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="3.81" y1="2.54" x2="3.81" y2="0" width="0.254" layer="94"/>
-<circle x="-1.27" y="0" radius="0.889" width="0" layer="94"/>
-<pin name="2" x="-6.35" y="0" visible="off" length="short"/>
-<pin name="1" x="6.35" y="0" visible="off" length="short" rot="R180"/>
-<text x="-3.81" y="2.54" size="1.27" layer="95" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
-<wire x1="3.81" y1="0" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="-3.81" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-2.54" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
-<text x="-6.35" y="0" size="0.8128" layer="95">OFF</text>
-<text x="5.08" y="0" size="0.8128" layer="95">ON</text>
-<wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" prefix="SW" uservalue="yes">
-<description>311100000</description>
-<gates>
-<gate name="G$1" symbol="SWITCH-TILT-2P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SW2-12.7-12.0X3.6X3.6MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="SW-200D" constant="no"/>
-<attribute name="VALUE" value="SW-200D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -7087,7 +7000,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <part name="LOPY_UART1" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="LOPY_I2C" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-05-PIN" device="-ROUND-PAD"/>
 <part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
-<part name="C4" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-10UF-10V-10%-X5R(0603)" device="" value="10uf"/>
+<part name="C4" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="TANTALUM-SMD-10UF-10V-10%(AVX-A)" device="" value="10uf"/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -7141,7 +7054,6 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <part name="F41" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F46" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F47" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="SW1" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
 <part name="C18" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="R20" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-15K-1%-1/10W(0603)" device="" value="15K 1/10W"/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -7151,17 +7063,13 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <part name="J5" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-BLACK-MALE-HEADER-VERT(16P-2.54)" device="" value="16p-2.54"/>
 <part name="J6" library="Seeed-Connector" library_urn="urn:adsk.eagle:library:465" deviceset="DIP-BLACK-MALE-HEADER-VERT(16P-2.54)" device="" value="16p-2.54"/>
 <part name="U$3" library="C106DG_thyristor" deviceset="C106DG" device=""/>
-<part name="U$4" library="mic29300" deviceset="MCR29300" device=""/>
+<part name="U$4" library="mic29300" deviceset="MIC29300" device=""/>
 <part name="D13" library="Seeed-LED-2016" library_urn="urn:adsk.eagle:library:458" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="RED-0603"/>
 <part name="R21" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-220R-5%-1/10W(0603)" device="" value="220R"/>
-<part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SW3" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
 <part name="D10" library="Seeed-LED-2016" library_urn="urn:adsk.eagle:library:458" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="RED-0603"/>
 <part name="R11" library="Seeed-Resistor-2016" library_urn="urn:adsk.eagle:library:460" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
 <part name="D14" library="Seeed-LED-2016" library_urn="urn:adsk.eagle:library:458" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="RED-0603"/>
 <part name="R22" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100R-5%-1/10W(0603)" device="" value="100R"/>
-<part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SW4" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
 <part name="FRAME7" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="U5" library="Seeed-IC" library_urn="urn:adsk.eagle:library:470" deviceset="INTERFACE-FT232RL(SSOP28)" device="" value="FT232RL-SSOP28"/>
 <part name="C28" library="Seeed-Capacitor-2016" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
@@ -7241,10 +7149,10 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <part name="F51" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="R35" library="Seeed-Resistor-2016" library_urn="urn:adsk.eagle:library:460" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
 <part name="D11" library="Seeed-LED-2016" deviceset="SMD-LED-CLEAR-BLUE(0603)" device="" value="BLUE-0603"/>
-<part name="SW5" library="Seeed-Switch-2016" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
-<part name="SW6" library="Seeed-Switch-2016" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
-<part name="SW7" library="Seeed-Switch-2016" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
-<part name="SW8" library="Seeed-Switch-2016" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
+<part name="SW5" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-BUTTON(2P-6.0X3.0X4.3MM)" device="-TS-1101F" value="TS-1101F"/>
+<part name="SW6" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-BUTTON(2P-6.0X3.0X4.3MM)" device="-TS-1101F" value="TS-1101F"/>
+<part name="SW7" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-BUTTON(2P-6.0X3.0X4.3MM)" device="-TS-1101F" value="TS-1101F"/>
+<part name="SW8" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-BUTTON(2P-6.0X3.0X4.3MM)" device="-TS-1101F" value="TS-1101F"/>
 <part name="J7" library="Seeed-Connector -2016" deviceset="DIP-BLACK-MALE-HEADER(2X3P-2.54）" device="-2.54" value="2x3p-2.54"/>
 <part name="U8" library="farnell-parts" deviceset="BR24G32-3" device=""/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -7300,7 +7208,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <part name="F45" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="SW2" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-TILT-SWITCH-SW-200D(2P-12X3.6MM)" device="" value="SW-200D"/>
+<part name="SW2" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-BUTTON(2P-6.0X3.0X4.3MM)" device="-TS-1101F" value="TS-1101F"/>
 <part name="Q2" library="Seeed-Transistor" library_urn="urn:adsk.eagle:library:477" deviceset="SMD-MOSFET-P-CH-20V-6A-SSM3J328R(SOT-23)" device="" value="SSM3J328R,LF"/>
 <part name="Q4" library="Seeed-Transistor" library_urn="urn:adsk.eagle:library:477" deviceset="SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F(SOT-23)" device="" value="BSS138W-7-F"/>
 <part name="R39" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-100K-5%-1/10W(0603)" device="" value="100K 1/10W"/>
@@ -7354,6 +7262,11 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <part name="R17" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-0R-5%-1/10W(0603)" device="" value="0R"/>
 <part name="R41" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-0R-5%-1/10W(0603)" device="" value="0R"/>
 <part name="F59" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
+<part name="TP9" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
+<part name="TP10" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
+<part name="TP11" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
+<part name="TP12" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
+<part name="SW1" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="DIP-BUTTON(2P-6.0X3.0X4.3MM)" device="-TS-1101F" value="TS-1101F"/>
 </parts>
 <sheets>
 <sheet>
@@ -9155,7 +9068,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <instance part="GND22" gate="1" x="101.6" y="182.88"/>
 <instance part="TP4" gate="G$1" x="129.54" y="233.68"/>
 <instance part="GND12" gate="1" x="27.94" y="200.66"/>
-<instance part="C4" gate="G$1" x="53.34" y="96.52" rot="R90"/>
+<instance part="C4" gate="G$1" x="53.34" y="96.52" rot="R270"/>
 <instance part="GND27" gate="1" x="53.34" y="60.96"/>
 <instance part="GND28" gate="1" x="121.92" y="60.96"/>
 <instance part="P+3" gate="1" x="129.54" y="104.14"/>
@@ -9168,7 +9081,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <instance part="GND40" gate="1" x="60.96" y="163.83"/>
 <instance part="U$3" gate="G$1" x="81.28" y="215.9"/>
 <instance part="U$4" gate="G$1" x="86.36" y="99.06"/>
-<instance part="SW2" gate="G$1" x="199.39" y="229.87" rot="R90"/>
+<instance part="SW2" gate="G$1" x="199.39" y="228.6" rot="R270"/>
 <instance part="Q2" gate="G$1" x="227.33" y="229.87"/>
 <instance part="Q4" gate="G$1" x="214.63" y="217.17"/>
 <instance part="R39" gate="G$1" x="214.63" y="238.76" rot="R90"/>
@@ -9178,6 +9091,10 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <instance part="P+1" gate="1" x="220.98" y="248.92"/>
 <instance part="TP8" gate="G$1" x="58.42" y="233.68"/>
 <instance part="U$5" gate="G$1" x="101.6" y="226.06"/>
+<instance part="TP9" gate="G$1" x="190.5" y="219.71"/>
+<instance part="TP10" gate="G$1" x="232.41" y="227.33"/>
+<instance part="TP11" gate="G$1" x="250.19" y="227.33"/>
+<instance part="TP12" gate="G$1" x="212.09" y="229.87" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -9232,15 +9149,15 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <junction x="27.94" y="203.2"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="92.71" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 <wire x1="53.34" y1="86.36" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="86.36" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="86.36" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
-<junction x="53.34" y="86.36"/>
 <pinref part="U$4" gate="G$1" pin="ADJ/GND"/>
+<pinref part="C4" gate="G$1" pin="-"/>
+<wire x1="53.34" y1="92.71" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
+<junction x="53.34" y="86.36"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="-"/>
@@ -9337,11 +9254,11 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <segment>
 <label x="48.26" y="101.6" size="1.778" layer="95"/>
 <wire x1="66.04" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="U$4" gate="G$1" pin="VIN"/>
+<pinref part="C4" gate="G$1" pin="+"/>
 <wire x1="53.34" y1="101.6" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="100.33" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
 <junction x="53.34" y="101.6"/>
-<pinref part="U$4" gate="G$1" pin="VIN"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -9402,21 +9319,27 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <pinref part="Q4" gate="G$1" pin="G"/>
 <wire x1="209.55" y1="217.17" x2="203.2" y2="217.17" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="217.17" x2="199.39" y2="217.17" width="0.1524" layer="91"/>
-<wire x1="199.39" y1="217.17" x2="195.58" y2="217.17" width="0.1524" layer="91"/>
+<wire x1="199.39" y1="217.17" x2="190.5" y2="217.17" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="217.17" x2="186.69" y2="217.17" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="217.17" x2="203.2" y2="209.55" width="0.1524" layer="91"/>
 <junction x="203.2" y="217.17"/>
 <pinref part="R40" gate="G$1" pin="2"/>
 <pinref part="SW2" gate="G$1" pin="2"/>
-<wire x1="199.39" y1="223.52" x2="199.39" y2="217.17" width="0.1524" layer="91"/>
+<wire x1="199.39" y1="220.98" x2="199.39" y2="217.17" width="0.1524" layer="91"/>
 <junction x="199.39" y="217.17"/>
 <label x="185.42" y="217.17" size="1.778" layer="95"/>
+<pinref part="TP9" gate="G$1" pin="TP"/>
+<junction x="190.5" y="217.17"/>
 </segment>
 </net>
 <net name="PI_5V" class="0">
 <segment>
 <pinref part="Q5" gate="G$1" pin="S"/>
-<wire x1="246.38" y1="224.79" x2="252.73" y2="224.79" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="224.79" x2="250.19" y2="224.79" width="0.1524" layer="91"/>
 <label x="246.38" y="226.06" size="1.778" layer="95"/>
+<pinref part="TP11" gate="G$1" pin="TP"/>
+<wire x1="250.19" y1="224.79" x2="252.73" y2="224.79" width="0.1524" layer="91"/>
+<junction x="250.19" y="224.79"/>
 </segment>
 </net>
 <net name="LOPY_3V3" class="0">
@@ -9435,13 +9358,17 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <pinref part="Q4" gate="G$1" pin="D"/>
 <wire x1="214.63" y1="229.87" x2="214.63" y2="222.25" width="0.1524" layer="91"/>
 <junction x="214.63" y="229.87"/>
+<pinref part="TP12" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$122" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="S"/>
 <pinref part="Q5" gate="G$1" pin="D"/>
-<wire x1="227.33" y1="224.79" x2="236.22" y2="224.79" width="0.1524" layer="91"/>
+<wire x1="227.33" y1="224.79" x2="232.41" y2="224.79" width="0.1524" layer="91"/>
+<pinref part="TP10" gate="G$1" pin="TP"/>
+<wire x1="232.41" y1="224.79" x2="236.22" y2="224.79" width="0.1524" layer="91"/>
+<junction x="232.41" y="224.79"/>
 </segment>
 </net>
 </nets>
@@ -9688,7 +9615,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="-12.7" y="-17.78"/>
-<instance part="GND10" gate="1" x="83.82" y="91.44"/>
+<instance part="GND10" gate="1" x="58.42" y="100.33"/>
 <instance part="D4" gate="G$1" x="48.26" y="129.54" rot="R270"/>
 <instance part="D5" gate="G$1" x="60.96" y="129.54" rot="R270"/>
 <instance part="D6" gate="G$1" x="73.66" y="129.54" rot="R270"/>
@@ -9701,20 +9628,16 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <instance part="R10" gate="G$1" x="111.76" y="139.7" rot="R90"/>
 <instance part="P+5" gate="1" x="60.96" y="149.86"/>
 <instance part="P+6" gate="1" x="48.26" y="152.4"/>
-<instance part="SW1" gate="G$1" x="83.82" y="105.41" rot="R90"/>
 <instance part="D13" gate="G$1" x="124.46" y="129.54" rot="R270"/>
 <instance part="R21" gate="G$1" x="124.46" y="138.43" rot="R90"/>
-<instance part="GND42" gate="1" x="111.76" y="93.98"/>
-<instance part="SW3" gate="G$1" x="111.76" y="110.49" rot="R90"/>
 <instance part="D10" gate="G$1" x="33.02" y="129.54" rot="R270"/>
 <instance part="R11" gate="G$1" x="33.02" y="140.97" rot="R90"/>
 <instance part="D14" gate="G$1" x="20.32" y="129.54" rot="R270"/>
 <instance part="R22" gate="G$1" x="20.32" y="140.97" rot="R90"/>
-<instance part="GND43" gate="1" x="27.94" y="91.44"/>
-<instance part="SW4" gate="G$1" x="27.94" y="105.41" rot="R90"/>
 <instance part="R35" gate="G$1" x="5.08" y="140.97" rot="R90"/>
 <instance part="D11" gate="G$1" x="5.08" y="129.54" rot="R270"/>
 <instance part="+3V8" gate="G$1" x="101.6" y="152.4"/>
+<instance part="SW1" gate="G$1" x="59.69" y="110.49"/>
 </instances>
 <busses>
 </busses>
@@ -9784,60 +9707,11 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <label x="33.02" y="147.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="GND" class="0">
-<segment>
-<pinref part="SW1" gate="G$1" pin="2"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="83.82" y1="99.06" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SW3" gate="G$1" pin="2"/>
-<pinref part="GND42" gate="1" pin="GND"/>
-<wire x1="111.76" y1="104.14" x2="111.76" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SW4" gate="G$1" pin="2"/>
-<pinref part="GND43" gate="1" pin="GND"/>
-<wire x1="27.94" y1="99.06" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PI_5V" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="142.24" x2="124.46" y2="149.86" width="0.1524" layer="91"/>
 <label x="121.92" y="149.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$81" class="0">
-<segment>
-<pinref part="D4" gate="G$1" pin="-"/>
-<wire x1="48.26" y1="125.73" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="D5" gate="G$1" pin="-"/>
-<wire x1="60.96" y1="125.73" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="121.92" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="D6" gate="G$1" pin="-"/>
-<wire x1="73.66" y1="125.73" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="121.92" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
-<junction x="60.96" y="121.92"/>
-<wire x1="73.66" y1="121.92" x2="83.82" y2="121.92" width="0.1524" layer="91"/>
-<junction x="73.66" y="121.92"/>
-<pinref part="SW1" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="121.92" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$86" class="0">
-<segment>
-<pinref part="D8" gate="G$1" pin="-"/>
-<wire x1="101.6" y1="125.73" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="D13" gate="G$1" pin="-"/>
-<wire x1="124.46" y1="125.73" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="D9" gate="G$1" pin="-"/>
-<wire x1="111.76" y1="121.92" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="125.73" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
-<junction x="111.76" y="121.92"/>
-<pinref part="SW3" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="121.92" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$87" class="0">
@@ -9867,15 +9741,39 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="20.32" y1="125.73" x2="20.32" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="D10" gate="G$1" pin="-"/>
 <wire x1="33.02" y1="125.73" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="121.92" x2="27.94" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="SW4" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="121.92" x2="27.94" y2="111.76" width="0.1524" layer="91"/>
-<junction x="27.94" y="121.92"/>
+<wire x1="20.32" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="D11" gate="G$1" pin="-"/>
 <wire x1="5.08" y1="125.73" x2="5.08" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="121.92" x2="20.32" y2="121.92" width="0.1524" layer="91"/>
 <junction x="20.32" y="121.92"/>
+<pinref part="D8" gate="G$1" pin="-"/>
+<wire x1="101.6" y1="125.73" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="D13" gate="G$1" pin="-"/>
+<wire x1="124.46" y1="125.73" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="D9" gate="G$1" pin="-"/>
+<wire x1="111.76" y1="121.92" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="125.73" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
+<junction x="111.76" y="121.92"/>
+<pinref part="D4" gate="G$1" pin="-"/>
+<wire x1="48.26" y1="125.73" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="D5" gate="G$1" pin="-"/>
+<wire x1="60.96" y1="125.73" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="121.92" x2="52.07" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="-"/>
+<wire x1="52.07" y1="121.92" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="125.73" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="121.92" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
+<junction x="60.96" y="121.92"/>
+<junction x="73.66" y="121.92"/>
+<wire x1="101.6" y1="121.92" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
+<junction x="101.6" y="121.92"/>
+<wire x1="33.02" y1="121.92" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
+<junction x="33.02" y="121.92"/>
+<junction x="48.26" y="121.92"/>
+<pinref part="SW1" gate="G$1" pin="1"/>
+<wire x1="52.07" y1="110.49" x2="52.07" y2="121.92" width="0.1524" layer="91"/>
+<junction x="52.07" y="121.92"/>
 </segment>
 </net>
 <net name="LOPY_3V3" class="0">
@@ -9911,6 +9809,16 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="144.78" x2="101.6" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="SW1" gate="G$1" pin="2"/>
+<wire x1="67.31" y1="110.49" x2="68.58" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="110.49" x2="68.58" y2="105.41" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="68.58" y1="105.41" x2="58.42" y2="105.41" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="105.41" x2="58.42" y2="102.87" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -11453,7 +11361,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <instance part="USB1" gate="G$1" x="7.62" y="238.76"/>
 <instance part="GND53" gate="1" x="25.4" y="231.14"/>
 <instance part="GND54" gate="1" x="53.34" y="195.58"/>
-<instance part="SW5" gate="G$1" x="172.72" y="207.01" rot="R270"/>
+<instance part="SW5" gate="G$1" x="172.72" y="207.01" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -11684,11 +11592,11 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="76.2" y1="203.2" x2="109.22" y2="203.2" width="0.1524" layer="91"/>
 <junction x="109.22" y="203.2"/>
 <wire x1="109.22" y1="203.2" x2="109.22" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="213.36" x2="172.72" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="213.36" x2="172.72" y2="214.63" width="0.1524" layer="91"/>
 <label x="134.62" y="213.36" size="1.778" layer="95"/>
 <pinref part="U12" gate="A" pin="VCC"/>
 <pinref part="C31" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="213.36" x2="190.5" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="214.63" x2="190.5" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="193.04" x2="227.33" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="227.33" y1="193.04" x2="215.9" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="193.04" x2="215.9" y2="187.96" width="0.1524" layer="91"/>
@@ -11700,7 +11608,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="190.5" y1="172.72" x2="190.5" y2="213.36" width="0.1524" layer="91"/>
 <junction x="190.5" y="213.36"/>
 <pinref part="SW5" gate="G$1" pin="2"/>
-<junction x="172.72" y="213.36"/>
+<junction x="172.72" y="214.63"/>
 </segment>
 </net>
 <net name="N$102" class="0">
@@ -11892,10 +11800,10 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <segment>
 <pinref part="D7" gate="G$1" pin="+"/>
 <pinref part="D15" gate="G$1" pin="+"/>
-<wire x1="182.88" y1="200.66" x2="172.72" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="200.66" x2="172.72" y2="199.39" width="0.1524" layer="91"/>
 <pinref part="SW5" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="200.66" x2="167.64" y2="200.66" width="0.1524" layer="91"/>
-<junction x="172.72" y="200.66"/>
+<wire x1="172.72" y1="199.39" x2="167.64" y2="200.66" width="0.1524" layer="91"/>
+<junction x="172.72" y="199.39"/>
 </segment>
 </net>
 </nets>
@@ -12258,7 +12166,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <junction x="203.2" y="279.4"/>
 <junction x="232.41" y="297.18"/>
 <pinref part="SW8" gate="G$1" pin="2"/>
-<wire x1="294.64" y1="294.64" x2="294.64" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="280.67" x2="294.64" y2="297.18" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="297.18" x2="264.16" y2="302.26" width="0.1524" layer="91"/>
 <junction x="264.16" y="297.18"/>
 <wire x1="264.16" y1="302.26" x2="309.88" y2="302.26" width="0.1524" layer="91"/>
@@ -12294,7 +12202,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <junction x="203.2" y="157.48"/>
 <junction x="232.41" y="175.26"/>
 <pinref part="SW7" gate="G$1" pin="2"/>
-<wire x1="294.64" y1="175.26" x2="294.64" y2="171.45" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="175.26" x2="294.64" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="375.92" y1="223.52" x2="405.13" y2="223.52" width="0.1524" layer="91"/>
@@ -12316,7 +12224,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <junction x="375.92" y="205.74"/>
 <junction x="405.13" y="223.52"/>
 <pinref part="SW6" gate="G$1" pin="2"/>
-<wire x1="467.36" y1="219.71" x2="467.36" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="467.36" y1="205.74" x2="467.36" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -12439,7 +12347,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="482.6" y1="204.47" x2="467.36" y2="204.47" width="0.1524" layer="91"/>
 <pinref part="D20" gate="G$1" pin="+"/>
 <pinref part="SW6" gate="G$1" pin="1"/>
-<wire x1="467.36" y1="207.01" x2="467.36" y2="204.47" width="0.1524" layer="91"/>
+<wire x1="467.36" y1="220.98" x2="467.36" y2="204.47" width="0.1524" layer="91"/>
 <junction x="467.36" y="204.47"/>
 </segment>
 </net>
@@ -12449,7 +12357,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="309.88" y1="156.21" x2="294.64" y2="156.21" width="0.1524" layer="91"/>
 <pinref part="D18" gate="G$1" pin="+"/>
 <pinref part="SW7" gate="G$1" pin="1"/>
-<wire x1="294.64" y1="158.75" x2="294.64" y2="156.21" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="172.72" x2="294.64" y2="156.21" width="0.1524" layer="91"/>
 <junction x="294.64" y="156.21"/>
 </segment>
 </net>
@@ -12459,7 +12367,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="309.88" y1="278.13" x2="294.64" y2="278.13" width="0.1524" layer="91"/>
 <pinref part="D16" gate="G$1" pin="+"/>
 <pinref part="SW8" gate="G$1" pin="1"/>
-<wire x1="294.64" y1="281.94" x2="294.64" y2="278.13" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="295.91" x2="294.64" y2="278.13" width="0.1524" layer="91"/>
 <junction x="294.64" y="278.13"/>
 </segment>
 </net>

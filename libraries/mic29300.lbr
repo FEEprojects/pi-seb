@@ -155,7 +155,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCR29300">
+<deviceset name="MIC29300">
 <gates>
 <gate name="G$1" symbol="MICR29300" x="-12.7" y="10.16"/>
 </gates>
