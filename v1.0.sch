@@ -12142,19 +12142,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="309.88" y1="257.81" x2="309.88" y2="260.35" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FTDI_3V3" class="0">
-<segment>
-<pinref part="C39" gate="G$1" pin="2"/>
-<pinref part="U13" gate="1" pin="3V3OUT"/>
-<wire x1="215.9" y1="255.27" x2="240.03" y2="255.27" width="0.1524" layer="91"/>
-<label x="218.44" y="255.27" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C43" gate="G$1" pin="2"/>
-<pinref part="U14" gate="1" pin="3V3OUT"/>
-<wire x1="215.9" y1="133.35" x2="240.03" y2="133.35" width="0.1524" layer="91"/>
-<label x="218.44" y="133.35" size="1.778" layer="95"/>
-</segment>
+<net name="FTDI5_3V3" class="0">
 <segment>
 <pinref part="C47" gate="G$1" pin="2"/>
 <pinref part="U15" gate="1" pin="3V3OUT"/>
@@ -12605,6 +12593,22 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <pinref part="U4" gate="A" pin="RIN1"/>
 <wire x1="327.66" y1="281.94" x2="322.58" y2="281.94" width="0.1524" layer="91"/>
 <label x="322.58" y="281.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FTDI3_3V3" class="0">
+<segment>
+<pinref part="C39" gate="G$1" pin="2"/>
+<pinref part="U13" gate="1" pin="3V3OUT"/>
+<wire x1="215.9" y1="255.27" x2="240.03" y2="255.27" width="0.1524" layer="91"/>
+<label x="218.44" y="255.27" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FTDI4_3V3" class="0">
+<segment>
+<pinref part="C43" gate="G$1" pin="2"/>
+<pinref part="U14" gate="1" pin="3V3OUT"/>
+<wire x1="215.9" y1="133.35" x2="240.03" y2="133.35" width="0.1524" layer="91"/>
+<label x="218.44" y="133.35" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
