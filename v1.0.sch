@@ -7304,8 +7304,6 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R16" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
 <part name="U4" library="ti-max213" deviceset="MAX213IDBR" device=""/>
-<part name="U9" library="ti-max213" deviceset="MAX213IDBR" device=""/>
-<part name="U16" library="ti-max213" deviceset="MAX213IDBR" device=""/>
 <part name="C20" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="C21" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="C22" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
@@ -11927,8 +11925,6 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <instance part="SW7" gate="G$1" x="294.64" y="165.1" rot="R270"/>
 <instance part="SW8" gate="G$1" x="294.64" y="288.29" rot="R270"/>
 <instance part="U4" gate="A" x="345.44" y="264.16"/>
-<instance part="U9" gate="A" x="474.98" y="106.68"/>
-<instance part="U16" gate="A" x="312.42" y="96.52"/>
 <instance part="C20" gate="G$1" x="322.58" y="287.02" rot="R90"/>
 <instance part="C21" gate="G$1" x="314.96" y="241.3" rot="R90"/>
 <instance part="C22" gate="G$1" x="322.58" y="233.68" rot="R90"/>
@@ -12199,16 +12195,16 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 </net>
 <net name="UART1_RDX" class="0">
 <segment>
-<pinref part="U13" gate="1" pin="TXD"/>
-<wire x1="267.97" y1="283.21" x2="280.67" y2="283.21" width="0.1524" layer="91"/>
-<label x="269.24" y="283.21" size="1.778" layer="95"/>
+<pinref part="U4" gate="A" pin="ROUT1"/>
+<wire x1="363.22" y1="279.4" x2="383.54" y2="279.4" width="0.1524" layer="91"/>
+<label x="378.46" y="279.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART1_TDX" class="0">
 <segment>
-<pinref part="U13" gate="1" pin="RXD"/>
-<wire x1="267.97" y1="280.67" x2="280.67" y2="280.67" width="0.1524" layer="91"/>
-<label x="269.24" y="280.67" size="1.778" layer="95"/>
+<pinref part="U4" gate="A" pin="DOUT1"/>
+<wire x1="363.22" y1="292.1" x2="383.54" y2="292.1" width="0.1524" layer="91"/>
+<label x="378.46" y="292.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART1_DP" class="0">
@@ -12382,16 +12378,16 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 </net>
 <net name="UART2_RDX" class="0">
 <segment>
-<pinref part="U14" gate="1" pin="TXD"/>
-<wire x1="267.97" y1="161.29" x2="280.67" y2="161.29" width="0.1524" layer="91"/>
-<label x="269.24" y="161.29" size="1.778" layer="95"/>
+<pinref part="U4" gate="A" pin="ROUT2"/>
+<wire x1="363.22" y1="276.86" x2="383.54" y2="276.86" width="0.1524" layer="91"/>
+<label x="378.46" y="276.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART2_TDX" class="0">
 <segment>
-<pinref part="U14" gate="1" pin="RXD"/>
-<wire x1="267.97" y1="158.75" x2="280.67" y2="158.75" width="0.1524" layer="91"/>
-<label x="269.24" y="158.75" size="1.778" layer="95"/>
+<pinref part="U4" gate="A" pin="DOUT2"/>
+<wire x1="363.22" y1="289.56" x2="383.54" y2="289.56" width="0.1524" layer="91"/>
+<label x="378.46" y="289.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART3_DP" class="0">
@@ -12410,16 +12406,16 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 </net>
 <net name="UART3_RDX" class="0">
 <segment>
-<pinref part="U15" gate="1" pin="TXD"/>
-<wire x1="440.69" y1="209.55" x2="453.39" y2="209.55" width="0.1524" layer="91"/>
-<label x="441.96" y="209.55" size="1.778" layer="95"/>
+<pinref part="U4" gate="A" pin="ROUT3"/>
+<wire x1="363.22" y1="274.32" x2="383.54" y2="274.32" width="0.1524" layer="91"/>
+<label x="378.46" y="274.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART3_TDX" class="0">
 <segment>
-<pinref part="U15" gate="1" pin="RXD"/>
-<wire x1="440.69" y1="207.01" x2="453.39" y2="207.01" width="0.1524" layer="91"/>
-<label x="441.96" y="207.01" size="1.778" layer="95"/>
+<pinref part="U4" gate="A" pin="DOUT3"/>
+<wire x1="363.22" y1="287.02" x2="383.54" y2="287.02" width="0.1524" layer="91"/>
+<label x="378.46" y="287.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$94" class="0">
@@ -12512,6 +12508,78 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="267.97" y1="251.46" x2="267.97" y2="250.19" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="TDX2" class="0">
+<segment>
+<pinref part="U4" gate="A" pin="RIN2"/>
+<wire x1="327.66" y1="279.4" x2="322.58" y2="279.4" width="0.1524" layer="91"/>
+<label x="322.58" y="279.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U14" gate="1" pin="RXD"/>
+<wire x1="267.97" y1="158.75" x2="280.67" y2="158.75" width="0.1524" layer="91"/>
+<label x="269.24" y="158.75" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TDX3" class="0">
+<segment>
+<pinref part="U4" gate="A" pin="RIN3"/>
+<wire x1="327.66" y1="276.86" x2="322.58" y2="276.86" width="0.1524" layer="91"/>
+<label x="322.58" y="276.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U15" gate="1" pin="RXD"/>
+<wire x1="440.69" y1="207.01" x2="453.39" y2="207.01" width="0.1524" layer="91"/>
+<label x="441.96" y="207.01" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RDX1" class="0">
+<segment>
+<pinref part="U4" gate="A" pin="DIN1"/>
+<wire x1="327.66" y1="266.7" x2="322.58" y2="266.7" width="0.1524" layer="91"/>
+<label x="322.58" y="266.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U13" gate="1" pin="TXD"/>
+<wire x1="267.97" y1="283.21" x2="280.67" y2="283.21" width="0.1524" layer="91"/>
+<label x="269.24" y="283.21" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RDX2" class="0">
+<segment>
+<pinref part="U4" gate="A" pin="DIN2"/>
+<wire x1="327.66" y1="264.16" x2="322.58" y2="264.16" width="0.1524" layer="91"/>
+<label x="322.58" y="264.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U14" gate="1" pin="TXD"/>
+<wire x1="267.97" y1="161.29" x2="280.67" y2="161.29" width="0.1524" layer="91"/>
+<label x="269.24" y="161.29" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RDX3" class="0">
+<segment>
+<pinref part="U4" gate="A" pin="DIN3"/>
+<wire x1="327.66" y1="261.62" x2="322.58" y2="261.62" width="0.1524" layer="91"/>
+<label x="322.58" y="261.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U15" gate="1" pin="TXD"/>
+<wire x1="440.69" y1="209.55" x2="453.39" y2="209.55" width="0.1524" layer="91"/>
+<label x="441.96" y="209.55" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TDX1" class="0">
+<segment>
+<pinref part="U13" gate="1" pin="RXD"/>
+<wire x1="267.97" y1="280.67" x2="280.67" y2="280.67" width="0.1524" layer="91"/>
+<label x="269.24" y="280.67" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="A" pin="RIN1"/>
+<wire x1="327.66" y1="281.94" x2="322.58" y2="281.94" width="0.1524" layer="91"/>
+<label x="322.58" y="281.94" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -12544,13 +12612,59 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <approved hash="202,2,242.57,110.49,U6,CBUS3,,,,"/>
 <approved hash="202,2,242.57,107.95,U6,CBUS4,,,,"/>
 <approved hash="202,2,214.63,133.35,U6,!RESET,,,,"/>
+<approved hash="202,7,113.03,187.96,U5,OSCO,,,,"/>
+<approved hash="202,7,113.03,190.5,U5,OSCI,,,,"/>
+<approved hash="202,7,140.97,198.12,U5,!RTS,,,,"/>
+<approved hash="202,7,140.97,195.58,U5,!CTS,,,,"/>
+<approved hash="202,7,140.97,193.04,U5,!DTR,,,,"/>
+<approved hash="202,7,140.97,190.5,U5,!DSR,,,,"/>
+<approved hash="202,7,140.97,187.96,U5,!DCD,,,,"/>
+<approved hash="202,7,140.97,185.42,U5,!RI,,,,"/>
+<approved hash="202,7,140.97,170.18,U5,CBUS4,,,,"/>
 <approved hash="104,7,238.76,193.04,U12,VCC,PI_5V,,,"/>
+<approved hash="202,8,240.03,267.97,U13,OSCO,,,,"/>
+<approved hash="202,8,240.03,270.51,U13,OSCI,,,,"/>
+<approved hash="202,8,267.97,278.13,U13,!RTS,,,,"/>
+<approved hash="202,8,267.97,275.59,U13,!CTS,,,,"/>
+<approved hash="202,8,267.97,273.05,U13,!DTR,,,,"/>
+<approved hash="202,8,267.97,270.51,U13,!DSR,,,,"/>
+<approved hash="202,8,267.97,267.97,U13,!DCD,,,,"/>
+<approved hash="202,8,267.97,265.43,U13,!RI,,,,"/>
+<approved hash="202,8,267.97,255.27,U13,CBUS2,,,,"/>
+<approved hash="202,8,267.97,252.73,U13,CBUS3,,,,"/>
+<approved hash="202,8,240.03,146.05,U14,OSCO,,,,"/>
+<approved hash="202,8,240.03,148.59,U14,OSCI,,,,"/>
+<approved hash="202,8,267.97,156.21,U14,!RTS,,,,"/>
+<approved hash="202,8,267.97,153.67,U14,!CTS,,,,"/>
+<approved hash="202,8,267.97,151.13,U14,!DTR,,,,"/>
+<approved hash="202,8,267.97,148.59,U14,!DSR,,,,"/>
+<approved hash="202,8,267.97,146.05,U14,!DCD,,,,"/>
+<approved hash="202,8,267.97,143.51,U14,!RI,,,,"/>
+<approved hash="202,8,267.97,133.35,U14,CBUS2,,,,"/>
+<approved hash="202,8,267.97,130.81,U14,CBUS3,,,,"/>
+<approved hash="202,8,267.97,128.27,U14,CBUS4,,,,"/>
+<approved hash="202,8,412.75,194.31,U15,OSCO,,,,"/>
+<approved hash="202,8,412.75,196.85,U15,OSCI,,,,"/>
+<approved hash="202,8,440.69,204.47,U15,!RTS,,,,"/>
+<approved hash="202,8,440.69,201.93,U15,!CTS,,,,"/>
+<approved hash="202,8,440.69,199.39,U15,!DTR,,,,"/>
+<approved hash="202,8,440.69,196.85,U15,!DSR,,,,"/>
+<approved hash="202,8,440.69,194.31,U15,!DCD,,,,"/>
+<approved hash="202,8,440.69,191.77,U15,!RI,,,,"/>
+<approved hash="202,8,440.69,181.61,U15,CBUS2,,,,"/>
+<approved hash="202,8,440.69,179.07,U15,CBUS3,,,,"/>
+<approved hash="202,8,440.69,176.53,U15,CBUS4,,,,"/>
 <approved hash="104,1,345.44,182.88,U8,VCC,3V3,,,"/>
 <approved hash="104,1,335.28,83.82,U$7,VDD,3V3_SMOOTH,,,"/>
+<approved hash="104,8,327.66,292.1,U4,VCC,PI_5V,,,"/>
+<approved hash="202,8,327.66,274.32,U4,RIN4,,,,"/>
+<approved hash="202,8,327.66,271.78,U4,RIN5,,,,"/>
+<approved hash="202,8,327.66,259.08,U4,DIN4,,,,"/>
+<approved hash="202,8,327.66,254,U4,EN,,,,"/>
 <approved hash="208,2,27.94,157.48,+5V,sup,,,,"/>
 <approved hash="208,3,129.54,101.6,+5V,sup,,,,"/>
 <approved hash="208,3,106.68,99.06,+5V,out,,,,"/>
-<approved hash="208,3,220.98,248.92,+5V,sup,,,,"/>
+<approved hash="208,3,220.98,246.38,+5V,sup,,,,"/>
 <approved hash="208,5,60.96,147.32,+5V,sup,,,,"/>
 <approved hash="209,7,238.76,185.42,FTDI2_TE,,,,,"/>
 <approved hash="209,7,140.97,175.26,FTDI2_TE,,,,,"/>
@@ -12559,12 +12673,27 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <approved hash="106,2,15.24,124.46,LOPY_RST,,,,,"/>
 <approved hash="106,1,238.76,226.06,N$2,,,,,"/>
 <approved hash="106,1,238.76,223.52,N$3,,,,,"/>
+<approved hash="209,8,327.66,251.46,N$4,,,,,"/>
+<approved hash="209,8,267.97,250.19,N$4,,,,,"/>
 <approved hash="106,2,322.58,198.12,N$18,,,,,"/>
 <approved hash="106,2,322.58,180.34,N$20,,,,,"/>
 <approved hash="106,2,322.58,177.8,N$21,,,,,"/>
+<approved hash="209,8,327.66,266.7,RDX1,,,,,"/>
+<approved hash="209,8,267.97,283.21,RDX1,,,,,"/>
+<approved hash="209,8,327.66,264.16,RDX2,,,,,"/>
+<approved hash="209,8,267.97,161.29,RDX2,,,,,"/>
+<approved hash="209,8,327.66,261.62,RDX3,,,,,"/>
+<approved hash="209,8,440.69,209.55,RDX3,,,,,"/>
 <approved hash="117,2,127,137.16,SHIELD,,,,,"/>
+<approved hash="209,8,267.97,280.67,TDX1,,,,,"/>
+<approved hash="209,8,327.66,281.94,TDX1,,,,,"/>
+<approved hash="209,8,327.66,279.4,TDX2,,,,,"/>
+<approved hash="209,8,267.97,158.75,TDX2,,,,,"/>
+<approved hash="209,8,327.66,276.86,TDX3,,,,,"/>
+<approved hash="209,8,440.69,207.01,TDX3,,,,,"/>
 <approved hash="111,1,359.41,177.8,N$97,,,,,"/>
 <approved hash="111,1,364.49,172.72,ID_SC,,,,,"/>
+<approved hash="111,8,314.96,238.76,N$41,,,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME1,,,,,"/>
 <approved hash="113,2,180.871,97.051,FRAME2,,,,,"/>
 <approved hash="113,3,193.571,130.071,FRAME3,,,,,"/>
