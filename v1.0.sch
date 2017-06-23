@@ -7837,11 +7837,6 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 </net>
 <net name="SPI_GPIO2" class="0">
 <segment>
-<pinref part="U10" gate="A" pin="2A0"/>
-<wire x1="200.66" y1="127" x2="195.58" y2="127" width="0.1524" layer="91"/>
-<label x="195.58" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="PCB1" gate="G$1" pin="GPIO27"/>
 <wire x1="91.44" y1="200.66" x2="73.66" y2="200.66" width="0.1524" layer="91"/>
 <label x="73.66" y="200.66" size="1.778" layer="95"/>
@@ -7849,14 +7844,14 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 </net>
 <net name="SPI_GPIO3" class="0">
 <segment>
-<pinref part="U10" gate="A" pin="1A1"/>
-<wire x1="200.66" y1="121.92" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
-<label x="195.58" y="121.92" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="PCB1" gate="G$1" pin="GPIO22"/>
 <wire x1="91.44" y1="195.58" x2="74.93" y2="195.58" width="0.1524" layer="91"/>
 <label x="76.2" y="195.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U10" gate="A" pin="2A0"/>
+<wire x1="200.66" y1="127" x2="195.58" y2="127" width="0.1524" layer="91"/>
+<label x="195.58" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI_GPIO4" class="0">
@@ -7869,6 +7864,11 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <pinref part="PCB1" gate="G$1" pin="GPIO23"/>
 <wire x1="119.38" y1="195.58" x2="129.54" y2="195.58" width="0.1524" layer="91"/>
 <label x="129.54" y="195.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U10" gate="A" pin="1A1"/>
+<wire x1="200.66" y1="121.92" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
+<label x="195.58" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PI_5V" class="0">
