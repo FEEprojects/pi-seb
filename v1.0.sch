@@ -1705,21 +1705,21 @@ More information and support community is available at http://www.element14.com/
 </device>
 </devices>
 </deviceset>
-<deviceset name="CERAMIC-4.7UF-10V-10%-X5R(0603)" prefix="C" uservalue="yes">
-<description>302010111</description>
+<deviceset name="TANTALUM-SMD-47UF-6.3V(AVX-A)" prefix="C" uservalue="yes">
+<description>302020005</description>
 <gates>
-<gate name="G$1" symbol="C" x="0" y="0"/>
+<gate name="G$1" symbol="CAP-POLAR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="C0603">
+<device name="" package="AVX-A">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MPN" value="CC0603KRX5R6BB475"/>
-<attribute name="VALUE" value="4.7uf"/>
+<attribute name="MPN" value="TAJA476*006#NJ"/>
+<attribute name="VALUE" value="47uf"/>
 </technology>
 </technologies>
 </device>
@@ -7280,7 +7280,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <part name="U13" library="Seeed-IC" library_urn="urn:adsk.eagle:library:470" deviceset="INTERFACE-FT232RL(SSOP28)" device="" value="FT232RL-SSOP28"/>
 <part name="C38" library="Seeed-Capacitor-2016" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="C39" library="Seeed-Capacitor-2016" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
-<part name="C40" library="Seeed-Capacitor-2016" deviceset="CERAMIC-4.7UF-10V-10%-X5R(0603)" device="" value="4.7uf"/>
+<part name="C40" library="Seeed-Capacitor-2016" deviceset="TANTALUM-SMD-47UF-6.3V(AVX-A)" device="" value="47uf"/>
 <part name="GND56" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND57" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND58" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -7291,7 +7291,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <part name="U14" library="Seeed-IC" library_urn="urn:adsk.eagle:library:470" deviceset="INTERFACE-FT232RL(SSOP28)" device="" value="FT232RL-SSOP28"/>
 <part name="C42" library="Seeed-Capacitor-2016" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="C43" library="Seeed-Capacitor-2016" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
-<part name="C44" library="Seeed-Capacitor-2016" deviceset="CERAMIC-4.7UF-10V-10%-X5R(0603)" device="" value="4.7uf"/>
+<part name="C44" library="Seeed-Capacitor-2016" deviceset="TANTALUM-SMD-47UF-6.3V(AVX-A)" device="" value="47uf"/>
 <part name="GND60" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND61" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND62" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -7302,7 +7302,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <part name="U15" library="Seeed-IC" library_urn="urn:adsk.eagle:library:470" deviceset="INTERFACE-FT232RL(SSOP28)" device="" value="FT232RL-SSOP28"/>
 <part name="C46" library="Seeed-Capacitor-2016" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="C47" library="Seeed-Capacitor-2016" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
-<part name="C48" library="Seeed-Capacitor-2016" deviceset="CERAMIC-4.7UF-10V-10%-X5R(0603)" device="" value="4.7uf"/>
+<part name="C48" library="Seeed-Capacitor-2016" deviceset="TANTALUM-SMD-47UF-6.3V(AVX-A)" device="" value="47uf"/>
 <part name="GND64" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND65" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND66" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -7468,7 +7468,6 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="289.56" y1="200.66" x2="383.54" y2="200.66" width="0.1524" layer="97"/>
 <text x="313.69" y="245.11" size="6.4516" layer="97">I2C Pullups</text>
 <text x="172.72" y="76.2" size="1.778" layer="97">Do we want this permenantly powered given the Pi can be switched?  What's the battery life like?</text>
-<text x="231.14" y="7.62" size="1.778" layer="97">Seed crystals have the wrong capacitance</text>
 <text x="187.96" y="27.94" size="1.778" layer="97">These need testing experiementally</text>
 <text x="170.18" y="243.84" size="1.778" layer="97">Seeed does not have sockets between 16 and 40 pins</text>
 <text x="327.66" y="205.74" size="1.778" layer="97">RPI has 1.8K pull up resistors for i2c</text>
@@ -7480,6 +7479,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <text x="292.1" y="111.76" size="5.08" layer="97">DHT22</text>
 <text x="325.12" y="69.85" size="5.08" layer="97">FREE RPI GPIOs</text>
 <text x="233.68" y="248.92" size="1.778" layer="97">Added new header with free rpi gpio and 5V, 3V3 and GND</text>
+<text x="261.62" y="30.48" size="1.778" layer="97">Address 1101111</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -7846,14 +7846,14 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <label x="185.42" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="UART_TXD" class="0">
+<net name="PI_TTL_TXD" class="0">
 <segment>
 <pinref part="PCB1" gate="G$1" pin="GPIO14"/>
 <wire x1="119.38" y1="215.9" x2="134.62" y2="215.9" width="0.1524" layer="91"/>
 <label x="137.16" y="215.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="UART_RXD" class="0">
+<net name="PI_TTL_RXD" class="0">
 <segment>
 <pinref part="PCB1" gate="G$1" pin="GPIO15"/>
 <wire x1="119.38" y1="210.82" x2="137.16" y2="210.82" width="0.1524" layer="91"/>
@@ -7991,6 +7991,11 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="91.44" y1="200.66" x2="73.66" y2="200.66" width="0.1524" layer="91"/>
 <label x="73.66" y="200.66" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U10" gate="A" pin="1A1"/>
+<wire x1="200.66" y1="121.92" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
+<label x="195.58" y="121.92" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPI_GPIO3" class="0">
 <segment>
@@ -8014,11 +8019,6 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <pinref part="PCB1" gate="G$1" pin="GPIO23"/>
 <wire x1="119.38" y1="195.58" x2="129.54" y2="195.58" width="0.1524" layer="91"/>
 <label x="129.54" y="195.58" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U10" gate="A" pin="1A1"/>
-<wire x1="200.66" y1="121.92" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
-<label x="195.58" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PI_5V" class="0">
@@ -8479,7 +8479,6 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="327.66" y1="63.5" x2="323.85" y2="63.5" width="0.1524" layer="91"/>
 <junction x="327.66" y="63.5"/>
 <pinref part="F60" gate="G$1" pin="2"/>
-<wire x1="323.85" y1="63.5" x2="322.58" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PI_5V_PP" class="0">
@@ -8507,7 +8506,6 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <pinref part="U9" gate="G$1" pin="4"/>
 <wire x1="327.66" y1="55.88" x2="323.85" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U9" gate="G$1" pin="25"/>
-<wire x1="323.85" y1="55.88" x2="322.58" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="55.88" x2="342.9" y2="55.88" width="0.1524" layer="91"/>
 <junction x="327.66" y="55.88"/>
 <pinref part="F63" gate="G$1" pin="2"/>
@@ -8553,6 +8551,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="-7.62" y1="2.54" x2="104.14" y2="2.54" width="0.1524" layer="97"/>
 <wire x1="104.14" y1="2.54" x2="104.14" y2="55.88" width="0.1524" layer="97"/>
 <text x="-5.08" y="-5.08" size="2.54" layer="97">tested RPI GPIO on boot, they are not doing any toggling, so connected p2 and miso directly to GPIO pins</text>
+<text x="106.68" y="127" size="1.778" layer="97">Is shield really connected to GND?</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="-12.7" y="-33.02"/>
@@ -8815,7 +8814,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <label x="2.54" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LOPY_RX0" class="0">
+<net name="LOPY_RXD0" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P0"/>
 <wire x1="50.8" y1="137.16" x2="68.58" y2="137.16" width="0.1524" layer="91"/>
@@ -8832,7 +8831,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <label x="243.84" y="140.97" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LOPY_TX0" class="0">
+<net name="LOPY_TXD0" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P1"/>
 <wire x1="50.8" y1="134.62" x2="68.58" y2="134.62" width="0.1524" layer="91"/>
@@ -8861,7 +8860,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <label x="0" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LOPY_TX1" class="0">
+<net name="LOPY_TXD1" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P3"/>
 <wire x1="50.8" y1="129.54" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
@@ -9085,7 +9084,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <label x="116.84" y="16.51" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LOPY_RX1" class="0">
+<net name="LOPY_RXD1" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P4"/>
 <wire x1="50.8" y1="127" x2="68.58" y2="127" width="0.1524" layer="91"/>
@@ -9359,17 +9358,17 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <segment>
 <pinref part="USB3" gate="G$1" pin="GND"/>
 <wire x1="127" y1="144.78" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="144.78" x2="144.78" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="139.7" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="137.16" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="139.7" x2="152.4" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="139.7" x2="152.4" y2="143.51" width="0.1524" layer="91"/>
-<junction x="144.78" y="139.7"/>
+<wire x1="144.78" y1="144.78" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="137.16" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 <pinref part="USB3" gate="G$1" pin="SHIELD"/>
+<wire x1="144.78" y1="124.46" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="127" y1="137.16" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
 <junction x="144.78" y="137.16"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="143.51" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="124.46" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
+<junction x="144.78" y="124.46"/>
 </segment>
 </net>
 </nets>
@@ -10669,7 +10668,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="209.55" y1="219.71" x2="181.61" y2="219.71" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="UART_TXD" class="0">
+<net name="PI_TTL_TXD" class="0">
 <segment>
 <pinref part="PI_UART" gate="-3" pin="S"/>
 <wire x1="17.78" y1="121.92" x2="-6.35" y2="121.92" width="0.1524" layer="91"/>
@@ -11220,7 +11219,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="93.98" y1="119.38" x2="68.58" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RS232_2_TDX" class="0">
+<net name="RS232_2_TXD" class="0">
 <segment>
 <pinref part="PI_UART_HUB_2" gate="-3" pin="S"/>
 <wire x1="166.37" y1="121.92" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
@@ -11234,7 +11233,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="166.37" y1="119.38" x2="140.97" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RS232_3_TDX" class="0">
+<net name="RS232_3_TXD" class="0">
 <segment>
 <pinref part="PI_UART_HUB_3" gate="-3" pin="S"/>
 <wire x1="228.6" y1="111.76" x2="204.47" y2="111.76" width="0.1524" layer="91"/>
@@ -11660,7 +11659,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="287.02" y1="142.24" x2="267.97" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="UART_RXD" class="0">
+<net name="PI_TTL_RXD" class="0">
 <segment>
 <pinref part="PI_UART" gate="-4" pin="S"/>
 <label x="-7.62" y="119.38" size="1.778" layer="95"/>
@@ -11674,16 +11673,17 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <text x="64.32" y="231.6" size="3.81" layer="97">RPI RS485</text>
 <text x="274.32" y="17.78" size="3.81" layer="97">USB HUB  and RS485</text>
 <text x="298.45" y="191.77" size="1.778" layer="97">Seed does not have 120R resistors, so put a 100R and 22R resistors in series.</text>
+<text x="2.54" y="217.17" size="1.778" layer="97">Is shield really connected to GND?</text>
 </plain>
 <instances>
 <instance part="FRAME7" gate="G$1" x="-15.24" y="2.54"/>
 <instance part="U5" gate="1" x="127" y="179.07"/>
 <instance part="C28" gate="G$1" x="72.39" y="194.31" rot="R90"/>
-<instance part="C29" gate="G$1" x="88.9" y="170.18" rot="R90"/>
+<instance part="C29" gate="G$1" x="92.71" y="170.18" rot="R90"/>
 <instance part="C30" gate="G$1" x="83.82" y="191.77" rot="R270"/>
 <instance part="GND32" gate="1" x="76.2" y="180.34"/>
 <instance part="GND47" gate="1" x="149.86" y="132.08"/>
-<instance part="GND48" gate="1" x="88.9" y="162.56"/>
+<instance part="GND48" gate="1" x="92.71" y="162.56"/>
 <instance part="D7" gate="G$1" x="167.64" y="189.23" rot="R270"/>
 <instance part="D15" gate="G$1" x="182.88" y="187.96" rot="R270"/>
 <instance part="R23" gate="G$1" x="167.64" y="198.12" rot="R270"/>
@@ -11704,8 +11704,8 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <instance part="GND51" gate="1" x="5.08" y="114.3"/>
 <instance part="USB1" gate="G$1" x="7.62" y="238.76"/>
 <instance part="GND53" gate="1" x="25.4" y="231.14"/>
-<instance part="TP13" gate="G$1" x="77.47" y="170.18"/>
-<instance part="TP14" gate="G$1" x="80.01" y="167.64"/>
+<instance part="TP13" gate="G$1" x="80.01" y="170.18"/>
+<instance part="TP14" gate="G$1" x="82.55" y="167.64"/>
 <instance part="R25" gate="G$1" x="314.96" y="187.96"/>
 <instance part="R26" gate="G$1" x="327.66" y="187.96"/>
 <instance part="SW3" gate="G$1" x="302.26" y="187.96"/>
@@ -11757,7 +11757,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 </segment>
 <segment>
 <pinref part="C29" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="166.37" x2="88.9" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="92.71" y1="166.37" x2="92.71" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="GND48" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -11832,8 +11832,8 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <segment>
 <pinref part="U5" gate="1" pin="3V3OUT"/>
 <pinref part="C29" gate="G$1" pin="2"/>
-<wire x1="113.03" y1="175.26" x2="88.9" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="175.26" x2="88.9" y2="173.99" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="175.26" x2="92.71" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="92.71" y1="175.26" x2="92.71" y2="173.99" width="0.1524" layer="91"/>
 <label x="96.52" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -11992,8 +11992,9 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="17.78" y1="248.92" x2="38.1" y2="248.92" width="0.1524" layer="91"/>
 <label x="22.86" y="248.92" size="1.778" layer="95"/>
 <pinref part="C25" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="248.92" x2="44.45" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="246.38" x2="38.1" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="L4" gate="L" pin="1"/>
+<wire x1="43.18" y1="248.92" x2="38.1" y2="248.92" width="0.1524" layer="91"/>
 <junction x="38.1" y="248.92"/>
 </segment>
 <segment>
@@ -12101,22 +12102,23 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <label x="81.28" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$44" class="0">
+<net name="USB_HUB_LED1" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="LED1"/>
-<wire x1="76.2" y1="167.64" x2="77.47" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="167.64" x2="80.01" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="TP13" gate="G$1" pin="TP"/>
-<wire x1="77.47" y1="167.64" x2="81.28" y2="167.64" width="0.1524" layer="91"/>
-<junction x="77.47" y="167.64"/>
+<wire x1="80.01" y1="167.64" x2="81.28" y2="167.64" width="0.1524" layer="91"/>
+<junction x="80.01" y="167.64"/>
 </segment>
 </net>
-<net name="N$45" class="0">
+<net name="USB_HUB_LED2" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="LED2"/>
-<wire x1="76.2" y1="165.1" x2="80.01" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="165.1" x2="82.55" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="TP14" gate="G$1" pin="TP"/>
-<wire x1="80.01" y1="165.1" x2="81.28" y2="165.1" width="0.1524" layer="91"/>
-<junction x="80.01" y="165.1"/>
+<wire x1="82.55" y1="165.1" x2="81.28" y2="165.1" width="0.1524" layer="91"/>
+<junction x="82.55" y="165.1"/>
+<wire x1="82.55" y1="165.1" x2="85.09" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -12129,11 +12131,6 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <pinref part="TP15" gate="G$1" pin="TP"/>
 <wire x1="66.04" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
 <junction x="66.04" y="175.26"/>
-</segment>
-</net>
-<net name="N$46" class="0">
-<segment>
-<wire x1="53.34" y1="199.39" x2="53.34" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -12238,7 +12235,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <instance part="U13" gate="1" x="254" y="259.08"/>
 <instance part="C38" gate="G$1" x="195.58" y="275.59" rot="R90"/>
 <instance part="C39" gate="G$1" x="215.9" y="251.46" rot="R90"/>
-<instance part="C40" gate="G$1" x="210.82" y="275.59" rot="R90"/>
+<instance part="C40" gate="G$1" x="210.82" y="274.32" rot="R270"/>
 <instance part="GND56" gate="1" x="203.2" y="264.16"/>
 <instance part="GND57" gate="1" x="276.86" y="210.82"/>
 <instance part="GND58" gate="1" x="215.9" y="241.3"/>
@@ -12249,7 +12246,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <instance part="U14" gate="1" x="199.39" y="139.7"/>
 <instance part="C42" gate="G$1" x="140.97" y="156.21" rot="R90"/>
 <instance part="C43" gate="G$1" x="161.29" y="132.08" rot="R90"/>
-<instance part="C44" gate="G$1" x="156.21" y="156.21" rot="R90"/>
+<instance part="C44" gate="G$1" x="156.21" y="156.21" rot="R270"/>
 <instance part="GND60" gate="1" x="148.59" y="144.78"/>
 <instance part="GND61" gate="1" x="222.25" y="91.44"/>
 <instance part="GND62" gate="1" x="161.29" y="121.92"/>
@@ -12260,7 +12257,7 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <instance part="U15" gate="1" x="426.72" y="185.42"/>
 <instance part="C46" gate="G$1" x="368.3" y="201.93" rot="R90"/>
 <instance part="C47" gate="G$1" x="388.62" y="177.8" rot="R90"/>
-<instance part="C48" gate="G$1" x="383.54" y="201.93" rot="R90"/>
+<instance part="C48" gate="G$1" x="383.54" y="201.93" rot="R270"/>
 <instance part="GND64" gate="1" x="375.92" y="190.5"/>
 <instance part="GND65" gate="1" x="449.58" y="137.16"/>
 <instance part="GND66" gate="1" x="388.62" y="167.64"/>
@@ -12284,13 +12281,13 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <segment>
 <pinref part="C38" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="271.78" x2="195.58" y2="267.97" width="0.1524" layer="91"/>
-<pinref part="C40" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="271.78" x2="210.82" y2="267.97" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="267.97" x2="203.2" y2="267.97" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="267.97" x2="210.82" y2="267.97" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="267.97" x2="203.2" y2="266.7" width="0.1524" layer="91"/>
 <junction x="203.2" y="267.97"/>
 <pinref part="GND56" gate="1" pin="GND"/>
+<pinref part="C40" gate="G$1" pin="-"/>
+<wire x1="210.82" y1="270.51" x2="210.82" y2="267.97" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U13" gate="1" pin="GND@2"/>
@@ -12324,13 +12321,13 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <segment>
 <pinref part="C42" gate="G$1" pin="1"/>
 <wire x1="140.97" y1="152.4" x2="140.97" y2="148.59" width="0.1524" layer="91"/>
-<pinref part="C44" gate="G$1" pin="1"/>
-<wire x1="156.21" y1="152.4" x2="156.21" y2="148.59" width="0.1524" layer="91"/>
 <wire x1="140.97" y1="148.59" x2="148.59" y2="148.59" width="0.1524" layer="91"/>
 <wire x1="148.59" y1="148.59" x2="156.21" y2="148.59" width="0.1524" layer="91"/>
 <wire x1="148.59" y1="148.59" x2="148.59" y2="147.32" width="0.1524" layer="91"/>
 <junction x="148.59" y="148.59"/>
 <pinref part="GND60" gate="1" pin="GND"/>
+<pinref part="C44" gate="G$1" pin="-"/>
+<wire x1="156.21" y1="152.4" x2="156.21" y2="148.59" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U14" gate="1" pin="GND@2"/>
@@ -12364,13 +12361,13 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <segment>
 <pinref part="C46" gate="G$1" pin="1"/>
 <wire x1="368.3" y1="198.12" x2="368.3" y2="194.31" width="0.1524" layer="91"/>
-<pinref part="C48" gate="G$1" pin="1"/>
-<wire x1="383.54" y1="198.12" x2="383.54" y2="194.31" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="194.31" x2="375.92" y2="194.31" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="194.31" x2="383.54" y2="194.31" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="194.31" x2="375.92" y2="193.04" width="0.1524" layer="91"/>
 <junction x="375.92" y="194.31"/>
 <pinref part="GND64" gate="1" pin="GND"/>
+<pinref part="C48" gate="G$1" pin="-"/>
+<wire x1="383.54" y1="198.12" x2="383.54" y2="194.31" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U15" gate="1" pin="GND@2"/>
@@ -12486,26 +12483,11 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <label x="223.52" y="247.65" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U13" gate="1" pin="!RESET"/>
-<wire x1="240.03" y1="275.59" x2="213.36" y2="275.59" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="275.59" x2="213.36" y2="254" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="254" x2="205.74" y2="254" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="USB3_DP" class="0">
 <segment>
 <pinref part="U14" gate="1" pin="USBDP"/>
 <wire x1="185.42" y1="130.81" x2="167.64" y2="130.81" width="0.1524" layer="91"/>
 <label x="168.91" y="130.81" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="UART2_DM" class="0">
-<segment>
-<pinref part="U14" gate="1" pin="USBDM"/>
-<wire x1="185.42" y1="128.27" x2="168.91" y2="128.27" width="0.1524" layer="91"/>
-<label x="168.91" y="128.27" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB4_DP" class="0">
@@ -12585,12 +12567,6 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="298.45" y1="241.3" x2="302.26" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U13" gate="1" pin="CBUS4"/>
-<wire x1="267.97" y1="251.46" x2="267.97" y2="250.19" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="TXD2" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="ROUT2"/>
@@ -12668,12 +12644,9 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <junction x="236.22" y="283.21"/>
 <wire x1="232.41" y1="297.18" x2="264.16" y2="297.18" width="0.1524" layer="91"/>
 <label x="241.3" y="297.18" size="1.778" layer="95"/>
-<pinref part="C40" gate="G$1" pin="2"/>
 <pinref part="C38" gate="G$1" pin="2"/>
-<wire x1="210.82" y1="279.4" x2="203.2" y2="279.4" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="279.4" x2="195.58" y2="279.4" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="297.18" x2="203.2" y2="279.4" width="0.1524" layer="91"/>
-<junction x="203.2" y="279.4"/>
 <junction x="232.41" y="297.18"/>
 <wire x1="264.16" y1="297.18" x2="264.16" y2="302.26" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="302.26" x2="309.88" y2="302.26" width="0.1524" layer="91"/>
@@ -12699,6 +12672,10 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="330.2" y1="252.73" x2="330.2" y2="292.1" width="0.1524" layer="91"/>
 <junction x="335.28" y="252.73"/>
 <junction x="330.2" y="292.1"/>
+<pinref part="C40" gate="G$1" pin="+"/>
+<wire x1="203.2" y1="279.4" x2="210.82" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="279.4" x2="210.82" y2="278.13" width="0.1524" layer="91"/>
+<junction x="203.2" y="279.4"/>
 </segment>
 <segment>
 <wire x1="375.92" y1="223.52" x2="402.59" y2="223.52" width="0.1524" layer="91"/>
@@ -12712,17 +12689,17 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="408.94" y1="207.01" x2="408.94" y2="209.55" width="0.1524" layer="91"/>
 <junction x="408.94" y="209.55"/>
 <label x="393.7" y="223.52" size="1.778" layer="95"/>
-<pinref part="C48" gate="G$1" pin="2"/>
 <pinref part="C46" gate="G$1" pin="2"/>
-<wire x1="383.54" y1="205.74" x2="375.92" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="205.74" x2="368.3" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="223.52" x2="375.92" y2="205.74" width="0.1524" layer="91"/>
-<junction x="375.92" y="205.74"/>
 <pinref part="SW5" gate="G$1" pin="2"/>
 <wire x1="476.25" y1="226.06" x2="476.25" y2="227.33" width="0.1524" layer="91"/>
 <wire x1="476.25" y1="227.33" x2="402.59" y2="227.33" width="0.1524" layer="91"/>
 <wire x1="402.59" y1="227.33" x2="402.59" y2="223.52" width="0.1524" layer="91"/>
 <junction x="402.59" y="223.52"/>
+<pinref part="C48" gate="G$1" pin="+"/>
+<wire x1="375.92" y1="205.74" x2="383.54" y2="205.74" width="0.1524" layer="91"/>
+<junction x="375.92" y="205.74"/>
 </segment>
 <segment>
 <wire x1="148.59" y1="177.8" x2="177.8" y2="177.8" width="0.1524" layer="91"/>
@@ -12735,11 +12712,11 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="181.61" y1="161.29" x2="181.61" y2="163.83" width="0.1524" layer="91"/>
 <junction x="181.61" y="163.83"/>
 <label x="158.75" y="179.07" size="1.778" layer="95"/>
-<pinref part="C44" gate="G$1" pin="2"/>
 <pinref part="C42" gate="G$1" pin="2"/>
-<wire x1="156.21" y1="160.02" x2="148.59" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="148.59" y1="160.02" x2="140.97" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="148.59" y1="177.8" x2="148.59" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="C44" gate="G$1" pin="+"/>
+<wire x1="148.59" y1="160.02" x2="156.21" y2="160.02" width="0.1524" layer="91"/>
 <junction x="148.59" y="160.02"/>
 </segment>
 </net>
@@ -12865,13 +12842,28 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="255.27" y1="160.02" x2="255.27" y2="158.75" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="USB3_DM" class="0">
+<segment>
+<pinref part="U14" gate="1" pin="USBDM"/>
+<wire x1="185.42" y1="128.27" x2="168.91" y2="128.27" width="0.1524" layer="91"/>
+<label x="168.91" y="128.27" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
+<approved hash="102,2,127,144.78,GND,SHIELD,,,,"/>
+<approved hash="102,2,144.78,114.3,GND,SHIELD,,,,"/>
+<approved hash="201,2,144.78,114.3,GND,GND\, SHIELD,,,,"/>
+<approved hash="201,2,127,144.78,GND,GND\, SHIELD,,,,"/>
 <approved hash="102,4,121.92,109.22,+3V3,+3V3_SMOOTH,,,,"/>
 <approved hash="102,4,119.38,204.47,+3V3,+3V3_SMOOTH,,,,"/>
 <approved hash="102,7,17.78,248.92,VBUS,5V_USB_HUB,,,,"/>
+<approved hash="102,7,17.78,238.76,GND,SHIELD,,,,"/>
+<approved hash="102,7,25.4,233.68,GND,SHIELD,,,,"/>
+<approved hash="201,7,25.4,233.68,GND,GND\, SHIELD,,,,"/>
+<approved hash="201,7,17.78,238.76,GND,GND\, SHIELD,,,,"/>
 <approved hash="104,1,203.2,226.06,U1,VDD,+3V3,,,"/>
 <approved hash="104,1,203.2,200.66,U1,VSS,GND,,,"/>
 <approved hash="104,4,132.08,190.5,U$1,VDD,+3V3_SMOOTH,,,"/>
@@ -12906,6 +12898,8 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <approved hash="202,7,140.97,187.96,U5,!DCD,,,,"/>
 <approved hash="202,7,140.97,185.42,U5,!RI,,,,"/>
 <approved hash="202,7,140.97,170.18,U5,CBUS4,,,,"/>
+<approved hash="202,7,113.03,195.58,U5,!RESET,,,,"/>
+<approved hash="104,7,238.76,193.04,U12,VCC,5V_USB_HUB_FERRITE,,,"/>
 <approved hash="202,8,240.03,267.97,U13,OSCO,,,,"/>
 <approved hash="202,8,240.03,270.51,U13,OSCI,,,,"/>
 <approved hash="202,8,267.97,278.13,U13,!RTS,,,,"/>
@@ -12916,17 +12910,20 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <approved hash="202,8,267.97,265.43,U13,!RI,,,,"/>
 <approved hash="202,8,267.97,255.27,U13,CBUS2,,,,"/>
 <approved hash="202,8,267.97,252.73,U13,CBUS3,,,,"/>
-<approved hash="202,8,240.03,146.05,U14,OSCO,,,,"/>
-<approved hash="202,8,240.03,148.59,U14,OSCI,,,,"/>
-<approved hash="202,8,267.97,156.21,U14,!RTS,,,,"/>
-<approved hash="202,8,267.97,153.67,U14,!CTS,,,,"/>
-<approved hash="202,8,267.97,151.13,U14,!DTR,,,,"/>
-<approved hash="202,8,267.97,148.59,U14,!DSR,,,,"/>
-<approved hash="202,8,267.97,146.05,U14,!DCD,,,,"/>
-<approved hash="202,8,267.97,143.51,U14,!RI,,,,"/>
-<approved hash="202,8,267.97,133.35,U14,CBUS2,,,,"/>
-<approved hash="202,8,267.97,130.81,U14,CBUS3,,,,"/>
-<approved hash="202,8,267.97,128.27,U14,CBUS4,,,,"/>
+<approved hash="202,8,267.97,250.19,U13,CBUS4,,,,"/>
+<approved hash="202,8,240.03,275.59,U13,!RESET,,,,"/>
+<approved hash="202,8,185.42,148.59,U14,OSCO,,,,"/>
+<approved hash="202,8,185.42,151.13,U14,OSCI,,,,"/>
+<approved hash="202,8,213.36,158.75,U14,!RTS,,,,"/>
+<approved hash="202,8,213.36,156.21,U14,!CTS,,,,"/>
+<approved hash="202,8,213.36,153.67,U14,!DTR,,,,"/>
+<approved hash="202,8,213.36,151.13,U14,!DSR,,,,"/>
+<approved hash="202,8,213.36,148.59,U14,!DCD,,,,"/>
+<approved hash="202,8,213.36,146.05,U14,!RI,,,,"/>
+<approved hash="202,8,213.36,135.89,U14,CBUS2,,,,"/>
+<approved hash="202,8,213.36,133.35,U14,CBUS3,,,,"/>
+<approved hash="202,8,213.36,130.81,U14,CBUS4,,,,"/>
+<approved hash="202,8,185.42,156.21,U14,!RESET,,,,"/>
 <approved hash="202,8,412.75,194.31,U15,OSCO,,,,"/>
 <approved hash="202,8,412.75,196.85,U15,OSCI,,,,"/>
 <approved hash="202,8,440.69,204.47,U15,!RTS,,,,"/>
@@ -12938,13 +12935,14 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <approved hash="202,8,440.69,181.61,U15,CBUS2,,,,"/>
 <approved hash="202,8,440.69,179.07,U15,CBUS3,,,,"/>
 <approved hash="202,8,440.69,176.53,U15,CBUS4,,,,"/>
+<approved hash="202,8,412.75,201.93,U15,!RESET,,,,"/>
 <approved hash="104,1,345.44,182.88,U8,VCC,3V3,,,"/>
-<approved hash="104,1,335.28,83.82,U$7,VDD,3V3_SMOOTH,,,"/>
-<approved hash="104,8,327.66,292.1,U4,VCC,PI_5V,,,"/>
-<approved hash="202,8,327.66,274.32,U4,RIN4,,,,"/>
-<approved hash="202,8,327.66,271.78,U4,RIN5,,,,"/>
-<approved hash="202,8,327.66,259.08,U4,DIN4,,,,"/>
-<approved hash="202,8,327.66,254,U4,EN,,,,"/>
+<approved hash="104,1,335.28,102.87,U$7,VDD,3V3_SMOOTH,,,"/>
+<approved hash="104,8,339.09,292.1,U4,VCC,5V_USB_HUB_FERRITE,,,"/>
+<approved hash="202,8,339.09,274.32,U4,RIN4,,,,"/>
+<approved hash="202,8,339.09,271.78,U4,RIN5,,,,"/>
+<approved hash="202,8,339.09,259.08,U4,DIN4,,,,"/>
+<approved hash="106,1,312.42,58.42,+3V3_PP,,,,,"/>
 <approved hash="208,2,27.94,157.48,+5V,sup,,,,"/>
 <approved hash="208,3,129.54,101.6,+5V,sup,,,,"/>
 <approved hash="208,3,106.68,99.06,+5V,out,,,,"/>
@@ -12955,27 +12953,17 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <approved hash="209,7,238.76,187.96,FTDI2_TXD,,,,,"/>
 <approved hash="209,7,140.97,203.2,FTDI2_TXD,,,,,"/>
 <approved hash="106,2,15.24,124.46,LOPY_RST,,,,,"/>
-<approved hash="209,8,327.66,251.46,N$4,,,,,"/>
-<approved hash="209,8,267.97,250.19,N$4,,,,,"/>
 <approved hash="106,2,322.58,198.12,N$18,,,,,"/>
 <approved hash="106,2,322.58,180.34,N$20,,,,,"/>
 <approved hash="106,2,322.58,177.8,N$21,,,,,"/>
-<approved hash="209,8,327.66,266.7,RDX1,,,,,"/>
-<approved hash="209,8,267.97,283.21,RDX1,,,,,"/>
-<approved hash="209,8,327.66,264.16,RDX2,,,,,"/>
-<approved hash="209,8,267.97,161.29,RDX2,,,,,"/>
-<approved hash="209,8,327.66,261.62,RDX3,,,,,"/>
-<approved hash="209,8,440.69,209.55,RDX3,,,,,"/>
-<approved hash="117,2,127,137.16,SHIELD,,,,,"/>
-<approved hash="209,8,267.97,280.67,TDX1,,,,,"/>
-<approved hash="209,8,327.66,281.94,TDX1,,,,,"/>
-<approved hash="209,8,327.66,279.4,TDX2,,,,,"/>
-<approved hash="209,8,267.97,158.75,TDX2,,,,,"/>
-<approved hash="209,8,327.66,276.86,TDX3,,,,,"/>
-<approved hash="209,8,440.69,207.01,TDX3,,,,,"/>
+<approved hash="209,8,339.09,266.7,RXD1,,,,,"/>
+<approved hash="209,8,267.97,280.67,RXD1,,,,,"/>
+<approved hash="209,8,339.09,264.16,RXD2,,,,,"/>
+<approved hash="209,8,213.36,161.29,RXD2,,,,,"/>
+<approved hash="209,8,339.09,261.62,RXD3,,,,,"/>
+<approved hash="209,8,440.69,207.01,RXD3,,,,,"/>
 <approved hash="111,1,359.41,177.8,N$97,,,,,"/>
 <approved hash="111,1,364.49,172.72,ID_SC,,,,,"/>
-<approved hash="111,8,314.96,238.76,N$41,,,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME1,,,,,"/>
 <approved hash="113,2,180.871,97.051,FRAME2,,,,,"/>
 <approved hash="113,3,193.571,130.071,FRAME3,,,,,"/>
