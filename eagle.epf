@@ -29,6 +29,12 @@ UsedLibrary="libraries/OPL-Eagle/OPL-new/Seeed-Switch.lbr"
 UsedLibrary="libraries/OPL-Eagle/OPL-new/Seeed-Transistor.lbr"
 
 [Win_1]
+Type="Control Panel"
+Loc="0 0 1919 1026"
+State=1
+Number=0
+
+[Win_2]
 Type="Board Editor"
 Loc="0 0 1919 1026"
 State=1
@@ -74,7 +80,7 @@ AddLevel=2
 PadsSameType=0
 Layer=1
 
-[Win_2]
+[Win_3]
 Type="Schematic Editor"
 Loc="1920 0 3839 1026"
 State=1
@@ -121,12 +127,6 @@ PadsSameType=0
 Layer=97
 Views=" 1: 2.77824 4.47344 493.949 218.614 2: -12.0291 -29.8682 391.646 241.736 3: 53.014 75.7557 188.207 166.715 4: -8.09305 34.7308 272.251 223.344 5: 20.8575 94.9423 156.049 185.9 6: -28.5582 167.935 106.635 258.894 7: -9.86483 97.4131 125.328 188.373 8: 282.795 223.699 395.456 299.499"
 Sheet="2"
-
-[Win_3]
-Type="Control Panel"
-Loc="0 0 1919 1026"
-State=1
-Number=0
 
 [Desktop]
 Screen="3840 1080"
