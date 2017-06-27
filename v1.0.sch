@@ -1519,27 +1519,6 @@ More information and support community is available at http://www.element14.com/
 </library>
 <library name="Seeed-Capacitor-2016">
 <packages>
-<package name="C0402">
-<description>&lt;b&gt;0402&lt;b&gt;&lt;p&gt;</description>
-<smd name="1" x="0" y="0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
-<smd name="2" x="0" y="-0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
-<text x="0.635" y="1.27" size="0.889" layer="25" ratio="11" rot="R270">&gt;NAME</text>
-<text x="-1.524" y="1.397" size="0.635" layer="27" font="vector" ratio="10" rot="R270">&gt;VALUE</text>
-<polygon width="0.0254" layer="51">
-<vertex x="0.254" y="0.508"/>
-<vertex x="0.254" y="-0.508"/>
-<vertex x="-0.254" y="-0.508"/>
-<vertex x="-0.254" y="0.508"/>
-</polygon>
-<wire x1="0.3945" y1="-0.712" x2="0.2675" y2="-0.839" width="0.0762" layer="21" curve="-90"/>
-<wire x1="0.2675" y1="-0.839" x2="-0.2675" y2="-0.839" width="0.0762" layer="21"/>
-<wire x1="-0.2675" y1="-0.839" x2="-0.3945" y2="-0.712" width="0.0762" layer="21" curve="-90"/>
-<wire x1="-0.3945" y1="-0.712" x2="-0.3945" y2="0.712" width="0.0762" layer="21"/>
-<wire x1="-0.3945" y1="0.712" x2="-0.2675" y2="0.839" width="0.0762" layer="21" curve="-90"/>
-<wire x1="-0.2675" y1="0.839" x2="0.2675" y2="0.839" width="0.0762" layer="21"/>
-<wire x1="0.2675" y1="0.839" x2="0.3945" y2="0.712" width="0.0762" layer="21" curve="-90"/>
-<wire x1="0.3945" y1="0.712" x2="0.3945" y2="-0.712" width="0.0762" layer="21"/>
-</package>
 <package name="C0805">
 <description>&lt;b&gt;0805&lt;b&gt;&lt;p&gt;</description>
 <wire x1="0.889" y1="-1.651" x2="-0.889" y2="-1.651" width="0.127" layer="21"/>
@@ -1605,26 +1584,6 @@ More information and support community is available at http://www.element14.com/
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CERAMIC-1UF-6.3V-10%-X5R(0402)" prefix="C" uservalue="yes">
-<description>302010003</description>
-<gates>
-<gate name="G$1" symbol="C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="C0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="CC0402KRX5R5BB105" constant="no"/>
-<attribute name="VALUE" value="1UF 6.3V" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CERAMIC-10NF-50V-5%-X7R(0805)" prefix="C" uservalue="yes">
 <description>302010175</description>
 <gates>
@@ -5838,6 +5797,26 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 </device>
 </devices>
 </deviceset>
+<deviceset name="TANTALUM-SMD-10UF-10V-10%(AVX-A)" prefix="C" uservalue="yes">
+<description>302020011</description>
+<gates>
+<gate name="G$1" symbol="CAP-POLAR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AVX-A">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="TAJA106K010RNJ" constant="no"/>
+<attribute name="VALUE" value="10uf"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="Seeed-Switch-2016" urn="urn:adsk.eagle:library:462">
@@ -7164,8 +7143,6 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <part name="FRAME5" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="U$1" library="MCP3424" deviceset="MCP3424-E/SL" device=""/>
 <part name="U$2" library="MCP3424" deviceset="MCP3424-E/SL" device=""/>
-<part name="C5" library="Seeed-Capacitor-2016" deviceset="CERAMIC-1UF-6.3V-10%-X5R(0402)" device="" value="1UF 6.3V"/>
-<part name="C8" library="Seeed-Capacitor-2016" deviceset="CERAMIC-1UF-6.3V-10%-X5R(0402)" device="" value="1UF 6.3V"/>
 <part name="C11" library="Seeed-Capacitor-2016" library_urn="urn:adsk.eagle:library:450" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -7529,6 +7506,9 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="H5" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="H6" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.0"/>
+<part name="C5" library="Seeed-Capacitor" deviceset="TANTALUM-SMD-10UF-10V-10%(AVX-A)" device="" value="10uf"/>
+<part name="C8" library="Seeed-Capacitor" deviceset="TANTALUM-SMD-10UF-10V-10%(AVX-A)" device="" value="10uf"/>
+<part name="TP17" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
 </parts>
 <sheets>
 <sheet>
@@ -7632,6 +7612,7 @@ LFXTAL016178
 <instance part="J10" gate="G$1" x="355.6" y="48.26"/>
 <instance part="J11" gate="G$1" x="369.57" y="48.26"/>
 <instance part="Q1" gate="G$1" x="167.64" y="17.78" rot="R90"/>
+<instance part="TP17" gate="G$1" x="193.04" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -7831,6 +7812,15 @@ LFXTAL016178
 <label x="309.88" y="58.42" size="1.778" layer="95"/>
 <pinref part="F62" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="VDD"/>
+<label x="312.42" y="102.87" size="1.778" layer="95"/>
+<wire x1="335.28" y1="102.87" x2="320.04" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="102.87" x2="312.42" y2="102.87" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="320.04" y1="101.6" x2="320.04" y2="102.87" width="0.1524" layer="91"/>
+<junction x="320.04" y="102.87"/>
+</segment>
 </net>
 <net name="SCL_3V3" class="0">
 <segment>
@@ -7957,8 +7947,12 @@ LFXTAL016178
 <segment>
 <pinref part="U2" gate="A" pin="VBAT"/>
 <pinref part="BAT1" gate="G$1" pin="V+"/>
-<wire x1="205.74" y1="55.88" x2="190.5" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="55.88" x2="193.04" y2="55.88" width="0.1524" layer="91"/>
 <label x="193.04" y="55.88" size="1.778" layer="95"/>
+<pinref part="TP17" gate="G$1" pin="TP"/>
+<wire x1="193.04" y1="55.88" x2="190.5" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="58.42" x2="193.04" y2="55.88" width="0.1524" layer="91"/>
+<junction x="193.04" y="55.88"/>
 </segment>
 </net>
 <net name="X1_RTC" class="0">
@@ -8349,17 +8343,6 @@ LFXTAL016178
 <junction x="351.79" y="157.48"/>
 </segment>
 </net>
-<net name="3V3_SMOOTH" class="0">
-<segment>
-<pinref part="U$7" gate="G$1" pin="VDD"/>
-<label x="312.42" y="102.87" size="1.778" layer="95"/>
-<wire x1="335.28" y1="102.87" x2="320.04" y2="102.87" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="102.87" x2="312.42" y2="102.87" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="320.04" y1="101.6" x2="320.04" y2="102.87" width="0.1524" layer="91"/>
-<junction x="320.04" y="102.87"/>
-</segment>
-</net>
 <net name="GPIO12" class="0">
 <segment>
 <pinref part="PCB1" gate="G$1" pin="GPIO12"/>
@@ -8414,16 +8397,17 @@ LFXTAL016178
 </net>
 <net name="GPIO18_FREE" class="0">
 <segment>
-<wire x1="120.65" y1="205.74" x2="142.24" y2="205.74" width="0.1524" layer="91"/>
-<label x="125.73" y="205.74" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="347.98" y1="50.8" x2="322.58" y2="50.8" width="0.1524" layer="91"/>
 <label x="326.39" y="50.8" size="1.778" layer="95"/>
 <pinref part="J10" gate="G$1" pin="8"/>
 <pinref part="J11" gate="G$1" pin="8"/>
 <wire x1="361.95" y1="50.8" x2="347.98" y2="50.8" width="0.1524" layer="91"/>
 <junction x="347.98" y="50.8"/>
+</segment>
+<segment>
+<pinref part="PCB1" gate="G$1" pin="GPIO18"/>
+<wire x1="119.38" y1="205.74" x2="142.24" y2="205.74" width="0.1524" layer="91"/>
+<label x="125.73" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO24_FREE" class="0">
@@ -8531,7 +8515,7 @@ LFXTAL016178
 <junction x="347.98" y="48.26"/>
 </segment>
 </net>
-<net name="+3V3_P" class="0">
+<net name="GPIO_3V3_FUSED" class="0">
 <segment>
 <wire x1="347.98" y1="58.42" x2="335.28" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="F62" gate="G$1" pin="2"/>
@@ -8551,7 +8535,7 @@ LFXTAL016178
 <junction x="347.98" y="60.96"/>
 </segment>
 </net>
-<net name="N$44" class="0">
+<net name="GPIO_5V_FUSED" class="0">
 <segment>
 <pinref part="J11" gate="G$1" pin="3"/>
 <pinref part="J10" gate="G$1" pin="3"/>
@@ -9576,7 +9560,7 @@ LFXTAL016178
 <pinref part="U$5" gate="G$1" pin="IN+"/>
 </segment>
 </net>
-<net name="3V3_SMOOTH" class="0">
+<net name="+3V3_SMOOTH" class="0">
 <segment>
 <pinref part="L2" gate="L" pin="2"/>
 <pinref part="C14" gate="G$1" pin="2"/>
@@ -9747,8 +9731,6 @@ LFXTAL016178
 <instance part="FRAME4" gate="G$1" x="-12.7" y="-15.24"/>
 <instance part="U$1" gate="A" x="149.86" y="172.72"/>
 <instance part="U$2" gate="A" x="149.86" y="78.74"/>
-<instance part="C5" gate="G$1" x="116.84" y="101.6" rot="R270"/>
-<instance part="C8" gate="G$1" x="116.84" y="195.58" rot="R270"/>
 <instance part="GND17" gate="1" x="132.08" y="144.78"/>
 <instance part="GND18" gate="1" x="129.54" y="46.99"/>
 <instance part="GND19" gate="1" x="116.84" y="189.23"/>
@@ -9757,6 +9739,8 @@ LFXTAL016178
 <instance part="GND20" gate="1" x="119.38" y="93.98"/>
 <instance part="+3V3_SMOOTH3" gate="G$1" x="121.92" y="111.76"/>
 <instance part="+3V3_SMOOTH4" gate="G$1" x="119.38" y="207.01"/>
+<instance part="C5" gate="G$1" x="116.84" y="101.6" rot="R270"/>
+<instance part="C8" gate="G$1" x="116.84" y="195.58" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -9838,25 +9822,24 @@ LFXTAL016178
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GNDA"/>
-<pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="96.52" x2="116.84" y2="97.79" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="96.52" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="96.52" x2="121.92" y2="97.79" width="0.1524" layer="91"/>
 <junction x="119.38" y="96.52"/>
+<pinref part="C5" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
-<pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="191.77" x2="116.84" y2="191.77" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GNDA"/>
+<pinref part="C8" gate="G$1" pin="-"/>
 <junction x="116.84" y="191.77"/>
 </segment>
 </net>
 <net name="+3V3_SMOOTH" class="0">
 <segment>
-<pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="U$2" gate="A" pin="VDD"/>
 <wire x1="116.84" y1="105.41" x2="121.92" y2="105.41" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="105.41" x2="132.08" y2="105.41" width="0.1524" layer="91"/>
@@ -9866,9 +9849,9 @@ LFXTAL016178
 <label x="125.73" y="105.41" size="1.778" layer="95"/>
 <pinref part="+3V3_SMOOTH3" gate="G$1" pin="+3V3"/>
 <wire x1="121.92" y1="105.41" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="+"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="199.39" x2="116.84" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="A" pin="VDD"/>
 <wire x1="116.84" y1="200.66" x2="119.38" y2="200.66" width="0.1524" layer="91"/>
@@ -9882,6 +9865,7 @@ LFXTAL016178
 <wire x1="119.38" y1="204.47" x2="119.38" y2="200.66" width="0.1524" layer="91"/>
 <junction x="119.38" y="200.66"/>
 <pinref part="+3V3_SMOOTH4" gate="G$1" pin="+3V3"/>
+<pinref part="C8" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="ADC3-" class="0">
@@ -10170,7 +10154,7 @@ LFXTAL016178
 <label x="5.08" y="148.59" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="3V3_SMOOTH" class="0">
+<net name="+3V3_SMOOTH" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="144.78" x2="111.76" y2="160.02" width="0.1524" layer="91"/>
@@ -10855,7 +10839,7 @@ LFXTAL016178
 <label x="217.17" y="41.91" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="3V3_SMOOTH" class="0">
+<net name="+3V3_SMOOTH" class="0">
 <segment>
 <pinref part="F41" gate="G$1" pin="1"/>
 <wire x1="92.71" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
@@ -11754,7 +11738,7 @@ LFXTAL016178
 <instance part="TP14" gate="G$1" x="82.55" y="167.64"/>
 <instance part="R25" gate="G$1" x="318.77" y="187.96"/>
 <instance part="R26" gate="G$1" x="331.47" y="187.96"/>
-<instance part="SW3" gate="G$1" x="302.26" y="187.96"/>
+<instance part="SW3" gate="G$1" x="300.99" y="187.96" rot="R180"/>
 <instance part="L4" gate="L" x="48.26" y="248.92"/>
 <instance part="C25" gate="G$1" x="41.91" y="242.57" rot="R90"/>
 <instance part="D12" gate="G$1" x="40.64" y="179.07" rot="R180"/>
@@ -11876,7 +11860,7 @@ LFXTAL016178
 <label x="278.13" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FTID2_CBUS2" class="0">
+<net name="RS485_CBUS2" class="0">
 <segment>
 <pinref part="U5" gate="1" pin="CBUS1"/>
 <wire x1="140.97" y1="177.8" x2="182.88" y2="177.8" width="0.1524" layer="91"/>
@@ -11891,14 +11875,6 @@ LFXTAL016178
 <wire x1="113.03" y1="175.26" x2="92.71" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="92.71" y1="175.26" x2="92.71" y2="173.99" width="0.1524" layer="91"/>
 <label x="96.52" y="175.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RS485_A" class="0">
-<segment>
-<pinref part="U12" gate="A" pin="A"/>
-<wire x1="274.32" y1="187.96" x2="294.64" y2="187.96" width="0.1524" layer="91"/>
-<label x="278.13" y="187.96" size="1.778" layer="95"/>
-<pinref part="SW3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RS485_B" class="0">
@@ -12050,17 +12026,6 @@ LFXTAL016178
 <wire x1="43.18" y1="248.92" x2="41.91" y2="248.92" width="0.1524" layer="91"/>
 <junction x="41.91" y="248.92"/>
 </segment>
-<segment>
-<pinref part="U$6" gate="G$1" pin="VDD5"/>
-<wire x1="45.72" y1="167.64" x2="29.21" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="29.21" y1="167.64" x2="29.21" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="29.21" y1="160.02" x2="22.86" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="160.02" x2="3.81" y2="160.02" width="0.1524" layer="91"/>
-<label x="3.81" y="160.02" size="1.778" layer="95"/>
-<pinref part="C32" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="161.29" x2="22.86" y2="160.02" width="0.1524" layer="91"/>
-<junction x="22.86" y="160.02"/>
-</segment>
 </net>
 <net name="USB1_DP" class="0">
 <segment>
@@ -12090,26 +12055,12 @@ LFXTAL016178
 </net>
 <net name="USB3_DP" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="DP3"/>
-<wire x1="76.2" y1="124.46" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
-<label x="81.28" y="124.46" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="USB4_DP" class="0">
-<segment>
 <pinref part="U$6" gate="G$1" pin="DP4"/>
 <wire x1="76.2" y1="116.84" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
 <label x="81.28" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="USB4_DM" class="0">
-<segment>
-<pinref part="U$6" gate="G$1" pin="DM4"/>
-<wire x1="76.2" y1="114.3" x2="81.28" y2="114.3" width="0.1524" layer="91"/>
-<label x="81.28" y="114.3" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$10" class="0">
+<net name="RS485_CBUS0" class="0">
 <segment>
 <pinref part="U5" gate="1" pin="CBUS0"/>
 <pinref part="D7" gate="G$1" pin="-"/>
@@ -12150,9 +12101,9 @@ LFXTAL016178
 </net>
 <net name="USB3_DM" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="DM3"/>
-<wire x1="76.2" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
-<label x="81.28" y="121.92" size="1.778" layer="95"/>
+<pinref part="U$6" gate="G$1" pin="DM4"/>
+<wire x1="76.2" y1="114.3" x2="81.28" y2="114.3" width="0.1524" layer="91"/>
+<label x="81.28" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_HUB_LED1" class="0">
@@ -12174,7 +12125,7 @@ LFXTAL016178
 <wire x1="82.55" y1="165.1" x2="85.09" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$43" class="0">
+<net name="USB_HUB_DRV" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="DRV"/>
 <wire x1="76.2" y1="170.18" x2="78.74" y2="170.18" width="0.1524" layer="91"/>
@@ -12191,13 +12142,6 @@ LFXTAL016178
 <pinref part="R25" gate="G$1" pin="2"/>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="322.58" y1="187.96" x2="327.66" y2="187.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<pinref part="SW3" gate="G$1" pin="2"/>
-<pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="309.88" y1="187.96" x2="314.96" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V_USB_HUB_FERRITE" class="0">
@@ -12237,6 +12181,17 @@ LFXTAL016178
 <wire x1="102.87" y1="198.12" x2="102.87" y2="195.58" width="0.1524" layer="91"/>
 <junction x="95.25" y="198.12"/>
 </segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="VDD5"/>
+<wire x1="45.72" y1="167.64" x2="29.21" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="29.21" y1="167.64" x2="29.21" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="29.21" y1="160.02" x2="22.86" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="160.02" x2="3.81" y2="160.02" width="0.1524" layer="91"/>
+<label x="3.81" y="160.02" size="1.778" layer="95"/>
+<pinref part="C32" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="161.29" x2="22.86" y2="160.02" width="0.1524" layer="91"/>
+<junction x="22.86" y="160.02"/>
+</segment>
 </net>
 <net name="N$49" class="0">
 <segment>
@@ -12257,6 +12212,35 @@ LFXTAL016178
 <pinref part="D15" gate="G$1" pin="+"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="191.77" x2="182.88" y2="194.31" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RS485_A" class="0">
+<segment>
+<pinref part="SW3" gate="G$1" pin="2"/>
+<pinref part="U12" gate="A" pin="A"/>
+<wire x1="293.37" y1="187.96" x2="274.32" y2="187.96" width="0.1524" layer="91"/>
+<label x="278.13" y="187.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="SW3" gate="G$1" pin="1"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="308.61" y1="187.96" x2="314.96" y2="187.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USB4_DP" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="DP3"/>
+<wire x1="76.2" y1="124.46" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
+<label x="81.28" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USB4_DM" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="DM3"/>
+<wire x1="76.2" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
+<label x="81.28" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -12448,7 +12432,7 @@ LFXTAL016178
 <pinref part="GND91" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="N$109" class="0">
+<net name="RS232_1_LED1" class="0">
 <segment>
 <pinref part="U13" gate="1" pin="CBUS0"/>
 <wire x1="207.01" y1="255.27" x2="224.79" y2="255.27" width="0.1524" layer="91"/>
@@ -12456,7 +12440,7 @@ LFXTAL016178
 <wire x1="224.79" y1="265.43" x2="224.79" y2="255.27" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$110" class="0">
+<net name="RS232_1_LED2" class="0">
 <segment>
 <pinref part="U13" gate="1" pin="CBUS1"/>
 <wire x1="207.01" y1="252.73" x2="240.03" y2="252.73" width="0.1524" layer="91"/>
@@ -12472,7 +12456,7 @@ LFXTAL016178
 <label x="391.16" y="181.61" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$113" class="0">
+<net name="RS232_2_LED1" class="0">
 <segment>
 <pinref part="U14" gate="1" pin="CBUS0"/>
 <wire x1="213.36" y1="140.97" x2="240.03" y2="140.97" width="0.1524" layer="91"/>
@@ -12480,7 +12464,7 @@ LFXTAL016178
 <wire x1="240.03" y1="151.13" x2="240.03" y2="140.97" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$114" class="0">
+<net name="RS232_2_LED2" class="0">
 <segment>
 <pinref part="U14" gate="1" pin="CBUS1"/>
 <wire x1="213.36" y1="138.43" x2="255.27" y2="138.43" width="0.1524" layer="91"/>
@@ -12488,7 +12472,7 @@ LFXTAL016178
 <wire x1="255.27" y1="151.13" x2="255.27" y2="138.43" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$117" class="0">
+<net name="RS232_3_LED1" class="0">
 <segment>
 <pinref part="U15" gate="1" pin="CBUS0"/>
 <wire x1="440.69" y1="186.69" x2="467.36" y2="186.69" width="0.1524" layer="91"/>
@@ -12496,7 +12480,7 @@ LFXTAL016178
 <wire x1="467.36" y1="189.23" x2="467.36" y2="186.69" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$118" class="0">
+<net name="RS232_3_LED2" class="0">
 <segment>
 <pinref part="U15" gate="1" pin="CBUS1"/>
 <wire x1="440.69" y1="184.15" x2="482.6" y2="184.15" width="0.1524" layer="91"/>
@@ -12955,7 +12939,7 @@ LFXTAL016178
 <approved hash="202,8,440.69,176.53,U15,CBUS4,,,,"/>
 <approved hash="202,8,412.75,201.93,U15,!RESET,,,,"/>
 <approved hash="104,1,336.55,182.88,U8,VCC,3V3,,,"/>
-<approved hash="104,1,335.28,102.87,U$7,VDD,3V3_SMOOTH,,,"/>
+<approved hash="104,1,335.28,102.87,U$7,VDD,+3V3,,,"/>
 <approved hash="104,8,339.09,292.1,U4,VCC,5V_USB_HUB_FERRITE,,,"/>
 <approved hash="202,8,339.09,274.32,U4,RIN4,,,,"/>
 <approved hash="202,8,339.09,271.78,U4,RIN5,,,,"/>
