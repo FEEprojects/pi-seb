@@ -31,8 +31,14 @@ UsedLibrary="libraries/OPL-Eagle/OPL-new/Seeed-Transistor.lbr"
 UsedLibrary="libraries/mic29300.lbr"
 
 [Win_1]
+Type="Control Panel"
+Loc="0 0 1919 1026"
+State=1
+Number=0
+
+[Win_2]
 Type="Schematic Editor"
-Loc="1910 0 3829 1026"
+Loc="1920 0 3839 1026"
 State=2
 Number=1
 File="v1.0.sch"
@@ -78,9 +84,9 @@ Layer=97
 Views=" 1: 130.625 13.6448 539.935 192.095 2: -74.8376 1.3579 328.838 272.962 3: 208.425 145.532 370.656 254.683 4: 87.6206 166.471 165.859 219.109 5: -6.90259 105.639 47.4278 142.193 6: 69.9346 76.8896 182.596 152.689 7: 3.61785 94.0175 138.811 184.977 8: 6.81181 102.665 410.497 374.27"
 Sheet="7"
 
-[Win_2]
+[Win_3]
 Type="Board Editor"
-Loc="-8 -8 1911 1018"
+Loc="0 0 1919 1026"
 State=1
 Number=2
 File="v1.0.brd"
@@ -123,12 +129,6 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=1
-
-[Win_3]
-Type="Control Panel"
-Loc="0 0 1919 1026"
-State=1
-Number=0
 
 [Desktop]
 Screen="3840 1080"
