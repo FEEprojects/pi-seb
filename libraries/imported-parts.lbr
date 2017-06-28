@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1923,6 +1923,18 @@ grid 2.54 mm, horinzontal</description>
 <text x="-3.4544" y="6.985" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-8.255" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
+<package name="85SMX">
+<smd name="1" x="0" y="0" dx="1.27" dy="0.635" layer="1" roundness="5" rot="R90"/>
+<smd name="2" x="5.5" y="0" dx="1.27" dy="0.635" layer="1" roundness="5" rot="R90"/>
+<smd name="3" x="5.5" y="2.3" dx="1.27" dy="0.635" layer="1" roundness="5" rot="R90"/>
+<smd name="4" x="0" y="2.3" dx="1.27" dy="0.635" layer="1" roundness="5" rot="R90"/>
+<wire x1="-1.6" y1="3.05" x2="7.1" y2="3.05" width="0.127" layer="21"/>
+<wire x1="7.1" y1="3.05" x2="7.1" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="7.1" y1="-0.75" x2="-1.6" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.75" x2="-1.6" y2="3.05" width="0.127" layer="21"/>
+<text x="0" y="4" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP23017-E/SO">
@@ -2817,6 +2829,22 @@ grid 2.54 mm, horinzontal</description>
 <text x="-5.5626" y="17.8562" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-4.445" y="-27.3558" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
 </symbol>
+<symbol name="Q">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MCP23017-E/SO" prefix="U">
@@ -3582,6 +3610,24 @@ http://www.sst.com/dotAsset/40506.pdf</description>
 <attribute name="OC_NEWARK" value="99K0549" constant="no"/>
 <attribute name="PACKAGE" value="SOIC-16" constant="no"/>
 <attribute name="SUPPLIER" value="NXP" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LFXTAL016178" prefix="Q">
+<gates>
+<gate name="G$1" symbol="Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="85SMX">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="OC_ONECALL" value="LFXTAL016178" constant="no"/>
 </technology>
 </technologies>
 </device>
