@@ -13051,8 +13051,6 @@ LFXTAL016178
 <text x="71.12" y="154.94" size="6.4516" layer="97">SPI Sockets</text>
 <wire x1="165.1" y1="149.86" x2="165.1" y2="261.62" width="0.1524" layer="97"/>
 <text x="46.99" y="81.28" size="3.81" layer="97">TTL</text>
-<text x="48.26" y="62.23" size="3.81" layer="97">RS232</text>
-<text x="49.53" y="44.45" size="3.81" layer="97">RS232</text>
 <text x="49.53" y="21.59" size="3.81" layer="97">RS232</text>
 </plain>
 <instances>
@@ -14051,28 +14049,21 @@ LFXTAL016178
 <pinref part="F54" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="RS232_1_TXD" class="0">
+<net name="TXD1" class="0">
 <segment>
 <pinref part="I_UART_HUB_1" gate="-3" pin="S"/>
 <wire x1="25.4" y1="64.77" x2="-12.7" y2="64.77" width="0.1524" layer="91"/>
 <label x="-12.7" y="64.77" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RS232_1_RXD" class="0">
-<segment>
-<pinref part="I_UART_HUB_1" gate="-4" pin="S"/>
-<label x="-12.7" y="62.23" size="1.778" layer="95"/>
-<wire x1="25.4" y1="62.23" x2="-12.7" y2="62.23" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="RS232_2_TXD" class="0">
+<net name="TXD2" class="0">
 <segment>
 <pinref part="PI_UART_HUB_2" gate="-3" pin="S"/>
 <wire x1="25.4" y1="45.72" x2="-12.7" y2="45.72" width="0.1524" layer="91"/>
 <label x="-12.7" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RS232_2_RXD" class="0">
+<net name="RXD2" class="0">
 <segment>
 <pinref part="PI_UART_HUB_2" gate="-4" pin="S"/>
 <label x="-12.7" y="43.18" size="1.778" layer="95"/>
@@ -14535,6 +14526,13 @@ LFXTAL016178
 <segment>
 <pinref part="PI_ADC_4" gate="-7" pin="S"/>
 <pinref part="GND92" gate="1" pin="GNDA"/>
+</segment>
+</net>
+<net name="RXD1" class="0">
+<segment>
+<pinref part="I_UART_HUB_1" gate="-4" pin="S"/>
+<label x="-12.7" y="62.23" size="1.778" layer="95"/>
+<wire x1="25.4" y1="62.23" x2="-12.7" y2="62.23" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -15446,22 +15444,12 @@ LFXTAL016178
 <wire x1="213.36" y1="163.83" x2="226.06" y2="163.83" width="0.1524" layer="91"/>
 <label x="218.44" y="163.83" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U4" gate="A" pin="DIN2"/>
-<wire x1="339.09" y1="264.16" x2="313.69" y2="264.16" width="0.1524" layer="91"/>
-<label x="313.69" y="264.16" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="RXD1" class="0">
 <segment>
 <pinref part="U13" gate="1" pin="RXD"/>
 <wire x1="207.01" y1="275.59" x2="219.71" y2="275.59" width="0.1524" layer="91"/>
 <label x="208.28" y="275.59" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U4" gate="A" pin="ROUT1"/>
-<wire x1="374.65" y1="279.4" x2="394.97" y2="279.4" width="0.1524" layer="91"/>
-<label x="378.46" y="279.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RXD2" class="0">
@@ -15470,22 +15458,12 @@ LFXTAL016178
 <wire x1="213.36" y1="161.29" x2="226.06" y2="161.29" width="0.1524" layer="91"/>
 <label x="218.44" y="161.29" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U4" gate="A" pin="ROUT2"/>
-<wire x1="374.65" y1="276.86" x2="394.97" y2="276.86" width="0.1524" layer="91"/>
-<label x="378.46" y="276.86" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="TXD1" class="0">
 <segment>
 <pinref part="U13" gate="1" pin="TXD"/>
 <wire x1="207.01" y1="278.13" x2="219.71" y2="278.13" width="0.1524" layer="91"/>
 <label x="208.28" y="278.13" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U4" gate="A" pin="DIN1"/>
-<wire x1="339.09" y1="266.7" x2="313.69" y2="266.7" width="0.1524" layer="91"/>
-<label x="313.69" y="266.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FTDI3_3V3" class="0">
@@ -15622,13 +15600,6 @@ LFXTAL016178
 <label x="313.69" y="261.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RS232_1_TXD" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="DOUT1"/>
-<wire x1="374.65" y1="292.1" x2="394.97" y2="292.1" width="0.1524" layer="91"/>
-<label x="378.46" y="292.1" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="RS232_3_RXD" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="RIN3"/>
@@ -15636,32 +15607,11 @@ LFXTAL016178
 <label x="313.69" y="276.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RS232_2_TXD" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="DOUT2"/>
-<wire x1="374.65" y1="289.56" x2="394.97" y2="289.56" width="0.1524" layer="91"/>
-<label x="378.46" y="289.56" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="RS232_3_TXD" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="DOUT3"/>
 <wire x1="374.65" y1="287.02" x2="394.97" y2="287.02" width="0.1524" layer="91"/>
 <label x="378.46" y="287.02" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RS232_1_RXD" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="RIN1"/>
-<wire x1="339.09" y1="281.94" x2="313.69" y2="281.94" width="0.1524" layer="91"/>
-<label x="313.69" y="281.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RS232_2_RXD" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="RIN2"/>
-<wire x1="339.09" y1="279.4" x2="314.96" y2="279.4" width="0.1524" layer="91"/>
-<label x="313.69" y="279.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -15798,8 +15748,12 @@ LFXTAL016178
 <approved hash="104,1,336.55,182.88,U8,VCC,3V3,,,"/>
 <approved hash="104,1,335.28,102.87,U$7,VDD,+3V3,,,"/>
 <approved hash="104,8,339.09,292.1,U4,VCC,5V_USB_HUB_FERRITE,,,"/>
+<approved hash="202,8,339.09,281.94,U4,RIN1,,,,"/>
+<approved hash="202,8,339.09,279.4,U4,RIN2,,,,"/>
 <approved hash="202,8,339.09,274.32,U4,RIN4,,,,"/>
 <approved hash="202,8,339.09,271.78,U4,RIN5,,,,"/>
+<approved hash="202,8,339.09,266.7,U4,DIN1,,,,"/>
+<approved hash="202,8,339.09,264.16,U4,DIN2,,,,"/>
 <approved hash="202,8,339.09,259.08,U4,DIN4,,,,"/>
 <approved hash="208,2,27.94,157.48,+5V,sup,,,,"/>
 <approved hash="208,2,52.07,194.31,+5V,sup,,,,"/>
@@ -15812,10 +15766,6 @@ LFXTAL016178
 <approved hash="209,7,140.97,175.26,FTDI2_TE,,,,,"/>
 <approved hash="209,7,238.76,187.96,FTDI2_TXD,,,,,"/>
 <approved hash="209,7,140.97,203.2,FTDI2_TXD,,,,,"/>
-<approved hash="209,8,207.01,278.13,TXD1,,,,,"/>
-<approved hash="209,8,339.09,266.7,TXD1,,,,,"/>
-<approved hash="209,8,213.36,163.83,TXD2,,,,,"/>
-<approved hash="209,8,339.09,264.16,TXD2,,,,,"/>
 <approved hash="209,8,440.69,209.55,TXD3,,,,,"/>
 <approved hash="209,8,339.09,261.62,TXD3,,,,,"/>
 <approved hash="113,2,180.871,97.051,FRAME2,,,,,"/>
