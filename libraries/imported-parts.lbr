@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2022,12 +2022,15 @@ grid 2.54 mm, horinzontal</description>
 <smd name="2" x="5.5" y="0" dx="1.27" dy="0.635" layer="1" roundness="5" rot="R90"/>
 <smd name="3" x="5.5" y="2.3" dx="1.27" dy="0.635" layer="1" roundness="5" rot="R90"/>
 <smd name="4" x="0" y="2.3" dx="1.27" dy="0.635" layer="1" roundness="5" rot="R90"/>
-<wire x1="-1.6" y1="3.05" x2="7.1" y2="3.05" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="3.05" x2="0" y2="3.05" width="0.127" layer="21"/>
+<wire x1="0" y1="3.05" x2="7.1" y2="3.05" width="0.127" layer="21"/>
 <wire x1="7.1" y1="3.05" x2="7.1" y2="-0.75" width="0.127" layer="21"/>
-<wire x1="7.1" y1="-0.75" x2="-1.6" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="7.1" y1="-0.75" x2="0" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.75" x2="-1.6" y2="-0.75" width="0.127" layer="21"/>
 <wire x1="-1.6" y1="-0.75" x2="-1.6" y2="3.05" width="0.127" layer="21"/>
 <text x="0" y="4" size="1.27" layer="25">&gt;NAME</text>
 <text x="0" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="0" y1="3.05" x2="0" y2="-0.75" width="0.127" layer="21"/>
 </package>
 <package name="TEMP-HUM-SENSOR-DHT22">
 <description>&lt;b&gt;DHT22 - digital humidity &amp; temperature sensor&lt;/b&gt;</description>
