@@ -11075,7 +11075,7 @@ LFXTAL016178
 <pinref part="R41" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="GPIO16" class="0">
+<net name="GPIO6" class="0">
 <segment>
 <pinref part="PCB1" gate="G$1" pin="GPIO6"/>
 <wire x1="91.44" y1="154.94" x2="69.85" y2="154.94" width="0.1524" layer="91"/>
