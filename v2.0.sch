@@ -3738,20 +3738,6 @@ http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</description>
 <wire x1="-3.7" y1="-1.2" x2="-3.7" y2="-2.1" width="0.127" layer="21"/>
 <wire x1="3.7" y1="-1.2" x2="3.7" y2="-2.1" width="0.127" layer="21"/>
 </package>
-<package name="H2-2.54">
-<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.127" layer="21"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-2.54" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0" layer="39"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0" layer="39"/>
-<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="2.54" width="0" layer="39"/>
-<pad name="1" x="0" y="1.27" drill="0.889" diameter="1.651" shape="square"/>
-<pad name="2" x="0" y="-1.27" drill="0.889" diameter="1.651"/>
-<text x="-1.905" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="0.889" layer="27" ratio="11" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="39"/>
-</package>
 </packages>
 <symbols>
 <symbol name="ZX62-B-5PA(11)">
@@ -3772,16 +3758,6 @@ SMD type&lt;br&gt;</description>
 <pin name="ID" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="GND" x="10.16" y="0" visible="pin" length="short" direction="sup" rot="R180"/>
 <pin name="SHIELD" x="10.16" y="-7.62" visible="pin" length="short" direction="sup" rot="R180"/>
-</symbol>
-<symbol name="HEADER-2P">
-<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<text x="-6.35" y="6.35" size="1.27" layer="95" ratio="10">&gt;name</text>
-<text x="1.27" y="6.35" size="1.27" layer="96" ratio="10">&gt;value</text>
-<pin name="1" x="-7.62" y="2.54" length="middle" function="dotclk" swaplevel="1"/>
-<pin name="2" x="-7.62" y="-2.54" length="middle" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3804,26 +3780,6 @@ SMD type&lt;br&gt;</description>
 <technology name="">
 <attribute name="MPN" value="ZX62-B-5PA" constant="no"/>
 <attribute name="VALUE" value="ZX62-B-5PA" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DIP-BLACK-ROUND-FEMALE-HEADER-VERT(2P-2.54)" prefix="J" uservalue="yes">
-<description>320030050</description>
-<gates>
-<gate name="G$1" symbol="HEADER-2P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="H2-2.54">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="RF130-1023ABS0741"/>
-<attribute name="VALUE" value="2p-2.54"/>
 </technology>
 </technologies>
 </device>
@@ -9863,6 +9819,55 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Seeed-Fuse">
+<packages>
+<package name="F1206">
+<wire x1="-2.159" y1="1.016" x2="2.159" y2="1.016" width="0.127" layer="21"/>
+<wire x1="2.159" y1="1.016" x2="2.159" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="2.159" y1="-1.016" x2="-2.159" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-2.159" y1="-1.016" x2="-2.159" y2="1.016" width="0.127" layer="21"/>
+<smd name="1" x="-1.397" y="0" dx="1.27" dy="1.778" layer="1"/>
+<smd name="2" x="1.397" y="0" dx="1.27" dy="1.778" layer="1"/>
+<text x="-1.905" y="1.27" size="0.889" layer="25" font="vector" ratio="11">&gt;NAME</text>
+<text x="-1.905" y="-2.159" size="0.889" layer="27" font="vector" ratio="11">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="-0.889" x2="2.032" y2="0.889" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FUSE">
+<wire x1="-1.016" y1="0" x2="0" y2="-1.016" width="0.254" layer="94" curve="-300.510237"/>
+<wire x1="0" y1="-1.016" x2="1.016" y2="0" width="0.254" layer="94" curve="-300.510237"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
+<text x="-3.81" y="2.54" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-2.54" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SMD-PPTC-500MA(1206)" prefix="F" uservalue="yes">
+<description>307010002</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="F1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="SMD1206R500SF" constant="no"/>
+<attribute name="VALUE" value="SMD1206R500SF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10072,7 +10077,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R36" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
 <part name="R37" library="Seeed-Resistor-2016" deviceset="SMD-RES-3.9K-5%-1/10W(0603)" device="" value="3.9K"/>
 <part name="R38" library="Seeed-Resistor-2016" deviceset="SMD-RES-3.9K-5%-1/10W(0603)" device="" value="3.9K"/>
-<part name="J8" library="Seeed-Connector -2016" deviceset="DIP-BLACK-ROUND-FEMALE-HEADER-VERT(2P-2.54)" device="" value="2p-2.54"/>
 <part name="TP6" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
 <part name="TP7" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54"/>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10229,6 +10233,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="JP1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device=""/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="F2" library="Seeed-Fuse" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 </parts>
 <sheets>
 <sheet>
@@ -10314,7 +10319,6 @@ LFXTAL016178
 <instance part="R36" gate="G$1" x="356.87" y="177.8"/>
 <instance part="R37" gate="G$1" x="365.76" y="176.53" rot="R90"/>
 <instance part="R38" gate="G$1" x="377.19" y="171.45" rot="R90"/>
-<instance part="J8" gate="G$1" x="367.03" y="154.94"/>
 <instance part="TP6" gate="G$1" x="351.79" y="160.02"/>
 <instance part="TP7" gate="G$1" x="355.6" y="154.94"/>
 <instance part="GND44" gate="1" x="355.6" y="149.86"/>
@@ -10456,7 +10460,6 @@ LFXTAL016178
 <junction x="311.15" y="182.88"/>
 </segment>
 <segment>
-<pinref part="J8" gate="G$1" pin="2"/>
 <wire x1="359.41" y1="152.4" x2="355.6" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="TP7" gate="G$1" pin="TP"/>
 <junction x="355.6" y="152.4"/>
@@ -11056,7 +11059,6 @@ LFXTAL016178
 <wire x1="336.55" y1="177.8" x2="349.25" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="349.25" y1="177.8" x2="353.06" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="R36" gate="G$1" pin="1"/>
-<pinref part="J8" gate="G$1" pin="1"/>
 <wire x1="359.41" y1="157.48" x2="351.79" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="351.79" y1="157.48" x2="349.25" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="349.25" y1="157.48" x2="349.25" y2="177.8" width="0.1524" layer="91"/>
@@ -12114,7 +12116,8 @@ LFXTAL016178
 <instance part="R47" gate="G$1" x="260.35" y="201.93" rot="R90"/>
 <instance part="JP1" gate="A" x="123.19" y="45.72" rot="R270"/>
 <instance part="GND26" gate="1" x="120.65" y="40.64"/>
-<instance part="P+4" gate="1" x="120.65" y="52.07"/>
+<instance part="P+4" gate="1" x="100.33" y="50.8"/>
+<instance part="F2" gate="G$1" x="111.76" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -12331,9 +12334,10 @@ LFXTAL016178
 <junction x="214.63" y="242.57"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="F2" gate="G$1" pin="1"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
-<wire x1="120.65" y1="45.72" x2="120.65" y2="49.53" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="45.72" x2="100.33" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="100.33" y1="45.72" x2="100.33" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$68" class="0">
@@ -12447,6 +12451,13 @@ LFXTAL016178
 <wire x1="245.11" y1="205.74" x2="260.35" y2="205.74" width="0.1524" layer="91"/>
 <junction x="260.35" y="205.74"/>
 <wire x1="260.35" y1="205.74" x2="260.35" y2="207.01" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="F2" gate="G$1" pin="2"/>
+<wire x1="120.65" y1="45.72" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
