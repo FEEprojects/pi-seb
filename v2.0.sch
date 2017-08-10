@@ -9983,8 +9983,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="F79" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F82" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F83" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="F74" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
-<part name="F75" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="F76" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
 <part name="PI_ADC_1" library="Rembrandt Electronics - JST XH Connectors v1-0 2" deviceset="JST-XH-07-PIN" device="-ROUND-PAD"/>
 <part name="F40" library="Seeed-Fuse" library_urn="urn:adsk.eagle:library:469" deviceset="SMD-PPTC-500MA(1206)" device="" value="SMD1206R500SF"/>
@@ -11218,14 +11216,14 @@ LFXTAL016178
 <wire x1="347.98" y1="66.04" x2="361.95" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="P2_EN" class="0">
 <segment>
 <pinref part="R41" gate="G$1" pin="1"/>
 <pinref part="U1" gate="A" pin="GPB5"/>
 <wire x1="224.79" y1="187.96" x2="223.52" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="PI12_EN" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="GPB6"/>
 <pinref part="R17" gate="G$1" pin="1"/>
@@ -11338,18 +11336,14 @@ LFXTAL016178
 <wire x1="104.14" y1="172.72" x2="104.14" y2="223.52" width="0.1524" layer="97"/>
 <text x="-5.08" y="175.26" size="2.54" layer="97">pycom UART1</text>
 <text x="-1.27" y="203.2" size="2.54" layer="97">pycom UART0</text>
-<wire x1="104.14" y1="172.72" x2="187.96" y2="172.72" width="0.1524" layer="97"/>
-<wire x1="187.96" y1="172.72" x2="187.96" y2="223.52" width="0.1524" layer="97"/>
-<wire x1="187.96" y1="172.72" x2="266.7" y2="172.72" width="0.1524" layer="97"/>
-<wire x1="266.7" y1="172.72" x2="266.7" y2="223.52" width="0.1524" layer="97"/>
-<text x="132.08" y="180.34" size="6.4516" layer="97">LoPy I2C</text>
-<text x="210.82" y="177.8" size="6.4516" layer="97">LoPy</text>
+<wire x1="104.14" y1="161.29" x2="266.7" y2="161.29" width="0.1524" layer="97"/>
+<wire x1="266.7" y1="161.29" x2="266.7" y2="223.52" width="0.1524" layer="97"/>
+<text x="135.89" y="157.48" size="6.4516" layer="97">LoPy</text>
 <text x="39.37" y="256.54" size="6.4516" layer="97">LoPy UART</text>
 <wire x1="-7.62" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="97"/>
-<wire x1="104.14" y1="55.88" x2="104.14" y2="172.72" width="0.1524" layer="97"/>
-<wire x1="370.84" y1="161.29" x2="292.1" y2="161.29" width="0.1524" layer="97"/>
-<wire x1="292.1" y1="161.29" x2="292.1" y2="172.72" width="0.1524" layer="97"/>
-<wire x1="292.1" y1="172.72" x2="266.7" y2="172.72" width="0.1524" layer="97"/>
+<wire x1="104.14" y1="55.88" x2="104.14" y2="161.29" width="0.1524" layer="97"/>
+<wire x1="104.14" y1="161.29" x2="104.14" y2="172.72" width="0.1524" layer="97"/>
+<wire x1="370.84" y1="161.29" x2="266.7" y2="161.29" width="0.1524" layer="97"/>
 <wire x1="104.14" y1="55.88" x2="370.84" y2="55.88" width="0.1524" layer="97"/>
 <text x="50.8" y="160.02" size="6.4516" layer="97">LoPy</text>
 <text x="276.86" y="213.36" size="6.4516" layer="97">uSD</text>
@@ -11379,13 +11373,13 @@ LFXTAL016178
 <instance part="LOPY_I2C" gate="-4" x="160.02" y="195.58"/>
 <instance part="LOPY_I2C" gate="-5" x="160.02" y="193.04"/>
 <instance part="J2" gate="G$1" x="340.36" y="187.96"/>
-<instance part="LOPY_SPI" gate="-1" x="236.22" y="203.2"/>
-<instance part="LOPY_SPI" gate="-2" x="236.22" y="200.66"/>
-<instance part="LOPY_SPI" gate="-3" x="236.22" y="198.12"/>
-<instance part="LOPY_SPI" gate="-4" x="236.22" y="195.58"/>
-<instance part="LOPY_SPI" gate="-5" x="236.22" y="193.04"/>
-<instance part="LOPY_SPI" gate="-6" x="236.22" y="190.5"/>
-<instance part="LOPY_SPI" gate="-7" x="236.22" y="187.96"/>
+<instance part="LOPY_SPI" gate="-1" x="161.29" y="182.88"/>
+<instance part="LOPY_SPI" gate="-2" x="161.29" y="180.34"/>
+<instance part="LOPY_SPI" gate="-3" x="161.29" y="177.8"/>
+<instance part="LOPY_SPI" gate="-4" x="161.29" y="175.26"/>
+<instance part="LOPY_SPI" gate="-5" x="161.29" y="172.72"/>
+<instance part="LOPY_SPI" gate="-6" x="161.29" y="170.18"/>
+<instance part="LOPY_SPI" gate="-7" x="161.29" y="167.64"/>
 <instance part="GND35" gate="1" x="350.52" y="165.1"/>
 <instance part="GND36" gate="1" x="350.52" y="215.9" rot="R180"/>
 <instance part="J3" gate="G$1" x="45.72" y="22.86"/>
@@ -11395,13 +11389,11 @@ LFXTAL016178
 <instance part="F79" gate="G$1" x="11.43" y="212.09"/>
 <instance part="F82" gate="G$1" x="146.05" y="203.2"/>
 <instance part="F83" gate="G$1" x="137.16" y="200.66"/>
-<instance part="F74" gate="G$1" x="220.98" y="203.2"/>
-<instance part="F75" gate="G$1" x="214.63" y="200.66"/>
 <instance part="F76" gate="G$1" x="140.97" y="49.53"/>
 <instance part="F59" gate="G$1" x="154.94" y="39.37"/>
 <instance part="GND38" gate="1" x="163.83" y="8.89"/>
 <instance part="GND42" gate="1" x="299.72" y="185.42" rot="R270"/>
-<instance part="GND43" gate="1" x="233.68" y="185.42"/>
+<instance part="GND43" gate="1" x="158.75" y="165.1"/>
 <instance part="GND52" gate="1" x="157.48" y="190.5"/>
 <instance part="GND54" gate="1" x="35.56" y="177.8"/>
 <instance part="GND55" gate="1" x="34.29" y="201.93"/>
@@ -11527,11 +11519,6 @@ LFXTAL016178
 <wire x1="140.97" y1="203.2" x2="123.19" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="198.12" y="203.2" size="1.778" layer="95"/>
-<pinref part="F74" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="203.2" x2="198.12" y2="203.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="F76" gate="G$1" pin="1"/>
 <wire x1="135.89" y1="49.53" x2="133.35" y2="49.53" width="0.1524" layer="91"/>
 <label x="133.61" y="49.24" size="1.778" layer="95"/>
@@ -11573,11 +11560,6 @@ LFXTAL016178
 <label x="133.35" y="39.37" size="1.778" layer="95"/>
 <pinref part="F59" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="39.37" x2="133.35" y2="39.37" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="F75" gate="G$1" pin="1"/>
-<wire x1="209.55" y1="200.66" x2="198.12" y2="200.66" width="0.1524" layer="91"/>
-<label x="198.12" y="200.66" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="F79" gate="G$1" pin="1"/>
@@ -11665,8 +11647,8 @@ LFXTAL016178
 </segment>
 <segment>
 <pinref part="LOPY_SPI" gate="-6" pin="S"/>
-<wire x1="233.68" y1="190.5" x2="198.12" y2="190.5" width="0.1524" layer="91"/>
-<label x="198.12" y="190.5" size="1.778" layer="95"/>
+<wire x1="158.75" y1="170.18" x2="123.19" y2="170.18" width="0.1524" layer="91"/>
+<label x="123.19" y="170.18" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LOPY_I2C" gate="-4" pin="S"/>
@@ -11682,8 +11664,8 @@ LFXTAL016178
 </segment>
 <segment>
 <pinref part="LOPY_SPI" gate="-4" pin="S"/>
-<wire x1="233.68" y1="195.58" x2="198.12" y2="195.58" width="0.1524" layer="91"/>
-<label x="198.12" y="195.58" size="1.778" layer="95"/>
+<wire x1="158.75" y1="175.26" x2="123.19" y2="175.26" width="0.1524" layer="91"/>
+<label x="123.19" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_MISO" class="0">
@@ -11694,8 +11676,8 @@ LFXTAL016178
 </segment>
 <segment>
 <pinref part="LOPY_SPI" gate="-5" pin="S"/>
-<wire x1="233.68" y1="193.04" x2="198.12" y2="193.04" width="0.1524" layer="91"/>
-<label x="198.12" y="193.04" size="1.778" layer="95"/>
+<wire x1="158.75" y1="172.72" x2="123.19" y2="172.72" width="0.1524" layer="91"/>
+<label x="123.19" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="2"/>
@@ -11882,8 +11864,8 @@ LFXTAL016178
 </segment>
 <segment>
 <pinref part="LOPY_SPI" gate="-3" pin="S"/>
-<wire x1="233.68" y1="198.12" x2="198.12" y2="198.12" width="0.1524" layer="91"/>
-<label x="198.12" y="198.12" size="1.778" layer="95"/>
+<wire x1="158.75" y1="177.8" x2="123.19" y2="177.8" width="0.1524" layer="91"/>
+<label x="123.19" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOPY_UART0_5V_PROTECTED" class="0">
@@ -11914,28 +11896,24 @@ LFXTAL016178
 <segment>
 <pinref part="F83" gate="G$1" pin="2"/>
 <pinref part="LOPY_I2C" gate="-2" pin="S"/>
-<wire x1="142.24" y1="200.66" x2="157.48" y2="200.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LOPY_SPI_5V_PROTECTED" class="0">
-<segment>
-<pinref part="LOPY_SPI" gate="-1" pin="S"/>
-<wire x1="233.68" y1="203.2" x2="226.06" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="F74" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="LOPY_SPI_3V3_PROTECTED" class="0">
-<segment>
-<pinref part="F75" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="200.66" x2="151.13" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="LOPY_SPI" gate="-2" pin="S"/>
-<wire x1="219.71" y1="200.66" x2="233.68" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="151.13" y1="200.66" x2="157.48" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="180.34" x2="151.13" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="151.13" y1="180.34" x2="151.13" y2="200.66" width="0.1524" layer="91"/>
+<junction x="151.13" y="200.66"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="LOPY_I2C" gate="-1" pin="S"/>
 <pinref part="F82" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="203.2" x2="151.13" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="203.2" x2="153.67" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="LOPY_SPI" gate="-1" pin="S"/>
+<wire x1="153.67" y1="203.2" x2="151.13" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="182.88" x2="153.67" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="153.67" y1="182.88" x2="153.67" y2="203.2" width="0.1524" layer="91"/>
+<junction x="153.67" y="203.2"/>
 </segment>
 </net>
 <net name="LOPY_5V_FUSED" class="0">
@@ -14526,11 +14504,11 @@ LFXTAL016178
 <segment>
 <wire x1="314.96" y1="187.96" x2="313.69" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="1"/>
-<pinref part="SW1" gate="G$1" pin="B"/>
-<wire x1="299.72" y1="193.04" x2="299.72" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="190.5" x2="313.69" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="313.69" y1="190.5" x2="313.69" y2="187.96" width="0.1524" layer="91"/>
 <junction x="313.69" y="187.96"/>
+<pinref part="SW1" gate="G$1" pin="A"/>
+<wire x1="313.69" y1="190.5" x2="309.88" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="190.5" x2="309.88" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB4_DP" class="0">
@@ -15216,7 +15194,7 @@ LFXTAL016178
 <approved hash="208,3,129.54,101.6,+5V,sup,,,,"/>
 <approved hash="208,3,106.68,99.06,+5V,out,,,,"/>
 <approved hash="208,3,223.52,246.38,+5V,sup,,,,"/>
-<approved hash="208,3,120.65,49.53,+5V,sup,,,,"/>
+<approved hash="208,3,100.33,48.26,+5V,sup,,,,"/>
 <approved hash="208,5,60.96,161.29,+5V,sup,,,,"/>
 <approved hash="209,7,238.76,185.42,FTDI2_TE,,,,,"/>
 <approved hash="209,7,140.97,175.26,FTDI2_TE,,,,,"/>
