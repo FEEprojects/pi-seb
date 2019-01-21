@@ -1,5 +1,7 @@
 # Pi-Seb
 
+[![DOI](https://zenodo.org/badge/93069232.svg)](https://zenodo.org/badge/latestdoi/93069232)
+
 A PCB for the Raspberry Pi to create a flexible sensor evaluation board.
 
 Provides the following features:
